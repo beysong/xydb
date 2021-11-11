@@ -1,9 +1,0 @@
-.header {
-  @apply flex p-5;
-}
-.header-menu {
-  @apply flex;
-  .menu-item {
-    @apply p-3;
-  }
-}
