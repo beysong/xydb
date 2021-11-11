@@ -14,13 +14,15 @@ export default function IndexPage({
 }) {
   const intl = useIntl();
   return (
-    <section className={'bg-gray-100 ' + className} {...rest}>
-      <a className="wow hidden" id={hrefid}></a>
-      <div className={full ? 'w-full' : 'container mx-auto'}>
-        <SectionTitle title1={title1} align="center" />
-        {desc ? <div className="text-center">{desc}</div> : false}
-        {children}
-      </div>
-    </section>
+    <>
+      <a id={hrefid}></a>
+      <section className={'bg-gray-100 ' + className} {...rest}>
+        <div className={full ? 'w-full' : 'container mx-auto'}>
+          <SectionTitle title1={title1} align="center" />
+          {desc ? <div className="text-center">{desc}</div> : false}
+          {children}
+        </div>
+      </section>
+    </>
   );
 }

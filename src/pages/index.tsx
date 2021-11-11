@@ -23,8 +23,8 @@ export default function IndexPage() {
       <Slider data={[s1, s2]} />
       <CountNum />
       <Section
-        className="py-10"
-        hrefid="id1"
+        className="py-20"
+        hrefid="menu.项目介绍"
         desc={
           <div className="leading-10 my-5">
             <div>
@@ -47,7 +47,7 @@ export default function IndexPage() {
         <Img src="/images/map.png" />
       </Section>
       <Section
-        hrefid="id2"
+        hrefid="id0"
         full
         style={{ backgroundImage: 'url(~@/assets/img/map.png)' }}
       >
@@ -64,8 +64,8 @@ export default function IndexPage() {
         </div>
       </Section>
       <Section
-        className="py-10"
-        hrefid="id3"
+        className="py-20"
+        hrefid="id1"
         title1={
           <div>
             <span className="text-red-400">设计</span>理念
@@ -109,8 +109,8 @@ export default function IndexPage() {
       </Section>
 
       <Section
-        className="py-10"
-        hrefid="id3"
+        className="py-20"
+        hrefid="id2"
         title1={
           <div>
             <span className="text-red-400">生态</span>配套
@@ -162,8 +162,8 @@ export default function IndexPage() {
       </Section>
 
       <Section
-        className="py-10"
-        hrefid="id1"
+        className="py-20"
+        hrefid="id3"
         desc={
           <div className="leading-10 my-5">
             <div>
@@ -207,7 +207,8 @@ export default function IndexPage() {
       </Section>
 
       <Section
-        className="py-10"
+        id="id4"
+        className="py-20"
         title1={
           <div>
             <span className="text-red-400">租赁</span>信息
