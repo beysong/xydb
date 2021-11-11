@@ -5,10 +5,19 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  base: '/static01/',
-  publicPath: '/static01/',
+  targets: {
+    ie: 9,
+  },
+  base: '/xydb/',
+  publicPath: '/xydb/',
   fastRefresh: {},
-  locale: {},
+  locale: {
+    default: 'zh-CN',
+    antd: false,
+    title: false,
+    baseNavigator: true,
+    baseSeparator: '-',
+  },
   dynamicImport: {
     loading: '@/components/PageLoading/index',
   },

@@ -4,13 +4,12 @@ import SectionTitle from '../SectionTitle';
 import './index.css';
 const menus = [{ id: 'home' }, { id: 'project' }];
 export default function IndexPage({
-  desc,
+  desc = '',
   children,
   className = '',
   title1,
-  title2,
-  full,
-  hrefid,
+  full = false,
+  hrefid = '',
   ...rest
 }) {
   const intl = useIntl();

@@ -8,7 +8,6 @@ import Section from '@/components/Section';
 import CountNum from '@/components/CountNum';
 import ZuLin from '@/components/ZuLin';
 import Img from '@/components/Img';
-import { WOW } from 'wowjs';
 
 import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
@@ -42,7 +41,7 @@ export default function IndexPage() {
             <span className="text-red-400">星月德必WE</span>概况
           </div>
         }
-        style={{ backgroundImage: 'url(/images/bg1.png)' }}
+        style={{ backgroundImage: 'url(~@/assets/img/bg1.png)' }}
         full
       >
         <Img src="/images/map.png" />
@@ -50,7 +49,7 @@ export default function IndexPage() {
       <Section
         hrefid="id2"
         full
-        style={{ backgroundImage: 'url(/images/map.png)' }}
+        style={{ backgroundImage: 'url(~@/assets/img/map.png)' }}
       >
         <div className="flex">
           <div className="w-0 md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"></div>
@@ -181,7 +180,7 @@ export default function IndexPage() {
             <span className="text-red-400">品牌</span>服务
           </div>
         }
-        style={{ backgroundImage: 'url(/images/bg1.png)' }}
+        style={{ backgroundImage: 'url(~@/assets/img/bg1.png)' }}
         full
       >
         <Img src="/images/map.png" />

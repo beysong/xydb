@@ -1,7 +1,16 @@
-import { setLocale, useIntl } from 'umi';
+import { setLocale, useIntl, getLocale } from 'umi';
 
 import './index.css';
-const menus = [{ id: 'home' }, { id: 'project' }];
+const menus = [
+  { id: 'menu.首页' },
+  { id: 'menu.项目介绍' },
+  { id: 'menu.区位交通' },
+  { id: 'menu.设计理念' },
+  { id: 'menu.品牌服务' },
+  { id: 'menu.租赁信息' },
+  { id: 'menu.联系我们' },
+];
+
 export default function IndexPage() {
   const intl = useIntl();
   return (
@@ -17,7 +26,7 @@ export default function IndexPage() {
             <li key={v.id} className="menu-item">
               <a href="#id1">
                 {intl.formatMessage({
-                  id: 'menu.' + v.id,
+                  id: v.id,
                 })}
               </a>
             </li>
@@ -28,11 +37,13 @@ export default function IndexPage() {
               onClick={() => {
                 setLocale('zh-CN', true);
               }}
+              className={getLocale() === 'zn-CN' ? 'text-green-600' : ''}
             >
               中文
             </span>
             /
             <span
+              className={getLocale() === 'en-US' ? 'text-green-600' : ''}
               onClick={() => {
                 setLocale('en-US', true);
               }}
