@@ -1,1 +1,32 @@
-
+.posWrap {
+  background: #3db2ad;
+  transition: height 0.15s ease-out;
+  @apply overflow-hidden absolute bottom-0 left-0 right-0 p-3 text-center text-white text-lg;
+  .title {
+    @apply text-lg;
+  }
+  .littleline {
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    margin: 0 auto;
+    @apply hidden;
+  }
+  .desc {
+    height: 0;
+    @apply text-base leading-7 hidden;
+  }
+  &:hover {
+    background: rgba(27, 126, 121, 0.6);
+    @apply h-full;
+    .title {
+      @apply py-5 text-xl;
+    }
+    .littleline {
+      @apply block;
+    }
+    .desc {
+      @apply h-auto p-5 block;
+    }
+  }
+}

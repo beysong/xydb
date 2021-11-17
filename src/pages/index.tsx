@@ -13,12 +13,12 @@ import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
 
 import './index.css';
-const menus = [{ id: 'home' }, { id: 'project' }];
 
 export default function IndexPage() {
   const intl = useIntl();
   return (
     <main>
+      <a href="" id="id0"></a>
       <Header />
       <Slider data={[s1, s2]} />
       <CountNum />
@@ -47,7 +47,7 @@ export default function IndexPage() {
         <Img src="/images/map.png" />
       </Section>
       <Section
-        hrefid="id0"
+        hrefid="id1"
         full
         style={{ backgroundImage: 'url(~@/assets/img/map.png)' }}
       >
@@ -65,7 +65,7 @@ export default function IndexPage() {
       </Section>
       <Section
         className="py-20"
-        hrefid="id1"
+        hrefid="id2"
         title1={
           <div>
             <span className="text-red-400">设计</span>理念
@@ -110,7 +110,7 @@ export default function IndexPage() {
 
       <Section
         className="py-20"
-        hrefid="id2"
+        hrefid="id3"
         title1={
           <div>
             <span className="text-red-400">生态</span>配套
@@ -163,7 +163,7 @@ export default function IndexPage() {
 
       <Section
         className="py-20"
-        hrefid="id3"
+        hrefid="id4"
         desc={
           <div className="leading-10 my-5">
             <div>
@@ -185,7 +185,7 @@ export default function IndexPage() {
       >
         <Img src="/images/map.png" />
         <div className="container mx-auto">
-          <div className=" flex flex-wrap bg-green-700 p-5">
+          <div className="flex flex-wrap p-5" style={{ background: '#162F33' }}>
             {[1, 2, 3, 4].map((v) => (
               <div
                 key={v}
@@ -193,9 +193,10 @@ export default function IndexPage() {
               >
                 <div key={v} className="relative">
                   <Img width="100%" src={'/images/demo.jpg'} />
-                  <div className="group  absolute bottom-0 left-0 right-0 p-3 text-center text-white text-lg bg-green-500">
-                    <div>十大增值服务</div>
-                    <div className="opacity-0 group-hover:opacity-60">
+                  <div className="posWrap">
+                    <div className="title">十大增值服务</div>
+                    <div className="littleline"></div>
+                    <div className="desc">
                       十大增值服务十大增值服务，十大增值服十大增值服务十大增值服务十大增值服务务
                     </div>
                   </div>
@@ -207,7 +208,7 @@ export default function IndexPage() {
       </Section>
 
       <Section
-        id="id4"
+        id="id5"
         className="py-20"
         title1={
           <div>
@@ -218,6 +219,26 @@ export default function IndexPage() {
         <ZuLin />
       </Section>
       <Footer />
+      <div className="fixed right-0 top-1/2 z-10">
+        <div
+          className="text-xs xl:text-sm 2xl:text-sm w-16 text-white text-center"
+          style={{ backgroundColor: '#3DB2AD' }}
+        >
+          <span>预约参观</span>
+        </div>
+        <div
+          className="text-xs xl:text-sm 2xl:text-sm w-16 mt-1 text-white text-center"
+          style={{ backgroundColor: '#3DB2AD' }}
+        >
+          <span>电话咨询</span>
+        </div>
+        <div
+          className="text-xs xl:text-sm 2xl:text-sm w-16 mt-1 text-white text-center"
+          style={{ backgroundColor: '#3DB2AD' }}
+        >
+          <span>在线咨询</span>
+        </div>
+      </div>
     </main>
   );
 }

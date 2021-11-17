@@ -6,6 +6,7 @@ export default {
   'menu.项目介绍': 'project',
   'menu.区位交通': 'regional',
   'menu.设计理念': 'design',
+  'menu.生态配套': '生态配套',
   'menu.品牌服务': 'brand',
   'menu.租赁信息': 'rental',
   'menu.联系我们': 'Contact',

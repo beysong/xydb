@@ -1,10 +1,11 @@
 .header-menu {
   @apply flex;
   .menu-item a {
-    @apply p-5 inline-block uppercase text-sm lg:text-base xl:text-lg 2xl:text-lg whitespace-nowrap;
+    @apply p-3 lg:p-4 xl:p-5 2xl:p-6 inline-block uppercase text-xs lg:text-sm xl:text-base 2xl:text-base whitespace-nowrap;
   }
-  .menu-item.active a {
-    @apply text-green-600;
+  .menu-item.active a,
+  .menu-item a:hover {
+    color: #3db2ad;
   }
 }
 
