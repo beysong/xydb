@@ -48,7 +48,7 @@ export default function IndexPage() {
           <ul className={'header-menu'}>
             {menus.map((v, i) => (
               <li
-                key={v.id}
+                key={i}
                 className={
                   nowMenu === v.id || (!i && !nowMenu)
                     ? 'menu-item active'
@@ -94,12 +94,12 @@ export default function IndexPage() {
             </li>
           </ul>
         </div>
-        <div className="header-phone hidden items-center xl:flex 2xl:flex">
+        <div className="header-phone hidden text-right items-center xl:flex 2xl:flex">
           <div>
             <div className="text-lg font-bold" style={{ color: '#3DB2AD' }}>
               021-62335008
             </div>
-            <div className="text-base">上海市闵行区丰虹路199号</div>
+            <div className="text-sm">上海市闵行区丰虹路199号</div>
           </div>
         </div>
         <div

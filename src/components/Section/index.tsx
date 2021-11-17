@@ -16,7 +16,7 @@ export default function IndexPage({
   return (
     <>
       <a id={hrefid}></a>
-      <section className={'bg-gray-100 ' + className} {...rest}>
+      <section className={className} {...rest}>
         <div className={full ? 'w-full' : 'container mx-auto'}>
           <SectionTitle title1={title1} align="center" />
           {desc ? <div className="text-center">{desc}</div> : false}

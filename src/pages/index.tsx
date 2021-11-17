@@ -12,6 +12,8 @@ import Img from '@/components/Img';
 import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
 
+import icon1 from '@/assets/icon1.png';
+
 import './index.css';
 
 export default function IndexPage() {
@@ -23,16 +25,14 @@ export default function IndexPage() {
       <Slider data={[s1, s2]} />
       <CountNum />
       <Section
-        className="py-20"
+        className="pt-28"
         hrefid="menu.项目介绍"
         desc={
-          <div className="leading-10 my-5">
+          <div className="leading-8 my-10 text-base" style={{ color: '#666' }}>
+            <div>星月德必WE"，位于虹桥商务区核心区，总建筑面积53,000m²</div>
+            <div>立足虹桥国际开放枢纽国家级规划</div>
             <div>
-              星光德必易园，定位西安数字文化创新中心，依托西安丰富的文科教资源和创新主体资源，
-            </div>
-            <div>以高新技术为核心产业，以轻公司生态圈为运营理念，</div>
-            <div>
-              为企业提供面向未来的智慧办公体验，打造融合科创、文创产业的新高地。
+              打造长三角数字科技创新中心，为上海及长三角数字创意企业提供最优化的办公环境和资源链接平台。
             </div>
           </div>
         }
@@ -49,22 +49,45 @@ export default function IndexPage() {
       <Section
         hrefid="id1"
         full
-        style={{ backgroundImage: 'url(~@/assets/img/map.png)' }}
+        style={{ backgroundImage: 'url(/images/map.png)' }}
       >
-        <div className="flex">
+        <div className="flex text-white">
           <div className="w-0 md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"></div>
-          <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 bg-green-300 p-10">
+          <div
+            className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-16 px-20"
+            style={{ backgroundColor: '#31ABA6' }}
+          >
             <SectionTitle title1="区位交通" align="left" color="white" />
-            <div className="pt-6">站位拉就是大概拉司空见惯拉设计费</div>
-            <div className="pt-6">点击查看</div>
-            <div className="pt-6">站位拉就是大概拉司空见惯拉设计费</div>
-            <div className="pt-6">站位拉就是大概拉司空见惯拉设计费</div>
-            <div className="pt-6">站位拉就是大概拉司空见惯拉设计费</div>
+            <div className="pt-6 text-2xl">
+              占位虹桥开放枢纽核心 多维立体交通打通商脉
+            </div>
+            <div className="pt-6">
+              <div
+                className="rounded-sm opacity-50 inline-block p-3"
+                style={{ backgroundColor: '#0E8885' }}
+              >
+                点击查看区位图
+              </div>
+            </div>
+            <div className="pt-6">
+              {[1, 2, 3, 4].map((v) => (
+                <div className="flex items-center my-3" key={v}>
+                  <img className="w-16 h-16" src={icon1} alt="" />
+                  <div className="flex-1 pl-2">
+                    <div className="text-xl">专属班车</div>
+                    <div className="text-base">
+                      <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
+                      <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Section>
       <Section
-        className="py-20"
+        className="pt-28"
         hrefid="id2"
         title1={
           <div>
@@ -72,15 +95,23 @@ export default function IndexPage() {
           </div>
         }
       >
-        <div className="flex flex-wrap mt-10">
+        <div className="flex flex-wrap mt-16">
           <div className="w-full lg:w-1/2">
             <Img width="100%" src={'/images/demo2.jpg'} />
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 bg-gray-300 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24">
+          <div
+            style={{ backgroundColor: '#F0F5F5' }}
+            className="w-full md:w-1/2 lg:w-1/4 py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center px-5 md:px-5 lg:px-10 xl:px-16 xxl:px-20"
+          >
             <div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
+              <div className="text-3xl">500-2000㎡精装空间</div>
+              <div className="text-lg mt-2" style={{ color: '#777' }}>
+                灵活户型随需而变
+              </div>
+              <div
+                style={{ width: 68, height: 4, background: '#3DB2AD' }}
+                className="mt-12"
+              ></div>
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4">
@@ -88,28 +119,40 @@ export default function IndexPage() {
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-full lg:w-1/2 bg-green-500 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24">
+          <div
+            style={{ backgroundColor: '#3DB2AD' }}
+            className="w-full lg:w-1/2 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24"
+          >
             <div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
+              <div className="text-3xl">前沿智能设施加持</div>
+              <div className="text-lg mt-2">创享未来科技体验</div>
+              <div
+                style={{ width: 68, height: 4, background: '#fff' }}
+                className="mt-12"
+              ></div>
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4">
             <Img width="100%" src={'/images/demo.jpg'} />
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 bg-gray-700 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24">
+          <div
+            style={{ backgroundColor: '#404445' }}
+            className="w-full md:w-1/2 lg:w-1/4 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24"
+          >
             <div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
+              <div className="text-3xl">多层次生态空间</div>
+              <div className="text-lg mt-2">滋生创意际遇</div>
+              <div
+                style={{ width: 68, height: 4, background: '#3DB2AD' }}
+                className="mt-12"
+              ></div>
             </div>
           </div>
         </div>
       </Section>
 
       <Section
-        className="py-20"
+        className="pt-28"
         hrefid="id3"
         title1={
           <div>
@@ -119,50 +162,47 @@ export default function IndexPage() {
         full
         desc={
           <div className="leading-10 my-5">
-            <div>
-              星光德必易园，定位西安数字文化创新中心，依托西安丰富的文科教资源和创新主体资源，
-            </div>
+            <div>完善的生态商业供应链配套 类生活精致办公体验</div>
           </div>
         }
       >
-        <div className="flex flex-wrap mt-5">
-          <div className="w-full lg:w-1/2">
+        <div className="flex flex-wrap mt-10">
+          <div className="w-full lg:w-1/2 relative">
             <Img width="100%" src={'/images/demo2.jpg'} />
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 bg-gray-300 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24">
-            <div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
+            <div
+              className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+              style={{ background: 'rgba(27, 63, 61, 0.39)' }}
+            >
+              智能会议室
             </div>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4">
-            <Img width="100%" src={'/images/demo.jpg'} />
-          </div>
-        </div>
-        <div className="flex flex-wrap">
-          <div className="w-full lg:w-1/2 bg-green-500 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24">
-            <div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
+          <div className="w-full lg:w-1/2">
+            <div className="flex flex-wrap">
+              <div className="w-full lg:w-1/2 relative">
+                <Img width="100%" src={'/images/demo.jpg'} />
+                <div className="absolute inset-0 flex items-center justify-center text-white text-3xl">
+                  睡眠舱
+                </div>
+              </div>
+              <div className="w-full lg:w-1/2 ">
+                <Img width="100%" src={'/images/demo.jpg'} />
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4">
-            <Img width="100%" src={'/images/demo.jpg'} />
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 bg-gray-700 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24">
-            <div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
-              <div>前沿技能石家技术</div>
+
+            <div className="flex flex-wrap">
+              <div className="w-full lg:w-1/2  ">
+                <Img width="100%" src={'/images/demo.jpg'} />
+              </div>
+              <div className="w-full lg:w-1/2">
+                <Img width="100%" src={'/images/demo.jpg'} />
+              </div>
             </div>
           </div>
         </div>
       </Section>
 
       <Section
-        className="py-20"
+        className="pt-28"
         hrefid="id4"
         desc={
           <div className="leading-10 my-5">
@@ -191,7 +231,7 @@ export default function IndexPage() {
                 key={v}
                 className="relative w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xxl:w-1/4 p-2"
               >
-                <div key={v} className="relative">
+                <div className="relative">
                   <Img width="100%" src={'/images/demo.jpg'} />
                   <div className="posWrap">
                     <div className="title">十大增值服务</div>
@@ -209,7 +249,7 @@ export default function IndexPage() {
 
       <Section
         id="id5"
-        className="py-20"
+        className="pt-28"
         title1={
           <div>
             <span className="text-red-400">租赁</span>信息

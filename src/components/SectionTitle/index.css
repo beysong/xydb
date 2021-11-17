@@ -1,5 +1,5 @@
 .section-title {
-  @apply text-2xl relative inline-block pb-5;
+  @apply text-3xl font-bold relative inline-block pb-5;
 
   &::after {
     content: '';
@@ -22,8 +22,8 @@
 }
 
 .green {
-  color: green;
+  color: #3db2ad;
   &::after {
-    border-color: green;
+    border-color: #3db2ad;
   }
 }
