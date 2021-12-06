@@ -1,4 +1,6 @@
 import { setLocale, useIntl } from 'umi';
+import { OverPack } from 'rc-scroll-anim';
+import TweenOne from 'rc-tween-one';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -22,6 +24,59 @@ export default function IndexPage() {
     <main>
       <a href="" id="id0"></a>
       <Header />
+      <OverPack>
+        <div className="container mx-auto relative">
+          <div
+            className="fixed w-1/4 z-10 p-2 rounded-lg transition-all"
+            style={{
+              backgroundColor: 'rgba(255,255,255,0.19)',
+              top: '30%',
+              right: '10%',
+            }}
+          >
+            <div
+              className="bg-white p-8 w-full rounded-lg overflow-hidden"
+              style={{
+                // filter: 'blur(10px)',
+                backgroundColor: 'rgba(255,255,255,0.93)',
+              }}
+            >
+              <div>
+                <input
+                  className="rounded-sm p-2 text-center w-full"
+                  style={{
+                    border: '1px solid #D1DDDD',
+                  }}
+                  type="text"
+                  placeholder="请输入您的姓名"
+                />
+              </div>
+              <div>
+                <input
+                  className="rounded-sm p-2 text-center w-full mt-2"
+                  style={{
+                    border: '1px solid #D1DDDD',
+                  }}
+                  type="text"
+                  placeholder="请输入您的手机号"
+                />
+              </div>
+              <div>
+                <button
+                  style={{ backgroundColor: '#3DB2AD' }}
+                  className="text-center p-2 text-white w-full mt-5"
+                >
+                  立即免费预约参观
+                </button>
+              </div>
+              <div className="text-center text-gray-400 mt-2 text-md">
+                <span>我们的专业顾问会尽快与您联系</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </OverPack>
+
       <Slider data={[s1, s2]} />
       <CountNum />
       <Section
