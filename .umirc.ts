@@ -8,6 +8,7 @@ export default defineConfig({
   targets: {
     ie: 9,
   },
+  antd: false,
   base: '/xydb/',
   publicPath: '/xydb/',
   fastRefresh: {},

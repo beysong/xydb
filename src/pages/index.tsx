@@ -5,6 +5,9 @@ import TweenOne from 'rc-tween-one';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Slider from '@/components/Slider';
+import Slider2 from '@/components/Slider2';
+import Slider3 from '@/components/Slider3';
+import Slider4 from '@/components/Slider4';
 import SectionTitle from '@/components/SectionTitle';
 import Section from '@/components/Section';
 import CountNum from '@/components/CountNum';
@@ -24,7 +27,7 @@ export default function IndexPage() {
     <main>
       <a href="" id="id0"></a>
       <Header />
-      <OverPack>
+      {/* <OverPack>
         <div className="container mx-auto relative">
           <div
             className="fixed w-1/4 z-10 p-2 rounded-lg transition-all"
@@ -75,9 +78,12 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-      </OverPack>
+      </OverPack> */}
 
       <Slider data={[s1, s2]} />
+      <Slider2 data={[s1, s1, s2, s2]} />
+      <Slider3 data={[s1, s1, s2, s2]} />
+      <Slider4 data={[s1, s1, s2, s2]} />
       <CountNum />
       <Section
         className="pt-28"
