@@ -16,7 +16,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default function IndexPage({ data }) {
   const intl = useIntl();
   return (
-    <section id="certify">
+    <section id="certify2">
       <Swiper
         // effect="coverflow"
         navigation
@@ -24,7 +24,7 @@ export default function IndexPage({ data }) {
           clickable: true,
           renderBullet: (index, className) => {
             // console.log('index', index, className);
-            return `<div class="${className}">${index}</div>`;
+            return `<div class="${className}"></div>`;
           },
         }}
         watchSlidesProgress
@@ -50,7 +50,7 @@ export default function IndexPage({ data }) {
             if (Math.abs(slideProgress) > 1) {
               modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
             }
-            let translate = slideProgress * modify * 500 + 'px';
+            let translate = slideProgress * modify * 1100 + 'px';
             let scale = 1 - Math.abs(slideProgress) / 5;
             let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
             slide.transform(

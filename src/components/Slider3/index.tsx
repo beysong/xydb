@@ -16,7 +16,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 export default function IndexPage({ data }) {
   const intl = useIntl();
   return (
-    <section id="certify2">
+    <section id="certify3">
       <Swiper
         effect="coverflow"
         navigation
@@ -38,7 +38,15 @@ export default function IndexPage({ data }) {
       >
         {data.map((v, i) => (
           <SwiperSlide key={i}>
-            <img src={v} />
+            <div>
+              <img src={v} />
+            </div>
+            <div className="py-20">
+              <div className="text-4xl pb-2" style={{ color: '#222' }}>
+                "前沿智能设施加持"
+              </div>
+              <div style={{ color: '#777' }}>创享未来科技体验</div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

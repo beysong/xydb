@@ -14,7 +14,7 @@ const datas = [
 export default function IndexPage() {
   const intl = useIntl();
   return (
-    <section className="bg-gray-200">
+    <section style={{ backgroundColor: '#EAFCFC' }}>
       <div className="container mx-auto py-5">
         <QueueAnim delay={300} className="flex flex-wrap">
           {datas.map((v, i) => (

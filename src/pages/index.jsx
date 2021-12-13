@@ -8,6 +8,7 @@ import Slider from '@/components/Slider';
 import Slider2 from '@/components/Slider2';
 import Slider3 from '@/components/Slider3';
 import Slider4 from '@/components/Slider4';
+import Slider5 from '@/components/Slider5';
 import SectionTitle from '@/components/SectionTitle';
 import Section from '@/components/Section';
 import CountNum from '@/components/CountNum';
@@ -81,8 +82,6 @@ export default function IndexPage() {
       </OverPack> */}
 
       <Slider data={[s1, s2]} />
-      <Slider2 data={[s1, s1, s2, s2]} />
-      <Slider3 data={[s1, s1, s2, s2]} />
       <Slider4 data={[s1, s1, s2, s2]} />
       <CountNum />
       <Section
@@ -99,7 +98,7 @@ export default function IndexPage() {
         }
         title1={
           <div>
-            <span className="text-red-400">星月德必WE</span>概况
+            <span className="text-green">星月德必WE"</span>概况
           </div>
         }
         style={{ backgroundImage: 'url(~@/assets/img/bg1.png)' }}
@@ -116,7 +115,7 @@ export default function IndexPage() {
           <div className="w-0 md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"></div>
           <div
             className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-16 px-20"
-            style={{ backgroundColor: '#31ABA6' }}
+            style={{ backgroundColor: '#00C9D0' }}
           >
             <SectionTitle title1="区位交通" align="left" color="white" />
             <div className="pt-6 text-2xl">
@@ -152,11 +151,14 @@ export default function IndexPage() {
         hrefid="id2"
         title1={
           <div>
-            <span className="text-red-400">设计</span>理念
+            <span className="text-green">设计</span>理念
           </div>
         }
       >
-        <div className="flex flex-wrap mt-16">
+        <div className="py-20">
+          <Slider3 data={[s1, s1, s2, s2]} />
+        </div>
+        {/* <div className="flex flex-wrap mt-16">
           <div className="w-full lg:w-1/2">
             <Img width="100%" src={'/images/demo2.jpg'} />
           </div>
@@ -209,15 +211,27 @@ export default function IndexPage() {
               ></div>
             </div>
           </div>
+        </div> */}
+      </Section>
+      <Section
+        className="pt-28"
+        hrefid="id2"
+        title1={
+          <div>
+            <span className="text-green">办公</span>空间
+          </div>
+        }
+      >
+        <div className="py-32">
+          <Slider2 data={[s1, s1, s2, s2]} />
         </div>
       </Section>
-
       <Section
         className="pt-28"
         hrefid="id3"
         title1={
           <div>
-            <span className="text-red-400">生态</span>配套
+            <span className="text-green">生态</span>配套
           </div>
         }
         full
@@ -232,30 +246,51 @@ export default function IndexPage() {
             <Img width="100%" src={'/images/demo2.jpg'} />
             <div
               className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
-              style={{ background: 'rgba(27, 63, 61, 0.39)' }}
+              style={{ background: '#00C9D0' }}
             >
-              智能会议室
+              wehome智能会议厅
             </div>
           </div>
           <div className="w-full lg:w-1/2">
             <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
-                <div className="absolute inset-0 flex items-center justify-center text-white text-3xl">
+                <div
+                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  style={{ background: '#00C9D0' }}
+                >
                   睡眠舱
                 </div>
               </div>
-              <div className="w-full lg:w-1/2 ">
+              <div className="w-full lg:w-1/2 relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
+                <div
+                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  style={{ background: '#00C9D0' }}
+                >
+                  睡眠舱
+                </div>
               </div>
             </div>
 
             <div className="flex flex-wrap">
-              <div className="w-full lg:w-1/2  ">
+              <div className="w-full lg:w-1/2  relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
+                <div
+                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  style={{ background: '#00C9D0' }}
+                >
+                  睡眠舱
+                </div>
               </div>
-              <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
+                <div
+                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  style={{ background: '#00C9D0' }}
+                >
+                  睡眠舱
+                </div>
               </div>
             </div>
           </div>
@@ -278,14 +313,14 @@ export default function IndexPage() {
         }
         title1={
           <div>
-            <span className="text-red-400">品牌</span>服务
+            <span className="text-green">品牌</span>服务
           </div>
         }
         style={{ backgroundImage: 'url(~@/assets/img/bg1.png)' }}
         full
       >
         <Img src="/images/map.png" />
-        <div className="container mx-auto">
+        {/* <div className="container mx-auto">
           <div className="flex flex-wrap p-5" style={{ background: '#162F33' }}>
             {[1, 2, 3, 4].map((v) => (
               <div
@@ -305,7 +340,9 @@ export default function IndexPage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
+
+        <Slider5 data={[s1, s1, s2, s2]} />
       </Section>
 
       <Section
@@ -313,7 +350,7 @@ export default function IndexPage() {
         className="pt-28"
         title1={
           <div>
-            <span className="text-red-400">租赁</span>信息
+            <span className="text-green">租赁</span>信息
           </div>
         }
       >
