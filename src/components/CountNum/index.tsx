@@ -27,7 +27,7 @@ export default function IndexPage() {
               </div>
               <div className="flex-1 pl-3">
                 <div className="text-2xl">{v.count}</div>
-                <div className="text-base">{v.desc}</div>
+                <div className="text-base text-gray-400">{v.desc}</div>
               </div>
             </div>
           ))}

@@ -1,6 +1,7 @@
 import { setLocale, useIntl } from 'umi';
-import { OverPack } from 'rc-scroll-anim';
+import { OverPack, Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
+import QueueAnim from 'rc-queue-anim';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -28,14 +29,26 @@ export default function IndexPage() {
     <main>
       <a href="" id="id0"></a>
       <Header />
-      {/* <OverPack>
+      <Slider data={[s1, s2]} />
+
+      <Parallax
+        animation={{ x: 100, opacity: 0, playScale: [0.8, 0.99] }}
+        style={{
+          transform: 'translateX(0px)',
+          opacity: 1,
+          top: 300,
+          zIndex: 99,
+          position: 'absolute',
+          right: 100,
+          width: '30%',
+        }}
+        className="hidden lg:block xl:block 2xl:block"
+      >
         <div className="container mx-auto relative">
           <div
-            className="fixed w-1/4 z-10 p-2 rounded-lg transition-all"
+            className=" z-10 p-2 rounded-lg"
             style={{
-              backgroundColor: 'rgba(255,255,255,0.19)',
-              top: '30%',
-              right: '10%',
+              backgroundColor: 'rgba(0, 201, 208, 0.52)',
             }}
           >
             <div
@@ -67,25 +80,24 @@ export default function IndexPage() {
               </div>
               <div>
                 <button
-                  style={{ backgroundColor: '#3DB2AD' }}
-                  className="text-center p-2 text-white w-full mt-5"
+                  style={{ backgroundColor: '#00C9D0' }}
+                  className="text-center text-lg p-2 text-white w-full mt-5"
                 >
                   立即免费预约参观
                 </button>
               </div>
-              <div className="text-center text-gray-400 mt-2 text-md">
+              <div className="text-center text-gray-400 mt-2 text-base">
                 <span>我们的专业顾问会尽快与您联系</span>
               </div>
             </div>
           </div>
         </div>
-      </OverPack> */}
+      </Parallax>
 
-      <Slider data={[s1, s2]} />
-      <Slider4 data={[s1, s1, s2, s2]} />
+      {/* <Slider4 data={[s1, s1, s2, s2]} /> */}
       <CountNum />
       <Section
-        className="pt-28"
+        className="pt-20"
         hrefid="menu.项目介绍"
         desc={
           <div className="leading-8 my-10 text-base" style={{ color: '#666' }}>
@@ -222,10 +234,13 @@ export default function IndexPage() {
             <span className="text-green">办公</span>空间
           </div>
         }
+        desc={
+          <div className="leading-8 my-10 text-base" style={{ color: '#666' }}>
+            <div>高品质精装全配，24小时无忧办公</div>
+          </div>
+        }
       >
-        <div className="py-32">
-          <Slider2 />
-        </div>
+        <Slider2 />
       </Section>
       <Section
         className="pt-28"
@@ -246,7 +261,7 @@ export default function IndexPage() {
           <div className="w-full lg:w-1/2 relative">
             <Img width="100%" src={'/images/demo2.jpg'} />
             <div
-              className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+              className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
               style={{ background: '#00C9D0' }}
             >
               wehome智能会议厅
@@ -257,7 +272,7 @@ export default function IndexPage() {
               <div className="w-full lg:w-1/2 relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
                 <div
-                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   睡眠舱
@@ -266,7 +281,7 @@ export default function IndexPage() {
               <div className="w-full lg:w-1/2 relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
                 <div
-                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   睡眠舱
@@ -278,7 +293,7 @@ export default function IndexPage() {
               <div className="w-full lg:w-1/2  relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
                 <div
-                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   睡眠舱
@@ -287,7 +302,7 @@ export default function IndexPage() {
               <div className="w-full lg:w-1/2 relative">
                 <Img width="100%" src={'/images/demo.jpg'} />
                 <div
-                  className="absolute bottom-0 w-full text-white text-3xl p-5 indent-3xl"
+                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   睡眠舱

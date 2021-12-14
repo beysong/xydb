@@ -1,7 +1,7 @@
 .header-menu {
   @apply flex;
   .menu-item a {
-    @apply p-2 lg:p-3 xl:p-4 2xl:p-5 inline-block uppercase text-xs lg:text-sm xl:text-base 2xl:text-base whitespace-nowrap;
+    @apply px-2 lg:px-3 xl:px-4 2xl:px-5 py-4 lg:py-5 xl:py-6 2xl:py-8 inline-block uppercase text-xs lg:text-sm xl:text-base 2xl:text-base whitespace-nowrap;
   }
   .menu-item.active a,
   .menu-item a:hover {

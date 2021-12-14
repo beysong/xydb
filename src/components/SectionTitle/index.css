@@ -1,5 +1,5 @@
 .section-title {
-  @apply text-4xl font-bold relative inline-block pb-7;
+  @apply text-4xl font-bold relative inline-block pb-7 tracking-wider;
 
   &::after {
     content: '';
@@ -23,7 +23,7 @@
 
 .green {
   &::after {
-    border-color: #3db2ad;
+    border-color: #00c9d0;
   }
 }
 
