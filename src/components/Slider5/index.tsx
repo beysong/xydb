@@ -13,11 +13,18 @@ import './index.css';
 
 import SectionTitle from '../SectionTitle';
 
+import s1 from './imgs/s1.jpg';
+import s2 from './imgs/s2.jpg';
+import s3 from './imgs/s3.jpg';
+import s4 from './imgs/s4.jpg';
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const tits = ['十大增值服务', '十大增值服务', '十大增值服务', '十大增值服务'];
 
-export default function IndexPage({ data }) {
+const sliser5Data = [s1, s2, s3, s4];
+
+export default function IndexPage() {
   const intl = useIntl();
   return (
     <section id="certify5" className="relative">
@@ -40,7 +47,7 @@ export default function IndexPage({ data }) {
         spaceBetween={50}
         loop
       >
-        {data.map((v, i) => (
+        {sliser5Data.map((v, i) => (
           <SwiperSlide key={i}>
             <img src={v} />
             <div className="absolute text-left top-1/3 left-1/4 text-white">

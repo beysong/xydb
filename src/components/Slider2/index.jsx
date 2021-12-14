@@ -11,9 +11,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import './index.css';
 
+import s1 from './imgs/s1.jpg';
+import s2 from './imgs/s2.jpg';
+import s3 from './imgs/s3.jpg';
+import s4 from './imgs/s4.jpg';
+import s5 from './imgs/s5.jpg';
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-export default function IndexPage({ data }) {
+const sliser2Data = [s1, s2, s3, s4, s5];
+export default function IndexPage() {
   const intl = useIntl();
   return (
     <section id="certify2">
@@ -50,7 +57,7 @@ export default function IndexPage({ data }) {
             if (Math.abs(slideProgress) > 1) {
               modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
             }
-            let translate = slideProgress * modify * 1100 + 'px';
+            let translate = slideProgress * modify * 1140 + 'px';
             let scale = 1 - Math.abs(slideProgress) / 5;
             let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
             slide.transform(
@@ -73,7 +80,7 @@ export default function IndexPage({ data }) {
           }
         }}
       >
-        {data.map((v, i) => (
+        {sliser2Data.map((v, i) => (
           <SwiperSlide key={i}>
             <img src={v} />
           </SwiperSlide>

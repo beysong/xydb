@@ -10,13 +10,13 @@
 
 #certify2 {
   position: relative;
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
 }
 
 #certify2 .swiper-container {
   padding-bottom: 60px;
-  overflow: visible;
+  /* overflow: visible; */
 }
 
 #certify2 .swiper-slide {
@@ -24,7 +24,7 @@
   height: 740px;
   background: #fff;
   box-shadow: 0 8px 30px #ddd;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #certify2 .swiper-slide img {
   display: block;
@@ -40,7 +40,7 @@
 
 #certify2 .swiper-pagination {
   width: 100%;
-  bottom: -20px;
+  bottom: 0px;
 }
 
 #certify2 .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -58,10 +58,10 @@
 }
 
 #certify2 .swiper-button-prev {
-  left: -30px;
+  left: 60px;
   width: 45px;
   height: 45px;
-  background: url(./wm_button_icon.png) no-repeat;
+  /* background: url(./wm_button_icon.png) no-repeat; */
   background-position: 0 0;
   background-size: 100%;
 }
@@ -72,10 +72,10 @@
 }
 
 #certify2 .swiper-button-next {
-  right: -30px;
+  right: 60px;
   width: 45px;
   height: 45px;
-  background: url(./wm_button_icon.png) no-repeat;
+  /* background: url(./wm_button_icon.png) no-repeat; */
   background-position: 0 -93px;
   background-size: 100%;
 }

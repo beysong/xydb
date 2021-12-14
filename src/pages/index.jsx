@@ -215,6 +215,7 @@ export default function IndexPage() {
       </Section>
       <Section
         className="pt-28"
+        full
         hrefid="id2"
         title1={
           <div>
@@ -223,7 +224,7 @@ export default function IndexPage() {
         }
       >
         <div className="py-32">
-          <Slider2 data={[s1, s1, s2, s2]} />
+          <Slider2 />
         </div>
       </Section>
       <Section
@@ -316,7 +317,7 @@ export default function IndexPage() {
             <span className="text-green">品牌</span>服务
           </div>
         }
-        style={{ backgroundImage: 'url(~@/assets/img/bg1.png)' }}
+        style={{ backgroundColor: '#E9FCFD' }}
         full
       >
         <Img src="/images/map.png" />
@@ -342,7 +343,7 @@ export default function IndexPage() {
           </div>
         </div> */}
 
-        <Slider5 data={[s1, s1, s2, s2]} />
+        <Slider5 />
       </Section>
 
       <Section

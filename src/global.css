@@ -4,9 +4,11 @@
 
 @tailwind utilities;
 
-html {
+html,
+body {
   font-size: 16px;
   color: #222;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
 }
 
 .text-green {
