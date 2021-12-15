@@ -11,15 +11,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import './index.css';
 
-import s1 from './imgs/s1.jpg';
-import s2 from './imgs/s2.jpg';
-import s3 from './imgs/s3.jpg';
-import s4 from './imgs/s4.jpg';
-import s5 from './imgs/s5.jpg';
-
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-const sliser2Data = [s1, s2, s3, s4, s5];
+const imgs = [
+  'd8c94e107703953269bc2cf9c1156f79.jpg',
+  '495a8d8a157f63bf52eb5218095f1c3d.jpg',
+  'c340fcd072819aee7979cf067dba94d1.jpg',
+  '57d8b53dcb78a38e1621f3343fd89223.jpg',
+  'e249a828ab58d9a501f964f45e021f07.jpg',
+];
+
 export default function IndexPage() {
   const intl = useIntl();
   return (
@@ -80,9 +81,11 @@ export default function IndexPage() {
           }
         }}
       >
-        {sliser2Data.map((v, i) => (
+        {imgs.map((v, i) => (
           <SwiperSlide key={i}>
-            <img src={v} />
+            <img
+              src={'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

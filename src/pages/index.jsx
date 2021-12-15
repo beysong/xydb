@@ -20,8 +20,6 @@ import OssImg from '@/components/OssImg';
 import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
 
-import icon1 from '@/assets/icon1.png';
-
 import fixmeet from '@/assets/fix_meet.png';
 import fixtel from '@/assets/fix_tel.png';
 import fixmsg from '@/assets/fix_msg.png';
@@ -106,8 +104,15 @@ export default function IndexPage() {
       {/* <Slider4 data={[s1, s1, s2, s2]} /> */}
       <CountNum />
       <Section
+        hrefid="id1"
+        style={{
+          backgroundImage:
+            'url(https://wehome-image.oss-cn-shanghai.aliyuncs.com/7ba38b255d101011f17d1bdb027c42c9.png)',
+          backgroundPosition: 'left top',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '22%',
+        }}
         className="pt-20"
-        hrefid="menu.项目介绍"
         desc={
           <div className="leading-8 my-10 text-base" style={{ color: '#666' }}>
             <div>星月德必WE"，位于虹桥商务区核心区，总建筑面积53,000m²</div>
@@ -122,59 +127,62 @@ export default function IndexPage() {
             <span className="text-green">星月德必WE"</span>概况
           </div>
         }
-        style={{ backgroundImage: 'url(~@/assets/img/bg1.png)' }}
         full
       >
         <Img src="/images/map.png" />
       </Section>
-      <Section
-        hrefid="id1"
-        full
-        style={{ backgroundImage: 'url(/images/map.png)' }}
-      >
+      <Section hrefid="id2" full>
         <div className="flex text-white">
-          <div className="w-0 md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"></div>
           <div
-            className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-16 px-20"
+            className="w-0 md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"
+            style={{
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundImage:
+                'url(https://wehome-image.oss-cn-shanghai.aliyuncs.com/11af3e84c140117665bf8b1ef1660583.png)',
+            }}
+          ></div>
+          <div
+            className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-16 px-24"
             style={{ backgroundColor: '#00C9D0' }}
           >
             <SectionTitle title1="区位交通" align="left" color="white" />
-            <div className="pt-6 text-2xl">
+            <div className="pt-8 text-2xl">
               占位虹桥开放枢纽核心 多维立体交通打通商脉
             </div>
-            <div className="pt-6">
+            <div className="pt-10">
               <div
                 className="rounded-sm opacity-50 inline-block p-3"
-                style={{ backgroundColor: '#0E8885' }}
+                style={{ backgroundColor: '#0094A5', letterSpacing: 4 }}
               >
                 点击查看区位图
               </div>
             </div>
-            <div className="pt-6">
-              <div className="flex items-center my-3">
-                <img className="w-16 h-16" src={add1} alt="" />
+            <div className="pt-4">
+              <div className="flex items-center my-10">
+                <img className="w-20 h-20" src={add1} alt="" />
                 <div className="flex-1 pl-2">
-                  <div className="text-xl">专属班车</div>
-                  <div className="text-base">
+                  <div className="text-2xl font-bold">专属班车</div>
+                  <div className="text-base mt-1">
                     <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center my-3">
-                <img className="w-16 h-16" src={add2} alt="" />
+              <div className="flex items-center my-10">
+                <img className="w-20 h-20" src={add2} alt="" />
                 <div className="flex-1 pl-2">
-                  <div className="text-xl">轨道交通</div>
-                  <div className="text-base">
+                  <div className="text-2xl font-bold">轨道交通</div>
+                  <div className="text-base mt-1">
                     <div>虹桥火车站：2号线/10号线/17号线</div>
                     <div>虹桥T2航站楼：2号线/10号线</div>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center my-3">
-                <img className="w-16 h-16" src={add3} alt="" />
+              <div className="flex items-center mt-10">
+                <img className="w-20 h-20" src={add3} alt="" />
                 <div className="flex-1 pl-2">
-                  <div className="text-xl">公交线路</div>
-                  <div className="text-base">
+                  <div className="text-2xl font-bold">公交线路</div>
+                  <div className="text-base mt-1">
                     <div>71路中运量、189/141/941路/虹桥商务区1、2路</div>
                   </div>
                 </div>
@@ -185,7 +193,7 @@ export default function IndexPage() {
       </Section>
       <Section
         className="pt-28"
-        hrefid="id2"
+        hrefid="id3"
         title1={
           <div>
             <span className="text-green">设计</span>理念
@@ -253,7 +261,6 @@ export default function IndexPage() {
       <Section
         className="pt-28"
         full
-        hrefid="id2"
         title1={
           <div>
             <span className="text-green">办公</span>空间
@@ -268,8 +275,15 @@ export default function IndexPage() {
         <Slider2 />
       </Section>
       <Section
+        style={{
+          backgroundImage:
+            'url(https://wehome-image.oss-cn-shanghai.aliyuncs.com/3190d8bc478ec4b31b0eecb339700353.png)',
+          backgroundPosition: 'right top',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '25%',
+        }}
         className="pt-28"
-        hrefid="id3"
+        hrefid="id4"
         title1={
           <div>
             <span className="text-green">生态</span>配套
@@ -284,7 +298,7 @@ export default function IndexPage() {
       >
         <div className="flex flex-wrap mt-10">
           <div className="w-full lg:w-1/2 relative">
-            <Img width="100%" src={'/images/demo2.jpg'} />
+            <OssImg width="100%" src={'0aed55856418022454767b5815c4d1e9.png'} />
             <div
               className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
               style={{ background: '#00C9D0' }}
@@ -295,7 +309,10 @@ export default function IndexPage() {
           <div className="w-full lg:w-1/2">
             <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 relative">
-                <Img width="100%" src={'/images/demo.jpg'} />
+                <OssImg
+                  width="100%"
+                  src={'71765038a896cc41ffb6527a0f3a3a8e.png'}
+                />
                 <div
                   className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
@@ -304,33 +321,42 @@ export default function IndexPage() {
                 </div>
               </div>
               <div className="w-full lg:w-1/2 relative">
-                <Img width="100%" src={'/images/demo.jpg'} />
+                <OssImg
+                  width="100%"
+                  src={'2ebec6c9dce48720310fd8d0163e0521.png'}
+                />
                 <div
                   className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  睡眠舱
+                  多层次餐饮服务
                 </div>
               </div>
             </div>
 
             <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2  relative">
-                <Img width="100%" src={'/images/demo.jpg'} />
+                <OssImg
+                  width="100%"
+                  src={'e217f33b4bf65e57319ba9a5dbf30896.png'}
+                />
                 <div
                   className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  睡眠舱
+                  人脸识别门禁
                 </div>
               </div>
               <div className="w-full lg:w-1/2 relative">
-                <Img width="100%" src={'/images/demo.jpg'} />
+                <OssImg
+                  width="100%"
+                  src={'0667876ac3587157d912f6168f6b267a.png'}
+                />
                 <div
                   className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  睡眠舱
+                  共享健身空间
                 </div>
               </div>
             </div>
@@ -340,7 +366,7 @@ export default function IndexPage() {
 
       <Section
         className="pt-28"
-        hrefid="id4"
+        hrefid="id5"
         desc={
           <div className="leading-10 my-5 relative">
             <div>
@@ -390,7 +416,7 @@ export default function IndexPage() {
       </Section>
 
       <Section
-        id="id5"
+        hrefid="id6"
         className="pt-28"
         title1={
           <div>
@@ -404,21 +430,21 @@ export default function IndexPage() {
       <div className="fixed right-0 top-1/2 z-10">
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 text-white text-center p-2"
-          style={{ backgroundColor: '#3DB2AD' }}
+          style={{ backgroundColor: '#00C9D0' }}
         >
           <img className="block w-2/3 mx-auto" src={fixmsg} alt="" />
           <span>预约参观</span>
         </div>
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
-          style={{ backgroundColor: '#3DB2AD' }}
+          style={{ backgroundColor: '#00C9D0' }}
         >
           <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
           <span>电话咨询</span>
         </div>
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
-          style={{ backgroundColor: '#3DB2AD' }}
+          style={{ backgroundColor: '#00C9D0' }}
         >
           <img className="block w-2/3 mx-auto" src={fixmeet} alt="" />
           <span>在线咨询</span>

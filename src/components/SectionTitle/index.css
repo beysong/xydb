@@ -1,5 +1,5 @@
 .section-title {
-  @apply text-4xl font-bold relative inline-block pb-7 tracking-wider;
+  @apply text-4xl font-bold relative inline-block pb-8 tracking-wider;
 
   &::after {
     content: '';

@@ -73,7 +73,12 @@ export default function IndexPage() {
             ))}
 
             <li className="menu-item">
-              <a href="">
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
                 <span
                   onClick={(e) => {
                     e.preventDefault();

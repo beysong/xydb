@@ -17,6 +17,7 @@ export default function IndexPage() {
         backgroundSize: 'cover',
       }}
     >
+      <a id={'id7'}></a>
       <div className="container mx-auto">
         <div className="p-0 lg:p-12 xl:p-12 2xl:p-12">
           <div className="bg-white rounded-lg flex flex-wrap p-12 lg:p-28 xl:p-28 2xl:p-28">
