@@ -1,14 +1,18 @@
 import { setLocale, useIntl } from 'umi';
 import QueueAnim from 'rc-queue-anim';
 
-import icon1 from '@/assets/icon1.png';
+import ico1 from '@/assets/count/ico1.png';
+import ico2 from '@/assets/count/ico2.png';
+import ico3 from '@/assets/count/ico3.png';
+import ico4 from '@/assets/count/ico4.png';
+import ico5 from '@/assets/count/ico5.png';
 
 const datas = [
-  { icon: icon1, count: '10年+', desc: '科技服务经验' },
-  { icon: icon1, count: '10年+', desc: '科技服务经验' },
-  { icon: icon1, count: '10年+', desc: '科技服务经验' },
-  { icon: icon1, count: '10年+', desc: '科技服务经验' },
-  { icon: icon1, count: '10年+', desc: '科技服务经验' },
+  { icon: ico1, count: '10+年', desc: '科创企业服务经验' },
+  { icon: ico2, count: '50+', desc: '长三角创意园区' },
+  { icon: ico3, count: '100-3800m²', desc: '精装私密空间' },
+  { icon: ico4, count: '24h', desc: '全配办公条件' },
+  { icon: ico5, count: '10+', desc: '全价值链增值服务' },
 ];
 
 export default function IndexPage() {

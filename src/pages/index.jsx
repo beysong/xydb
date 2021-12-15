@@ -15,11 +15,20 @@ import Section from '@/components/Section';
 import CountNum from '@/components/CountNum';
 import ZuLin from '@/components/ZuLin';
 import Img from '@/components/Img';
+import OssImg from '@/components/OssImg';
 
 import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
 
 import icon1 from '@/assets/icon1.png';
+
+import fixmeet from '@/assets/fix_meet.png';
+import fixtel from '@/assets/fix_tel.png';
+import fixmsg from '@/assets/fix_msg.png';
+
+import add1 from '@/assets/address/add1.png';
+import add2 from '@/assets/address/add2.png';
+import add3 from '@/assets/address/add3.png';
 
 import './index.css';
 
@@ -142,18 +151,34 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="pt-6">
-              {[1, 2, 3, 4].map((v) => (
-                <div className="flex items-center my-3" key={v}>
-                  <img className="w-16 h-16" src={icon1} alt="" />
-                  <div className="flex-1 pl-2">
-                    <div className="text-xl">专属班车</div>
-                    <div className="text-base">
-                      <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
-                      <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
-                    </div>
+              <div className="flex items-center my-3">
+                <img className="w-16 h-16" src={add1} alt="" />
+                <div className="flex-1 pl-2">
+                  <div className="text-xl">专属班车</div>
+                  <div className="text-base">
+                    <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
                   </div>
                 </div>
-              ))}
+              </div>
+              <div className="flex items-center my-3">
+                <img className="w-16 h-16" src={add2} alt="" />
+                <div className="flex-1 pl-2">
+                  <div className="text-xl">轨道交通</div>
+                  <div className="text-base">
+                    <div>虹桥火车站：2号线/10号线/17号线</div>
+                    <div>虹桥T2航站楼：2号线/10号线</div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center my-3">
+                <img className="w-16 h-16" src={add3} alt="" />
+                <div className="flex-1 pl-2">
+                  <div className="text-xl">公交线路</div>
+                  <div className="text-base">
+                    <div>71路中运量、189/141/941路/虹桥商务区1、2路</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -317,7 +342,7 @@ export default function IndexPage() {
         className="pt-28"
         hrefid="id4"
         desc={
-          <div className="leading-10 my-5">
+          <div className="leading-10 my-5 relative">
             <div>
               星光德必易园，定位西安数字文化创新中心，依托西安丰富的文科教资源和创新主体资源，
             </div>
@@ -335,7 +360,10 @@ export default function IndexPage() {
         style={{ backgroundColor: '#E9FCFD' }}
         full
       >
-        <Img src="/images/map.png" />
+        <OssImg
+          className="-mt-32 z-0"
+          src="4f086a83cea70f65cfc6973e31cc1610.png"
+        />
         {/* <div className="container mx-auto">
           <div className="flex flex-wrap p-5" style={{ background: '#162F33' }}>
             {[1, 2, 3, 4].map((v) => (
@@ -375,21 +403,24 @@ export default function IndexPage() {
       <Footer />
       <div className="fixed right-0 top-1/2 z-10">
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-16 text-white text-center"
+          className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 text-white text-center p-2"
           style={{ backgroundColor: '#3DB2AD' }}
         >
+          <img className="block w-2/3 mx-auto" src={fixmsg} alt="" />
           <span>预约参观</span>
         </div>
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-16 mt-1 text-white text-center"
+          className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#3DB2AD' }}
         >
+          <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
           <span>电话咨询</span>
         </div>
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-16 mt-1 text-white text-center"
+          className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#3DB2AD' }}
         >
+          <img className="block w-2/3 mx-auto" src={fixmeet} alt="" />
           <span>在线咨询</span>
         </div>
       </div>

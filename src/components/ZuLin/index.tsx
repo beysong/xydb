@@ -2,17 +2,24 @@ import { setLocale, useIntl } from 'umi';
 import QueueAnim from 'rc-queue-anim';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-import icon1 from '@/assets/icon1.png';
+import ico1 from '@/assets/foot/ico1.png';
+import ico2 from '@/assets/foot/ico2.png';
+import ico3 from '@/assets/foot/ico3.png';
+import ico4 from '@/assets/foot/ico4.png';
+import ico5 from '@/assets/foot/ico5.png';
+import ico6 from '@/assets/foot/ico6.png';
+import ico7 from '@/assets/foot/ico7.png';
+import ico8 from '@/assets/foot/ico8.png';
 
 const datas = [
-  { icon: icon1, count: '10㎡', desc: '总面积' },
-  { icon: icon1, count: '101㎡', desc: '分隔面积' },
-  { icon: icon1, count: '3㎡', desc: '原高' },
-  { icon: icon1, count: '精装', desc: '交付标准' },
-  { icon: icon1, count: '停车场', desc: '供应' },
-  { icon: icon1, count: 'WiFi', desc: '全区域覆盖' },
-  { icon: icon1, count: 'VRV', desc: '24小时在线' },
-  { icon: icon1, count: '园区管理', desc: '24小时在线' },
+  { icon: ico1, count: '10㎡', desc: '总面积' },
+  { icon: ico2, count: '101㎡', desc: '分隔面积' },
+  { icon: ico3, count: '3㎡', desc: '原高' },
+  { icon: ico4, count: '精装', desc: '交付标准' },
+  { icon: ico5, count: '停车场', desc: '供应' },
+  { icon: ico6, count: 'WiFi', desc: '全区域覆盖' },
+  { icon: ico7, count: 'VRV', desc: '24小时在线' },
+  { icon: ico8, count: '园区管理', desc: '24小时在线' },
 ];
 
 export default function IndexPage() {
