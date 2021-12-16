@@ -28,12 +28,12 @@ export default function IndexPage() {
   const intl = useIntl();
   return (
     <section id="certify5" className="relative">
-      <div className="absolute z-10 w-full top-8">
+      <div className="absolute -z-1 lg:z-10 w-full top-8">
         <SectionTitle title1={'品牌服务'} align="center" color="white" />
       </div>
       <Swiper
         // effect="coverflow"
-        navigation
+
         pagination={{
           clickable: true,
           renderBullet: (index, className) => {
@@ -52,16 +52,15 @@ export default function IndexPage() {
             <img
               src={'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v}
             />
-            <div className="absolute text-left top-1/3 left-1/4 text-white">
-              <div className="text-2xl">轻公司生态圈</div>
-              <div>
-                依托优势资源，结合企业发展所需，为企业提供人才、资金融集
-                <br />
-                品牌推广、法律政策咨询等企业服务，为入驻企业排忧解难，共
-                <br />
+            <div className="absolute text-left top-1/3 left-0 2xl:left-1/4 ml-5 lg:ml-0 text-white">
+              <div className="text-base 2xl:text-2xl">轻公司生态圈</div>
+              <div className="text-xs mt-2 w-11/12 xl:w-1/4">
+                依托优势资源，结合企业发展所需，为企业提供人才、资金融集品牌推广、法律政策咨询等企业服务，为入驻企业排忧解难，共
                 同成长
               </div>
-              <div>了解更多</div>
+              <div className="inline-block px-4 py-1 mt-2 text-xs lg:text-base rounded-full border border-solid border-white">
+                了解更多
+              </div>
             </div>
           </SwiperSlide>
         ))}

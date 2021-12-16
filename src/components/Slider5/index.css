@@ -38,17 +38,16 @@
 #certify5 .swiper-pagination {
   width: 100%;
   top: 120px;
+  @apply top-2 lg:top-24 xl:top-32 2xl:top-36;
 }
 
 #certify5 .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0;
-  padding: 10px 20px;
-  width: auto;
-  height: auto;
   border-radius: 0;
   background-color: rgba(9, 51, 53, 0.35);
   color: #fff;
   opacity: 1;
+  @apply w-auto h-auto px-2 py-2 2xl:px-6 2xl:py-4 text-sm 2xl:text-base;
 }
 
 #certify5 .swiper-pagination-bullets .swiper-pagination-bullet-active {

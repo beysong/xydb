@@ -19,21 +19,26 @@ export default function IndexPage() {
     >
       <a id={'id7'}></a>
       <div className="container mx-auto">
-        <div className="p-0 lg:p-12 xl:p-12 2xl:p-12">
+        <div className="p-5 lg:p-12 xl:p-12 2xl:p-12">
           <div className="bg-white rounded-lg flex flex-wrap p-12 lg:p-28 xl:p-28 2xl:p-28">
             <div className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2">
               <div>
-                <img src={logo} className="w-2/5" alt="" />
+                <img src={logo} className="w-2/3 lg:w-1/2 2xl:w-2/5" alt="" />
               </div>
               <div className="mt-6">
-                <div className="text-base">欢迎咨询</div>
-                <div className="text-2xl" style={{ color: '#C8171E' }}>
+                <div className="text-sm 2xl:text-base">欢迎咨询</div>
+                <div
+                  className="text-lg xl:text-xl 2xl:text-2xl"
+                  style={{ color: '#C8171E' }}
+                >
                   021-62335008
                 </div>
               </div>
               <div className="mt-6">
-                <div className="text-base">项目地址</div>
-                <div className="text-2xl mt-1">上海市闵行区丰虹路199号</div>
+                <div className="text-sm 2xl:text-base">项目地址</div>
+                <div className="text-lg xl:text-xl 2xl:text-2xl mt-1">
+                  上海市闵行区丰虹路199号
+                </div>
               </div>
             </div>
             <div className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">

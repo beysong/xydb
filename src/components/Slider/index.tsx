@@ -18,7 +18,10 @@ export default function IndexPage({ data }) {
       >
         {data.map((v, i) => (
           <SwiperSlide key={i}>
-            <img src={v} />
+            <img
+              referrerPolicy="no-referrer"
+              src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga25a3e66a51f28a738b3dc2bf722c0560c6173a00d688a4805711bf37d1bd601"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

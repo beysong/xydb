@@ -35,11 +35,17 @@ export default function IndexPage() {
               className="item flex w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 xxl:w-1/5 p-3 items-center"
             >
               <div className="icon">
-                <img className="w-16 h-16" src={v.icon} alt="" />
+                <img
+                  className="w-8 h-8  lg:w-12 lg:h-12 xl:w-16 xl:h-16 2xl:w-16 2xl:h-16"
+                  src={v.icon}
+                  alt=""
+                />
               </div>
               <div className="flex-1 pl-3">
-                <div className="text-2xl">{v.count}</div>
-                <div className="text-base text-gray-400">{v.desc}</div>
+                <div className="text-lg 2xl:text-2xl">{v.count}</div>
+                <div className="text-sm 2xl:text-base text-gray-400">
+                  {v.desc}
+                </div>
               </div>
             </div>
           ))}

@@ -114,7 +114,10 @@ export default function IndexPage() {
         }}
         className="pt-20"
         desc={
-          <div className="leading-8 my-10 text-base" style={{ color: '#666' }}>
+          <div
+            className="leading-8 px-5 my-10 text-sm 2xl:text-base"
+            style={{ color: '#666' }}
+          >
             <div>星月德必WE"，位于虹桥商务区核心区，总建筑面积53,000m²</div>
             <div>立足虹桥国际开放枢纽国家级规划</div>
             <div>
@@ -143,16 +146,16 @@ export default function IndexPage() {
             }}
           ></div>
           <div
-            className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-16 px-24"
+            className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-8 px-8 xl:py-12 xl:px-20 2xl:py-16 2xl:px-24"
             style={{ backgroundColor: '#00C9D0' }}
           >
             <SectionTitle title1="区位交通" align="left" color="white" />
-            <div className="pt-8 text-2xl">
+            <div className="pt-8 text-base lx:text-xl 2xl:text-2xl">
               占位虹桥开放枢纽核心 多维立体交通打通商脉
             </div>
             <div className="pt-10">
               <div
-                className="rounded-sm opacity-50 inline-block p-3"
+                className="rounded-sm opacity-50 inline-block p-3 text-sm 2xl:text-base"
                 style={{ backgroundColor: '#0094A5', letterSpacing: 4 }}
               >
                 点击查看区位图
@@ -160,29 +163,47 @@ export default function IndexPage() {
             </div>
             <div className="pt-4">
               <div className="flex items-center my-10">
-                <img className="w-20 h-20" src={add1} alt="" />
+                <img
+                  className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                  src={add1}
+                  alt=""
+                />
                 <div className="flex-1 pl-2">
-                  <div className="text-2xl font-bold">专属班车</div>
-                  <div className="text-base mt-1">
+                  <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                    专属班车
+                  </div>
+                  <div className="text-xs lg:text-sm 2xl:text-base mt-1">
                     <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
                   </div>
                 </div>
               </div>
               <div className="flex items-center my-10">
-                <img className="w-20 h-20" src={add2} alt="" />
+                <img
+                  className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                  src={add2}
+                  alt=""
+                />
                 <div className="flex-1 pl-2">
-                  <div className="text-2xl font-bold">轨道交通</div>
-                  <div className="text-base mt-1">
+                  <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                    轨道交通
+                  </div>
+                  <div className="text-xs lg:text-sm 2xl:text-base mt-1">
                     <div>虹桥火车站：2号线/10号线/17号线</div>
                     <div>虹桥T2航站楼：2号线/10号线</div>
                   </div>
                 </div>
               </div>
               <div className="flex items-center mt-10">
-                <img className="w-20 h-20" src={add3} alt="" />
+                <img
+                  className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                  src={add3}
+                  alt=""
+                />
                 <div className="flex-1 pl-2">
-                  <div className="text-2xl font-bold">公交线路</div>
-                  <div className="text-base mt-1">
+                  <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                    公交线路
+                  </div>
+                  <div className="text-xs lg:text-sm 2xl:text-base mt-1">
                     <div>71路中运量、189/141/941路/虹桥商务区1、2路</div>
                   </div>
                 </div>
@@ -267,7 +288,10 @@ export default function IndexPage() {
           </div>
         }
         desc={
-          <div className="leading-8 my-10 text-base" style={{ color: '#666' }}>
+          <div
+            className="leading-8 px-5 my-10 text-sm 2xl:text-base"
+            style={{ color: '#666' }}
+          >
             <div>高品质精装全配，24小时无忧办公</div>
           </div>
         }
@@ -291,7 +315,7 @@ export default function IndexPage() {
         }
         full
         desc={
-          <div className="leading-10 my-5">
+          <div className="leading-8 px-5 my-5 text-sm 2xl:text-base">
             <div>完善的生态商业供应链配套 类生活精致办公体验</div>
           </div>
         }
@@ -300,7 +324,7 @@ export default function IndexPage() {
           <div className="w-full lg:w-1/2 relative">
             <OssImg width="100%" src={'0aed55856418022454767b5815c4d1e9.png'} />
             <div
-              className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
+              className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
               style={{ background: '#00C9D0' }}
             >
               wehome智能会议厅
@@ -314,7 +338,7 @@ export default function IndexPage() {
                   src={'71765038a896cc41ffb6527a0f3a3a8e.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   睡眠舱
@@ -326,7 +350,7 @@ export default function IndexPage() {
                   src={'2ebec6c9dce48720310fd8d0163e0521.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   多层次餐饮服务
@@ -341,7 +365,7 @@ export default function IndexPage() {
                   src={'e217f33b4bf65e57319ba9a5dbf30896.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   人脸识别门禁
@@ -353,7 +377,7 @@ export default function IndexPage() {
                   src={'0667876ac3587157d912f6168f6b267a.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-2xl p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   共享健身空间
@@ -368,13 +392,17 @@ export default function IndexPage() {
         className="pt-28"
         hrefid="id5"
         desc={
-          <div className="leading-10 my-5 relative">
-            <div>
-              星光德必易园，定位西安数字文化创新中心，依托西安丰富的文科教资源和创新主体资源，
+          <div className="leading-10 my-5 px-5 relative">
+            <div
+              className="text-base 2xl:text-lg mt-3"
+              style={{ color: '#222' }}
+            >
+              多元增值服务赋能企业 国际平台链接全球资源
             </div>
-            <div>以高新技术为核心产业，以轻公司生态圈为运营理念，</div>
-            <div>
-              为企业提供面向未来的智慧办公体验，打造融合科创、文创产业的新高地。
+            <div className="text-xs 2xl:text-sm mt-2" style={{ color: '#666' }}>
+              针对数字创新企业的成长发展和商务往来需求，依托德必集团十余年文科创产业服务体系、数十个全球产业园区及数千家入驻企业，助力企业跨城市布局，
+              <br />
+              推动企业之间互动联通，构建覆盖企业全生命周期的创新服务
             </div>
           </div>
         }
@@ -387,7 +415,7 @@ export default function IndexPage() {
         full
       >
         <OssImg
-          className="-mt-32 z-0"
+          className="-mt-16 lg:-mt-20 xl:-mt-24 2xl:-mt-32 z-0"
           src="4f086a83cea70f65cfc6973e31cc1610.png"
         />
         {/* <div className="container mx-auto">

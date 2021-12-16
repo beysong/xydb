@@ -35,9 +35,15 @@ export default function IndexPage() {
             {datas.map((v) => (
               <div key={v.icon} className="text-center">
                 <div className="icon m-5">
-                  <img className="w-12 h-12 inline-block" src={v.icon} alt="" />
+                  <img
+                    className=" w-8 h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 inline-block"
+                    src={v.icon}
+                    alt=""
+                  />
                 </div>
-                <div className="font-bold text-lg">{v.count}</div>
+                <div className="font-bold text-sm xl:text-base 2xl:text-lg">
+                  {v.count}
+                </div>
                 <div className="text-xs">{v.desc}</div>
               </div>
             ))}
