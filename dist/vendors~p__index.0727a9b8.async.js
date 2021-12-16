@@ -335,7 +335,12 @@
         }
       }
       function E(e, t, n) {
-        return t && T(e.prototype, t), n && T(e, n), e;
+        return (
+          t && T(e.prototype, t),
+          n && T(e, n),
+          Object.defineProperty(e, 'prototype', { writable: !1 }),
+          e
+        );
       }
       var O = n('xEkU'),
         C = n.n(O);
@@ -742,13 +747,13 @@
       function Y(e) {
         return (
           (Y =
-            'function' === typeof Symbol && 'symbol' === typeof Symbol.iterator
+            'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
                 }
               : function (e) {
                   return e &&
-                    'function' === typeof Symbol &&
+                    'function' == typeof Symbol &&
                     e.constructor === Symbol &&
                     e !== Symbol.prototype
                     ? 'symbol'
