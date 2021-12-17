@@ -2,13 +2,14 @@ import { setLocale, useIntl } from 'umi';
 import { OverPack, Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
+import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Slider from '@/components/Slider';
 import Slider2 from '@/components/Slider2';
 import Slider3 from '@/components/Slider3';
-import Slider4 from '@/components/Slider4';
+// import Slider4 from '@/components/Slider4';
 import Slider5 from '@/components/Slider5';
 import SectionTitle from '@/components/SectionTitle';
 import Section from '@/components/Section';
@@ -47,7 +48,7 @@ export default function IndexPage() {
           zIndex: 99,
           position: 'absolute',
           right: 100,
-          width: '30%',
+          width: '22%',
         }}
         className="hidden lg:block xl:block 2xl:block"
       >
@@ -88,12 +89,12 @@ export default function IndexPage() {
               <div>
                 <button
                   style={{ backgroundColor: '#00C9D0' }}
-                  className="text-center text-lg p-2 text-white w-full mt-5"
+                  className="text-center text-base 2xl:text-lg p-2 text-white w-full mt-5"
                 >
                   立即免费预约参观
                 </button>
               </div>
-              <div className="text-center text-gray-400 mt-2 text-base">
+              <div className="text-center text-gray-400 mt-2 text-sm 2xl:text-base">
                 <span>我们的专业顾问会尽快与您联系</span>
               </div>
             </div>
@@ -162,52 +163,54 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="pt-4">
-              <div className="flex items-center my-10">
-                <img
-                  className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
-                  src={add1}
-                  alt=""
-                />
-                <div className="flex-1 pl-2">
-                  <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
-                    专属班车
-                  </div>
-                  <div className="text-xs lg:text-sm 2xl:text-base mt-1">
-                    <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center my-10">
-                <img
-                  className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
-                  src={add2}
-                  alt=""
-                />
-                <div className="flex-1 pl-2">
-                  <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
-                    轨道交通
-                  </div>
-                  <div className="text-xs lg:text-sm 2xl:text-base mt-1">
-                    <div>虹桥火车站：2号线/10号线/17号线</div>
-                    <div>虹桥T2航站楼：2号线/10号线</div>
+              <QueueAnim delay={300} reversed>
+                <div key={'a'} className="flex items-center my-10">
+                  <img
+                    className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                    src={add1}
+                    alt=""
+                  />
+                  <div className="flex-1 pl-2">
+                    <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                      专属班车
+                    </div>
+                    <div className="text-xs lg:text-sm 2xl:text-base mt-1">
+                      <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex items-center mt-10">
-                <img
-                  className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
-                  src={add3}
-                  alt=""
-                />
-                <div className="flex-1 pl-2">
-                  <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
-                    公交线路
-                  </div>
-                  <div className="text-xs lg:text-sm 2xl:text-base mt-1">
-                    <div>71路中运量、189/141/941路/虹桥商务区1、2路</div>
+                <div key={'b'} className="flex items-center my-10">
+                  <img
+                    className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                    src={add2}
+                    alt=""
+                  />
+                  <div className="flex-1 pl-2">
+                    <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                      轨道交通
+                    </div>
+                    <div className="text-xs lg:text-sm 2xl:text-base mt-1">
+                      <div>虹桥火车站：2号线/10号线/17号线</div>
+                      <div>虹桥T2航站楼：2号线/10号线</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div key={'c'} className="flex items-center mt-10">
+                  <img
+                    className="w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                    src={add3}
+                    alt=""
+                  />
+                  <div className="flex-1 pl-2">
+                    <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                      公交线路
+                    </div>
+                    <div className="text-xs lg:text-sm 2xl:text-base mt-1">
+                      <div>71路中运量、189/141/941路/虹桥商务区1、2路</div>
+                    </div>
+                  </div>
+                </div>
+              </QueueAnim>
             </div>
           </div>
         </div>
@@ -224,60 +227,6 @@ export default function IndexPage() {
         <div className="py-20">
           <Slider3 data={[s1, s1, s2, s2]} />
         </div>
-        {/* <div className="flex flex-wrap mt-16">
-          <div className="w-full lg:w-1/2">
-            <Img width="100%" src={'/images/demo2.jpg'} />
-          </div>
-          <div
-            style={{ backgroundColor: '#F0F5F5' }}
-            className="w-full md:w-1/2 lg:w-1/4 py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center px-5 md:px-5 lg:px-10 xl:px-16 xxl:px-20"
-          >
-            <div>
-              <div className="text-3xl">500-2000㎡精装空间</div>
-              <div className="text-lg mt-2" style={{ color: '#777' }}>
-                灵活户型随需而变
-              </div>
-              <div
-                style={{ width: 68, height: 4, background: '#3DB2AD' }}
-                className="mt-12"
-              ></div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4">
-            <Img width="100%" src={'/images/demo.jpg'} />
-          </div>
-        </div>
-        <div className="flex flex-wrap">
-          <div
-            style={{ backgroundColor: '#3DB2AD' }}
-            className="w-full lg:w-1/2 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24"
-          >
-            <div>
-              <div className="text-3xl">前沿智能设施加持</div>
-              <div className="text-lg mt-2">创享未来科技体验</div>
-              <div
-                style={{ width: 68, height: 4, background: '#fff' }}
-                className="mt-12"
-              ></div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4">
-            <Img width="100%" src={'/images/demo.jpg'} />
-          </div>
-          <div
-            style={{ backgroundColor: '#404445' }}
-            className="w-full md:w-1/2 lg:w-1/4 text-white py-24 md:py-20 lg:py-12 xl:py-8 xxl:py-5 flex items-center pl-5 md:pl-5 lg:pl-10 xl:pl-16 xxl:pl-24"
-          >
-            <div>
-              <div className="text-3xl">多层次生态空间</div>
-              <div className="text-lg mt-2">滋生创意际遇</div>
-              <div
-                style={{ width: 68, height: 4, background: '#3DB2AD' }}
-                className="mt-12"
-              ></div>
-            </div>
-          </div>
-        </div> */}
       </Section>
       <Section
         className="pt-28"
@@ -296,17 +245,19 @@ export default function IndexPage() {
           </div>
         }
       >
-        <Slider2 />
+        <div className="w-4/5 mx-auto">
+          <Slider2 />
+        </div>
       </Section>
       <Section
         style={{
           backgroundImage:
             'url(https://wehome-image.oss-cn-shanghai.aliyuncs.com/3190d8bc478ec4b31b0eecb339700353.png)',
-          backgroundPosition: 'right top',
+          backgroundPosition: 'right 1rem',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '25%',
         }}
-        className="pt-28"
+        className="pt-12 lg:pt-20 xl:pt-28 2xl:pt-32"
         hrefid="id4"
         title1={
           <div>
@@ -418,27 +369,6 @@ export default function IndexPage() {
           className="-mt-16 lg:-mt-20 xl:-mt-24 2xl:-mt-32 z-0"
           src="4f086a83cea70f65cfc6973e31cc1610.png"
         />
-        {/* <div className="container mx-auto">
-          <div className="flex flex-wrap p-5" style={{ background: '#162F33' }}>
-            {[1, 2, 3, 4].map((v) => (
-              <div
-                key={v}
-                className="relative w-full md:w-1/2 lg:w-1/3 xl:w-1/4 xxl:w-1/4 p-2"
-              >
-                <div className="relative">
-                  <Img width="100%" src={'/images/demo.jpg'} />
-                  <div className="posWrap">
-                    <div className="title">十大增值服务</div>
-                    <div className="littleline"></div>
-                    <div className="desc">
-                      十大增值服务十大增值服务，十大增值服十大增值服务十大增值服务十大增值服务务
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
 
         <Slider5 />
       </Section>
@@ -467,8 +397,10 @@ export default function IndexPage() {
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#00C9D0' }}
         >
-          <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
-          <span>电话咨询</span>
+          <a href="tel:021-62335008">
+            <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
+            <span>电话咨询</span>
+          </a>
         </div>
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"

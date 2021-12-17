@@ -1,7 +1,7 @@
 .header-menu {
   @apply flex;
   .menu-item a {
-    @apply px-2 lg:px-3 xl:px-4 2xl:px-5 py-4 lg:py-5 xl:py-6 2xl:py-8 inline-block uppercase text-xs lg:text-sm xl:text-base 2xl:text-base whitespace-nowrap;
+    @apply px-2 lg:px-3 xl:px-4 2xl:px-5 py-4 lg:py-5 xl:py-6 2xl:py-8 block uppercase text-xs lg:text-sm xl:text-base 2xl:text-base whitespace-nowrap;
   }
   .menu-item.active a,
   .menu-item a:hover {
@@ -12,7 +12,7 @@
 .menu-wrap {
   @apply flex-1 hidden lg:block xl:block 2xl:block absolute lg:relative xl:relative 2xl:relative;
   &.active {
-    @apply block lg:hidden xl:hidden 2xl:hidden bg-white top-24 left-6 right-6;
+    @apply block lg:hidden xl:hidden 2xl:hidden bg-white top-20 left-6 right-6;
     .header-menu {
       @apply block;
     }

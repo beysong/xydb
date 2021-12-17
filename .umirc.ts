@@ -26,6 +26,7 @@ export default defineConfig({
     react: 'window.React',
     'react-dom': 'window.ReactDOM',
   },
+  // headScripts: [{ src: '/xydb/swiper.min.js' }],
   scripts:
     process.env.NODE_ENV === 'development'
       ? [

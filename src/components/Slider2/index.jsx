@@ -38,17 +38,11 @@ export default function IndexPage() {
         watchSlidesProgress
         centeredSlides
         onSwiper={(swiper) => (window.swiper = swiper)}
-        spaceBetween={50}
+        // spaceBetween={50}
         loop
         slidesPerView={'auto'}
         loopedSlides={5}
-        // coverflowEffect={{
-        //   rotate: 50,
-        //   stretch: 0,
-        //   depth: 1000,
-        //   modifier: 1,
-        //   slideShadows: true,
-        // }}
+        autoplay
         onProgress={function (progress, a) {
           // console.log('progress', this);
           for (let i = 0; i < this.slides.length; i++) {
@@ -58,7 +52,9 @@ export default function IndexPage() {
             if (Math.abs(slideProgress) > 1) {
               modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
             }
-            let translate = slideProgress * modify * 1140 + 'px';
+            let w = window.innerWidth * 0.67 * 0.8;
+            // console.log('w', w);
+            let translate = slideProgress * modify * w + 'px';
             let scale = 1 - Math.abs(slideProgress) / 5;
             let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
             slide.transform(
@@ -73,9 +69,9 @@ export default function IndexPage() {
             }
           }
         }}
-        onSetTransition={function (transition) {
-          // console.log('transition');
-          for (var i = 0; i < this.slides.length; i++) {
+        onSetTransition={function (swiper, transition) {
+          console.log('transition', transition);
+          for (let i = 0; i < this.slides.length; i++) {
             let slide = this.slides.eq(i);
             slide.transition(transition);
           }
