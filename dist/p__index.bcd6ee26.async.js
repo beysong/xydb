@@ -341,11 +341,28 @@
       s('dFpQ');
       u['a'].use([M['a'], v['a'], O['a'], f['a']]);
       var Q = [
-        'd8c94e107703953269bc2cf9c1156f79.jpg',
-        '495a8d8a157f63bf52eb5218095f1c3d.jpg',
-        'c340fcd072819aee7979cf067dba94d1.jpg',
-        '57d8b53dcb78a38e1621f3343fd89223.jpg',
-        'e249a828ab58d9a501f964f45e021f07.jpg',
+        {
+          title:
+            '\u25cf \u72ec\u7acb\u524d\u53f0\u3001\u4f1a\u8bae\u5ba4\u3001\u50a8\u85cf\u95f4',
+          img: 'd8c94e107703953269bc2cf9c1156f79.jpg',
+        },
+        {
+          title:
+            '\u25cf \u9ad8\u54c1\u8d28\u5bb6\u5177\u5168\u914d\uff0c\u7cbe\u88c5\u5165\u9a7b',
+          img: '495a8d8a157f63bf52eb5218095f1c3d.jpg',
+        },
+        {
+          title: '\u25cf \u53ef\u5bb9\u7eb3 3 0 - 6 0 \u4eba\u56e2\u961f ',
+          img: 'c340fcd072819aee7979cf067dba94d1.jpg',
+        },
+        {
+          title: '\u25cf 24\u5c0f\u65f6VRV\u7a7a\u8c03 ',
+          img: '57d8b53dcb78a38e1621f3343fd89223.jpg',
+        },
+        {
+          title: '\u25cf 1 5 0 - 5 0 0 \u5e73\u7c73\u6237\u578b',
+          img: 'e249a828ab58d9a501f964f45e021f07.jpg',
+        },
       ];
       function E() {
         Object(c['e'])();
@@ -392,13 +409,21 @@
               }
             },
             children: Q.map(function (e, t) {
-              return Object(o['jsx'])(
+              return Object(o['jsxs'])(
                 w['a'],
                 {
-                  children: Object(o['jsx'])('img', {
-                    src:
-                      'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + e,
-                  }),
+                  children: [
+                    Object(o['jsx'])('img', {
+                      src:
+                        'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
+                        e.img,
+                    }),
+                    Object(o['jsx'])('div', {
+                      className:
+                        'absolute text-lg left-2 bottom-2 xl:left-5 xl:bottom-5 text-white',
+                      children: e.title,
+                    }),
+                  ],
                 },
                 t,
               );
@@ -808,23 +833,92 @@
           }),
         });
       }
-      var ge = function (e) {
+      var ge = 'https://wehome-image.oss-cn-shanghai.aliyuncs.com/',
+        be = function (e) {
           var t = e.src,
             s = Object(K['a'])(e, ['src']);
           return Object(o['jsx'])(
             'img',
-            Object(Y['a'])(Object(Y['a'])({}, s), {}, { src: '/xydb' + t }),
+            Object(Y['a'])(Object(Y['a'])({}, s), {}, { src: ge + t }),
           );
         },
-        be = 'https://wehome-image.oss-cn-shanghai.aliyuncs.com/',
-        me = function (e) {
-          var t = e.src,
-            s = Object(K['a'])(e, ['src']);
-          return Object(o['jsx'])(
-            'img',
-            Object(Y['a'])(Object(Y['a'])({}, s), {}, { src: be + t }),
-          );
-        },
+        me =
+          (s('UbcZ'),
+          function () {
+            return Object(o['jsx'])('div', {
+              className: 'container mx-auto relative',
+              children: Object(o['jsxs'])('div', {
+                className: 'pbg',
+                children: [
+                  Object(o['jsx'])('div', {
+                    className: 'dian dian1',
+                    children: Object(o['jsx'])('div', {
+                      className: 'dian-tit',
+                      children: '\u9f99\u6e56\u8679\u6865\u5929\u8857',
+                    }),
+                  }),
+                  Object(o['jsx'])('div', {
+                    className: 'dian dian2',
+                    children: Object(o['jsx'])('div', {
+                      className: 'dian-tit',
+                      children: '\u65b0\u534e\u8054\u8d2d\u7269\u4e2d\u5fc3',
+                    }),
+                  }),
+                  Object(o['jsx'])('div', {
+                    className: 'meto meto1',
+                    children: Object(o['jsx'])('div', {
+                      className: 'meto-tit',
+                      children: '\u8679\u6865\u706b\u8f66\u7ad9',
+                    }),
+                  }),
+                  Object(o['jsx'])('div', {
+                    className: 'dian dian3',
+                    children: Object(o['jsxs'])('div', {
+                      className: 'dian-tit',
+                      children: [
+                        Object(o['jsx'])('img', {
+                          src: r.a,
+                          className: 'w-36',
+                          alt: '',
+                        }),
+                        Object(o['jsx'])('div', {
+                          className: 'text-gray-600 text-xs mt-1',
+                          children:
+                            '\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3',
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(o['jsx'])('div', {
+                    className: 'meto meto2',
+                    children: Object(o['jsxs'])('div', {
+                      className: 'meto-tit',
+                      children: [
+                        '\u8679\u68652\u53f7',
+                        Object(o['jsx'])('br', {}),
+                        '\u822a\u7ad9\u697c',
+                      ],
+                    }),
+                  }),
+                  Object(o['jsx'])('div', {
+                    className: 'dian dian4',
+                    children: Object(o['jsx'])('div', {
+                      className: 'dian-tit',
+                      children:
+                        '\u4e0a\u6d77\u8679\u6865\u56fd\u9645\u673a\u573a',
+                    }),
+                  }),
+                  Object(o['jsx'])('div', {
+                    className: 'dian dian5',
+                    children: Object(o['jsx'])('div', {
+                      className: 'dian-tit',
+                      children: '\u4e0a\u6d77\u52a8\u7269\u56ed',
+                    }),
+                  }),
+                ],
+              }),
+            });
+          }),
         Ne = s('CoB4'),
         he = s.n(Ne),
         ue = s('dEfy'),
@@ -922,7 +1016,8 @@
               },
               className: 'pt-20',
               desc: Object(o['jsxs'])('div', {
-                className: 'leading-8 px-5 my-10 text-sm 2xl:text-base',
+                className:
+                  'px-5 my-10 text-sm 2xl:text-base leading-6 2xl:leading-8',
                 style: { color: '#666' },
                 children: [
                   Object(o['jsx'])('div', {
@@ -949,7 +1044,7 @@
                 ],
               }),
               full: !0,
-              children: Object(o['jsx'])(ge, { src: '/images/map.png' }),
+              children: Object(o['jsx'])(me, {}),
             }),
             Object(o['jsx'])(Z, {
               hrefid: 'id2',
@@ -1190,7 +1285,7 @@
                   Object(o['jsxs'])('div', {
                     className: 'w-full lg:w-1/2 relative',
                     children: [
-                      Object(o['jsx'])(me, {
+                      Object(o['jsx'])(be, {
                         width: '100%',
                         src: '0aed55856418022454767b5815c4d1e9.png',
                       }),
@@ -1211,7 +1306,7 @@
                           Object(o['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(o['jsx'])(me, {
+                              Object(o['jsx'])(be, {
                                 width: '100%',
                                 src: '71765038a896cc41ffb6527a0f3a3a8e.png',
                               }),
@@ -1226,7 +1321,7 @@
                           Object(o['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(o['jsx'])(me, {
+                              Object(o['jsx'])(be, {
                                 width: '100%',
                                 src: '2ebec6c9dce48720310fd8d0163e0521.png',
                               }),
@@ -1247,7 +1342,7 @@
                           Object(o['jsxs'])('div', {
                             className: 'w-full lg:w-1/2  relative',
                             children: [
-                              Object(o['jsx'])(me, {
+                              Object(o['jsx'])(be, {
                                 width: '100%',
                                 src: 'e217f33b4bf65e57319ba9a5dbf30896.png',
                               }),
@@ -1263,7 +1358,7 @@
                           Object(o['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(o['jsx'])(me, {
+                              Object(o['jsx'])(be, {
                                 width: '100%',
                                 src: '0667876ac3587157d912f6168f6b267a.png',
                               }),
@@ -1318,7 +1413,7 @@
               style: { backgroundColor: '#E9FCFD' },
               full: !0,
               children: [
-                Object(o['jsx'])(me, {
+                Object(o['jsx'])(be, {
                   className: '-mt-16 lg:-mt-20 xl:-mt-24 2xl:-mt-32 z-0',
                   src: '4f086a83cea70f65cfc6973e31cc1610.png',
                 }),
@@ -1431,6 +1526,7 @@
     R56l: function (e, t, s) {},
     SJWS: function (e, t, s) {},
     U94f: function (e, t, s) {},
+    UbcZ: function (e, t, s) {},
     ZtXy: function (e, t) {
       e.exports =
         'data:image/png;base64,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';
