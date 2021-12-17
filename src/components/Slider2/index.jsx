@@ -94,7 +94,7 @@ export default function IndexPage() {
             <img
               src={'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v.img}
             />
-            <div className="absolute text-lg left-2 bottom-2 xl:left-5 xl:bottom-5 text-white">
+            <div className="absolute text-sm lg:text-lg left-4 bottom-4 xl:left-8 xl:bottom-8 text-white">
               {v.title}
             </div>
           </SwiperSlide>

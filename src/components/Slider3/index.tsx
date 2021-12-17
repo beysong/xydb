@@ -30,7 +30,7 @@ export default function IndexPage({ data }) {
         loopedSlides={5}
         autoplay
         onProgress={function (swiperItem, a) {
-          console.log('progress', a);
+          // console.log('progress', a);
 
           for (let i = 0; i < this.slides.length; i++) {
             let slide = this.slides.eq(i);
@@ -41,17 +41,22 @@ export default function IndexPage({ data }) {
             if (Math.abs(slideProgress) > 1) {
               modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
             }
-            let w = window.innerWidth * 0.67 * 0.36;
+            let w = window.innerWidth * 0.67 * 0.32;
 
+            let abss = Math.abs(slideProgress);
             // console.log('w', w);
-            let translate = slideProgress * modify * w + 'px';
-            let scale = Math.abs(slideProgress) > 0.001 ? 0.5 : 1;
+            let translate = '0px';
+            if (Math.round(slideProgress)) {
+              translate = w * 0.45 * slideProgress * (1 + abss / 3.5) + 'px';
+            }
+
+            let scale = abss > 0.001 ? 0.4 * (1 + abss / 10) : 1;
             let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-            let deg = (6 * slideProgress) / 4;
+            let deg = (8 * slideProgress) / 4;
 
             slide.transform(
               'translateX(' +
-                0 +
+                translate +
                 ') perspective(100px) rotateY(' +
                 deg +
                 'deg) scale(' +
@@ -85,10 +90,15 @@ export default function IndexPage({ data }) {
                 now === i ? '-bottom-1/2 visible' : '-bottom-full invisible'
               }`}
             >
-              <div className="text-4xl pb-2" style={{ color: '#222' }}>
+              <div
+                className="text-lg lg:text-2xl 2xl:text-4xl pb-2"
+                style={{ color: '#222' }}
+              >
                 "前沿智能设施加持"
               </div>
-              <div style={{ color: '#777' }}>创享未来科技体验</div>
+              <div className="text-base xl:text-lg" style={{ color: '#777' }}>
+                创享未来科技体验
+              </div>
             </div>
           </SwiperSlide>
         ))}
