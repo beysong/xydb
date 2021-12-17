@@ -37,8 +37,7 @@
 
 #certify5 .swiper-pagination {
   width: 100%;
-  top: 120px;
-  @apply top-2 lg:top-24 xl:top-32 2xl:top-36;
+  @apply top-2 lg:top-24 xl:top-36 2xl:top-44;
 }
 
 #certify5 .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -47,7 +46,7 @@
   background-color: rgba(9, 51, 53, 0.35);
   color: #fff;
   opacity: 1;
-  @apply w-auto h-auto px-2 py-2 2xl:px-6 2xl:py-4 text-xs lg:text-sm 2xl:text-base;
+  @apply w-auto h-auto px-2 py-2 xl:px-6 2xl:py-4 text-xs lg:text-base xl:text-lg 2xl:text-xl;
 }
 
 #certify5 .swiper-pagination-bullets .swiper-pagination-bullet-active {

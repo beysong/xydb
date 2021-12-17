@@ -1,15 +1,19 @@
 import React from 'react';
 
-import meto1 from './imgs/meto1.png';
-import meto2 from './imgs/meto2.png';
-
 import logo from '@/assets/logo.png';
 
 import './index.css';
-
+// d7a7d3a8b9eac838cd67c712bf5800b8.png
 export default () => (
   <div className="container mx-auto relative">
-    <div className="pbg">
+    <div className="mt-4 mb-24 xl:hidden">
+      <img
+        className="w-full"
+        src="https://wehome-image.oss-cn-shanghai.aliyuncs.com/d7a7d3a8b9eac838cd67c712bf5800b8.png"
+        alt=""
+      />
+    </div>
+    <div className="pbg hidden xl:block">
       <div className="dian dian1">
         <div className="dian-tit">龙湖虹桥天街</div>
       </div>

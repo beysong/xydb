@@ -44,7 +44,7 @@ export default function IndexPage() {
   const intl = useIntl();
   return (
     <section id="certify5" className="relative">
-      <div className="absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-12">
+      <div className="absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-16">
         <SectionTitle title1={'品牌服务'} align="center" color="white" />
       </div>
       <Swiper
@@ -63,13 +63,20 @@ export default function IndexPage() {
             <img
               src={'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v.img}
             />
-            <div className="absolute text-left top-1/3 left-0 2xl:left-1/4 ml-5 lg:ml-10 2xl:ml-0 text-white">
-              <div className="text-sm lg:text-base 2xl:text-2xl">{v.title}</div>
-              <div className="text-xs lg:text-sm xl:text-base 2xl:text-lg mt-2 lg:mt-4 w-11/12 lg:w-1/2">
-                {v.desc}
-              </div>
-              <div className="hidden lg:inline-block px-6 lg:px-8 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-xs lg:text-sm xl:text-base 2xl:text-lg rounded-full border border-solid border-white">
-                了解更多
+            <div
+              className="absolute w-full text-white px-5 lg:px-0"
+              style={{ top: '40%' }}
+            >
+              <div className="container mx-auto text-left">
+                <div className="text-sm lg:text-base xl:text-2xl 2xl:text-3xl">
+                  {v.title}
+                </div>
+                <div className="text-xs lg:text-base xl:text-lg 2xl:text-xl mt-2 lg:mt-4 lg:w-1/2">
+                  {v.desc}
+                </div>
+                <div className="hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 xl:py-3 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg 2xl:text-xl rounded-full border border-solid border-white">
+                  了解更多
+                </div>
               </div>
             </div>
           </SwiperSlide>

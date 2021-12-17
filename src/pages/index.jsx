@@ -29,6 +29,9 @@ import add1 from '@/assets/address/add1.png';
 import add2 from '@/assets/address/add2.png';
 import add3 from '@/assets/address/add3.png';
 
+import regleft from '@/assets/regleft.png';
+import regright from '@/assets/regright.png';
+
 import './index.css';
 
 export default function IndexPage() {
@@ -47,22 +50,21 @@ export default function IndexPage() {
           top: 300,
           zIndex: 99,
           position: 'absolute',
-          right: 100,
-          width: '22%',
+          right: '15%',
+          width: '24rem',
         }}
         className="hidden lg:block xl:block 2xl:block"
       >
         <div className="container mx-auto relative">
           <div
-            className=" z-10 p-2 rounded-lg"
+            className=" z-10 p-3 rounded-lg"
             style={{
               backgroundColor: 'rgba(0, 201, 208, 0.52)',
             }}
           >
             <div
-              className="bg-white p-8 w-full rounded-lg overflow-hidden"
+              className="bg-white px-10 py-12 w-full rounded-lg overflow-hidden"
               style={{
-                // filter: 'blur(10px)',
                 backgroundColor: 'rgba(255,255,255,0.93)',
               }}
             >
@@ -78,7 +80,7 @@ export default function IndexPage() {
               </div>
               <div>
                 <input
-                  className="rounded-sm p-2 text-center w-full mt-2"
+                  className="rounded-sm p-2 text-center w-full mt-4"
                   style={{
                     border: '1px solid #D1DDDD',
                   }}
@@ -89,13 +91,15 @@ export default function IndexPage() {
               <div>
                 <button
                   style={{ backgroundColor: '#00C9D0' }}
-                  className="text-center text-base 2xl:text-lg p-2 text-white w-full mt-5"
+                  className="text-center text-base 2xl:text-lg p-2 text-white w-full mt-7"
                 >
                   立即免费预约参观
                 </button>
               </div>
-              <div className="text-center text-gray-400 mt-2 text-sm 2xl:text-base">
+              <div className="flex items-center justify-around text-center text-gray-400 mt-7 text-sm 2xl:text-base">
+                <img className="w-6" src={regleft} alt="" />
                 <span>我们的专业顾问会尽快与您联系</span>
+                <img className="w-6" src={regleft} alt="" />
               </div>
             </div>
           </div>
@@ -170,7 +174,7 @@ export default function IndexPage() {
                     src={add1}
                     alt=""
                   />
-                  <div className="flex-1 pl-2">
+                  <div className="flex-1 pl-4">
                     <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
                       专属班车
                     </div>
@@ -185,7 +189,7 @@ export default function IndexPage() {
                     src={add2}
                     alt=""
                   />
-                  <div className="flex-1 pl-2">
+                  <div className="flex-1 pl-4">
                     <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
                       轨道交通
                     </div>
@@ -201,7 +205,7 @@ export default function IndexPage() {
                     src={add3}
                     alt=""
                   />
-                  <div className="flex-1 pl-2">
+                  <div className="flex-1 pl-4">
                     <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
                       公交线路
                     </div>
