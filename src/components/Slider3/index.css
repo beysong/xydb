@@ -15,11 +15,11 @@
 
 #certify3 .swiper-container {
   padding-bottom: 60px;
+  overflow: visible;
 }
 
 #certify3 .swiper-slide {
-  width: 600px;
-  height: 408px;
+  width: 36%;
   background: #fff;
 }
 #certify3 .swiper-slide img {
@@ -56,12 +56,10 @@
 }
 
 #certify3 .swiper-button-prev {
-  left: -30px;
+  left: 28%;
+  top: 110%;
   width: 45px;
   height: 45px;
-  background: url(./wm_button_icon.png) no-repeat;
-  background-position: 0 0;
-  background-size: 100%;
 }
 
 #certify3 .swiper-button-prev:hover {
@@ -70,12 +68,10 @@
 }
 
 #certify3 .swiper-button-next {
-  right: -30px;
+  right: 28%;
+  top: 110%;
   width: 45px;
   height: 45px;
-  background: url(./wm_button_icon.png) no-repeat;
-  background-position: 0 -93px;
-  background-size: 100%;
 }
 
 #certify3 .swiper-button-next:hover {

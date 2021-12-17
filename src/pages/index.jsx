@@ -220,6 +220,7 @@ export default function IndexPage() {
         </div>
       </Section>
       <Section
+        full
         className="pt-28"
         hrefid="id3"
         title1={
@@ -228,7 +229,7 @@ export default function IndexPage() {
           </div>
         }
       >
-        <div className="py-20">
+        <div className="py-20 overflow-hidden">
           <Slider3 data={[s1, s1, s2, s2]} />
         </div>
       </Section>
