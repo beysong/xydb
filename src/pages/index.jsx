@@ -9,7 +9,6 @@ import Footer from '@/components/Footer';
 import Slider from '@/components/Slider';
 import Slider2 from '@/components/Slider2';
 import Slider3 from '@/components/Slider3';
-// import Slider4 from '@/components/Slider4';
 import Slider5 from '@/components/Slider5';
 import SectionTitle from '@/components/SectionTitle';
 import Section from '@/components/Section';
@@ -17,6 +16,7 @@ import CountNum from '@/components/CountNum';
 import ZuLin from '@/components/ZuLin';
 import Img from '@/components/Img';
 import OssImg from '@/components/OssImg';
+import ProjectInfo from '@/components/ProjectInfo';
 
 import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
@@ -116,7 +116,7 @@ export default function IndexPage() {
         className="pt-20"
         desc={
           <div
-            className="leading-8 px-5 my-10 text-sm 2xl:text-base"
+            className="px-5 my-10 text-sm 2xl:text-base leading-6 2xl:leading-8"
             style={{ color: '#666' }}
           >
             <div>星月德必WE"，位于虹桥商务区核心区，总建筑面积53,000m²</div>
@@ -133,7 +133,7 @@ export default function IndexPage() {
         }
         full
       >
-        <Img src="/images/map.png" />
+        <ProjectInfo />
       </Section>
       <Section hrefid="id2" full>
         <div className="flex text-white">
