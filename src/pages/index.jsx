@@ -229,8 +229,11 @@ export default function IndexPage() {
           </div>
         }
       >
-        <div className="py-20 overflow-hidden">
+        <div className="py-20 overflow-hidden hidden lg:block">
           <Slider3 data={[s1, s1, s2, s2]} />
+        </div>
+        <div className="py-20 overflow-hidden lg:hidden">
+          <Slider2 />
         </div>
       </Section>
       <Section
@@ -250,7 +253,7 @@ export default function IndexPage() {
           </div>
         }
       >
-        <div className="w-4/5 mx-auto">
+        <div className="lg:w-4/5 mx-auto">
           <Slider2 />
         </div>
       </Section>
@@ -355,7 +358,10 @@ export default function IndexPage() {
             >
               多元增值服务赋能企业 国际平台链接全球资源
             </div>
-            <div className="text-xs 2xl:text-sm mt-2" style={{ color: '#666' }}>
+            <div
+              className="text-xs 2xl:text-sm mt-2 leading-6 2xl:leading-7"
+              style={{ color: '#666' }}
+            >
               针对数字创新企业的成长发展和商务往来需求，依托德必集团十余年文科创产业服务体系、数十个全球产业园区及数千家入驻企业，助力企业跨城市布局，
               <br />
               推动企业之间互动联通，构建覆盖企业全生命周期的创新服务

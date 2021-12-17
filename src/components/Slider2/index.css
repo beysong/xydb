@@ -17,8 +17,8 @@
 }
 
 #certify2 .swiper-container {
-  padding-bottom: 60px;
   overflow: visible;
+  @apply pb-8 lg:pb-12 xl:pb-16;
 }
 
 #certify2 .swiper-slide {
@@ -53,13 +53,14 @@
   border-radius: 0;
   background-color: #cfe4e5;
   width: 20px;
-  height: 6px;
   opacity: 1;
+  @apply w-3 lg:w-4 xl:w-5 h-1 xl:h-2;
 }
 
 #certify2 .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #00c9d0;
-  width: 60px;
+
+  @apply w-9 lg:w-12 xl:w-16;
 }
 
 #certify2 .swiper-button-prev {
