@@ -17,7 +17,7 @@
       '' +
       ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
       '.' +
-      { 0: 'eb8ce860', 2: '0727a9b8' }[e] +
+      { 0: 'bcd6ee26', 2: '0727a9b8' }[e] +
       '.async.js'
     );
   }
@@ -39,7 +39,7 @@
               var a =
                   ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
                   '.' +
-                  { 0: '393e454f', 2: '485daf20' }[e] +
+                  { 0: '54758958', 2: '485daf20' }[e] +
                   '.chunk.css',
                 i = o.p + a,
                 s = document.getElementsByTagName('link'),
@@ -38662,12 +38662,7 @@
     }
     var xe = function () {
       return Object(M['jsx'])('div', {
-        style: {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '100vh',
-        },
+        className: 'flex justify-center items-center h-screen',
         children: 'loading...',
       });
     };
