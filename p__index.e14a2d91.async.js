@@ -424,7 +424,7 @@
                     }),
                     Object(o['jsx'])('div', {
                       className:
-                        'absolute text-lg left-2 bottom-2 xl:left-5 xl:bottom-5 text-white',
+                        'absolute text-sm lg:text-lg left-4 bottom-4 xl:left-8 xl:bottom-8 text-white',
                       children: e.title,
                     }),
                   ],
@@ -458,24 +458,28 @@
             loopedSlides: 5,
             autoplay: !0,
             onProgress: function (e, t) {
-              console.log('progress', t);
               for (var s = 0; s < this.slides.length; s++) {
                 var c = this.slides.eq(s),
                   A = this.slides[s].progress;
                 console.log('i', s, A);
                 Math.abs(A) > 1 && 0.3 * (Math.abs(A) - 1) + 1;
-                window.innerWidth;
-                var l = Math.abs(A) > 0.001 ? 0.5 : 1,
-                  a = 999 - Math.abs(Math.round(10 * A)),
-                  i = (6 * A) / 4;
+                var l = 0.67 * window.innerWidth * 0.32,
+                  a = Math.abs(A),
+                  i = '0px';
+                Math.round(A) && (i = 0.45 * l * A * (1 + a / 3.5) + 'px');
+                var n = a > 0.001 ? 0.4 * (1 + a / 10) : 1,
+                  x = 999 - Math.abs(Math.round(10 * A)),
+                  d = (8 * A) / 4;
                 c.transform(
-                  'translateX(0) perspective(100px) rotateY(' +
+                  'translateX(' +
                     i +
+                    ') perspective(100px) rotateY(' +
+                    d +
                     'deg) scale(' +
-                    l +
+                    n +
                     ')',
                 ),
-                  c.css('zIndex', a),
+                  c.css('zIndex', x),
                   c.css('opacity', 1),
                   Math.abs(A) > 3 && c.css('opacity', 0);
               }
@@ -504,12 +508,13 @@
                         ),
                       children: [
                         Object(o['jsx'])('div', {
-                          className: 'text-4xl pb-2',
+                          className: 'text-lg lg:text-2xl 2xl:text-4xl pb-2',
                           style: { color: '#222' },
                           children:
                             '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
                         }),
                         Object(o['jsx'])('div', {
+                          className: 'text-base xl:text-lg',
                           style: { color: '#777' },
                           children:
                             '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
