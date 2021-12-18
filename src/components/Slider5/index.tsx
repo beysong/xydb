@@ -68,13 +68,13 @@ export default function IndexPage() {
               style={{ top: '40%' }}
             >
               <div className="container mx-auto text-left">
-                <div className="text-sm lg:text-base xl:text-2xl 2xl:text-3xl">
+                <div className="text-sm lg:text-base xl:text-2xl">
                   {v.title}
                 </div>
-                <div className="text-xs lg:text-base xl:text-lg 2xl:text-xl mt-2 lg:mt-4 lg:w-1/2">
+                <div className="text-xs lg:text-base xl:text-lg mt-2 lg:mt-4 lg:w-1/2">
                   {v.desc}
                 </div>
-                <div className="hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 xl:py-3 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg 2xl:text-xl rounded-full border border-solid border-white">
+                <div className="hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white">
                   了解更多
                 </div>
               </div>

@@ -85,13 +85,13 @@ export default function IndexPage() {
                     e.preventDefault();
                     setLocale('zh-CN', false);
                   }}
-                  style={{ color: getLocale() === 'zh-CN' ? '#3db2ad' : '' }}
+                  style={{ color: getLocale() === 'zh-CN' ? '#00C9D0' : '' }}
                 >
                   中文
                 </span>
                 /
                 <span
-                  style={{ color: getLocale() === 'en-US' ? '#3db2ad' : '' }}
+                  style={{ color: getLocale() === 'en-US' ? '#00C9D0' : '' }}
                   onClick={(e) => {
                     e.preventDefault();
                     setLocale('en-US', false);
@@ -105,7 +105,7 @@ export default function IndexPage() {
         </div>
         <div className="header-phone hidden text-right items-center xl:flex 2xl:flex">
           <div>
-            <div className="text-2xl font-bold" style={{ color: '#3DB2AD' }}>
+            <div className="text-2xl font-bold" style={{ color: '#00C9D0' }}>
               021-62335008
             </div>
             <div className="text-xs">上海市闵行区丰虹路199号</div>

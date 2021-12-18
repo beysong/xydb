@@ -55,6 +55,16 @@
   width: 60px;
 }
 
+#certify3 .swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #d1dddd;
+}
+
+#certify3 .swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: #00c9d0;
+}
+
 #certify3 .swiper-button-prev {
   left: 28%;
   top: 110%;

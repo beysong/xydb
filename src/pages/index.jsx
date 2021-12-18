@@ -59,7 +59,7 @@ export default function IndexPage() {
           <div
             className=" z-10 p-3 rounded-lg"
             style={{
-              backgroundColor: 'rgba(0, 201, 208, 0.52)',
+              backgroundColor: 'rgba(0, 201, 208, 0.42)',
             }}
           >
             <div
@@ -229,7 +229,7 @@ export default function IndexPage() {
           </div>
         }
       >
-        <div className="py-20 overflow-hidden hidden lg:block">
+        <div className="py-20 2xl:pb-32 overflow-hidden hidden lg:block">
           <Slider3 data={[s1, s1, s2, s2]} />
         </div>
         <div className="py-20 overflow-hidden lg:hidden">
@@ -283,7 +283,7 @@ export default function IndexPage() {
           <div className="w-full lg:w-1/2 relative">
             <OssImg width="100%" src={'0aed55856418022454767b5815c4d1e9.png'} />
             <div
-              className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
+              className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
               style={{ background: '#00C9D0' }}
             >
               wehome智能会议厅
@@ -297,7 +297,7 @@ export default function IndexPage() {
                   src={'71765038a896cc41ffb6527a0f3a3a8e.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   睡眠舱
@@ -309,7 +309,7 @@ export default function IndexPage() {
                   src={'2ebec6c9dce48720310fd8d0163e0521.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   多层次餐饮服务
@@ -324,7 +324,7 @@ export default function IndexPage() {
                   src={'e217f33b4bf65e57319ba9a5dbf30896.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   人脸识别门禁
@@ -336,7 +336,7 @@ export default function IndexPage() {
                   src={'0667876ac3587157d912f6168f6b267a.png'}
                 />
                 <div
-                  className="absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center"
+                  className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
                   共享健身空间
@@ -377,7 +377,7 @@ export default function IndexPage() {
         full
       >
         <OssImg
-          className="-mt-16 lg:-mt-20 xl:-mt-24 2xl:-mt-32 z-0"
+          className="-mt-20 sm:-mt-32 md:-mt-40 lg:-mt-48 xl:-mt-52 2xl:-mt-64 z-0"
           src="4f086a83cea70f65cfc6973e31cc1610.png"
         />
 

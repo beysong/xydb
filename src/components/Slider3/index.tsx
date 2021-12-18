@@ -91,7 +91,7 @@ export default function IndexPage({ data }) {
               }`}
             >
               <div
-                className="text-lg lg:text-2xl 2xl:text-4xl pb-2"
+                className="text-lg lg:text-2xl 2xl:text-3xl pb-2"
                 style={{ color: '#222' }}
               >
                 "前沿智能设施加持"

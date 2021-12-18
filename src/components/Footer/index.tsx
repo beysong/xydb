@@ -20,8 +20,8 @@ export default function IndexPage() {
       <a id={'id7'}></a>
       <div className="container mx-auto">
         <div className="p-5 lg:p-12 xl:p-12 2xl:p-12">
-          <div className="bg-white rounded-lg flex flex-wrap p-12 lg:p-28 xl:p-28 2xl:p-28">
-            <div className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+          <div className="bg-white rounded-lg flex flex-wrap p-12 lg:p-20 xl:p-24">
+            <div className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 lg:mt-1">
               <div>
                 <img src={logo} className="w-2/3 lg:w-1/2 2xl:w-2/5" alt="" />
               </div>
@@ -41,7 +41,7 @@ export default function IndexPage() {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
+            <div className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 mt-12 lg:mt-1">
               <div>
                 <input
                   className="p-3 w-full"
@@ -64,7 +64,7 @@ export default function IndexPage() {
               </div>
               <div>
                 <button
-                  className="p-3 mt-10 text-white text-lg w-full"
+                  className="p-3 mt-10 text-white text-base xl:text-lg w-full"
                   style={{
                     background: '#00C9D0',
                   }}
@@ -72,7 +72,10 @@ export default function IndexPage() {
                   立即免费预约参观
                 </button>
               </div>
-              <div className="text-center mt-3" style={{ color: '#00C9D0' }}>
+              <div
+                className="text-center mt-3 text-sm lg:text-base"
+                style={{ color: '#00C9D0' }}
+              >
                 我们的专业顾问会尽快与您联系
               </div>
             </div>

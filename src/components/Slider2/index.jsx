@@ -79,6 +79,9 @@ export default function IndexPage() {
             if (Math.abs(slideProgress) > 3) {
               slide.css('opacity', 0);
             }
+            if (Math.abs(slideProgress) > 0.5) {
+              slide.css('opacity', 0.6);
+            }
           }
         }}
         onSetTransition={function (swiper, transition) {
