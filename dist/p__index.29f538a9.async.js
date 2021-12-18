@@ -139,7 +139,7 @@
                             },
                             style: {
                               color:
-                                'zh-CN' === Object(c['a'])() ? '#3db2ad' : '',
+                                'zh-CN' === Object(c['a'])() ? '#00C9D0' : '',
                             },
                             children: '\u4e2d\u6587',
                           }),
@@ -147,7 +147,7 @@
                           Object(o['jsx'])('span', {
                             style: {
                               color:
-                                'en-US' === Object(c['a'])() ? '#3db2ad' : '',
+                                'en-US' === Object(c['a'])() ? '#00C9D0' : '',
                             },
                             onClick: function (e) {
                               e.preventDefault(), Object(c['d'])('en-US', !1);
@@ -167,7 +167,7 @@
                   children: [
                     Object(o['jsx'])('div', {
                       className: 'text-2xl font-bold',
-                      style: { color: '#3DB2AD' },
+                      style: { color: '#00C9D0' },
                       children: '021-62335008',
                     }),
                     Object(o['jsx'])('div', {
@@ -221,10 +221,10 @@
                 className: 'p-5 lg:p-12 xl:p-12 2xl:p-12',
                 children: Object(o['jsxs'])('div', {
                   className:
-                    'bg-white rounded-lg flex flex-wrap p-12 lg:p-28 xl:p-28 2xl:p-28',
+                    'bg-white rounded-lg flex flex-wrap p-12 lg:p-20 xl:p-24',
                   children: [
                     Object(o['jsxs'])('div', {
-                      className: 'w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2',
+                      className: 'w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 lg:mt-1',
                       children: [
                         Object(o['jsx'])('div', {
                           children: Object(o['jsx'])('img', {
@@ -265,7 +265,7 @@
                     }),
                     Object(o['jsxs'])('div', {
                       className:
-                        'w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 mt-20 lg:mt-0 xl:mt-0 2xl:mt-0',
+                        'w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 mt-12 lg:mt-1',
                       children: [
                         Object(o['jsx'])('div', {
                           children: Object(o['jsx'])('input', {
@@ -287,14 +287,15 @@
                         }),
                         Object(o['jsx'])('div', {
                           children: Object(o['jsx'])('button', {
-                            className: 'p-3 mt-10 text-white text-lg w-full',
+                            className:
+                              'p-3 mt-10 text-white text-base xl:text-lg w-full',
                             style: { background: '#00C9D0' },
                             children:
                               '\u7acb\u5373\u514d\u8d39\u9884\u7ea6\u53c2\u89c2',
                           }),
                         }),
                         Object(o['jsx'])('div', {
-                          className: 'text-center mt-3',
+                          className: 'text-center mt-3 text-sm lg:text-base',
                           style: { color: '#00C9D0' },
                           children:
                             '\u6211\u4eec\u7684\u4e13\u4e1a\u987e\u95ee\u4f1a\u5c3d\u5feb\u4e0e\u60a8\u8054\u7cfb',
@@ -402,7 +403,8 @@
                 c.transform('translateX(' + i + ') scale(' + n + ')'),
                   c.css('zIndex', x),
                   c.css('opacity', 1),
-                  Math.abs(A) > 3 && c.css('opacity', 0);
+                  Math.abs(A) > 3 && c.css('opacity', 0),
+                  Math.abs(A) > 0.5 && c.css('opacity', 0.6);
               }
             },
             onSetTransition: function (e, t) {
@@ -508,7 +510,7 @@
                         ),
                       children: [
                         Object(o['jsx'])('div', {
-                          className: 'text-lg lg:text-2xl 2xl:text-4xl pb-2',
+                          className: 'text-lg lg:text-2xl 2xl:text-3xl pb-2',
                           style: { color: '#222' },
                           children:
                             '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -619,18 +621,17 @@
                           className: 'container mx-auto text-left',
                           children: [
                             Object(o['jsx'])('div', {
-                              className:
-                                'text-sm lg:text-base xl:text-2xl 2xl:text-3xl',
+                              className: 'text-sm lg:text-base xl:text-2xl',
                               children: e.title,
                             }),
                             Object(o['jsx'])('div', {
                               className:
-                                'text-xs lg:text-base xl:text-lg 2xl:text-xl mt-2 lg:mt-4 lg:w-1/2',
+                                'text-xs lg:text-base xl:text-lg mt-2 lg:mt-4 lg:w-1/2',
                               children: e.desc,
                             }),
                             Object(o['jsx'])('div', {
                               className:
-                                'hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 xl:py-3 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg 2xl:text-xl rounded-full border border-solid border-white',
+                                'hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white',
                               children: '\u4e86\u89e3\u66f4\u591a',
                             }),
                           ],
@@ -1014,7 +1015,7 @@
                 className: 'container mx-auto relative',
                 children: Object(o['jsx'])('div', {
                   className: ' z-10 p-3 rounded-lg',
-                  style: { backgroundColor: 'rgba(0, 201, 208, 0.52)' },
+                  style: { backgroundColor: 'rgba(0, 201, 208, 0.42)' },
                   children: Object(o['jsxs'])('div', {
                     className:
                       'bg-white px-10 py-12 w-full rounded-lg overflow-hidden',
@@ -1291,7 +1292,7 @@
               }),
               children: [
                 Object(o['jsx'])('div', {
-                  className: 'py-20 overflow-hidden hidden lg:block',
+                  className: 'py-20 2xl:pb-32 overflow-hidden hidden lg:block',
                   children: Object(o['jsx'])(C, {
                     data: [Ne.a, Ne.a, ve.a, ve.a],
                   }),
@@ -1366,7 +1367,7 @@
                       }),
                       Object(o['jsx'])('div', {
                         className:
-                          'absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center',
+                          'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                         style: { background: '#00C9D0' },
                         children: 'wehome\u667a\u80fd\u4f1a\u8bae\u5385',
                       }),
@@ -1387,7 +1388,7 @@
                               }),
                               Object(o['jsx'])('div', {
                                 className:
-                                  'absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center',
+                                  'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
                                 children: '\u7761\u7720\u8231',
                               }),
@@ -1402,7 +1403,7 @@
                               }),
                               Object(o['jsx'])('div', {
                                 className:
-                                  'absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center',
+                                  'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
                                 children:
                                   '\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1',
@@ -1423,7 +1424,7 @@
                               }),
                               Object(o['jsx'])('div', {
                                 className:
-                                  'absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center',
+                                  'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
                                 children:
                                   '\u4eba\u8138\u8bc6\u522b\u95e8\u7981',
@@ -1439,7 +1440,7 @@
                               }),
                               Object(o['jsx'])('div', {
                                 className:
-                                  'absolute bottom-0 w-full text-white text-base 2xl:text-2xl p-3 2xl:p-5 text-center',
+                                  'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
                                 children:
                                   '\u5171\u4eab\u5065\u8eab\u7a7a\u95f4',
@@ -1490,7 +1491,8 @@
               full: !0,
               children: [
                 Object(o['jsx'])(be, {
-                  className: '-mt-16 lg:-mt-20 xl:-mt-24 2xl:-mt-32 z-0',
+                  className:
+                    '-mt-20 sm:-mt-32 md:-mt-40 lg:-mt-48 xl:-mt-52 2xl:-mt-64 z-0',
                   src: '4f086a83cea70f65cfc6973e31cc1610.png',
                 }),
                 Object(o['jsx'])(U, {}),
