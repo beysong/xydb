@@ -91,12 +91,12 @@ export default function IndexPage({ data }) {
               }`}
             >
               <div
-                className="text-lg lg:text-2xl 2xl:text-3xl pb-2"
+                className="text-base lg:text-xl xl:text-2xl pb-2"
                 style={{ color: '#222' }}
               >
                 "前沿智能设施加持"
               </div>
-              <div className="text-base xl:text-lg" style={{ color: '#777' }}>
+              <div className="text-sm xl:text-lg" style={{ color: '#777' }}>
                 创享未来科技体验
               </div>
             </div>

@@ -24,8 +24,8 @@
 }
 #certify3 .swiper-slide img {
   display: block;
-  -webkit-box-reflect: below 30px -webkit-linear-gradient(transparent 60%, rgba(0, 0, 0, 0.3));
-  box-reflect: below 30px linear-gradient(transparent 60%, rgba(0, 0, 0, 0.3));
+  -webkit-box-reflect: below 20px -webkit-linear-gradient(transparent 60%, rgba(0, 0, 0, 0.3));
+  box-reflect: below 20px linear-gradient(transparent 60%, rgba(0, 0, 0, 0.3));
 }
 #certify3 .swiper-slide p {
   line-height: 98px;

@@ -9,7 +9,7 @@ export default function IndexPage() {
   const intl = useIntl();
   return (
     <footer
-      className="footer py-24"
+      className="footer py-12 xl:py-24"
       style={{
         background: '#34A09B',
         backgroundImage:

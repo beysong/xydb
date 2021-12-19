@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import Slider from '@/components/Slider';
 import Slider2 from '@/components/Slider2';
 import Slider3 from '@/components/Slider3';
+import Slider32 from '@/components/Slider32';
 import Slider5 from '@/components/Slider5';
 import SectionTitle from '@/components/SectionTitle';
 import Section from '@/components/Section';
@@ -155,18 +156,18 @@ export default function IndexPage() {
             style={{ backgroundColor: '#00C9D0' }}
           >
             <SectionTitle title1="区位交通" align="left" color="white" />
-            <div className="pt-8 text-base lx:text-xl 2xl:text-2xl">
+            <div className="pt-6 xl:pt-8 text-base lx:text-xl 2xl:text-2xl">
               占位虹桥开放枢纽核心 多维立体交通打通商脉
             </div>
             <div className="pt-10">
               <div
-                className="rounded-sm opacity-50 inline-block p-3 text-sm 2xl:text-base"
+                className="rounded-sm opacity-50 inline-block p-3 text-xs lg:text-sm xl:text-base"
                 style={{ backgroundColor: '#0094A5', letterSpacing: 4 }}
               >
                 点击查看区位图
               </div>
             </div>
-            <div className="pt-4">
+            <div className="xl:pt-4">
               <QueueAnim delay={300} reversed>
                 <div key={'a'} className="flex items-center my-10">
                   <img
@@ -175,7 +176,7 @@ export default function IndexPage() {
                     alt=""
                   />
                   <div className="flex-1 pl-4">
-                    <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                    <div className="text-base xl:text-xl 2xl:text-2xl font-bold">
                       专属班车
                     </div>
                     <div className="text-xs lg:text-sm 2xl:text-base mt-1">
@@ -190,7 +191,7 @@ export default function IndexPage() {
                     alt=""
                   />
                   <div className="flex-1 pl-4">
-                    <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                    <div className="text-base xl:text-xl 2xl:text-2xl font-bold">
                       轨道交通
                     </div>
                     <div className="text-xs lg:text-sm 2xl:text-base mt-1">
@@ -206,7 +207,7 @@ export default function IndexPage() {
                     alt=""
                   />
                   <div className="flex-1 pl-4">
-                    <div className="text-lg xl:text-xl 2xl:text-2xl font-bold">
+                    <div className="text-base xl:text-xl 2xl:text-2xl font-bold">
                       公交线路
                     </div>
                     <div className="text-xs lg:text-sm 2xl:text-base mt-1">
@@ -221,7 +222,7 @@ export default function IndexPage() {
       </Section>
       <Section
         full
-        className="pt-28"
+        className="pt-20"
         hrefid="id3"
         title1={
           <div>
@@ -229,15 +230,15 @@ export default function IndexPage() {
           </div>
         }
       >
-        <div className="py-20 2xl:pb-32 overflow-hidden hidden lg:block">
+        <div className="pt-10 lg:pt-20 lg:pb-16 xl:pb-24 2xl:pb-32 overflow-hidden hidden lg:block">
           <Slider3 data={[s1, s1, s2, s2]} />
         </div>
-        <div className="py-20 overflow-hidden lg:hidden">
-          <Slider2 />
+        <div className="pt-10 lg:pt-20 overflow-hidden lg:hidden">
+          <Slider32 />
         </div>
       </Section>
       <Section
-        className="pt-28"
+        className="pt-20"
         full
         title1={
           <div>
@@ -348,7 +349,7 @@ export default function IndexPage() {
       </Section>
 
       <Section
-        className="pt-28"
+        className="pt-20"
         hrefid="id5"
         desc={
           <div className="leading-10 my-5 px-5 relative">
@@ -386,7 +387,7 @@ export default function IndexPage() {
 
       <Section
         hrefid="id6"
-        className="pt-28"
+        className="pt-20"
         title1={
           <div>
             <span className="text-green">租赁</span>信息
