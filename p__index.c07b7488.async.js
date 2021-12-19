@@ -38,17 +38,17 @@
         s.d(t, 'default', function () {
           return Ve;
         });
-      var c = s('9kvl'),
-        A = s('iLUg'),
-        l = s('0Xwh'),
-        a = s('bqU7'),
-        i = s.n(a),
-        n = s('tJVT'),
-        x = s('cDcd'),
-        d = s('zwU1'),
-        r = s.n(d),
+      var c = s('tJVT'),
+        A = s('9kvl'),
+        l = s('cDcd'),
+        a = s('iLUg'),
+        i = s('0Xwh'),
+        n = s('bqU7'),
+        d = s.n(n),
+        x = s('zwU1'),
+        r = s.n(x),
         o = (s('PCGc'), s('nKUr')),
-        j = [
+        b = [
           { id: 'menu.\u9996\u9875' },
           { id: 'menu.\u9879\u76ee\u4ecb\u7ecd' },
           { id: 'menu.\u533a\u4f4d\u4ea4\u901a' },
@@ -58,7 +58,7 @@
           { id: 'menu.\u79df\u8d41\u4fe1\u606f' },
           { id: 'menu.\u8054\u7cfb\u6211\u4eec' },
         ],
-        b = function (e, t) {
+        j = function (e, t) {
           t && t.preventDefault();
           var s = document.querySelector(e);
           console.log('??', s, e),
@@ -70,15 +70,15 @@
               });
         };
       function g() {
-        var e = Object(c['e'])(),
-          t = Object(x['useState'])(!1),
-          s = Object(n['a'])(t, 2),
-          A = s[0],
-          l = s[1],
-          a = Object(x['useState'])(''),
-          i = Object(n['a'])(a, 2),
-          d = i[0],
-          g = i[1];
+        var e = Object(A['e'])(),
+          t = Object(l['useState'])(!1),
+          s = Object(c['a'])(t, 2),
+          a = s[0],
+          i = s[1],
+          n = Object(l['useState'])(''),
+          d = Object(c['a'])(n, 2),
+          x = d[0],
+          g = d[1];
         return Object(o['jsx'])('header', {
           className: 'sticky top-0 z-10 bg-white p-3 xl:p-0 2xl:p-0 3xl:p-0',
           children: Object(o['jsxs'])('div', {
@@ -102,22 +102,22 @@
               }),
               Object(o['jsx'])('div', {
                 id: 'menu-wrap',
-                className: A ? 'menu-wrap active' : 'menu-wrap',
+                className: a ? 'menu-wrap active' : 'menu-wrap',
                 children: Object(o['jsxs'])('ul', {
                   className: 'header-menu',
                   children: [
-                    j.map(function (t, s) {
+                    b.map(function (t, s) {
                       return Object(o['jsx'])(
                         'li',
                         {
                           className:
-                            d === t.id || (!s && !d)
+                            x === t.id || (!s && !x)
                               ? 'menu-item active'
                               : 'menu-item',
                           children: Object(o['jsx'])('a', {
                             href: '',
                             onClick: function (e) {
-                              g(t.id), l(!1), b('#id' + s, e);
+                              g(t.id), i(!1), j('#id' + s, e);
                             },
                             children: e.formatMessage({ id: t.id }),
                           }),
@@ -135,11 +135,11 @@
                         children: [
                           Object(o['jsx'])('span', {
                             onClick: function (e) {
-                              e.preventDefault(), Object(c['d'])('zh-CN', !1);
+                              e.preventDefault(), Object(A['d'])('zh-CN', !1);
                             },
                             style: {
                               color:
-                                'zh-CN' === Object(c['a'])() ? '#00C9D0' : '',
+                                'zh-CN' === Object(A['a'])() ? '#00C9D0' : '',
                             },
                             children: '\u4e2d\u6587',
                           }),
@@ -147,10 +147,10 @@
                           Object(o['jsx'])('span', {
                             style: {
                               color:
-                                'en-US' === Object(c['a'])() ? '#00C9D0' : '',
+                                'en-US' === Object(A['a'])() ? '#00C9D0' : '',
                             },
                             onClick: function (e) {
-                              e.preventDefault(), Object(c['d'])('en-US', !1);
+                              e.preventDefault(), Object(A['d'])('en-US', !1);
                             },
                             children: 'EN',
                           }),
@@ -180,7 +180,7 @@
               }),
               Object(o['jsx'])('div', {
                 onClick: function () {
-                  l(!A);
+                  i(!a);
                 },
                 className: 'lg:hidden xl:hidden 2xl:hidden',
                 children: Object(o['jsx'])('svg', {
@@ -204,7 +204,7 @@
         h = s.n(m);
       s('kyQ6');
       function N() {
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsxs'])('footer', {
           className: 'footer py-12 xl:py-24',
           style: {
@@ -319,7 +319,7 @@
       s('u+OR'), s('lubV');
       function p(e) {
         var t = e.data;
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsx'])('section', {
           children: Object(o['jsx'])(w['a'], {
             onSwiper: function (e) {
@@ -370,7 +370,7 @@
         },
       ];
       function E() {
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsx'])('section', {
           id: 'certify2',
           children: Object(o['jsx'])(w['a'], {
@@ -399,9 +399,9 @@
                 var a = 0.67 * window.innerWidth * 0.8,
                   i = A * l * a + 'px',
                   n = 1 - Math.abs(A) / 5,
-                  x = 999 - Math.abs(Math.round(10 * A));
+                  d = 999 - Math.abs(Math.round(10 * A));
                 c.transform('translateX(' + i + ') scale(' + n + ')'),
-                  c.css('zIndex', x),
+                  c.css('zIndex', d),
                   c.css('opacity', 1),
                   Math.abs(A) > 3 && c.css('opacity', 0),
                   Math.abs(A) > 0.5 && c.css('opacity', 0.6);
@@ -441,11 +441,11 @@
       s('NeEy');
       function C(e) {
         var t = e.data,
-          s = Object(x['useState'])(0),
-          A = Object(n['a'])(s, 2),
-          l = A[0],
-          a = A[1];
-        Object(c['e'])();
+          s = Object(l['useState'])(0),
+          a = Object(c['a'])(s, 2),
+          i = a[0],
+          n = a[1];
+        Object(A['e'])();
         return Object(o['jsx'])('section', {
           id: 'certify3',
           children: Object(o['jsx'])(w['a'], {
@@ -470,24 +470,24 @@
                   i = '0px';
                 Math.round(A) && (i = 0.45 * l * A * (1 + a / 3.5) + 'px');
                 var n = a > 0.001 ? 0.4 * (1 + a / 10) : 1,
-                  x = 999 - Math.abs(Math.round(10 * A)),
-                  d = (8 * A) / 4;
+                  d = 999 - Math.abs(Math.round(10 * A)),
+                  x = (8 * A) / 4;
                 c.transform(
                   'translateX(' +
                     i +
                     ') perspective(100px) rotateY(' +
-                    d +
+                    x +
                     'deg) scale(' +
                     n +
                     ')',
                 ),
-                  c.css('zIndex', x),
+                  c.css('zIndex', d),
                   c.css('opacity', 1),
                   Math.abs(A) > 3 && c.css('opacity', 0);
               }
             },
             onSetTransition: function (e, t) {
-              a(e.realIndex);
+              n(e.realIndex);
               for (var s = 0; s < this.slides.length; s++) {
                 var c = this.slides.eq(s);
                 c.transition(t);
@@ -504,7 +504,7 @@
                     Object(o['jsxs'])('div', {
                       className:
                         'text-center w-full absolute transition-all '.concat(
-                          l === t
+                          i === t
                             ? '-bottom-1/2 visible'
                             : '-bottom-full invisible',
                         ),
@@ -561,7 +561,7 @@
         },
       ];
       function D() {
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsx'])('section', {
           id: 'certify32',
           children: Object(o['jsx'])(w['a'], {
@@ -584,9 +584,9 @@
                 var a = 0.67 * window.innerWidth * 0.8,
                   i = A * l * a + 'px',
                   n = 1 - Math.abs(A) / 5,
-                  x = 999 - Math.abs(Math.round(10 * A));
+                  d = 999 - Math.abs(Math.round(10 * A));
                 c.transform('translateX(' + i + ') scale(' + n + ')'),
-                  c.css('zIndex', x),
+                  c.css('zIndex', d),
                   c.css('opacity', 1),
                   Math.abs(A) > 3 && c.css('opacity', 0),
                   Math.abs(A) > 0.5 && c.css('opacity', 0.6);
@@ -635,9 +635,9 @@
       function R(e) {
         var t = e.title1,
           s = e.align,
-          A = e.color,
-          l = void 0 === A ? 'green' : A;
-        Object(c['e'])();
+          c = e.color,
+          l = void 0 === c ? 'green' : c;
+        Object(A['e'])();
         return Object(o['jsx'])('div', {
           className: 'left' === s ? 'text-left' : 'text-center',
           children:
@@ -678,7 +678,7 @@
           },
         ];
       function P() {
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsxs'])('section', {
           id: 'certify5',
           className: 'relative',
@@ -751,15 +751,15 @@
       function H(e) {
         var t = e.desc,
           s = void 0 === t ? '' : t,
-          A = e.children,
+          c = e.children,
           l = e.className,
           a = void 0 === l ? '' : l,
           i = e.title1,
           n = e.full,
-          x = void 0 !== n && n,
-          d = e.hrefid,
-          r = void 0 === d ? '' : d,
-          j = Object(K['a'])(e, [
+          d = void 0 !== n && n,
+          x = e.hrefid,
+          r = void 0 === x ? '' : x,
+          b = Object(K['a'])(e, [
             'desc',
             'children',
             'className',
@@ -767,18 +767,18 @@
             'full',
             'hrefid',
           ]);
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsxs'])(o['Fragment'], {
           children: [
             Object(o['jsx'])('a', { id: r }),
             Object(o['jsx'])(
               'section',
               Object(V['a'])(
-                Object(V['a'])({ className: a }, j),
+                Object(V['a'])({ className: a }, b),
                 {},
                 {
                   children: Object(o['jsxs'])('div', {
-                    className: x ? 'w-full' : 'container mx-auto',
+                    className: d ? 'w-full' : 'container mx-auto',
                     children: [
                       Object(o['jsx'])(R, { title1: i, align: 'center' }),
                       !!s &&
@@ -786,7 +786,7 @@
                           className: 'text-center',
                           children: s,
                         }),
-                      A,
+                      c,
                     ],
                   }),
                 },
@@ -833,7 +833,7 @@
           },
         ];
       function L() {
-        Object(c['e'])();
+        Object(A['e'])();
         return Object(o['jsx'])('section', {
           style: {
             backgroundColor: '#EAFCFC',
@@ -844,7 +844,7 @@
           },
           children: Object(o['jsx'])('div', {
             className: 'container mx-auto py-5',
-            children: Object(o['jsx'])(l['a'], {
+            children: Object(o['jsx'])(i['a'], {
               delay: 300,
               className: 'flex flex-wrap',
               children: X.map(function (e, t) {
@@ -896,12 +896,12 @@
         ae = s('bl/D'),
         ie = s.n(ae),
         ne = s('ZtXy'),
-        xe = s.n(ne),
-        de = s('GgEe'),
-        re = s.n(de),
+        de = s.n(ne),
+        xe = s('GgEe'),
+        re = s.n(xe),
         oe = s('6tIf'),
-        je = s.n(oe),
-        be = [
+        be = s.n(oe),
+        je = [
           { icon: $.a, count: '10\u33a1', desc: '\u603b\u9762\u79ef' },
           { icon: te.a, count: '101\u33a1', desc: '\u5206\u9694\u9762\u79ef' },
           { icon: ce.a, count: '3\u33a1', desc: '\u539f\u9ad8' },
@@ -911,16 +911,16 @@
             desc: '\u4ea4\u4ed8\u6807\u51c6',
           },
           { icon: ie.a, count: '\u505c\u8f66\u573a', desc: '\u4f9b\u5e94' },
-          { icon: xe.a, count: 'WiFi', desc: '\u5168\u533a\u57df\u8986\u76d6' },
+          { icon: de.a, count: 'WiFi', desc: '\u5168\u533a\u57df\u8986\u76d6' },
           { icon: re.a, count: 'VRV', desc: '24\u5c0f\u65f6\u5728\u7ebf' },
           {
-            icon: je.a,
+            icon: be.a,
             count: '\u56ed\u533a\u7ba1\u7406',
             desc: '24\u5c0f\u65f6\u5728\u7ebf',
           },
         ];
       function ge() {
-        Object(c['e'])();
+        Object(A['e'])();
         var e = function (e) {
           return Object(o['jsx'])(
             'div',
@@ -932,15 +932,15 @@
           style: { minHeight: 80 },
           children: Object(o['jsx'])('div', {
             className: 'container mx-auto',
-            children: Object(o['jsx'])(i.a, {
+            children: Object(o['jsx'])(d.a, {
               playScale: '0.1',
               children: Object(o['jsx'])(
-                l['a'],
+                i['a'],
                 {
                   type: 'bottom',
                   component: e,
                   leaveReverse: !0,
-                  children: be.map(function (e) {
+                  children: je.map(function (e) {
                     return Object(o['jsxs'])(
                       'div',
                       {
@@ -1092,13 +1092,17 @@
         Pe = s.n(Ye);
       s('WhpI'), s('EDuE');
       function Ve() {
-        Object(c['e'])();
+        Object(A['e'])();
+        var e = Object(l['useState'])(!1),
+          t = Object(c['a'])(e, 2),
+          s = t[0],
+          n = t[1];
         return Object(o['jsxs'])('main', {
           children: [
             Object(o['jsx'])('a', { href: '', id: 'id0' }),
             Object(o['jsx'])(g, {}),
             Object(o['jsx'])(p, { data: [ve.a, Oe.a] }),
-            Object(o['jsx'])(A['a'], {
+            Object(o['jsx'])(a['a'], {
               animation: { x: 100, opacity: 0, playScale: [0.8, 0.99] },
               style: {
                 transform: 'translateX(0px)',
@@ -1260,7 +1264,7 @@
                       }),
                       Object(o['jsx'])('div', {
                         className: 'xl:pt-4',
-                        children: Object(o['jsxs'])(l['a'], {
+                        children: Object(o['jsxs'])(i['a'], {
                           delay: 300,
                           reversed: !0,
                           children: [
@@ -1654,6 +1658,16 @@
                   className:
                     'text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2',
                   style: { backgroundColor: '#00C9D0' },
+                  onClick: function () {
+                    var e = document.querySelector('.iframe');
+                    s
+                      ? e.removeAttribute('src')
+                      : e.setAttribute(
+                          'src',
+                          'https://im1c5366d.7x24cc.com/phone_webChat.html?accountId=N000000031971&chatId=c60d2526-50f4-432d-9bb2-2f77c9f39efe',
+                        ),
+                      n(!s);
+                  },
                   children: [
                     Object(o['jsx'])('img', {
                       className: 'block w-2/3 mx-auto',
@@ -1662,6 +1676,17 @@
                     }),
                     Object(o['jsx'])('span', {
                       children: '\u5728\u7ebf\u54a8\u8be2',
+                    }),
+                    Object(o['jsx'])('div', {
+                      className:
+                        'fixed top-1/2 w-80 h-3/5 transform -translate-y-1/2 right-20 '.concat(
+                          s ? 'block' : 'hidden',
+                        ),
+                      children: Object(o['jsx'])('iframe', {
+                        src: '',
+                        frameborder: '0',
+                        className: 'iframe w-full h-full',
+                      }),
                     }),
                   ],
                 }),
