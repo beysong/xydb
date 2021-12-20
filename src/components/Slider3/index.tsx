@@ -14,7 +14,35 @@ import './index.css';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
-export default function IndexPage({ data }) {
+const data = [
+  {
+    title: '"前沿智能设施加持"',
+    desc: '创享未来科技体验',
+    img: '44338fa1419cf3d5d1cba60e3ab27416.jpg',
+  },
+  {
+    title: '"前沿智能设施加持"',
+    desc: '创享未来科技体验',
+    img: '5648752b2e22c1d979933b6d5c551301.jpg',
+  },
+  {
+    title: '"前沿智能设施加持"',
+    desc: '创享未来科技体验',
+    img: '891d1c44ed176b9e70727e7f996727f4.jpg',
+  },
+  {
+    title: '"前沿智能设施加持"',
+    desc: '创享未来科技体验',
+    img: 'b44231525e153409e443de754e7b81ef.jpg',
+  },
+  {
+    title: '"前沿智能设施加持"',
+    desc: '创享未来科技体验',
+    img: '4d8a1f0f7a5172c9e4f935c7d560cd2e.jpg',
+  },
+];
+
+export default function IndexPage() {
   const [now, setNow] = useState(0);
   const intl = useIntl();
   return (
@@ -83,21 +111,27 @@ export default function IndexPage({ data }) {
         {data.map((v, i) => (
           <SwiperSlide key={i}>
             <div>
-              <img src={v} />
+              <img
+                src={
+                  'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v.img
+                }
+              />
             </div>
             <div
               className={`text-center w-full absolute transition-all ${
-                now === i ? '-bottom-1/2 visible' : '-bottom-full invisible'
+                now === i
+                  ? '-bottom-24 lg:-bottom-28 xl:-bottom-30 2xl:-bottom-44 visible'
+                  : '-bottom-full invisible'
               }`}
             >
               <div
                 className="text-base lg:text-xl xl:text-2xl pb-2"
                 style={{ color: '#222' }}
               >
-                "前沿智能设施加持"
+                {v.title}
               </div>
               <div className="text-sm xl:text-lg" style={{ color: '#777' }}>
-                创享未来科技体验
+                {v.desc}
               </div>
             </div>
           </SwiperSlide>

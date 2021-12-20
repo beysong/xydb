@@ -1,4 +1,5 @@
 import { setLocale, useIntl } from 'umi';
+import React, { useState } from 'react';
 import { OverPack, Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
@@ -32,11 +33,37 @@ import add3 from '@/assets/address/add3.png';
 
 import regleft from '@/assets/regleft.png';
 import regright from '@/assets/regright.png';
+import { getSingle, addEvent } from '@/utils';
 
 import './index.css';
 
+let popMapIns = null;
+
 export default function IndexPage() {
   const intl = useIntl();
+  const [isFrame, setIsFrame] = useState(false);
+
+  const popMap = getSingle(function () {
+    const popDiv = document.createElement('div');
+    const popImg = document.createElement('img');
+    popImg.src =
+      'https://wehome-image.oss-cn-shanghai.aliyuncs.com/2dc8058a10178bb2961da002793615e7.jpg';
+    popImg.className = 'w-2/3 mx-auto';
+    // popDiv.innerHTML = '我是登录浮窗';
+    popDiv.appendChild(popImg);
+    popDiv.style.background = 'rgba(0,0,0,0.3)';
+    popDiv.style.zIndex = '999';
+    popDiv.className =
+      'w-full h-screen flex items-center justify-center fixed inset-0';
+
+    addEvent(popDiv, 'click', function () {
+      this.style.display = 'none';
+    });
+
+    document.body.appendChild(popDiv);
+    return popDiv;
+  });
+
   return (
     <main>
       <a href="" id="id0"></a>
@@ -100,7 +127,7 @@ export default function IndexPage() {
               <div className="flex items-center justify-around text-center text-gray-400 mt-7 text-sm 2xl:text-base">
                 <img className="w-6" src={regleft} alt="" />
                 <span>我们的专业顾问会尽快与您联系</span>
-                <img className="w-6" src={regleft} alt="" />
+                <img className="w-6" src={regright} alt="" />
               </div>
             </div>
           </div>
@@ -163,6 +190,13 @@ export default function IndexPage() {
               <div
                 className="rounded-sm opacity-50 inline-block p-3 text-xs lg:text-sm xl:text-base"
                 style={{ backgroundColor: '#0094A5', letterSpacing: 4 }}
+                onClick={() => {
+                  if (popMapIns) {
+                    popMapIns.style.display = 'flex';
+                  } else {
+                    popMapIns = popMap();
+                  }
+                }}
               >
                 点击查看区位图
               </div>
@@ -417,9 +451,32 @@ export default function IndexPage() {
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#00C9D0' }}
+          onClick={() => {
+            let iframe = document.querySelector('.iframe');
+            if (!isFrame) {
+              iframe.setAttribute(
+                'src',
+                'https://im1c5366d.7x24cc.com/phone_webChat.html?accountId=N000000031971&chatId=5ba0492b-7f47-454f-a6b9-415da15e8c68',
+              );
+            } else {
+              iframe.removeAttribute('src');
+            }
+            setIsFrame(!isFrame);
+          }}
         >
           <img className="block w-2/3 mx-auto" src={fixmeet} alt="" />
           <span>在线咨询</span>
+          <div
+            className={`fixed top-1/2 w-80 h-3/5 transform -translate-y-1/2 right-20 ${
+              isFrame ? 'block' : 'hidden'
+            }`}
+          >
+            <iframe
+              src=""
+              frameBorder="0"
+              className="iframe w-full h-full"
+            ></iframe>
+          </div>
         </div>
       </div>
     </main>

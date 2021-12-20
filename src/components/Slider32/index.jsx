@@ -17,23 +17,27 @@ const imgs = [
   {
     title: '"前沿智能设施加持"',
     desc: '创享未来科技体验',
-    img: 'd8c94e107703953269bc2cf9c1156f79.jpg',
+    img: '44338fa1419cf3d5d1cba60e3ab27416.jpg',
   },
   {
     title: '"前沿智能设施加持"',
     desc: '创享未来科技体验',
-    img: '495a8d8a157f63bf52eb5218095f1c3d.jpg',
+    img: '5648752b2e22c1d979933b6d5c551301.jpg',
   },
   {
     title: '"前沿智能设施加持"',
     desc: '创享未来科技体验',
-    img: 'c340fcd072819aee7979cf067dba94d1.jpg',
+    img: '891d1c44ed176b9e70727e7f996727f4.jpg',
   },
-  { title: '● 24小时VRV空调 ', img: '57d8b53dcb78a38e1621f3343fd89223.jpg' },
   {
     title: '"前沿智能设施加持"',
     desc: '创享未来科技体验',
-    img: 'e249a828ab58d9a501f964f45e021f07.jpg',
+    img: 'b44231525e153409e443de754e7b81ef.jpg',
+  },
+  {
+    title: '"前沿智能设施加持"',
+    desc: '创享未来科技体验',
+    img: '4d8a1f0f7a5172c9e4f935c7d560cd2e.jpg',
   },
 ];
 
