@@ -162,11 +162,11 @@
               }),
               Object(o['jsx'])('div', {
                 className:
-                  'header-phone hidden text-right items-center xl:flex 2xl:flex',
+                  'header-phone hidden text-right items-center lg:flex',
                 children: Object(o['jsxs'])('div', {
                   children: [
                     Object(o['jsx'])('div', {
-                      className: 'text-2xl font-bold',
+                      className: 'text-xl xl:text-2xl font-bold',
                       style: { color: '#00C9D0' },
                       children: '021-62335008',
                     }),
@@ -495,9 +495,8 @@
                   a = Math.abs(l),
                   i = '0px';
                 Math.round(l) && (i = 0.45 * A * l * (1 + a / 3.5) + 'px');
-                var n = a > 0.01 ? 0.4 * (1 + a / 10) : 1;
-                console.log('------------', a);
-                var d = 999 - Math.abs(Math.round(10 * l)),
+                var n = a > 0.01 ? 0.4 * (1 + a / 10) : 1,
+                  d = 999 - Math.abs(Math.round(10 * l)),
                   x = (8 * l) / 4;
                 c.transform(
                   'translateX(' +
