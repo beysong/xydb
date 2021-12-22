@@ -79,7 +79,7 @@ export default function IndexPage() {
             }
 
             let scale = abss > 0.01 ? 0.4 * (1 + abss / 10) : 1;
-            console.log('------------', abss);
+
             let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
             let deg = (8 * slideProgress) / 4;
 

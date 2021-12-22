@@ -103,9 +103,12 @@ export default function IndexPage() {
             </li>
           </ul>
         </div>
-        <div className="header-phone hidden text-right items-center xl:flex 2xl:flex">
+        <div className="header-phone hidden text-right items-center lg:flex">
           <div>
-            <div className="text-2xl font-bold" style={{ color: '#00C9D0' }}>
+            <div
+              className="text-xl xl:text-2xl font-bold"
+              style={{ color: '#00C9D0' }}
+            >
               021-62335008
             </div>
             <div className="text-xs">上海市闵行区丰虹路199号</div>
@@ -117,7 +120,6 @@ export default function IndexPage() {
           }}
           className="lg:hidden xl:hidden 2xl:hidden"
         >
-          {/* <img style={{ width: 120 }} src={logo} /> */}
           <svg
             viewBox="80 80 896 896"
             focusable="false"
