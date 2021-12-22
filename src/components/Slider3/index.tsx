@@ -63,7 +63,7 @@ export default function IndexPage() {
           for (let i = 0; i < this.slides.length; i++) {
             let slide = this.slides.eq(i);
             let slideProgress = this.slides[i].progress;
-            console.log('i', i, slideProgress);
+            // console.log('i', i, slideProgress);
 
             let modify = 1;
             if (Math.abs(slideProgress) > 1) {
@@ -78,7 +78,8 @@ export default function IndexPage() {
               translate = w * 0.45 * slideProgress * (1 + abss / 3.5) + 'px';
             }
 
-            let scale = abss > 0.001 ? 0.4 * (1 + abss / 10) : 1;
+            let scale = abss > 0.01 ? 0.4 * (1 + abss / 10) : 1;
+            console.log('------------', abss);
             let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
             let deg = (8 * slideProgress) / 4;
 
