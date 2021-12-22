@@ -490,14 +490,14 @@
               for (var s = 0; s < this.slides.length; s++) {
                 var c = this.slides.eq(s),
                   l = this.slides[s].progress;
-                console.log('i', s, l);
                 Math.abs(l) > 1 && 0.3 * (Math.abs(l) - 1) + 1;
                 var A = 0.67 * window.innerWidth * 0.32,
                   a = Math.abs(l),
                   i = '0px';
                 Math.round(l) && (i = 0.45 * A * l * (1 + a / 3.5) + 'px');
-                var n = a > 0.001 ? 0.4 * (1 + a / 10) : 1,
-                  d = 999 - Math.abs(Math.round(10 * l)),
+                var n = a > 0.01 ? 0.4 * (1 + a / 10) : 1;
+                console.log('------------', a);
+                var d = 999 - Math.abs(Math.round(10 * l)),
                   x = (8 * l) / 4;
                 c.transform(
                   'translateX(' +
