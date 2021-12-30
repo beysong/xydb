@@ -135,7 +135,7 @@ export default function IndexPage() {
       </Parallax>
 
       {/* <Slider4 data={[s1, s1, s2, s2]} /> */}
-      <CountNum />
+      {/* <CountNum /> */}
       <Section
         hrefid="id1"
         style={{

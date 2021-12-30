@@ -36,7 +36,10 @@ export default function IndexPage() {
   const [nowMenu, setNowMenu] = useState('');
 
   return (
-    <header className="sticky top-0 z-10 bg-white p-3 xl:p-0 2xl:p-0 3xl:p-0">
+    <header
+      style={{ zIndex: 9999 }}
+      className="sticky top-0 bg-white p-3 xl:p-0 2xl:p-0 3xl:p-0"
+    >
       <div className=" container mx-auto flex items-center justify-between lg:justify-self-auto xl:justify-self-auto 2xl:justify-self-auto">
         <div className="logo">
           <img className="w-36 2xl:w-40" src={logo} />

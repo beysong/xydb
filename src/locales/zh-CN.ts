@@ -1,6 +1,7 @@
 export default {
-  WELCOME_TO_UMI_WORLD: '{name}，欢迎光临umi的世界',
-  'site.title': '项目标题',
+  WELCOME_TO_UMI_WORLD: '{name}，欢迎光临',
+  'site.title': '星月德必WE"',
+  'site.logodesc': '长三角数字科技创新中心',
 
   'menu.首页': '首页',
   'menu.项目介绍': '项目介绍',
@@ -10,6 +11,21 @@ export default {
   'menu.品牌服务': '品牌服务',
   'menu.租赁信息': '租赁信息',
   'menu.联系我们': '联系我们',
+
+  'sidemenu.预约参观': '预约参观',
+  'sidemenu.电话咨询': '电话咨询',
+  'sidemenu.在线咨询': '在线咨询',
+
+  'count.10+年': '10+年',
+  'count.50+': '50+',
+  'count.100-3800m²': '100-3800m²',
+  'count.24h': '24h',
+  'count.10+': '10+',
+  'count.科创企业服务经验': '科创企业服务经验',
+  'count.长三角创意园区': '长三角创意园区',
+  'count.精装私密空间': '精装私密空间',
+  'count.全配办公条件': '全配办公条件',
+  'count.全价值链增值服务': '全价值链增值服务',
 
   'header.创意办公轻奢商业': '创意办公 轻奢商业',
 

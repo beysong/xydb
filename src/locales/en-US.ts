@@ -2,14 +2,30 @@ export default {
   WELCOME_TO_UMI_WORLD: '{name}，welcome',
   'site.title': 'Project Title',
 
-  'menu.首页': 'HOME',
-  'menu.项目介绍': 'project',
-  'menu.区位交通': 'regional',
-  'menu.设计理念': 'design',
-  'menu.生态配套': '生态配套',
-  'menu.品牌服务': 'brand',
-  'menu.租赁信息': 'rental',
-  'menu.联系我们': 'Contact',
+  'menu.首页': 'Home',
+  'menu.项目介绍': 'Project profile',
+  'menu.区位交通': 'Location',
+  'menu.设计理念': 'Design philosophy',
+  'menu.生态配套': 'Supporting ecotope',
+  'menu.品牌服务': 'Brand service',
+  'menu.租赁信息': 'Lease information',
+  'menu.联系我们': 'Contact us',
+
+  'sidemenu.预约参观': 'Visitation appointment',
+  'sidemenu.电话咨询': 'Telephone consultation',
+  'sidemenu.在线咨询': 'Online consultation',
+
+  'count.10+年': '10+ Years',
+  'count.50+': '50+',
+  'count.100-3800m²': '100-3800m²',
+  'count.24h': '24h',
+  'count.10+': '10+',
+  'count.科创企业服务经验':
+    '10 + years of service experience in high-tech enterprises',
+  'count.长三角创意园区': '50 + Yangtze River Delta creative industry parks',
+  'count.精装私密空间': '100-3800m² decorated and private space ',
+  'count.全配办公条件': '24h well-equipped office',
+  'count.全价值链增值服务': '10 + value-added services of full value chain',
 
   'header.创意办公轻奢商业': 'Business invitation',
 

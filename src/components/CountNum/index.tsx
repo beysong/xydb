@@ -8,11 +8,11 @@ import ico4 from '@/assets/count/ico4.png';
 import ico5 from '@/assets/count/ico5.png';
 
 const datas = [
-  { icon: ico1, count: '10+年', desc: '科创企业服务经验' },
-  { icon: ico2, count: '50+', desc: '长三角创意园区' },
-  { icon: ico3, count: '100-3800m²', desc: '精装私密空间' },
-  { icon: ico4, count: '24h', desc: '全配办公条件' },
-  { icon: ico5, count: '10+', desc: '全价值链增值服务' },
+  { icon: ico1, count: 'count.10+年', desc: 'count.科创企业服务经验' },
+  { icon: ico2, count: 'count.50+', desc: 'count.长三角创意园区' },
+  { icon: ico3, count: 'count.100-3800m²', desc: 'count.精装私密空间' },
+  { icon: ico4, count: 'count.24h', desc: 'count.全配办公条件' },
+  { icon: ico5, count: 'count.10+', desc: 'count.全价值链增值服务' },
 ];
 
 export default function IndexPage() {
@@ -27,7 +27,7 @@ export default function IndexPage() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="container mx-auto py-5">
+      <div className="container mx-auto py-5 text-left">
         <QueueAnim delay={300} className="flex flex-wrap">
           {datas.map((v, i) => (
             <div
@@ -42,9 +42,15 @@ export default function IndexPage() {
                 />
               </div>
               <div className="flex-1 pl-3">
-                <div className="text-lg 2xl:text-2xl">{v.count}</div>
+                <div className="text-lg 2xl:text-2xl">
+                  {intl.formatMessage({
+                    id: v.count,
+                  })}
+                </div>
                 <div className="text-sm 2xl:text-base text-gray-400">
-                  {v.desc}
+                  {intl.formatMessage({
+                    id: v.desc,
+                  })}
                 </div>
               </div>
             </div>
