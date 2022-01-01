@@ -129,10 +129,14 @@ export default function IndexPage() {
                 className="text-base lg:text-xl xl:text-2xl pb-2"
                 style={{ color: '#222' }}
               >
-                {v.title}
+                {intl.formatMessage({
+                  id: 'section3.' + v.title,
+                })}
               </div>
               <div className="text-sm xl:text-lg" style={{ color: '#777' }}>
-                {v.desc}
+                {intl.formatMessage({
+                  id: 'section3.' + v.desc,
+                })}
               </div>
             </div>
           </SwiperSlide>

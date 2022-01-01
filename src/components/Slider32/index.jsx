@@ -106,8 +106,16 @@ export default function IndexPage() {
               src={'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v.img}
             />
             <div className="absolute bottom-4 w-full text-center xl:left-8 xl:bottom-8 text-white">
-              <div className="text-base lg:text-lg">{v.title}</div>
-              <div className="text-xs lg:text-sm">{v.desc}</div>
+              <div className="text-base lg:text-lg">
+                {intl.formatMessage({
+                  id: 'section3.' + v.title,
+                })}
+              </div>
+              <div className="text-xs lg:text-sm">
+                {intl.formatMessage({
+                  id: 'section3.' + v.desc,
+                })}
+              </div>
             </div>
           </SwiperSlide>
         ))}

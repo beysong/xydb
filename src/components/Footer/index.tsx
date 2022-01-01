@@ -26,7 +26,11 @@ export default function IndexPage() {
                 <img src={logo} className="w-2/3 lg:w-1/2 2xl:w-2/5" alt="" />
               </div>
               <div className="mt-6">
-                <div className="text-sm 2xl:text-base">欢迎咨询</div>
+                <div className="text-sm 2xl:text-base">
+                  {intl.formatMessage({
+                    id: 'footer.欢迎咨询',
+                  })}
+                </div>
                 <div
                   className="text-lg xl:text-xl 2xl:text-2xl"
                   style={{ color: '#C8171E' }}
@@ -35,9 +39,15 @@ export default function IndexPage() {
                 </div>
               </div>
               <div className="mt-6">
-                <div className="text-sm 2xl:text-base">项目地址</div>
+                <div className="text-sm 2xl:text-base">
+                  {intl.formatMessage({
+                    id: 'footer.项目地址',
+                  })}
+                </div>
                 <div className="text-lg xl:text-xl 2xl:text-2xl mt-1">
-                  上海市闵行区丰虹路199号
+                  {intl.formatMessage({
+                    id: 'footer.上海市闵行区丰虹路199号',
+                  })}
                 </div>
               </div>
             </div>
@@ -49,7 +59,9 @@ export default function IndexPage() {
                     border: '1px solid #DFEBEB',
                   }}
                   type="text"
-                  placeholder="请输入您的姓名"
+                  placeholder={intl.formatMessage({
+                    id: 'footer.请输入您的姓名',
+                  })}
                 />
               </div>
               <div>
@@ -59,7 +71,9 @@ export default function IndexPage() {
                     border: '1px solid #DFEBEB',
                   }}
                   type="number"
-                  placeholder="请输入您的手机号"
+                  placeholder={intl.formatMessage({
+                    id: 'footer.请输入您的手机号',
+                  })}
                 />
               </div>
               <div>
@@ -69,14 +83,18 @@ export default function IndexPage() {
                     background: '#00C9D0',
                   }}
                 >
-                  立即免费预约参观
+                  {intl.formatMessage({
+                    id: 'footer.立即免费预约参观',
+                  })}
                 </button>
               </div>
               <div
                 className="text-center mt-3 text-sm lg:text-base"
                 style={{ color: '#00C9D0' }}
               >
-                我们的专业顾问会尽快与您联系
+                {intl.formatMessage({
+                  id: 'footer.我们的专业顾问会尽快与您联系',
+                })}
               </div>
             </div>
           </div>

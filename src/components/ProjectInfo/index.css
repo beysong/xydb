@@ -14,7 +14,8 @@
   @apply absolute;
 
   .dian-tit {
-    @apply absolute whitespace-nowrap;
+    width: 150px;
+    @apply absolute;
   }
 }
 .meto {
@@ -25,7 +26,7 @@
   @apply absolute;
 
   .meto-tit {
-    @apply absolute whitespace-nowrap;
+    @apply absolute;
   }
 }
 
@@ -36,7 +37,8 @@
   left: 120px;
   top: 80px;
   .dian-tit {
-    left: -70px;
+    right: 80px;
+    text-align: right;
   }
 }
 .dian2 {
@@ -48,6 +50,7 @@
 
   .dian-tit {
     right: 90%;
+    text-align: right;
   }
 }
 
@@ -59,7 +62,9 @@
   left: 28%;
 
   .meto-tit {
-    right: 90%;
+    right: 88%;
+    width: 115px;
+    text-align: right;
   }
 }
 
@@ -94,6 +99,7 @@
   left: 55%;
   top: 35%;
   .meto-tit {
+    width: 115px;
     left: 85%;
   }
 }
@@ -115,6 +121,6 @@
   right: 2%;
   top: 18%;
   .dian-tit {
-    @apply -right-0;
+    left: 115px;
   }
 }

@@ -44,7 +44,9 @@ export default function IndexPage() {
         <div className="logo">
           <img className="w-36 2xl:w-40" src={logo} />
           <div className="text-gray-400 text-xs xl:text-sm 2xl:text-sm mt-1">
-            长三角数字科技创新中心
+            {intl.formatMessage({
+              id: 'header.长三角数字科技创新中心',
+            })}
           </div>
         </div>
         <div
@@ -114,7 +116,11 @@ export default function IndexPage() {
             >
               021-62335008
             </div>
-            <div className="text-xs">上海市闵行区丰虹路199号</div>
+            <div className="text-xs">
+              {intl.formatMessage({
+                id: 'footer.上海市闵行区丰虹路199号',
+              })}
+            </div>
           </div>
         </div>
         <div

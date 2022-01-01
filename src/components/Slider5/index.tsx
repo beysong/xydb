@@ -45,14 +45,26 @@ export default function IndexPage() {
   return (
     <section id="certify5" className="relative">
       <div className="absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-16">
-        <SectionTitle title1={'品牌服务'} align="center" color="white" />
+        <SectionTitle
+          title1={
+            intl.formatMessage({
+              id: 'title.品牌',
+            }) +
+            intl.formatMessage({
+              id: 'title.服务',
+            })
+          }
+          align="center"
+          color="white"
+        />
       </div>
       <Swiper
         pagination={{
           clickable: true,
           renderBullet: (index, className) => {
-            // console.log('index', index, className);
-            return `<div class="${className}">${tits[index]}</div>`;
+            return `<div class="${className}">${intl.formatMessage({
+              id: 'section7.' + tits[index],
+            })}</div>`;
           },
         }}
         onSwiper={(swiper) => (window.swiper = swiper)}

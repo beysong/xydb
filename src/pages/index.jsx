@@ -103,7 +103,9 @@ export default function IndexPage() {
                     border: '1px solid #D1DDDD',
                   }}
                   type="text"
-                  placeholder="请输入您的姓名"
+                  placeholder={intl.formatMessage({
+                    id: 'footer.请输入您的姓名',
+                  })}
                 />
               </div>
               <div>
@@ -113,7 +115,9 @@ export default function IndexPage() {
                     border: '1px solid #D1DDDD',
                   }}
                   type="text"
-                  placeholder="请输入您的手机号"
+                  placeholder={intl.formatMessage({
+                    id: 'footer.请输入您的手机号',
+                  })}
                 />
               </div>
               <div>
@@ -121,12 +125,18 @@ export default function IndexPage() {
                   style={{ backgroundColor: '#00C9D0' }}
                   className="text-center text-base 2xl:text-lg p-2 text-white w-full mt-7"
                 >
-                  立即免费预约参观
+                  {intl.formatMessage({
+                    id: 'footer.立即免费预约参观',
+                  })}
                 </button>
               </div>
               <div className="flex items-center justify-around text-center text-gray-400 mt-7 text-sm 2xl:text-base">
                 <img className="w-6" src={regleft} alt="" />
-                <span>我们的专业顾问会尽快与您联系</span>
+                <span>
+                  {intl.formatMessage({
+                    id: 'footer.我们的专业顾问会尽快与您联系',
+                  })}
+                </span>
                 <img className="w-6" src={regright} alt="" />
               </div>
             </div>
@@ -134,8 +144,6 @@ export default function IndexPage() {
         </div>
       </Parallax>
 
-      {/* <Slider4 data={[s1, s1, s2, s2]} /> */}
-      {/* <CountNum /> */}
       <Section
         hrefid="id1"
         style={{
@@ -151,16 +159,33 @@ export default function IndexPage() {
             className="px-5 my-10 text-sm 2xl:text-base leading-6 2xl:leading-8"
             style={{ color: '#666' }}
           >
-            <div>星月德必WE"，位于虹桥商务区核心区，总建筑面积53,000m²</div>
-            <div>立足虹桥国际开放枢纽国家级规划</div>
             <div>
-              打造长三角数字科技创新中心，为上海及长三角数字创意企业提供最优化的办公环境和资源链接平台。
+              {intl.formatMessage({
+                id: 'section1.con1',
+              })}
+            </div>
+            <div>
+              {intl.formatMessage({
+                id: 'section1.con2',
+              })}
+            </div>
+            <div>
+              {intl.formatMessage({
+                id: 'section1.con3',
+              })}
             </div>
           </div>
         }
         title1={
           <div>
-            <span className="text-green">星月德必WE"</span>概况
+            <span className="text-green">
+              {intl.formatMessage({
+                id: 'title.星月德必WE"',
+              })}
+            </span>
+            {intl.formatMessage({
+              id: 'title.概况',
+            })}
           </div>
         }
         full
@@ -182,9 +207,17 @@ export default function IndexPage() {
             className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-8 px-8 xl:py-12 xl:px-20 2xl:py-16 2xl:px-24"
             style={{ backgroundColor: '#00C9D0' }}
           >
-            <SectionTitle title1="区位交通" align="left" color="white" />
+            <SectionTitle
+              title1={intl.formatMessage({
+                id: 'title.区位交通',
+              })}
+              align="left"
+              color="white"
+            />
             <div className="pt-6 xl:pt-8 text-base lx:text-xl 2xl:text-2xl">
-              占位虹桥开放枢纽核心 多维立体交通打通商脉
+              {intl.formatMessage({
+                id: 'section2.con1',
+              })}
             </div>
             <div className="pt-10">
               <div
@@ -198,7 +231,9 @@ export default function IndexPage() {
                   }
                 }}
               >
-                点击查看区位图
+                {intl.formatMessage({
+                  id: 'section2.点击查看区位图',
+                })}
               </div>
             </div>
             <div className="xl:pt-4">
@@ -211,10 +246,16 @@ export default function IndexPage() {
                   />
                   <div className="flex-1 pl-4">
                     <div className="text-base xl:text-xl 2xl:text-2xl font-bold">
-                      专属班车
+                      {intl.formatMessage({
+                        id: 'section2.专属班车',
+                      })}
                     </div>
                     <div className="text-xs lg:text-sm 2xl:text-base mt-1">
-                      <div>上下班5分钟直达虹桥T2航站楼地铁站</div>
+                      <div>
+                        {intl.formatMessage({
+                          id: 'section2.上下班5分钟直达虹桥T2航站楼地铁站',
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -226,11 +267,21 @@ export default function IndexPage() {
                   />
                   <div className="flex-1 pl-4">
                     <div className="text-base xl:text-xl 2xl:text-2xl font-bold">
-                      轨道交通
+                      {intl.formatMessage({
+                        id: 'section2.轨道交通',
+                      })}
                     </div>
                     <div className="text-xs lg:text-sm 2xl:text-base mt-1">
-                      <div>虹桥火车站：2号线/10号线/17号线</div>
-                      <div>虹桥T2航站楼：2号线/10号线</div>
+                      <div>
+                        {intl.formatMessage({
+                          id: 'section2.con2',
+                        })}
+                      </div>
+                      <div>
+                        {intl.formatMessage({
+                          id: 'section2.con3',
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -242,10 +293,16 @@ export default function IndexPage() {
                   />
                   <div className="flex-1 pl-4">
                     <div className="text-base xl:text-xl 2xl:text-2xl font-bold">
-                      公交线路
+                      {intl.formatMessage({
+                        id: 'section2.公交线路',
+                      })}
                     </div>
                     <div className="text-xs lg:text-sm 2xl:text-base mt-1">
-                      <div>71路中运量、189/141/941路/虹桥商务区1、2路</div>
+                      <div>
+                        {intl.formatMessage({
+                          id: 'section2.con4',
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -260,7 +317,14 @@ export default function IndexPage() {
         hrefid="id3"
         title1={
           <div>
-            <span className="text-green">设计</span>理念
+            <span className="text-green">
+              {intl.formatMessage({
+                id: 'title.设计',
+              })}
+            </span>
+            {intl.formatMessage({
+              id: 'title.理念',
+            })}
           </div>
         }
       >
@@ -276,7 +340,14 @@ export default function IndexPage() {
         full
         title1={
           <div>
-            <span className="text-green">办公</span>空间
+            <span className="text-green">
+              {intl.formatMessage({
+                id: 'title.办公',
+              })}
+            </span>
+            {intl.formatMessage({
+              id: 'title.空间',
+            })}
           </div>
         }
         desc={
@@ -284,7 +355,11 @@ export default function IndexPage() {
             className="leading-8 px-5 my-10 text-sm 2xl:text-base"
             style={{ color: '#666' }}
           >
-            <div>高品质精装全配，24小时无忧办公</div>
+            <div>
+              {intl.formatMessage({
+                id: 'section4.con1',
+              })}
+            </div>
           </div>
         }
       >
@@ -304,13 +379,24 @@ export default function IndexPage() {
         hrefid="id4"
         title1={
           <div>
-            <span className="text-green">生态</span>配套
+            <span className="text-green">
+              {intl.formatMessage({
+                id: 'title.生态',
+              })}
+            </span>
+            {intl.formatMessage({
+              id: 'title.配套',
+            })}
           </div>
         }
         full
         desc={
           <div className="leading-8 px-5 my-5 text-sm 2xl:text-base">
-            <div>完善的生态商业供应链配套 类生活精致办公体验</div>
+            <div>
+              {intl.formatMessage({
+                id: 'section5.con1',
+              })}
+            </div>
           </div>
         }
       >
@@ -321,7 +407,9 @@ export default function IndexPage() {
               className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
               style={{ background: '#00C9D0' }}
             >
-              wehome智能会议厅
+              {intl.formatMessage({
+                id: 'section5.wehome智能会议厅',
+              })}
             </div>
           </div>
           <div className="w-full lg:w-1/2">
@@ -335,7 +423,9 @@ export default function IndexPage() {
                   className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  睡眠舱
+                  {intl.formatMessage({
+                    id: 'section5.睡眠舱',
+                  })}
                 </div>
               </div>
               <div className="w-full lg:w-1/2 relative">
@@ -347,7 +437,9 @@ export default function IndexPage() {
                   className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  多层次餐饮服务
+                  {intl.formatMessage({
+                    id: 'section5.多层次餐饮服务',
+                  })}
                 </div>
               </div>
             </div>
@@ -362,7 +454,9 @@ export default function IndexPage() {
                   className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  人脸识别门禁
+                  {intl.formatMessage({
+                    id: 'section5.人脸识别门禁',
+                  })}
                 </div>
               </div>
               <div className="w-full lg:w-1/2 relative">
@@ -374,7 +468,9 @@ export default function IndexPage() {
                   className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
                   style={{ background: '#00C9D0' }}
                 >
-                  共享健身空间
+                  {intl.formatMessage({
+                    id: 'section5.共享健身空间',
+                  })}
                 </div>
               </div>
             </div>
@@ -391,21 +487,30 @@ export default function IndexPage() {
               className="text-base 2xl:text-lg mt-3"
               style={{ color: '#222' }}
             >
-              多元增值服务赋能企业 国际平台链接全球资源
+              {intl.formatMessage({
+                id: 'section6.con1',
+              })}
             </div>
             <div
               className="text-xs 2xl:text-sm mt-2 leading-6 2xl:leading-7"
               style={{ color: '#666' }}
             >
-              针对数字创新企业的成长发展和商务往来需求，依托德必集团十余年文科创产业服务体系、数十个全球产业园区及数千家入驻企业，助力企业跨城市布局，
-              <br />
-              推动企业之间互动联通，构建覆盖企业全生命周期的创新服务
+              {intl.formatMessage({
+                id: 'section6.con2',
+              })}
             </div>
           </div>
         }
         title1={
           <div>
-            <span className="text-green">品牌</span>服务
+            <span className="text-green">
+              {intl.formatMessage({
+                id: 'title.品牌',
+              })}
+            </span>
+            {intl.formatMessage({
+              id: 'title.服务',
+            })}
           </div>
         }
         style={{ backgroundColor: '#E9FCFD' }}
@@ -424,7 +529,14 @@ export default function IndexPage() {
         className="pt-20"
         title1={
           <div>
-            <span className="text-green">租赁</span>信息
+            <span className="text-green">
+              {intl.formatMessage({
+                id: 'title.租赁',
+              })}
+            </span>
+            {intl.formatMessage({
+              id: 'title.信息',
+            })}
           </div>
         }
       >
@@ -437,7 +549,11 @@ export default function IndexPage() {
           style={{ backgroundColor: '#00C9D0' }}
         >
           <img className="block w-2/3 mx-auto" src={fixmsg} alt="" />
-          <span>预约参观</span>
+          <span>
+            {intl.formatMessage({
+              id: 'footer.预约参观',
+            })}
+          </span>
         </div>
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
@@ -445,7 +561,11 @@ export default function IndexPage() {
         >
           <a href="tel:021-62335008">
             <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
-            <span>电话咨询</span>
+            <span>
+              {intl.formatMessage({
+                id: 'footer.电话咨询',
+              })}
+            </span>
           </a>
         </div>
         <div
@@ -465,7 +585,11 @@ export default function IndexPage() {
           }}
         >
           <img className="block w-2/3 mx-auto" src={fixmeet} alt="" />
-          <span>在线咨询</span>
+          <span>
+            {intl.formatMessage({
+              id: 'footer.在线咨询',
+            })}
+          </span>
           <div
             className={`fixed top-1/2 w-80 h-3/5 transform -translate-y-1/2 right-20 ${
               isFrame ? 'block' : 'hidden'

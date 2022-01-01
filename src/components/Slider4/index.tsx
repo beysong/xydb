@@ -50,30 +50,8 @@ export default function IndexPage({ data }) {
           slide2.css('transform', 'rotateY(60deg)');
           slide3.css('transform', 'rotateY(60deg)');
           slide4.css('transform', 'rotateY(60deg)');
-
-          // for (let i = 0; i < this.slides.length; i++) {
-          //   let slide = this.slides.eq(i);
-          //   let slideProgress = this.slides[i].progress;
-          //   let modify = 1;
-          //   if (Math.abs(slideProgress) > 1) {
-          //     modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
-          //   }
-          //   let translate = slideProgress * modify * 500 + 'px';
-          //   let scale = 1 - Math.abs(slideProgress) / 5;
-          //   let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-          //   slide.transform(
-          //     'translateX(' + translate + ') scale(' + scale + ')',
-          //   );
-          //   console.log('slide', this.slides[i]);
-          //   slide.css('zIndex', zIndex);
-          //   slide.css('opacity', 1);
-          //   if (Math.abs(slideProgress) > 3) {
-          //     slide.css('opacity', 0);
-          //   }
-          // }
         }}
         onSetTransition={function (transition) {
-          // console.log('transition');
           for (var i = 0; i < this.slides.length; i++) {
             let slide = this.slides.eq(i);
             slide.transition(transition);

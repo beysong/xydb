@@ -42,9 +42,15 @@ export default function IndexPage() {
                   />
                 </div>
                 <div className="font-bold text-sm xl:text-base 2xl:text-lg">
-                  {v.count}
+                  {intl.formatMessage({
+                    id: 'zulin.' + v.count,
+                  })}
                 </div>
-                <div className="text-xs">{v.desc}</div>
+                <div className="text-xs">
+                  {intl.formatMessage({
+                    id: 'zulin.' + v.desc,
+                  })}
+                </div>
               </div>
             ))}
           </QueueAnim>
