@@ -1,5 +1,5 @@
 import { setLocale, useIntl } from 'umi';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { OverPack, Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
@@ -19,6 +19,7 @@ import ZuLin from '@/components/ZuLin';
 import Img from '@/components/Img';
 import OssImg from '@/components/OssImg';
 import ProjectInfo from '@/components/ProjectInfo';
+import Contact from '@/components/Contact';
 
 import s1 from '@/assets/slider/s1.png';
 import s2 from '@/assets/slider/s2.png';
@@ -42,7 +43,19 @@ let popMapIns = null;
 export default function IndexPage() {
   const intl = useIntl();
   const [isFrame, setIsFrame] = useState(false);
+  const [showContact, setShowContact] = useState(true);
 
+  useEffect(() => {
+    const handleScroll = (e) => {
+      // console.log('xxx', e);
+      setShowContact(false);
+    };
+    window.addEventListener('scroll', handleScroll, true);
+    return () => {
+      // console.log('xxx2');
+      window.removeEventListener('scroll', handleScroll, true);
+    };
+  });
   const popMap = getSingle(function () {
     const popDiv = document.createElement('div');
     const popImg = document.createElement('img');
@@ -70,79 +83,22 @@ export default function IndexPage() {
       <Header />
       <Slider data={[s1, s2]} />
 
-      <Parallax
-        animation={{ x: 100, opacity: 0, playScale: [0.8, 0.99] }}
+      <div
         style={{
-          transform: 'translateX(0px)',
-          opacity: 1,
           top: 300,
           zIndex: 99,
-          position: 'absolute',
+          position: 'fixed',
           right: '15%',
           width: '24rem',
         }}
-        className="hidden lg:block xl:block 2xl:block"
+        className={showContact ? 'block' : 'hidden'}
       >
-        <div className="container mx-auto relative">
-          <div
-            className=" z-10 p-3 rounded-lg"
-            style={{
-              backgroundColor: 'rgba(0, 201, 208, 0.42)',
-            }}
-          >
-            <div
-              className="bg-white px-10 py-12 w-full rounded-lg overflow-hidden"
-              style={{
-                backgroundColor: 'rgba(255,255,255,0.93)',
-              }}
-            >
-              <div>
-                <input
-                  className="rounded-sm p-2 text-center w-full"
-                  style={{
-                    border: '1px solid #D1DDDD',
-                  }}
-                  type="text"
-                  placeholder={intl.formatMessage({
-                    id: 'footer.请输入您的姓名',
-                  })}
-                />
-              </div>
-              <div>
-                <input
-                  className="rounded-sm p-2 text-center w-full mt-4"
-                  style={{
-                    border: '1px solid #D1DDDD',
-                  }}
-                  type="text"
-                  placeholder={intl.formatMessage({
-                    id: 'footer.请输入您的手机号',
-                  })}
-                />
-              </div>
-              <div>
-                <button
-                  style={{ backgroundColor: '#00C9D0' }}
-                  className="text-center text-base 2xl:text-lg p-2 text-white w-full mt-7"
-                >
-                  {intl.formatMessage({
-                    id: 'footer.立即免费预约参观',
-                  })}
-                </button>
-              </div>
-              <div className="flex items-center justify-around text-center text-gray-400 mt-7 text-sm 2xl:text-base">
-                <img className="w-6" src={regleft} alt="" />
-                <span>
-                  {intl.formatMessage({
-                    id: 'footer.我们的专业顾问会尽快与您联系',
-                  })}
-                </span>
-                <img className="w-6" src={regright} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </Parallax>
+        <Contact
+          onSubmit={() => {
+            setShowContact(false);
+          }}
+        />
+      </div>
 
       <Section
         hrefid="id1"
@@ -544,8 +500,11 @@ export default function IndexPage() {
       <Footer />
       <div className="fixed right-0 top-1/2 z-10">
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 text-white text-center p-2"
+          className="text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 text-white text-center p-2 cursor-pointer"
           style={{ backgroundColor: '#00C9D0' }}
+          onClick={() => {
+            setShowContact(!showContact);
+          }}
         >
           <img className="block w-2/3 mx-auto" src={fixmsg} alt="" />
           <span>
@@ -555,7 +514,7 @@ export default function IndexPage() {
           </span>
         </div>
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
+          className="text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#00C9D0' }}
         >
           <a href="tel:021-62335008">
@@ -568,7 +527,7 @@ export default function IndexPage() {
           </a>
         </div>
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-16 xl:w-20 2xl:w-20 mt-2 text-white text-center p-2"
+          className="text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2 cursor-pointer"
           style={{ backgroundColor: '#00C9D0' }}
           onClick={() => {
             let iframe = document.querySelector('.iframe');
