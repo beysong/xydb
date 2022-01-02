@@ -17,7 +17,7 @@
       '' +
       ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
       '.' +
-      { 0: '5f9b0d5e', 2: '0727a9b8' }[e] +
+      { 0: '4460d532', 2: '0727a9b8' }[e] +
       '.async.js'
     );
   }
@@ -39,7 +39,7 @@
               var a =
                   ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
                   '.' +
-                  { 0: '41a9ae32', 2: '485daf20' }[e] +
+                  { 0: '6e456fd9', 2: '485daf20' }[e] +
                   '.chunk.css',
                 i = o.p + a,
                 s = document.getElementsByTagName('link'),
@@ -11449,110 +11449,173 @@
       Ot = {
         WELCOME_TO_UMI_WORLD: '{name}\uff0cwelcome',
         'site.title': 'Project Title',
-        'menu.\u9996\u9875': 'HOME',
-        'menu.\u9879\u76ee\u4ecb\u7ecd': 'project',
-        'menu.\u533a\u4f4d\u4ea4\u901a': 'regional',
-        'menu.\u8bbe\u8ba1\u7406\u5ff5': 'design',
-        'menu.\u751f\u6001\u914d\u5957': '\u751f\u6001\u914d\u5957',
-        'menu.\u54c1\u724c\u670d\u52a1': 'brand',
-        'menu.\u79df\u8d41\u4fe1\u606f': 'rental',
+        'menu.\u9996\u9875': 'Home',
+        'menu.\u9879\u76ee\u4ecb\u7ecd': 'Project',
+        'menu.\u533a\u4f4d\u4ea4\u901a': 'Location',
+        'menu.\u8bbe\u8ba1\u7406\u5ff5': 'Design',
+        'menu.\u751f\u6001\u914d\u5957': 'Supporting',
+        'menu.\u54c1\u724c\u670d\u52a1': 'Brand',
+        'menu.\u79df\u8d41\u4fe1\u606f': 'Lease',
         'menu.\u8054\u7cfb\u6211\u4eec': 'Contact',
-        'header.\u521b\u610f\u529e\u516c\u8f7b\u5962\u5546\u4e1a':
-          'Business invitation',
-        'footer.iconTitle':
-          '\u521b\u610f\u529e\u516c \u8f7b\u5962\u5546\u4e1a \u706b\u70ed\u62db\u79df',
-        'footer.address': '\u9879\u76ee\u5730\u5740',
-        'footer.addressDescribe':
-          '\u897f\u5b89\xb7\u7891\u6797\xb7\u516c\u56ed\u5357\u8def26\u53f7(\u5730\u94c13/6\u53f7\u7ebf)',
-        'footer.position': '\u626b\u7801\u4e86\u89e3\u66f4\u591a\u4fe1\u606f',
-        'rental.rental': 'Rental information',
-        'rental.Delivery':
-          '\u4ea4\u4ed8\u6807\u51c6\n\u6bdb\u576f/\u7cbe\u88c5',
-        'rental.totalArea': '\u603b\u9762\u79ef\n15000\u33a1',
-        'rental.DividedArea': '\u5206\u5272\u9762\u79ef\n100-1000\u33a1',
-        'rental.FloorHeight': '\u5c42\u9ad8(\u90e8\u5206loft)\n3.5-5m',
-        'rental.ParkingLot': '\u505c\u8f66\u573a',
-        'rental.SharedRoom': '\u5171\u4eab\u4f1a\u8bae\u5ba4',
-        'rental.conditioning':
-          '\u4e2d\u592e\u7a7a\u8c03\n\u5206\u4f53\u7a7a\u8c03',
-        'rental.Monitoring': '24H\u5b89\u4fdd\n\u76d1\u63a7\u670d\u52a1',
-        'rental.PublicArea': '\u516c\u5171\u533a\u57df\nWiFi\u8986\u76d6',
-        'rental.Restaurant': '\u767d\u9886\u9910\u5385',
-        'rental.Garden': '\u5c4b\u9876\u82b1\u56ed',
-        'rental.WaterBar': '\u6c34\u5427\u53f0',
-        'rental.viewPlan': '\u67e5\u770b\u5e73\u9762\u56fe',
-        'brand.brand': 'Brand service',
-        'brand.MembershipTitle': '\u5341\u5927\u4f1a\u5458\u670d\u52a1',
-        'brand.MembershipDescribe':
-          '\u4f9d\u6258\u4f18\u52bf\u8d44\u6e90,\u7ed3\u5408\u4f01\u4e1a\u53d1\u5c55\u6240\u9700,\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u4eba\u624d\u3001\u8d44\u91d1\u878d\u96c6\u3001\u54c1\u724c\u63a8\u5e7f\u3001\u6cd5\u5f8b\u653f\u7b56\u54a8\u8be2\u7b49\u4f01\u4e1a\u670d\u52a1,\u4e3a\u5165\u9a7b\u4f01\u4e1a\u6392\u5fe7\u89e3\u96be,\u5171\u540c\u6210\u957f\u3002',
-        'brand.ecosystemTitle': '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
-        'brand.ecosystemDescribe':
-          '\u5fb7\u5fc5\u56ed\u533a\u8fde\u63a5\u6570\u5343\u5bb6\u516c\u53f8,\u901a\u8fc7\u642d\u5efa\u201c\u8f7b\u516c\u53f8\u751f\u6001\u5708\u201d,\u6253\u901a\u56ed\u533a\u5165\u9a7b\u4f01\u4e1a\u8d44\u6e90\u901a\u9053,\u5185\u5916\u5708\u5c42,\u4e0a\u4e0b\u8054\u52a8\u3001\u8de8\u754c\u5408\u4f5c\u3002\u65e0\u7f1d\u5bf9\u63a5\u65d7\u4e0b\u6570\u5343\u5bb6\u4f01\u4e1a\u300110\u4f59\u4e07\u540d\u4f01\u4e1a\u5458\u5de5,\u5b9e\u73b0\u81ea\u7531\u4ea4\u6613\u5408\u4f5c,\u540c\u9891\u5171\u632f',
-        'brand.FederationTitle': '\u56fd\u9645\u4f01\u4e1a\u5171\u8054',
-        'brand.FederationDescribe':
-          '\u5fb7\u5fc5\u96c6\u56e2\u5df2\u8986\u76d6\u610f\u5927\u5229\u3001\u6cd5\u56fd\u3001\u5fb7\u56fd\u3001\u7f8e\u56fd\u3001\u897f\u73ed\u7259\u7b49\u5341\u51e0\u4e2a\u56fd\u5bb6\u548c\u5730\u533a,\u901a\u8fc7\u5168\u7403\u8d44\u6e90\u7f51\u7edc,\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u6df1\u5ea6\u5d4c\u5165\u5f0f\u201cN+1\u201d\u56fd\u9645\u4e1a\u52a1\u670d\u52a1,\u5305\u62ec\u6d77\u5916\u6ce8\u518c\u3001\u56fd\u9645\u63a8\u5e7f,\u5546\u52a1\u5408\u4f5c\u7b49,\u62c5\u4efb\u4f01\u4e1a\u95f4\u201c\u5927\u4f7f\u9986\u201d,\u5b9e\u73b0\u4f01\u4e1a\u5ba2\u6237\u7684\u7ecf\u6d4e\u4e0e\u793e\u4f1a\u6548\u76ca\u6700\u5927\u5316\u3002',
-        'brand.enterpriseTitle': '\u57fa\u7840\u4f01\u4e1a\u670d\u52a1',
-        'brand.enterpriseDescribe':
-          '5A\u7ea7\u667a\u80fd\u5316\u529e\u516c\u53ca\u7269\u4e1a\u670d\u52a1\u7cfb\u7edf,\u4e3a\u6240\u6709\u5ba2\u6237\u63d0\u4f9b\u4e13\u4e1a\u5316\u7ba1\u7406\u548c\u56fd\u9645\u6807\u51c6\u5316\u670d\u52a1,\u5305\u62ec\u65e5\u5e38\u697c\u5b87\u670d\u52a1\u3001\u5b89\u5168\u9884\u9632\u7ba1\u7406\u3001\u7d27\u6025\u4e8b\u4ef6\u5904\u7406\u3001\u667a\u80fd\u8fd0\u8425\u670d\u52a1\u3002',
-        'design.design': 'Design concept',
-        'design.TaohuaTitle':
-          '\u95f9\u4e16\u6843\u82b1\u575e \u9759\u4eab\u5ead\u9662\u5f0f\u529e\u516c\u73af\u5883',
-        'design.TaohuaDescribe':
-          '\u7a7f\u8fc7\u4f73\u6728\u7e41\u79c0\u7684\u7af9\u6797,\u8e0f\u8fc7\u66f2\u5f84\u901a\u5e7d\u7684\u5c0f\u5f84,\n\u4e09\u91cd\u5ead\u9662\u9759\u4eab,\u89e6\u76ee\u7686\u81ea\u7136,\u7e41\u534e\u95f9\u5e02\u4e2d\u4e00\u9685\u521b\u610f\u9759\u571f,\n\u8ba9\u529e\u516c\u8131\u53bb\u4ec6\u4ec6\u98ce\u5c18,\u4e8e\u57ce\u5e02\u95f4\u611f\u77e5\u751f\u547d\u3001\u5fae\u98ce\u3001\u6696\u9633\u3002',
-        'design.receptionTitle':
-          '\u57ce\u5e02\u4f1a\u5ba2\u5385 \u529e\u516c\u751f\u6001\u65b0\u573a\u666f',
-        'design.receptionDescribe':
-          '9\u7c73\u6311\u9ad8,\u62fe\u9636\u800c\u4e0a,\u8def\u6f14\u5c55\u89c8\u3001\u793e\u4ea4\u4f1a\u6664,\n\u5546\u52a1\u4f11\u95f2\u968f\u6027\u5207\u6362,\u591a\u5143\u5316\u5171\u4eab\u7a7a\u95f4\u4f53\u9a8c\u3002',
-        'design.HardcoverTitle':
-          '\u7cbe\u88c5\u62ce\u5305\u5165\u9a7b \u5fb7\u5fc5SPACE \u7eb5\u4eab\u9ad8\u6548\u529e\u516c',
-        'design.HardcoverDescribe':
-          '\u5fb7\u5fc5SPACE\u4e00\u7ad9\u5f0foffice\u7cbe\u88c5,\u63d0\u4f9b\u5171\u4eab\u4f1a\u8bae\u5ba4\u3001\u4f1a\u5ba2\u533a\u3001\u6c34\u5427\u53f0\u7b49\u516c\u5171\u8bbe\u65bd,\n\u4e3a\u4f01\u4e1a\u8282\u7ea630%\u7a7a\u95f4\u9884\u7b97,\u5e2e\u52a9\u4f01\u4e1a\u964d\u4f4e\u7ecf\u8425\u3001\u5546\u52a1\u3001\u65f6\u95f4\u6210\u672c\u3002',
-        'design.wehomeTitle':
-          'wehome\u7a7a\u95f4\u667a\u6167\u7ba1\u7406\u5e73\u53f0 \u5efa\u7acb\u4f01\u4e1a\u670d\u52a1\u751f\u6001\u7269\u8054\u7f51\u7edc',
-        'design.wehomeDescribe':
-          '\u4f9d\u6258\u4e8e\u5fb7\u5fc5\u96c6\u56e2\u591a\u5e74\u56ed\u533a\u8fd0\u8425\u7ba1\u7406\u7ecf\u9a8c,\u4ee5\u53ca\u7ecf\u9a8c\u4e30\u5bcc\u7684\u56e2\u961f,\u575a\u6301\u81ea\u4e3b\u521b\u65b0,\u5c06\u79d1\u7814\u7ed3\u679c\u4e0e\u201c\u4e92\u8054\u7f51\uff0b\u201d\u7ed3\u5408,\u81ea\u4e3b\u521b\u65b0wehome\u7a7a\u95f4\u667a\u6167\u7ba1\u7406\u5e73\u53f0,\u63d0\u4f9b\u56ed\u533a\u6574\u4f53\u667a\u80fd\u89e3\u51b3\u65b9\u6848,\u6253\u9020\u573a\u666f\u5168\u89e6\u8fbe\u7684\u96c6\u6210\u578b\u5e73\u53f0,\u589e\u52a0\u573a\u6240\u8ba4\u540c,\u8ba9\u201c\u667a\u6167\u56ed\u533a\u201d\u4ece\u6784\u60f3\u53d8\u4e3a\u73b0\u5b9e\u3002',
-        'design.commercialTitle':
-          '\u661f\u5149\u91cc\xb7\u5546\u4e1a\u8857\u533a \u8db3\u4e0d\u51fa\u56ed\u4f18\u4eab\u591a\u5143\u751f\u6d3b',
-        'design.commercialDescribe':
-          '\u529e\u516c\u3001\u751f\u6d3b\u3001\u5546\u52a1\u3001\u793e\u4ea4\u3001\u4f11\u95f2\u4e00\u7ad9\u5f0f\u521b\u610f\u5546\u4e1a\u8857\u533a,\u4e3a\u5165\u9a7b\u767d\u9886\u63d0\u4f9b\u697c\u4e0a\u529e\u516c,\n\u697c\u4e0b\u4f11\u95f2\u7684\u5168\u65b0\u4f53\u9a8c\u3002',
-        'regional.regional': 'Regional traffic',
-        'regional.describe':
-          '\u53cc\u8f68\u5730\u94c1\u73af\u7ed5 \u7545\u4eab\u4fbf\u5229\u7e41\u534e\n\u897f\u5b89\u4e3b\u57ce\u533a \u7d27\u90bb\u4e1c\u4e8c\u73af',
-        'regional.iconDrive': '\u9a7e\u8f66',
-        'regional.iconTransit': '\u516c\u4ea4',
-        'regional.iconMetro': '\u5730\u94c1',
-        'regional.Areabitmap': '\u533a\u4f4d\u56fe',
-        'regional.describeRing': '\u4e1c\u4e8c\u73af',
-        'regional.describeXiaozhai':
-          '\u5c0f\u5be8/\u5357\u7a0d\u95e8/\u6c38\u5b81\u95e8\n/\u949f\u697c/\u5927\u96c1\u5854',
-        'regional.describeQujiang': '\u66f2\u6c5f/\u9ad8\u65b0',
-        'regional.describeRailway': '\u897f\u5b89\u706b\u8f66\u7ad9',
-        'regional.describeNorth': '\u897f\u5b89\u5317\u5ba2\u7ad9',
-        'regional.describeAirport':
-          '\u897f\u5b89\u54b8\u9633\u56fd\u9645\u673a\u573a',
-        'regional.transitDescribe':
-          '\u5185\u5341\u4f59\u6761\u516c\u4ea4\u8f66\u7ebf\u8def,\u76f4\u8fbe\u5404\u5927\u5546\u5708',
-        'regional.metroTitle': '3\u53f7\u7ebf\u5ef6\u5174\u95e8',
-        'regional.metroDescribe': '6\u53f7\u7ebf\u516c\u56ed\u5357\u8def\u7ad9',
-        'project.project': 'Project introduction',
-        'project.describe':
-          "DoBe E-manor of Xingguang,DCI (Digital,Culture and Innovation) Hub of Xi'an.Reliant on abundant science and education resources and innovation subject resources in Xi\u2019an\nTaking high technology as the core industry,Taking Smart Circle ecosystem as the operation idea,\nDoBe E-manor of Xingguang gathers the innovative enterprises, and provides the future-oriented smart office experience for the enterprises, and creates the new highland which integrates the scientific & technological innovation and cultural & creative industries.",
-        'project.MetroLine2': '\u5730\u94c1\u4e8c\u53f7\u7ebf',
-        'project.belltower': '\u949f\u697c',
-        'project.XingqingPark': '\u5174\u5e86\u516c\u56ed',
-        'project.Pagoda': '\u5927\u96c1\u5854',
-        'project.Happyforestbelt': '\u5e78\u798f\u6797\u5e26',
-        'project.MetroLine3': '\u5730\u94c1\u4e09\u53f7\u7ebf',
-        'project.TechnologyUniversity': '\u897f\u5b89\u7406\u5de5\u5927\u5b66',
-        'project.JiaotongUniversity': '\u897f\u5b89\u4ea4\u901a\u5927\u5b66',
-        'project.MetroLine6': '\u5730\u94c1\u516d\u53f7\u7ebf',
-        'project.Phase': '\u4e8c\u671f\u5728\u5efa',
-        'project.Engineering': '\u897f\u5b89\u5de5\u7a0b\u5927\u5b66',
+        'sidemenu.\u9884\u7ea6\u53c2\u89c2': 'Visitation appointment',
+        'sidemenu.\u7535\u8bdd\u54a8\u8be2': 'Telephone consultation',
+        'sidemenu.\u5728\u7ebf\u54a8\u8be2': 'Online consultation',
+        'count.10+\u5e74': '10+ Years',
+        'count.50+': '50+',
+        'count.100-3800m\xb2': '100-3800m\xb2',
+        'count.24h': '24h',
+        'count.10+': '10+',
+        'count.\u79d1\u521b\u4f01\u4e1a\u670d\u52a1\u7ecf\u9a8c':
+          '10 + years of service experience in high-tech enterprises',
+        'count.\u957f\u4e09\u89d2\u521b\u610f\u56ed\u533a':
+          '50 + Yangtze River Delta creative industry parks',
+        'count.\u7cbe\u88c5\u79c1\u5bc6\u7a7a\u95f4':
+          '100-3800m\xb2 decorated and private space ',
+        'count.\u5168\u914d\u529e\u516c\u6761\u4ef6':
+          '24h well-equipped office',
+        'count.\u5168\u4ef7\u503c\u94fe\u589e\u503c\u670d\u52a1':
+          '10 + value-added services of full value chain',
+        'zulin.10\u33a1': '10\u33a1',
+        'zulin.\u603b\u9762\u79ef': 'Total area',
+        'zulin.101\u33a1': '101\u33a1',
+        'zulin.\u5206\u9694\u9762\u79ef': 'Separate area',
+        'zulin.3\u33a1': '3\u33a1',
+        'zulin.\u539f\u9ad8': 'Original height',
+        'zulin.\u7cbe\u88c5': 'Refined decoration',
+        'zulin.\u4ea4\u4ed8\u6807\u51c6': 'Delivery standards',
+        'zulin.\u505c\u8f66\u573a': 'Parking lot',
+        'zulin.\u4f9b\u5e94': 'Supply',
+        'zulin.WiFi': 'WiFi',
+        'zulin.\u5168\u533a\u57df\u8986\u76d6': 'Full coverage',
+        'zulin.VRV': 'VRV',
+        'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24h online service',
+        'zulin.\u56ed\u533a\u7ba1\u7406': 'Park management',
+        'title.\u661f\u6708\u5fb7\u5fc5WE"': 'Moonstar DoBe WE"',
+        'title.\u6982\u51b5': ' profile',
+        'title.\u533a\u4f4d\u4ea4\u901a': 'Location',
+        'title.\u8bbe\u8ba1': 'Design',
+        'title.\u7406\u5ff5': ' philosophy',
+        'title.\u529e\u516c': 'Office',
+        'title.\u7a7a\u95f4': ' space',
+        'title.\u751f\u6001': 'Supporting',
+        'title.\u914d\u5957': ' ecotope',
+        'title.\u54c1\u724c': 'Brand',
+        'title.\u670d\u52a1': ' service',
+        'title.\u79df\u8d41': 'Lease',
+        'title.\u4fe1\u606f': ' information',
+        'header.\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3':
+          'Digital Technology Innovation Center In The Yangtze River Delta',
+        'footer.\u6b22\u8fce\u54a8\u8be2': 'Service call',
+        'footer.\u9879\u76ee\u5730\u5740': 'Project address',
+        'footer.\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u4e30\u8679\u8def199\u53f7':
+          'No. 199, Fenghong Road, Minhang District, Shanghai ',
+        'footer.\u6211\u4eec\u7684\u4e13\u4e1a\u987e\u95ee\u4f1a\u5c3d\u5feb\u4e0e\u60a8\u8054\u7cfb':
+          'Our consultant will contact you as soon as possible',
+        'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u59d3\u540d':
+          'Please input your name',
+        'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7':
+          'Please input your phone number ',
+        'footer.\u7acb\u5373\u514d\u8d39\u9884\u7ea6\u53c2\u89c2':
+          'Make an appointment now for free visiting',
+        'footer.\u9884\u7ea6\u53c2\u89c2': 'Visitation appointment',
+        'footer.\u7535\u8bdd\u54a8\u8be2': 'Telephone consultation',
+        'footer.\u5728\u7ebf\u54a8\u8be2': 'Online consultation',
+        'section1.con1':
+          'With total area of 53,000m\xb2 in Hongqiao CBD, Moonstar DoBe WE" is determined to ',
+        'section1.con2':
+          'be the digital technology innovation center in the Yangtze River Delta according to the national strategy of international opening hub, ',
+        'section1.con3':
+          'providing an optimum work environment and resource service platform for Shanghai and digital creative enterprises.',
+        'section1.\u9f99\u6e56\u8679\u6865\u5929\u8857':
+          'Hongqiao Paradise Street',
+        'section1.\u65b0\u534e\u8054\u8d2d\u7269\u4e2d\u5fc3':
+          'Macrolink shopping center',
+        'section1.\u8679\u6865\u706b\u8f66\u7ad9': 'Hongqiao railway station',
+        'section1.\u8679\u68652\u53f7': 'Hongqiao',
+        'section1.\u822a\u7ad9\u697c': ' Terminal 2',
+        'section1.\u4e0a\u6d77\u8679\u6865\u56fd\u9645\u673a\u573a':
+          'Shanghai Hongqiao International Airport',
+        'section1.\u4e0a\u6d77\u52a8\u7269\u56ed': 'Shanghai zoo',
+        'section2.con1':
+          'Core hub in Hongqiao and three-dimensional traffic system',
+        'section2.\u70b9\u51fb\u67e5\u770b\u533a\u4f4d\u56fe':
+          'Click to view location map',
+        'section2.\u4e13\u5c5e\u73ed\u8f66': 'Exclusive shuttle ',
+        'section2.\u4e0a\u4e0b\u73ed5\u5206\u949f\u76f4\u8fbe\u8679\u6865T2\u822a\u7ad9\u697c\u5730\u94c1\u7ad9':
+          'Five-minute distance to subway station of Hongqiao T2 terminal ',
+        'section2.\u8f68\u9053\u4ea4\u901a': 'Rail traffic',
+        'section2.con2': 'Hongqiao railway station:  Line 2/ Line 10/ Line 17',
+        'section2.con3': 'Hongqiao Terminal 2: Line 2/ Line 10',
+        'section2.\u516c\u4ea4\u7ebf\u8def': 'Bus route',
+        'section2.con4':
+          'No. 71 BRT, No. 189/141/941/ No. 1 and 2 of Hongqiao business district',
+        'section3."\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"':
+          '"advanced smart facility"',
+        'section3.\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c':
+          'Fantastic experience of future technology',
+        'section3."\u7075\u52a8\u591a\u53d8 \u6253\u7834\u4f20\u7edf\u529e\u516c\u683c\u5c40"':
+          '"flexible and innovative office layout"',
+        'section3.\u521b\u610f\u4e0d\u518d\u88ab\u7a7a\u95f4\u675f\u7f1a':
+          'Creativity is no confined to space',
+        'section3."\u5168\u65b9\u4f4d\u5b89\u5fc3\u5b88\u62a4"':
+          '"all-round safety and guard"',
+        'section3.\u4e0d\u653e\u8fc7\u6bcf\u4e00\u5904\u7ec6\u8282':
+          'Focusing on each detail',
+        'section3."\u9ad8\u54c1\u8d28\u7cbe\u88c5\u5165\u9a7b"':
+          '"high-quality decoration"',
+        'section3.\u4e3a\u4f01\u4e1a\u8282\u770130%\u7a7a\u95f4\u6210\u672c':
+          'Save 30% space cost for enterprises',
+        'section3."\u751f\u6001\u8d4b\u80fd\u5efa\u7b51 \u65e0\u754c\u82b1\u56ed"':
+          '"ecological building and borderless garden"',
+        'section3.\u6253\u9020\u7eff\u8272\u4f4e\u78b3\u529e\u516c\u793e\u533a':
+          'Green and low-carbon office community',
+        'section4.con1': 'Well-equipped decoration and 24h worry-free office',
+        'section4.\u72ec\u7acb\u524d\u53f0\u3001\u4f1a\u8bae\u5ba4\u3001\u50a8\u85cf\u95f4':
+          'Independent reception, meeting room and  storeroom',
+        'section4.\u9ad8\u54c1\u8d28\u5bb6\u5177\u5168\u914d\uff0c\u7cbe\u88c5\u5165\u9a7b':
+          'Furnished apartment',
+        'section4.\u53ef\u5bb9\u7eb3 3 0 - 6 0 \u4eba\u56e2\u961f':
+          'Seating capacity for 30-60 members',
+        'section4.24\u5c0f\u65f6VRV\u7a7a\u8c03': '24h VRV air conditioner',
+        'section4.1 5 0 - 5 0 0 \u5e73\u7c73\u6237\u578b':
+          'House type of 150-500 square meters',
+        'section5.con1':
+          'Complete ecological commercial supply chain and life-esque office experience',
+        'section5.wehome\u667a\u80fd\u4f1a\u8bae\u5385':
+          'Wehome smart meeting room',
+        'section5.\u7761\u7720\u8231': 'Sleep cabin',
+        'section5.\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1':
+          'Multilevel catering service',
+        'section5.\u4eba\u8138\u8bc6\u522b\u95e8\u7981':
+          'Facial recognition access control',
+        'section5.\u5171\u4eab\u5065\u8eab\u7a7a\u95f4':
+          'Sharing fitness center',
+        'section6.con1':
+          'Diversified value-added services enable enterprises to share global resources via international platforms',
+        'section6.con2':
+          "To satisfy growth and transaction of digital innovative businesses, \nMoonstar DoBe WE's spends more than ten years on constructing culture-technology-innovation industrial service system, \nintroducing dozens of global industrial parks and thousands of enterprises. \nDoing so contributes to the urban layout of different cities, \nconnectivity among enterprises and full life-cycle innovation service.",
+        'section7.\u5341\u5927\u589e\u503c\u670d\u52a1':
+          'Ten value-added services',
+        'section7.\u8f7b\u516c\u53f8\u751f\u6001\u5708': 'Smart circle',
+        'section7.\u56fd\u9645\u4f01\u4e1a\u5171\u8054':
+          'International enterprise alliance',
+        'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a1':
+          'Basic enterprise service',
+        'section7.\u5341\u5927\u589e\u503c\u670d\u52a10':
+          'Depending on favorable resources, we can provide talents, financing brand promotion, legal policy consulting and other services based on enterprise demands, thus giving solutions for members and growing up together with them.',
+        'section7.\u8f7b\u516c\u53f8\u751f\u6001\u57081':
+          'Moonstar DoBe WE integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
+        'section7.\u56fd\u9645\u4f01\u4e1a\u5171\u80542':
+          'Moonstar DoBe WE has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
+        'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a13':
+          '5A smart office and property service system offers specialized and top-ranking service for all clients, including daily building management, safety precaution management, emergency management and smart operating service.',
+        'section7.\u4e86\u89e3\u66f4\u591a': 'Learn more',
       },
       Et = {
-        WELCOME_TO_UMI_WORLD:
-          '{name}\uff0c\u6b22\u8fce\u5149\u4e34umi\u7684\u4e16\u754c',
-        'site.title': '\u9879\u76ee\u6807\u9898',
+        WELCOME_TO_UMI_WORLD: '{name}\uff0c\u6b22\u8fce\u5149\u4e34',
+        'site.title': '\u661f\u6708\u5fb7\u5fc5WE"',
+        'site.logodesc':
+          '\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3',
         'menu.\u9996\u9875': '\u9996\u9875',
         'menu.\u9879\u76ee\u4ecb\u7ecd': '\u9879\u76ee\u4ecb\u7ecd',
         'menu.\u533a\u4f4d\u4ea4\u901a': '\u533a\u4f4d\u4ea4\u901a',
@@ -11561,97 +11624,167 @@
         'menu.\u54c1\u724c\u670d\u52a1': '\u54c1\u724c\u670d\u52a1',
         'menu.\u79df\u8d41\u4fe1\u606f': '\u79df\u8d41\u4fe1\u606f',
         'menu.\u8054\u7cfb\u6211\u4eec': '\u8054\u7cfb\u6211\u4eec',
-        'header.\u521b\u610f\u529e\u516c\u8f7b\u5962\u5546\u4e1a':
-          '\u521b\u610f\u529e\u516c \u8f7b\u5962\u5546\u4e1a',
-        'footer.iconTitle':
-          '\u521b\u610f\u529e\u516c \u8f7b\u5962\u5546\u4e1a \u706b\u70ed\u62db\u79df',
-        'footer.address': '\u9879\u76ee\u5730\u5740',
-        'footer.addressDescribe':
-          '\u897f\u5b89\xb7\u7891\u6797\xb7\u516c\u56ed\u5357\u8def26\u53f7(\u5730\u94c13/6\u53f7\u7ebf)',
-        'footer.position': '\u626b\u7801\u4e86\u89e3\u66f4\u591a\u4fe1\u606f',
-        'rental.rental': '\u79df\u8d41\u4fe1\u606f',
-        'rental.Delivery':
-          '\u4ea4\u4ed8\u6807\u51c6\n\u6bdb\u576f/\u7cbe\u88c5',
-        'rental.totalArea': '\u603b\u9762\u79ef\n15000\u33a1',
-        'rental.DividedArea': '\u5206\u5272\u9762\u79ef\n100-1000\u33a1',
-        'rental.FloorHeight': '\u5c42\u9ad8(\u90e8\u5206loft)\n3.5-5m',
-        'rental.ParkingLot': '\u505c\u8f66\u573a',
-        'rental.SharedRoom': '\u5171\u4eab\u4f1a\u8bae\u5ba4',
-        'rental.conditioning':
-          '\u4e2d\u592e\u7a7a\u8c03\n\u5206\u4f53\u7a7a\u8c03',
-        'rental.Monitoring': '24H\u5b89\u4fdd\n\u76d1\u63a7\u670d\u52a1',
-        'rental.PublicArea': '\u516c\u5171\u533a\u57df\nWiFi\u8986\u76d6',
-        'rental.Restaurant': '\u767d\u9886\u9910\u5385',
-        'rental.Garden': '\u5c4b\u9876\u82b1\u56ed',
-        'rental.WaterBar': '\u6c34\u5427\u53f0',
-        'rental.viewPlan': '\u67e5\u770b\u5e73\u9762\u56fe',
-        'brand.brand': '\u54c1\u724c\u670d\u52a1',
-        'brand.MembershipTitle': '\u5341\u5927\u4f1a\u5458\u670d\u52a1',
-        'brand.MembershipDescribe':
-          '\u4f9d\u6258\u4f18\u52bf\u8d44\u6e90,\u7ed3\u5408\u4f01\u4e1a\u53d1\u5c55\u6240\u9700,\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u4eba\u624d\u3001\u8d44\u91d1\u878d\u96c6\u3001\u54c1\u724c\u63a8\u5e7f\u3001\u6cd5\u5f8b\u653f\u7b56\u54a8\u8be2\u7b49\u4f01\u4e1a\u670d\u52a1,\u4e3a\u5165\u9a7b\u4f01\u4e1a\u6392\u5fe7\u89e3\u96be,\u5171\u540c\u6210\u957f\u3002',
-        'brand.ecosystemTitle': '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
-        'brand.ecosystemDescribe':
-          '\u5fb7\u5fc5\u56ed\u533a\u8fde\u63a5\u6570\u5343\u5bb6\u516c\u53f8,\u901a\u8fc7\u642d\u5efa\u201c\u8f7b\u516c\u53f8\u751f\u6001\u5708\u201d,\u6253\u901a\u56ed\u533a\u5165\u9a7b\u4f01\u4e1a\u8d44\u6e90\u901a\u9053,\u5185\u5916\u5708\u5c42,\u4e0a\u4e0b\u8054\u52a8\u3001\u8de8\u754c\u5408\u4f5c\u3002\u65e0\u7f1d\u5bf9\u63a5\u65d7\u4e0b\u6570\u5343\u5bb6\u4f01\u4e1a\u300110\u4f59\u4e07\u540d\u4f01\u4e1a\u5458\u5de5,\u5b9e\u73b0\u81ea\u7531\u4ea4\u6613\u5408\u4f5c,\u540c\u9891\u5171\u632f',
-        'brand.FederationTitle': '\u56fd\u9645\u4f01\u4e1a\u5171\u8054',
-        'brand.FederationDescribe':
-          '\u5fb7\u5fc5\u96c6\u56e2\u5df2\u8986\u76d6\u610f\u5927\u5229\u3001\u6cd5\u56fd\u3001\u5fb7\u56fd\u3001\u7f8e\u56fd\u3001\u897f\u73ed\u7259\u7b49\u5341\u51e0\u4e2a\u56fd\u5bb6\u548c\u5730\u533a,\u901a\u8fc7\u5168\u7403\u8d44\u6e90\u7f51\u7edc,\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u6df1\u5ea6\u5d4c\u5165\u5f0f\u201cN+1\u201d\u56fd\u9645\u4e1a\u52a1\u670d\u52a1,\u5305\u62ec\u6d77\u5916\u6ce8\u518c\u3001\u56fd\u9645\u63a8\u5e7f,\u5546\u52a1\u5408\u4f5c\u7b49,\u62c5\u4efb\u4f01\u4e1a\u95f4\u201c\u5927\u4f7f\u9986\u201d,\u5b9e\u73b0\u4f01\u4e1a\u5ba2\u6237\u7684\u7ecf\u6d4e\u4e0e\u793e\u4f1a\u6548\u76ca\u6700\u5927\u5316\u3002',
-        'brand.enterpriseTitle': '\u57fa\u7840\u4f01\u4e1a\u670d\u52a1',
-        'brand.enterpriseDescribe':
-          '5A\u7ea7\u667a\u80fd\u5316\u529e\u516c\u53ca\u7269\u4e1a\u670d\u52a1\u7cfb\u7edf,\u4e3a\u6240\u6709\u5ba2\u6237\u63d0\u4f9b\u4e13\u4e1a\u5316\u7ba1\u7406\u548c\u56fd\u9645\u6807\u51c6\u5316\u670d\u52a1,\u5305\u62ec\u65e5\u5e38\u697c\u5b87\u670d\u52a1\u3001\u5b89\u5168\u9884\u9632\u7ba1\u7406\u3001\u7d27\u6025\u4e8b\u4ef6\u5904\u7406\u3001\u667a\u80fd\u8fd0\u8425\u670d\u52a1\u3002',
-        'design.design': '\u8bbe\u8ba1\u7406\u5ff5',
-        'design.TaohuaTitle':
-          '\u95f9\u4e16\u6843\u82b1\u575e \u9759\u4eab\u5ead\u9662\u5f0f\u529e\u516c\u73af\u5883',
-        'design.TaohuaDescribe':
-          '\u7a7f\u8fc7\u4f73\u6728\u7e41\u79c0\u7684\u7af9\u6797,\u8e0f\u8fc7\u66f2\u5f84\u901a\u5e7d\u7684\u5c0f\u5f84,\n\u4e09\u91cd\u5ead\u9662\u9759\u4eab,\u89e6\u76ee\u7686\u81ea\u7136,\u7e41\u534e\u95f9\u5e02\u4e2d\u4e00\u9685\u521b\u610f\u9759\u571f,\n\u8ba9\u529e\u516c\u8131\u53bb\u4ec6\u4ec6\u98ce\u5c18,\u4e8e\u57ce\u5e02\u95f4\u611f\u77e5\u751f\u547d\u3001\u5fae\u98ce\u3001\u6696\u9633\u3002',
-        'design.receptionTitle':
-          '\u57ce\u5e02\u4f1a\u5ba2\u5385 \u529e\u516c\u751f\u6001\u65b0\u573a\u666f',
-        'design.receptionDescribe':
-          '9\u7c73\u6311\u9ad8,\u62fe\u9636\u800c\u4e0a,\u8def\u6f14\u5c55\u89c8\u3001\u793e\u4ea4\u4f1a\u6664,\n\u5546\u52a1\u4f11\u95f2\u968f\u6027\u5207\u6362,\u591a\u5143\u5316\u5171\u4eab\u7a7a\u95f4\u4f53\u9a8c\u3002',
-        'design.HardcoverTitle':
-          '\u7cbe\u88c5\u62ce\u5305\u5165\u9a7b \u5fb7\u5fc5SPACE \u7eb5\u4eab\u9ad8\u6548\u529e\u516c',
-        'design.HardcoverDescribe':
-          '\u5fb7\u5fc5SPACE\u4e00\u7ad9\u5f0foffice\u7cbe\u88c5,\u63d0\u4f9b\u5171\u4eab\u4f1a\u8bae\u5ba4\u3001\u4f1a\u5ba2\u533a\u3001\u6c34\u5427\u53f0\u7b49\u516c\u5171\u8bbe\u65bd,\n\u4e3a\u4f01\u4e1a\u8282\u7ea630%\u7a7a\u95f4\u9884\u7b97,\u5e2e\u52a9\u4f01\u4e1a\u964d\u4f4e\u7ecf\u8425\u3001\u5546\u52a1\u3001\u65f6\u95f4\u6210\u672c\u3002',
-        'design.wehomeTitle':
-          'wehome\u7a7a\u95f4\u667a\u6167\u7ba1\u7406\u5e73\u53f0 \u5efa\u7acb\u4f01\u4e1a\u670d\u52a1\u751f\u6001\u7269\u8054\u7f51\u7edc',
-        'design.wehomeDescribe':
-          '\u4f9d\u6258\u4e8e\u5fb7\u5fc5\u96c6\u56e2\u591a\u5e74\u56ed\u533a\u8fd0\u8425\u7ba1\u7406\u7ecf\u9a8c,\u4ee5\u53ca\u7ecf\u9a8c\u4e30\u5bcc\u7684\u56e2\u961f,\u575a\u6301\u81ea\u4e3b\u521b\u65b0,\u5c06\u79d1\u7814\u7ed3\u679c\u4e0e\u201c\u4e92\u8054\u7f51\uff0b\u201d\u7ed3\u5408,\u81ea\u4e3b\u521b\u65b0wehome\u7a7a\u95f4\u667a\u6167\u7ba1\u7406\u5e73\u53f0,\u63d0\u4f9b\u56ed\u533a\u6574\u4f53\u667a\u80fd\u89e3\u51b3\u65b9\u6848,\u6253\u9020\u573a\u666f\u5168\u89e6\u8fbe\u7684\u96c6\u6210\u578b\u5e73\u53f0,\u589e\u52a0\u573a\u6240\u8ba4\u540c,\u8ba9\u201c\u667a\u6167\u56ed\u533a\u201d\u4ece\u6784\u60f3\u53d8\u4e3a\u73b0\u5b9e\u3002',
-        'design.commercialTitle':
-          '\u661f\u5149\u91cc\xb7\u5546\u4e1a\u8857\u533a \u8db3\u4e0d\u51fa\u56ed\u4f18\u4eab\u591a\u5143\u751f\u6d3b',
-        'design.commercialDescribe':
-          '\u529e\u516c\u3001\u751f\u6d3b\u3001\u5546\u52a1\u3001\u793e\u4ea4\u3001\u4f11\u95f2\u4e00\u7ad9\u5f0f\u521b\u610f\u5546\u4e1a\u8857\u533a,\u4e3a\u5165\u9a7b\u767d\u9886\u63d0\u4f9b\u697c\u4e0a\u529e\u516c,\n\u697c\u4e0b\u4f11\u95f2\u7684\u5168\u65b0\u4f53\u9a8c\u3002',
-        'regional.regional': '\u533a\u4f4d\u4ea4\u901a',
-        'regional.describe':
-          '\u53cc\u8f68\u5730\u94c1\u73af\u7ed5 \u7545\u4eab\u4fbf\u5229\u7e41\u534e\n\u897f\u5b89\u4e3b\u57ce\u533a \u7d27\u90bb\u4e1c\u4e8c\u73af',
-        'regional.iconDrive': '\u9a7e\u8f66',
-        'regional.iconTransit': '\u516c\u4ea4',
-        'regional.iconMetro': '\u5730\u94c1',
-        'regional.Areabitmap': '\u533a\u4f4d\u56fe',
-        'regional.describeRing': '\u4e1c\u4e8c\u73af',
-        'regional.describeXiaozhai':
-          '\u5c0f\u5be8/\u5357\u7a0d\u95e8/\u6c38\u5b81\u95e8\n/\u949f\u697c/\u5927\u96c1\u5854',
-        'regional.describeQujiang': '\u66f2\u6c5f/\u9ad8\u65b0',
-        'regional.describeRailway': '\u897f\u5b89\u706b\u8f66\u7ad9',
-        'regional.describeNorth': '\u897f\u5b89\u5317\u5ba2\u7ad9',
-        'regional.describeAirport':
-          '\u897f\u5b89\u54b8\u9633\u56fd\u9645\u673a\u573a',
-        'regional.transitDescribe':
-          '\u5185\u5341\u4f59\u6761\u516c\u4ea4\u8f66\u7ebf\u8def,\u76f4\u8fbe\u5404\u5927\u5546\u5708',
-        'regional.metroTitle': '3\u53f7\u7ebf\u5ef6\u5174\u95e8',
-        'regional.metroDescribe': '6\u53f7\u7ebf\u516c\u56ed\u5357\u8def\u7ad9',
-        'project.project': '\u9879\u76ee\u4ecb\u7ecd',
-        'project.describe':
-          '\u661f\u5149\u5fb7\u5fc5\u6613\u56ed\uff0c\u5b9a\u4f4d\u897f\u5b89\u6570\u5b57\u6587\u5316\u521b\u65b0\u4e2d\u5fc3\uff0c\u4f9d\u6258\u897f\u5b89\u4e30\u5bcc\u7684\u6587\u79d1\u6559\u8d44\u6e90\u548c\u521b\u65b0\u4e3b\u4f53\u8d44\u6e90\uff0c\n\u4ee5\u9ad8\u65b0\u6280\u672f\u4e3a\u6838\u5fc3\u4ea7\u4e1a\uff0c\u4ee5\u8f7b\u516c\u53f8\u751f\u6001\u5708\u4e3a\u8fd0\u8425\u7406\u5ff5\uff0c\n\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u9762\u5411\u672a\u6765\u7684\u667a\u6167\u529e\u516c\u4f53\u9a8c\uff0c\u6253\u9020\u878d\u5408\u79d1\u521b\u3001\u6587\u521b\u4ea7\u4e1a\u7684\u65b0\u9ad8\u5730\u3002',
-        'project.MetroLine2': '\u5730\u94c1\u4e8c\u53f7\u7ebf',
-        'project.belltower': '\u949f\u697c',
-        'project.XingqingPark': '\u5174\u5e86\u516c\u56ed',
-        'project.Pagoda': '\u5927\u96c1\u5854',
-        'project.Happyforestbelt': '\u5e78\u798f\u6797\u5e26',
-        'project.MetroLine3': '\u5730\u94c1\u4e09\u53f7\u7ebf',
-        'project.TechnologyUniversity': '\u897f\u5b89\u7406\u5de5\u5927\u5b66',
-        'project.JiaotongUniversity': '\u897f\u5b89\u4ea4\u901a\u5927\u5b66',
-        'project.MetroLine6': '\u5730\u94c1\u516d\u53f7\u7ebf',
-        'project.Phase': '\u4e8c\u671f\u5728\u5efa',
-        'project.Engineering': '\u897f\u5b89\u5de5\u7a0b\u5927\u5b66',
+        'sidemenu.\u9884\u7ea6\u53c2\u89c2': '\u9884\u7ea6\u53c2\u89c2',
+        'sidemenu.\u7535\u8bdd\u54a8\u8be2': '\u7535\u8bdd\u54a8\u8be2',
+        'sidemenu.\u5728\u7ebf\u54a8\u8be2': '\u5728\u7ebf\u54a8\u8be2',
+        'count.10+\u5e74': '10+\u5e74',
+        'count.50+': '50+',
+        'count.100-3800m\xb2': '100-3800m\xb2',
+        'count.24h': '24h',
+        'count.10+': '10+',
+        'count.\u79d1\u521b\u4f01\u4e1a\u670d\u52a1\u7ecf\u9a8c':
+          '\u79d1\u521b\u4f01\u4e1a\u670d\u52a1\u7ecf\u9a8c',
+        'count.\u957f\u4e09\u89d2\u521b\u610f\u56ed\u533a':
+          '\u957f\u4e09\u89d2\u521b\u610f\u56ed\u533a',
+        'count.\u7cbe\u88c5\u79c1\u5bc6\u7a7a\u95f4':
+          '\u7cbe\u88c5\u79c1\u5bc6\u7a7a\u95f4',
+        'count.\u5168\u914d\u529e\u516c\u6761\u4ef6':
+          '\u5168\u914d\u529e\u516c\u6761\u4ef6',
+        'count.\u5168\u4ef7\u503c\u94fe\u589e\u503c\u670d\u52a1':
+          '\u5168\u4ef7\u503c\u94fe\u589e\u503c\u670d\u52a1',
+        'zulin.10\u33a1': '10\u33a1',
+        'zulin.\u603b\u9762\u79ef': '\u603b\u9762\u79ef',
+        'zulin.101\u33a1': '101\u33a1',
+        'zulin.\u5206\u9694\u9762\u79ef': '\u5206\u9694\u9762\u79ef',
+        'zulin.3\u33a1': '3\u33a1',
+        'zulin.\u539f\u9ad8': '\u539f\u9ad8',
+        'zulin.\u7cbe\u88c5': '\u7cbe\u88c5',
+        'zulin.\u4ea4\u4ed8\u6807\u51c6': '\u4ea4\u4ed8\u6807\u51c6',
+        'zulin.\u505c\u8f66\u573a': '\u505c\u8f66\u573a',
+        'zulin.\u4f9b\u5e94': '\u4f9b\u5e94',
+        'zulin.WiFi': 'WiFi',
+        'zulin.\u5168\u533a\u57df\u8986\u76d6':
+          '\u5168\u533a\u57df\u8986\u76d6',
+        'zulin.VRV': 'VRV',
+        'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24\u5c0f\u65f6\u5728\u7ebf',
+        'zulin.\u56ed\u533a\u7ba1\u7406': '\u56ed\u533a\u7ba1\u7406',
+        'title.\u661f\u6708\u5fb7\u5fc5WE"': '\u661f\u6708\u5fb7\u5fc5WE"',
+        'title.\u6982\u51b5': '\u6982\u51b5',
+        'title.\u533a\u4f4d\u4ea4\u901a': '\u533a\u4f4d\u4ea4\u901a',
+        'title.\u8bbe\u8ba1': '\u8bbe\u8ba1',
+        'title.\u7406\u5ff5': '\u7406\u5ff5',
+        'title.\u529e\u516c': '\u529e\u516c',
+        'title.\u7a7a\u95f4': '\u7a7a\u95f4',
+        'title.\u751f\u6001': '\u751f\u6001',
+        'title.\u914d\u5957': '\u914d\u5957',
+        'title.\u54c1\u724c': '\u54c1\u724c',
+        'title.\u670d\u52a1': '\u670d\u52a1',
+        'title.\u79df\u8d41': '\u79df\u8d41',
+        'title.\u4fe1\u606f': '\u4fe1\u606f',
+        'header.\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3':
+          '\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3',
+        'footer.\u6b22\u8fce\u54a8\u8be2': '\u6b22\u8fce\u54a8\u8be2',
+        'footer.\u9879\u76ee\u5730\u5740': '\u9879\u76ee\u5730\u5740',
+        'footer.\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u4e30\u8679\u8def199\u53f7':
+          '\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u4e30\u8679\u8def199\u53f7',
+        'footer.\u6211\u4eec\u7684\u4e13\u4e1a\u987e\u95ee\u4f1a\u5c3d\u5feb\u4e0e\u60a8\u8054\u7cfb':
+          '\u6211\u4eec\u7684\u4e13\u4e1a\u987e\u95ee\u4f1a\u5c3d\u5feb\u4e0e\u60a8\u8054\u7cfb',
+        'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u59d3\u540d':
+          '\u8bf7\u8f93\u5165\u60a8\u7684\u59d3\u540d',
+        'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7':
+          '\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7',
+        'footer.\u7acb\u5373\u514d\u8d39\u9884\u7ea6\u53c2\u89c2':
+          '\u7acb\u5373\u514d\u8d39\u9884\u7ea6\u53c2\u89c2',
+        'footer.\u9884\u7ea6\u53c2\u89c2': '\u9884\u7ea6\u53c2\u89c2',
+        'footer.\u7535\u8bdd\u54a8\u8be2': '\u7535\u8bdd\u54a8\u8be2',
+        'footer.\u5728\u7ebf\u54a8\u8be2': '\u5728\u7ebf\u54a8\u8be2',
+        'section1.con1':
+          '\u661f\u6708\u5fb7\u5fc5WE"\uff0c\u4f4d\u4e8e\u8679\u6865\u5546\u52a1\u533a\u6838\u5fc3\u533a\uff0c\n\u603b\u5efa\u7b51\u9762\u79ef53,000m\xb2',
+        'section1.con2':
+          '\u7acb\u8db3\u8679\u6865\u56fd\u9645\u5f00\u653e\u67a2\u7ebd\u56fd\u5bb6\u7ea7\u89c4\u5212',
+        'section1.con3':
+          '\u6253\u9020\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3\uff0c\u4e3a\u4e0a\u6d77\u53ca\u957f\u4e09\u89d2\u6570\u5b57\u521b\u610f\u4f01\u4e1a\u63d0\u4f9b\u6700\u4f18\u5316\u7684\u529e\u516c\u73af\u5883\u548c\u8d44\u6e90\u94fe\u63a5\u5e73\u53f0\u3002',
+        'section1.\u9f99\u6e56\u8679\u6865\u5929\u8857':
+          '\u9f99\u6e56\u8679\u6865\u5929\u8857',
+        'section1.\u65b0\u534e\u8054\u8d2d\u7269\u4e2d\u5fc3':
+          '\u65b0\u534e\u8054\u8d2d\u7269\u4e2d\u5fc3',
+        'section1.\u8679\u6865\u706b\u8f66\u7ad9':
+          '\u8679\u6865\u706b\u8f66\u7ad9',
+        'section1.\u8679\u68652\u53f7': '\u8679\u68652\u53f7',
+        'section1.\u822a\u7ad9\u697c': '\u822a\u7ad9\u697c',
+        'section1.\u4e0a\u6d77\u8679\u6865\u56fd\u9645\u673a\u573a':
+          '\u4e0a\u6d77\u8679\u6865\u56fd\u9645\u673a\u573a',
+        'section1.\u4e0a\u6d77\u52a8\u7269\u56ed':
+          '\u4e0a\u6d77\u52a8\u7269\u56ed',
+        'section2.con1':
+          '\u5360\u4f4d\u8679\u6865\u5f00\u653e\u67a2\u7ebd\u6838\u5fc3 \u591a\u7ef4\u7acb\u4f53\u4ea4\u901a\u6253\u901a\u5546\u8109',
+        'section2.\u70b9\u51fb\u67e5\u770b\u533a\u4f4d\u56fe':
+          '\u70b9\u51fb\u67e5\u770b\u533a\u4f4d\u56fe',
+        'section2.\u4e13\u5c5e\u73ed\u8f66': '\u4e13\u5c5e\u73ed\u8f66',
+        'section2.\u4e0a\u4e0b\u73ed5\u5206\u949f\u76f4\u8fbe\u8679\u6865T2\u822a\u7ad9\u697c\u5730\u94c1\u7ad9':
+          '\u4e0a\u4e0b\u73ed5\u5206\u949f\u76f4\u8fbe\u8679\u6865T2\u822a\u7ad9\u697c\u5730\u94c1\u7ad9',
+        'section2.\u8f68\u9053\u4ea4\u901a': '\u8f68\u9053\u4ea4\u901a',
+        'section2.con2':
+          '\u8679\u6865\u706b\u8f66\u7ad9\uff1a2\u53f7\u7ebf/10\u53f7\u7ebf/17\u53f7\u7ebf',
+        'section2.con3':
+          '\u8679\u6865T2\u822a\u7ad9\u697c\uff1a2\u53f7\u7ebf/10\u53f7\u7ebf',
+        'section2.\u516c\u4ea4\u7ebf\u8def': '\u516c\u4ea4\u7ebf\u8def',
+        'section2.con4':
+          '71\u8def\u4e2d\u8fd0\u91cf\u3001189/141/941\u8def/\u8679\u6865\u5546\u52a1\u533a1\u30012\u8def',
+        'section3."\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"':
+          '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
+        'section3.\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c':
+          '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
+        'section3."\u7075\u52a8\u591a\u53d8 \u6253\u7834\u4f20\u7edf\u529e\u516c\u683c\u5c40"':
+          '"\u7075\u52a8\u591a\u53d8 \u6253\u7834\u4f20\u7edf\u529e\u516c\u683c\u5c40"',
+        'section3.\u521b\u610f\u4e0d\u518d\u88ab\u7a7a\u95f4\u675f\u7f1a':
+          '\u521b\u610f\u4e0d\u518d\u88ab\u7a7a\u95f4\u675f\u7f1a',
+        'section3."\u5168\u65b9\u4f4d\u5b89\u5fc3\u5b88\u62a4"':
+          '"\u5168\u65b9\u4f4d\u5b89\u5fc3\u5b88\u62a4"',
+        'section3.\u4e0d\u653e\u8fc7\u6bcf\u4e00\u5904\u7ec6\u8282':
+          '\u4e0d\u653e\u8fc7\u6bcf\u4e00\u5904\u7ec6\u8282',
+        'section3."\u9ad8\u54c1\u8d28\u7cbe\u88c5\u5165\u9a7b"':
+          '"\u9ad8\u54c1\u8d28\u7cbe\u88c5\u5165\u9a7b"',
+        'section3.\u4e3a\u4f01\u4e1a\u8282\u770130%\u7a7a\u95f4\u6210\u672c':
+          '\u4e3a\u4f01\u4e1a\u8282\u770130%\u7a7a\u95f4\u6210\u672c',
+        'section3."\u751f\u6001\u8d4b\u80fd\u5efa\u7b51 \u65e0\u754c\u82b1\u56ed"':
+          '"\u751f\u6001\u8d4b\u80fd\u5efa\u7b51 \u65e0\u754c\u82b1\u56ed"',
+        'section3.\u6253\u9020\u7eff\u8272\u4f4e\u78b3\u529e\u516c\u793e\u533a':
+          '\u6253\u9020\u7eff\u8272\u4f4e\u78b3\u529e\u516c\u793e\u533a',
+        'section4.con1':
+          '\u9ad8\u54c1\u8d28\u7cbe\u88c5\u5168\u914d\uff0c24\u5c0f\u65f6\u65e0\u5fe7\u529e\u516c',
+        'section4.\u72ec\u7acb\u524d\u53f0\u3001\u4f1a\u8bae\u5ba4\u3001\u50a8\u85cf\u95f4':
+          '\u72ec\u7acb\u524d\u53f0\u3001\u4f1a\u8bae\u5ba4\u3001\u50a8\u85cf\u95f4',
+        'section4.\u9ad8\u54c1\u8d28\u5bb6\u5177\u5168\u914d\uff0c\u7cbe\u88c5\u5165\u9a7b':
+          '\u9ad8\u54c1\u8d28\u5bb6\u5177\u5168\u914d\uff0c\u7cbe\u88c5\u5165\u9a7b',
+        'section4.\u53ef\u5bb9\u7eb3 3 0 - 6 0 \u4eba\u56e2\u961f':
+          '\u53ef\u5bb9\u7eb3 3 0 - 6 0 \u4eba\u56e2\u961f',
+        'section4.24\u5c0f\u65f6VRV\u7a7a\u8c03':
+          '24\u5c0f\u65f6VRV\u7a7a\u8c03',
+        'section4.1 5 0 - 5 0 0 \u5e73\u7c73\u6237\u578b':
+          '1 5 0 - 5 0 0 \u5e73\u7c73\u6237\u578b',
+        'section5.con1':
+          '\u5b8c\u5584\u7684\u751f\u6001\u5546\u4e1a\u4f9b\u5e94\u94fe\u914d\u5957 \u7c7b\u751f\u6d3b\u7cbe\u81f4\u529e\u516c\u4f53\u9a8c',
+        'section5.wehome\u667a\u80fd\u4f1a\u8bae\u5385':
+          'wehome\u667a\u80fd\u4f1a\u8bae\u5385',
+        'section5.\u7761\u7720\u8231': '\u7761\u7720\u8231',
+        'section5.\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1':
+          '\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1',
+        'section5.\u4eba\u8138\u8bc6\u522b\u95e8\u7981':
+          '\u4eba\u8138\u8bc6\u522b\u95e8\u7981',
+        'section5.\u5171\u4eab\u5065\u8eab\u7a7a\u95f4':
+          '\u5171\u4eab\u5065\u8eab\u7a7a\u95f4',
+        'section6.con1':
+          '\u591a\u5143\u589e\u503c\u670d\u52a1\u8d4b\u80fd\u4f01\u4e1a \u56fd\u9645\u5e73\u53f0\u94fe\u63a5\u5168\u7403\u8d44\u6e90',
+        'section6.con2':
+          '\u9488\u5bf9\u6570\u5b57\u521b\u65b0\u4f01\u4e1a\u7684\u6210\u957f\u53d1\u5c55\u548c\u5546\u52a1\u5f80\u6765\u9700\u6c42\uff0c\n\u4f9d\u6258\u5fb7\u5fc5\u96c6\u56e2\u5341\u4f59\u5e74\u6587\u79d1\u521b\u4ea7\u4e1a\u670d\u52a1\u4f53\u7cfb\u3001\u6570\u5341\u4e2a\u5168\u7403\u4ea7\u4e1a\u56ed\u533a\u53ca\u6570\u5343\u5bb6\u5165\u9a7b\u4f01\u4e1a\uff0c\n\u52a9\u529b\u4f01\u4e1a\u8de8\u57ce\u5e02\u5e03\u5c40\uff0c\u63a8\u52a8\u4f01\u4e1a\u4e4b\u95f4\u4e92\u52a8\u8054\u901a\uff0c\u6784\u5efa\u8986\u76d6\u4f01\u4e1a\u5168\u751f\u547d\u5468\u671f\u7684\u521b\u65b0\u670d\u52a1',
+        'section7.\u5341\u5927\u589e\u503c\u670d\u52a1':
+          '\u5341\u5927\u589e\u503c\u670d\u52a1',
+        'section7.\u8f7b\u516c\u53f8\u751f\u6001\u5708':
+          '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
+        'section7.\u56fd\u9645\u4f01\u4e1a\u5171\u8054':
+          '\u56fd\u9645\u4f01\u4e1a\u5171\u8054',
+        'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a1':
+          '\u57fa\u7840\u4f01\u4e1a\u670d\u52a1',
+        'section7.\u5341\u5927\u589e\u503c\u670d\u52a10':
+          '\u4f9d\u6258\u4f18\u52bf\u8d44\u6e90\uff0c\u7ed3\u5408\u4f01\u4e1a\u53d1\u5c55\u6240\u9700\uff0c\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u4eba\u624d\u3001\u8d44\u91d1\u878d\u96c6\u54c1\u724c\u63a8\u5e7f\u3001\u6cd5\u5f8b\u653f\u7b56\u54a8\u8be2\u7b49\u4f01\u4e1a\u670d\u52a1\uff0c\u4e3a\u5165\u9a7b\u4f01\u4e1a\u6392\u5fe7\u89e3\u96be\uff0c\u5171\u540c\u6210\u957f\u3002',
+        'section7.\u8f7b\u516c\u53f8\u751f\u6001\u57081':
+          '\u5fb7\u5fc5\u96c6\u56e2\u901a\u8fc7\u642d\u5efa\u201c\u8f7b\u516c\u53f8\u751f\u6001\u5708\u201d\uff0c\u6253\u901a\u56ed\u533a\u5165\u9a7b\u4f01\u4e1a\u8d44\u6e90\u901a\u9053\uff0c\u5185\u5916\u5708\u5c42\uff0c\u4e0a\u4e0b\u8054\u52a8\u3001\u8de8\u754c\u5408\u4f5c\u3002\u65e0\u7f1d\u5bf9\u63a5\u65d7\u6570\u5343\u5bb6\u4f01\u4e1a\u300110\u4f59\u4e07\u540d\u767d\u9886\uff0c\u5b9e\u73b0\u81ea\u7531\u4ea4\u6613\u5408\u4f5c\uff0c\u540c\u9891\u5171\u632f\u3002',
+        'section7.\u56fd\u9645\u4f01\u4e1a\u5171\u80542':
+          '\u5fb7\u5fc5\u96c6\u56e2\u5df2\u8986\u76d6\u6b27\u7f8e\u4e9a\u4e09\u5927\u6d3210\u4f59\u4e2a\u56fd\u5bb6\u548c\u5730\u533a\uff0c\u62c5\u4efb\u4f01\u4e1a\u201c\u5927\u4f7f\u9986\u201d\uff0c\u901a\u8fc7\u5168\u7403\u8d44\u6e90\u7f51\u7edc\uff0c\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u6df1\u5ea6\u5d4c\u5165\u5f0f\u201cN+1\u201d\u56fd\u9645\u4e1a\u52a1\u670d\u52a1\uff0c\u5b9e\u73b0\u4f01\u4e1a\u5ba2\u6237\u7684\u7ecf\u6d4e\u4e0e\u793e\u4f1a\u6548\u76ca\u6700\u5927\u5316\u3002',
+        'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a13':
+          '5A\u7ea7\u667a\u80fd\u5316\u529e\u516c\u53ca\u7269\u4e1a\u670d\u52a1\u7cfb\u7edf\uff0c\u4e3a\u6240\u6709\u5ba2\u6237\u63d0\u4f9b\u4e13\u4e1a\u5316\u7ba1\u7406\u548c\u56fd\u9645\u6807\u51c6\u5316\u670d\u52a1\uff0c\u5305\u62ec\u65e5\u5e38\u697c\u5b87\u670d\u52a1\u3001\u5b89\u5168\u9884\u9632\u7ba1\u7406\u3001\u7d27\u6025\u4e8b\u4ef6\u5904\u7406\u3001\u667a\u80fd\u8fd0\u8425\u670d\u52a1\u3002',
+        'section7.\u4e86\u89e3\u66f4\u591a': '\u4e86\u89e3\u66f4\u591a',
       },
       At = !0,
       Ht = {
