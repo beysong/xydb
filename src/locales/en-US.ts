@@ -131,10 +131,19 @@ export default {
   'section6.con1':
     'Diversified value-added services enable enterprises to share global resources via international platforms',
   'section6.con2':
-    "To satisfy growth and transaction of digital innovative businesses, Moonstar DoBe WE's spends more than ten years on constructing culture-technology-innovation industrial service system, introducing dozens of global industrial parks and thousands of enterprises. Doing so contributes to the urban layout of different cities, connectivity among enterprises and full life-cycle innovation service.",
+    "To satisfy growth and transaction of digital innovative businesses, \nMoonstar DoBe WE's spends more than ten years on constructing culture-technology-innovation industrial service system, \nintroducing dozens of global industrial parks and thousands of enterprises. \nDoing so contributes to the urban layout of different cities, \nconnectivity among enterprises and full life-cycle innovation service.",
 
   'section7.十大增值服务': 'Ten value-added services',
   'section7.轻公司生态圈': 'Smart circle',
   'section7.国际企业共联': 'International enterprise alliance',
   'section7.基础企业服务': 'Basic enterprise service',
+  'section7.十大增值服务0':
+    'Depending on favorable resources, we can provide talents, financing brand promotion, legal policy consulting and other services based on enterprise demands, thus giving solutions for members and growing up together with them.',
+  'section7.轻公司生态圈1':
+    'Moonstar DoBe WE integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
+  'section7.国际企业共联2':
+    'Moonstar DoBe WE has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
+  'section7.基础企业服务3':
+    '5A smart office and property service system offers specialized and top-ranking service for all clients, including daily building management, safety precaution management, emergency management and smart operating service.',
+  'section7.了解更多': 'Learn more',
 };

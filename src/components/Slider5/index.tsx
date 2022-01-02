@@ -81,13 +81,19 @@ export default function IndexPage() {
             >
               <div className="container mx-auto text-left">
                 <div className="text-sm lg:text-base xl:text-2xl">
-                  {v.title}
+                  {intl.formatMessage({
+                    id: 'section7.' + v.title,
+                  })}
                 </div>
                 <div className="text-xs lg:text-base xl:text-lg mt-2 lg:mt-4 lg:w-1/2">
-                  {v.desc}
+                  {intl.formatMessage({
+                    id: 'section7.' + v.title + i,
+                  })}
                 </div>
                 <div className="hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white">
-                  了解更多
+                  {intl.formatMessage({
+                    id: 'section7.了解更多',
+                  })}
                 </div>
               </div>
             </div>

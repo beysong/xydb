@@ -159,7 +159,7 @@ export default function IndexPage() {
             className="px-5 my-10 text-sm 2xl:text-base leading-6 2xl:leading-8"
             style={{ color: '#666' }}
           >
-            <div>
+            <div className="whitespace-pre-line">
               {intl.formatMessage({
                 id: 'section1.con1',
               })}
@@ -193,9 +193,9 @@ export default function IndexPage() {
         <ProjectInfo />
       </Section>
       <Section hrefid="id2" full>
-        <div className="flex text-white">
+        <div className="flex flex-wrap flex-col-reverse md:flex-row text-white">
           <div
-            className="w-0 md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"
+            className="w-full h-96 md:h-auto md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2"
             style={{
               backgroundSize: 'cover',
               backgroundPosition: 'center',
@@ -221,7 +221,7 @@ export default function IndexPage() {
             </div>
             <div className="pt-10">
               <div
-                className="rounded-sm opacity-50 inline-block p-3 text-xs lg:text-sm xl:text-base"
+                className="mapBtn"
                 style={{ backgroundColor: '#0094A5', letterSpacing: 4 }}
                 onClick={() => {
                   if (popMapIns) {
@@ -492,7 +492,7 @@ export default function IndexPage() {
               })}
             </div>
             <div
-              className="text-xs 2xl:text-sm mt-2 leading-6 2xl:leading-7"
+              className="text-xs 2xl:text-sm mt-2 leading-6 2xl:leading-7 whitespace-pre-line"
               style={{ color: '#666' }}
             >
               {intl.formatMessage({
@@ -516,10 +516,9 @@ export default function IndexPage() {
         style={{ backgroundColor: '#E9FCFD' }}
         full
       >
-        <OssImg
-          className="-mt-20 sm:-mt-32 md:-mt-40 lg:-mt-48 xl:-mt-52 2xl:-mt-64 z-0"
-          src="4f086a83cea70f65cfc6973e31cc1610.png"
-        />
+        <div className="container mx-auto">
+          <OssImg className="z-0" src="8b29a2213f35a062c978bef867f946df.jpg" />
+        </div>
 
         <Slider5 />
       </Section>

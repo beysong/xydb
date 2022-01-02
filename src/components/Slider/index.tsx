@@ -12,7 +12,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default function IndexPage({ data }) {
   const intl = useIntl();
   return (
-    <section>
+    <section id="mainSlider">
       <Swiper
         onSwiper={(swiper) => (window.swiper = swiper)}
         spaceBetween={50}
