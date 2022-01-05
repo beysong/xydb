@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import logo from '@/assets/foot_logo.png';
 
 import './index.css';
-const menus = [{ id: 'home' }, { id: 'project' }];
 
 export default function IndexPage() {
   const intl = useIntl();
