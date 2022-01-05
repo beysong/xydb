@@ -47,8 +47,9 @@ export default function IndexPage() {
 
   useEffect(() => {
     const handleScroll = (e) => {
-      // console.log('xxx', e);
+      console.log('xxx', e);
       if (window.innerWidth > 1024) {
+        console.log('xxx2', e);
         setShowContact(false);
       }
     };
@@ -87,12 +88,14 @@ export default function IndexPage() {
 
       <div
         style={{
-          top: 300,
           zIndex: 99,
         }}
-        className={`fixed w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 ${
-          showContact ? 'block' : 'hidden'
+        className={`fixed bg-gray-900 bg-opacity-20 md:bg-none top-0 bottom-0 items-center justify-center md:inset-auto md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 ${
+          showContact ? ' flex md:block' : ' hidden'
         }`}
+        onClick={() => {
+          setShowContact(false);
+        }}
       >
         <Contact
           onSubmit={() => {

@@ -9,7 +9,12 @@ export default ({ onSubmit }) => {
   const [tel, setTel] = useState();
   const [name, setName] = useState();
   return (
-    <div className="container mx-auto relative">
+    <div
+      className="container mx-auto relative"
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
       <div
         className=" z-10 p-3 rounded-lg"
         style={{
