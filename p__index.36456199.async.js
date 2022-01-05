@@ -1186,6 +1186,9 @@
             m = r[1];
           return Object(x['jsx'])('div', {
             className: 'container mx-auto relative',
+            onClick: function (e) {
+              e.stopPropagation();
+            },
             children: Object(x['jsx'])('div', {
               className: ' z-10 p-3 rounded-lg',
               style: { backgroundColor: 'rgba(0, 201, 208, 0.42)' },
@@ -1323,7 +1326,8 @@
           g = o[1];
         Object(i['useEffect'])(function () {
           var e = function (e) {
-            window.innerWidth > 1024 && g(!1);
+            console.log('xxx', e),
+              window.innerWidth > 1024 && (console.log('xxx2', e), g(!1));
           };
           return (
             window.addEventListener('scroll', e, !0),
@@ -1359,9 +1363,12 @@
             Object(x['jsx'])('div', {
               style: { zIndex: 99 },
               className:
-                'fixed inset-0 md:inset-auto top-1/4 md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
-                  r ? 'block' : 'hidden',
+                'fixed bg-gray-900 bg-opacity-20 md:bg-none top-0 bottom-0 items-center justify-center md:inset-auto md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
+                  r ? ' flex md:block' : ' hidden',
                 ),
+              onClick: function () {
+                g(!1);
+              },
               children: Object(x['jsx'])(Oe, {
                 onSubmit: function () {
                   g(!1);
