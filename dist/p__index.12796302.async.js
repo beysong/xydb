@@ -69,7 +69,7 @@
               });
         };
       function m() {
-        var e = Object(a['e'])(),
+        var e = Object(a['f'])(),
           t = Object(i['useState'])(!1),
           s = Object(c['a'])(t, 2),
           l = s[0],
@@ -137,12 +137,12 @@
                           Object(r['jsx'])('span', {
                             onClick: function (e) {
                               e.preventDefault(),
-                                Object(a['d'])('zh-CN', !1),
+                                Object(a['e'])('zh-CN', !1),
                                 A(!1);
                             },
                             style: {
                               color:
-                                'zh-CN' === Object(a['a'])() ? '#00C9D0' : '',
+                                'zh-CN' === Object(a['b'])() ? '#00C9D0' : '',
                             },
                             children: '\u4e2d\u6587',
                           }),
@@ -150,11 +150,11 @@
                           Object(r['jsx'])('span', {
                             style: {
                               color:
-                                'en-US' === Object(a['a'])() ? '#00C9D0' : '',
+                                'en-US' === Object(a['b'])() ? '#00C9D0' : '',
                             },
                             onClick: function (e) {
                               e.preventDefault(),
-                                Object(a['d'])('en-US', !1),
+                                Object(a['e'])('en-US', !1),
                                 A(!1);
                             },
                             children: 'EN',
@@ -209,8 +209,8 @@
       var b = s('yonP'),
         j = s.n(b);
       s('kyQ6');
-      function h() {
-        var e = Object(a['e'])(),
+      function f() {
+        var e = Object(a['f'])(),
           t = Object(i['useState'])(),
           s = Object(c['a'])(t, 2),
           l = s[0],
@@ -356,8 +356,8 @@
           ],
         });
       }
-      var u = s('bTu8'),
-        f = s('g0Ox'),
+      var h = s('bTu8'),
+        u = s('g0Ox'),
         M = s('Xchd'),
         v = s('Ap4+'),
         N = s('ZXcA'),
@@ -401,7 +401,7 @@
           },
         ];
       function P() {
-        var e = Object(a['e'])();
+        var e = Object(a['f'])();
         return Object(r['jsx'])('section', {
           style: {
             backgroundColor: '#EAFCFC',
@@ -457,7 +457,7 @@
       s('lubV');
       function K(e) {
         var t = e.data;
-        Object(a['e'])();
+        Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'mainSlider',
           children: Object(r['jsx'])(O['a'], {
@@ -484,9 +484,9 @@
           }),
         });
       }
-      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
       s('dFpQ');
-      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
       var V = [
         {
           title:
@@ -512,7 +512,7 @@
         },
       ];
       function H() {
-        var e = Object(a['e'])();
+        var e = Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'certify2',
           children: Object(r['jsx'])(O['a'], {
@@ -584,7 +584,7 @@
       }
       var Z = s('daxC');
       s('NeEy');
-      u['a'].use([f['a'], M['a'], v['a'], N['a'], Z['a']]);
+      h['a'].use([u['a'], M['a'], v['a'], N['a'], Z['a']]);
       var I = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -619,7 +619,7 @@
           t = Object(c['a'])(e, 2),
           s = t[0],
           l = t[1],
-          A = Object(a['e'])();
+          A = Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'certify3',
           children: Object(r['jsx'])(O['a'], {
@@ -711,7 +711,7 @@
         });
       }
       s('UUBk');
-      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
       var G = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -742,7 +742,7 @@
         },
       ];
       function F() {
-        var e = Object(a['e'])();
+        var e = Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'certify32',
           children: Object(r['jsx'])(O['a'], {
@@ -822,7 +822,7 @@
           s = e.align,
           c = e.color,
           i = void 0 === c ? 'green' : c;
-        Object(a['e'])();
+        Object(a['f'])();
         return Object(r['jsx'])('div', {
           className: 'left' === s ? 'text-left' : 'text-center',
           children:
@@ -833,7 +833,7 @@
             }),
         });
       }
-      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
       var S = [
           '\u5341\u5927\u589e\u503c\u670d\u52a1',
           '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
@@ -863,9 +863,10 @@
           },
         ];
       function q() {
-        var e = Object(a['e'])();
+        var e,
+          t = Object(a['f'])();
         return (
-          console.log('\u91cd\u65b0\u6267\u884c\u6ca1\uff1f'),
+          null === (e = window.swiper) || void 0 === e || e.pagination.render(),
           Object(r['jsxs'])('section', {
             id: 'certify5',
             className: 'relative',
@@ -875,8 +876,8 @@
                   'absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-16',
                 children: Object(r['jsx'])(T, {
                   title1:
-                    e.formatMessage({ id: 'title.\u54c1\u724c' }) +
-                    e.formatMessage({ id: 'title.\u670d\u52a1' }),
+                    t.formatMessage({ id: 'title.\u54c1\u724c' }) +
+                    t.formatMessage({ id: 'title.\u670d\u52a1' }),
                   align: 'center',
                   color: 'white',
                 }),
@@ -885,23 +886,21 @@
                 touchEventsTarget: 'wrapper',
                 pagination: {
                   clickable: !0,
-                  renderBullet: function (t, s) {
-                    return (
-                      console.log('\u91cd\u65b0\u6267\u884c\u6ca12\uff1f'),
-                      '<div class="'
-                        .concat(s, '">')
-                        .concat(
-                          e.formatMessage({ id: 'section7.' + S[t] }),
-                          '</div>',
-                        )
-                    );
+                  renderBullet: function (e, t) {
+                    var s = Object(a['a'])(Object(a['b'])());
+                    return '<div class="'
+                      .concat(t, '">')
+                      .concat(
+                        s.formatMessage({ id: 'section7.' + S[e] }),
+                        '</div>',
+                      );
                   },
                 },
                 onSwiper: function (e) {
                   return (window.swiper = e);
                 },
                 spaceBetween: 50,
-                children: W.map(function (t, s) {
+                children: W.map(function (e, s) {
                   return Object(r['jsxs'])(
                     w['a'],
                     {
@@ -909,7 +908,7 @@
                         Object(r['jsx'])('img', {
                           src:
                             'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
-                            t.img,
+                            e.img,
                         }),
                         Object(r['jsx'])('div', {
                           className: 'absolute w-full text-white px-5 lg:px-0',
@@ -919,21 +918,21 @@
                             children: [
                               Object(r['jsx'])('div', {
                                 className: 'text-sm lg:text-base xl:text-2xl',
-                                children: e.formatMessage({
-                                  id: 'section7.' + t.title,
+                                children: t.formatMessage({
+                                  id: 'section7.' + e.title,
                                 }),
                               }),
                               Object(r['jsx'])('div', {
                                 className:
                                   'text-xs lg:text-base xl:text-lg mt-2 lg:mt-4 lg:w-1/2',
-                                children: e.formatMessage({
-                                  id: 'section7.' + t.title + s,
+                                children: t.formatMessage({
+                                  id: 'section7.' + e.title + s,
                                 }),
                               }),
                               Object(r['jsx'])('div', {
                                 className:
                                   'hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white',
-                                children: e.formatMessage({
+                                children: t.formatMessage({
                                   id: 'section7.\u4e86\u89e3\u66f4\u591a',
                                 }),
                               }),
@@ -972,7 +971,7 @@
             'full',
             'hrefid',
           ]);
-        Object(a['e'])();
+        Object(a['f'])();
         return Object(r['jsxs'])(r['Fragment'], {
           children: [
             Object(r['jsx'])('a', { id: x }),
@@ -1035,7 +1034,7 @@
           },
         ];
       function be() {
-        var e = Object(a['e'])(),
+        var e = Object(a['f'])(),
           t = function (e) {
             return Object(r['jsx'])(
               'div',
@@ -1099,7 +1098,7 @@
         });
       }
       var je = 'https://wehome-image.oss-cn-shanghai.aliyuncs.com/',
-        he = function (e) {
+        fe = function (e) {
           var t = e.src,
             s = Object(X['a'])(e, ['src']);
           return Object(r['jsx'])(
@@ -1107,10 +1106,10 @@
             Object(J['a'])(Object(J['a'])({}, s), {}, { src: je + t }),
           );
         },
-        ue =
+        he =
           (s('UbcZ'),
           function () {
-            var e = Object(a['e'])();
+            var e = Object(a['f'])();
             return Object(r['jsxs'])('div', {
               className: 'container mx-auto relative',
               children: [
@@ -1212,13 +1211,13 @@
               ],
             });
           }),
-        fe = s('5Pvu'),
-        Me = s.n(fe),
+        ue = s('5Pvu'),
+        Me = s.n(ue),
         ve = s('WhpI'),
         Ne = s.n(ve),
         Oe = function (e) {
           var t = e.onSubmit,
-            s = Object(a['e'])(),
+            s = Object(a['f'])(),
             l = Object(i['useState'])(),
             A = Object(c['a'])(l, 2),
             n = A[0],
@@ -1358,7 +1357,7 @@
         },
         ke = (s('EDuE'), null);
       function Ge() {
-        var e = Object(a['e'])(),
+        var e = Object(a['f'])(),
           t = Object(i['useState'])(!1),
           s = Object(c['a'])(t, 2),
           A = s[0],
@@ -1456,7 +1455,7 @@
                 ],
               }),
               full: !0,
-              children: Object(r['jsx'])(ue, {}),
+              children: Object(r['jsx'])(he, {}),
             }),
             Object(r['jsx'])(L, {
               hrefid: 'id2',
@@ -1720,7 +1719,7 @@
                   Object(r['jsxs'])('div', {
                     className: 'w-full lg:w-1/2 relative',
                     children: [
-                      Object(r['jsx'])(he, {
+                      Object(r['jsx'])(fe, {
                         width: '100%',
                         src: '0aed55856418022454767b5815c4d1e9.png',
                       }),
@@ -1743,7 +1742,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(r['jsx'])(he, {
+                              Object(r['jsx'])(fe, {
                                 width: '100%',
                                 src: '71765038a896cc41ffb6527a0f3a3a8e.png',
                               }),
@@ -1760,7 +1759,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(r['jsx'])(he, {
+                              Object(r['jsx'])(fe, {
                                 width: '100%',
                                 src: '2ebec6c9dce48720310fd8d0163e0521.png',
                               }),
@@ -1782,7 +1781,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2  relative',
                             children: [
-                              Object(r['jsx'])(he, {
+                              Object(r['jsx'])(fe, {
                                 width: '100%',
                                 src: 'e217f33b4bf65e57319ba9a5dbf30896.png',
                               }),
@@ -1799,7 +1798,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(r['jsx'])(he, {
+                              Object(r['jsx'])(fe, {
                                 width: '100%',
                                 src: '0667876ac3587157d912f6168f6b267a.png',
                               }),
@@ -1853,7 +1852,7 @@
               children: [
                 Object(r['jsx'])('div', {
                   className: 'container mx-auto',
-                  children: Object(r['jsx'])(he, {
+                  children: Object(r['jsx'])(fe, {
                     className: 'z-0',
                     src: '8b29a2213f35a062c978bef867f946df.jpg',
                   }),
@@ -1875,7 +1874,7 @@
               }),
               children: Object(r['jsx'])(be, {}),
             }),
-            Object(r['jsx'])(h, {}),
+            Object(r['jsx'])(f, {}),
             Object(r['jsxs'])('div', {
               className: 'fixed right-0 top-1/2 z-10',
               children: [
