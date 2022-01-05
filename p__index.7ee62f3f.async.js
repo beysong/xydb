@@ -680,27 +680,29 @@
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
           desc: '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
+          img: '4d8a1f0f7a5172c9e4f935c7d560cd2e.jpg',
+        },
+        {
+          title:
+            '"\u7075\u52a8\u591a\u53d8 \u6253\u7834\u4f20\u7edf\u529e\u516c\u683c\u5c40"',
+          desc: '\u521b\u610f\u4e0d\u518d\u88ab\u7a7a\u95f4\u675f\u7f1a',
           img: '44338fa1419cf3d5d1cba60e3ab27416.jpg',
         },
         {
-          title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
-          desc: '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
+          title: '"\u5168\u65b9\u4f4d\u5b89\u5fc3\u5b88\u62a4"',
+          desc: '\u4e0d\u653e\u8fc7\u6bcf\u4e00\u5904\u7ec6\u8282',
           img: '5648752b2e22c1d979933b6d5c551301.jpg',
         },
         {
-          title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
-          desc: '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
+          title: '"\u9ad8\u54c1\u8d28\u7cbe\u88c5\u5165\u9a7b"',
+          desc: '\u4e3a\u4f01\u4e1a\u8282\u770130%\u7a7a\u95f4\u6210\u672c',
           img: '891d1c44ed176b9e70727e7f996727f4.jpg',
         },
         {
-          title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
-          desc: '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
+          title:
+            '"\u751f\u6001\u8d4b\u80fd\u5efa\u7b51 \u65e0\u754c\u82b1\u56ed"',
+          desc: '\u6253\u9020\u7eff\u8272\u4f4e\u78b3\u529e\u516c\u793e\u533a',
           img: 'b44231525e153409e443de754e7b81ef.jpg',
-        },
-        {
-          title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
-          desc: '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
-          img: '4d8a1f0f7a5172c9e4f935c7d560cd2e.jpg',
         },
       ];
       function F() {
@@ -802,7 +804,7 @@
           '\u56fd\u9645\u4f01\u4e1a\u5171\u8054',
           '\u57fa\u7840\u4f01\u4e1a\u670d\u52a1',
         ],
-        q = [
+        W = [
           {
             title: '\u5341\u5927\u589e\u503c\u670d\u52a1',
             desc: '\u4f9d\u6258\u4f18\u52bf\u8d44\u6e90\uff0c\u7ed3\u5408\u4f01\u4e1a\u53d1\u5c55\u6240\u9700\uff0c\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u4eba\u624d\u3001\u8d44\u91d1\u878d\u96c6\u54c1\u724c\u63a8\u5e7f\u3001\u6cd5\u5f8b\u653f\u7b56\u54a8\u8be2\u7b49\u4f01\u4e1a\u670d\u52a1\uff0c\u4e3a\u5165\u9a7b\u4f01\u4e1a\u6392\u5fe7\u89e3\u96be\uff0c\u5171\u540c\u6210\u957f\u3002',
@@ -824,7 +826,7 @@
             img: 'c7058973f6c27138656db878fc5ed8cf.jpg',
           },
         ];
-      function W() {
+      function q() {
         var e = Object(a['e'])();
         return Object(x['jsxs'])('section', {
           id: 'certify5',
@@ -857,7 +859,7 @@
                 return (window.swiper = e);
               },
               spaceBetween: 50,
-              children: q.map(function (t, s) {
+              children: W.map(function (t, s) {
                 return Object(x['jsxs'])(
                   w['a'],
                   {
@@ -1315,7 +1317,7 @@
           s = Object(c['a'])(t, 2),
           A = s[0],
           n = s[1],
-          d = Object(i['useState'])(!0),
+          d = Object(i['useState'])(window.innerWidth > 1024),
           o = Object(c['a'])(d, 2),
           r = o[0],
           g = o[1];
@@ -1355,14 +1357,11 @@
             Object(x['jsx'])(m, {}),
             Object(x['jsx'])(K, { data: [pe.a, Qe.a] }),
             Object(x['jsx'])('div', {
-              style: {
-                top: 300,
-                zIndex: 99,
-                position: 'fixed',
-                right: '15%',
-                width: '24rem',
-              },
-              className: r ? 'block' : 'hidden',
+              style: { top: 300, zIndex: 99 },
+              className:
+                'fixed w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
+                  r ? 'block' : 'hidden',
+                ),
               children: Object(x['jsx'])(Oe, {
                 onSubmit: function () {
                   g(!1);
@@ -1810,7 +1809,7 @@
                     src: '8b29a2213f35a062c978bef867f946df.jpg',
                   }),
                 }),
-                Object(x['jsx'])(W, {}),
+                Object(x['jsx'])(q, {}),
               ],
             }),
             Object(x['jsx'])(L, {
