@@ -1323,7 +1323,7 @@
           g = o[1];
         Object(i['useEffect'])(function () {
           var e = function (e) {
-            g(!1);
+            window.innerWidth > 1024 && g(!1);
           };
           return (
             window.addEventListener('scroll', e, !0),
