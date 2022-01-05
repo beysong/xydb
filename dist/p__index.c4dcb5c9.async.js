@@ -46,8 +46,8 @@
         n = s.n(A),
         d = s('zwU1'),
         o = s.n(d),
-        x = (s('PCGc'), s('nKUr')),
-        r = [
+        r = (s('PCGc'), s('nKUr')),
+        x = [
           { id: 'menu.\u9996\u9875' },
           { id: 'menu.\u9879\u76ee\u4ecb\u7ecd' },
           { id: 'menu.\u533a\u4f4d\u4ea4\u901a' },
@@ -78,21 +78,21 @@
           d = Object(c['a'])(n, 2),
           m = d[0],
           b = d[1];
-        return Object(x['jsx'])('header', {
+        return Object(r['jsx'])('header', {
           style: { zIndex: 9999 },
           className: 'sticky top-0 bg-white p-3 xl:p-0 2xl:p-0 3xl:p-0',
-          children: Object(x['jsxs'])('div', {
+          children: Object(r['jsxs'])('div', {
             className:
               ' container mx-auto flex items-center justify-between lg:justify-self-auto xl:justify-self-auto 2xl:justify-self-auto',
             children: [
-              Object(x['jsxs'])('div', {
+              Object(r['jsxs'])('div', {
                 className: 'logo',
                 children: [
-                  Object(x['jsx'])('img', {
+                  Object(r['jsx'])('img', {
                     className: 'w-36 2xl:w-40',
                     src: o.a,
                   }),
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     className:
                       'text-gray-400 text-xs xl:text-sm 2xl:text-sm mt-1',
                     children: e.formatMessage({
@@ -101,21 +101,21 @@
                   }),
                 ],
               }),
-              Object(x['jsx'])('div', {
+              Object(r['jsx'])('div', {
                 id: 'menu-wrap',
                 className: l ? 'menu-wrap active' : 'menu-wrap',
-                children: Object(x['jsxs'])('ul', {
+                children: Object(r['jsxs'])('ul', {
                   className: 'header-menu',
                   children: [
-                    r.map(function (t, s) {
-                      return Object(x['jsx'])(
+                    x.map(function (t, s) {
+                      return Object(r['jsx'])(
                         'li',
                         {
                           className:
                             m === t.id || (!s && !m)
                               ? 'menu-item active'
                               : 'menu-item',
-                          children: Object(x['jsx'])('a', {
+                          children: Object(r['jsx'])('a', {
                             href: '',
                             onClick: function (e) {
                               b(t.id), A(!1), g('#id' + s, e);
@@ -126,17 +126,19 @@
                         s,
                       );
                     }),
-                    Object(x['jsx'])('li', {
+                    Object(r['jsx'])('li', {
                       className: 'menu-item',
-                      children: Object(x['jsxs'])('a', {
+                      children: Object(r['jsxs'])('a', {
                         href: '',
                         onClick: function (e) {
                           e.preventDefault();
                         },
                         children: [
-                          Object(x['jsx'])('span', {
+                          Object(r['jsx'])('span', {
                             onClick: function (e) {
-                              e.preventDefault(), Object(a['d'])('zh-CN', !1);
+                              e.preventDefault(),
+                                Object(a['d'])('zh-CN', !1),
+                                A(!1);
                             },
                             style: {
                               color:
@@ -145,13 +147,15 @@
                             children: '\u4e2d\u6587',
                           }),
                           '/',
-                          Object(x['jsx'])('span', {
+                          Object(r['jsx'])('span', {
                             style: {
                               color:
                                 'en-US' === Object(a['a'])() ? '#00C9D0' : '',
                             },
                             onClick: function (e) {
-                              e.preventDefault(), Object(a['d'])('en-US', !1);
+                              e.preventDefault(),
+                                Object(a['d'])('en-US', !1),
+                                A(!1);
                             },
                             children: 'EN',
                           }),
@@ -161,17 +165,17 @@
                   ],
                 }),
               }),
-              Object(x['jsx'])('div', {
+              Object(r['jsx'])('div', {
                 className:
                   'header-phone hidden text-right items-center lg:flex',
-                children: Object(x['jsxs'])('div', {
+                children: Object(r['jsxs'])('div', {
                   children: [
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'text-xl xl:text-2xl font-bold',
                       style: { color: '#00C9D0' },
                       children: '021-62335008',
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'text-xs',
                       children: e.formatMessage({
                         id: 'footer.\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u4e30\u8679\u8def199\u53f7',
@@ -180,12 +184,12 @@
                   ],
                 }),
               }),
-              Object(x['jsx'])('div', {
+              Object(r['jsx'])('div', {
                 onClick: function () {
                   A(!l);
                 },
                 className: 'lg:hidden xl:hidden 2xl:hidden',
-                children: Object(x['jsx'])('svg', {
+                children: Object(r['jsx'])('svg', {
                   viewBox: '80 80 896 896',
                   focusable: 'false',
                   'data-icon': 'menu',
@@ -193,7 +197,7 @@
                   height: '1em',
                   fill: 'currentColor',
                   'aria-hidden': 'true',
-                  children: Object(x['jsx'])('path', {
+                  children: Object(r['jsx'])('path', {
                     d: 'M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z',
                   }),
                 }),
@@ -207,7 +211,7 @@
       s('kyQ6');
       function h() {
         var e = Object(a['e'])();
-        return Object(x['jsxs'])('footer', {
+        return Object(r['jsxs'])('footer', {
           className: 'footer py-12 xl:py-24',
           style: {
             background: '#34A09B',
@@ -216,51 +220,51 @@
             backgroundSize: 'cover',
           },
           children: [
-            Object(x['jsx'])('a', { id: 'id7' }),
-            Object(x['jsx'])('div', {
+            Object(r['jsx'])('a', { id: 'id7' }),
+            Object(r['jsx'])('div', {
               className: 'container mx-auto',
-              children: Object(x['jsx'])('div', {
+              children: Object(r['jsx'])('div', {
                 className: 'p-5 lg:p-12 xl:p-12 2xl:p-12',
-                children: Object(x['jsxs'])('div', {
+                children: Object(r['jsxs'])('div', {
                   className:
                     'bg-white rounded-lg flex flex-wrap p-12 lg:p-20 xl:p-24',
                   children: [
-                    Object(x['jsxs'])('div', {
+                    Object(r['jsxs'])('div', {
                       className: 'w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 lg:mt-1',
                       children: [
-                        Object(x['jsx'])('div', {
-                          children: Object(x['jsx'])('img', {
+                        Object(r['jsx'])('div', {
+                          children: Object(r['jsx'])('img', {
                             src: j.a,
                             className: 'w-2/3 lg:w-1/2 2xl:w-2/5',
                             alt: '',
                           }),
                         }),
-                        Object(x['jsxs'])('div', {
+                        Object(r['jsxs'])('div', {
                           className: 'mt-6',
                           children: [
-                            Object(x['jsx'])('div', {
+                            Object(r['jsx'])('div', {
                               className: 'text-sm 2xl:text-base',
                               children: e.formatMessage({
                                 id: 'footer.\u6b22\u8fce\u54a8\u8be2',
                               }),
                             }),
-                            Object(x['jsx'])('div', {
+                            Object(r['jsx'])('div', {
                               className: 'text-lg xl:text-xl 2xl:text-2xl',
                               style: { color: '#C8171E' },
                               children: '021-62335008',
                             }),
                           ],
                         }),
-                        Object(x['jsxs'])('div', {
+                        Object(r['jsxs'])('div', {
                           className: 'mt-6',
                           children: [
-                            Object(x['jsx'])('div', {
+                            Object(r['jsx'])('div', {
                               className: 'text-sm 2xl:text-base',
                               children: e.formatMessage({
                                 id: 'footer.\u9879\u76ee\u5730\u5740',
                               }),
                             }),
-                            Object(x['jsx'])('div', {
+                            Object(r['jsx'])('div', {
                               className: 'text-lg xl:text-xl 2xl:text-2xl mt-1',
                               children: e.formatMessage({
                                 id: 'footer.\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u4e30\u8679\u8def199\u53f7',
@@ -270,12 +274,12 @@
                         }),
                       ],
                     }),
-                    Object(x['jsxs'])('div', {
+                    Object(r['jsxs'])('div', {
                       className:
                         'w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 mt-12 lg:mt-1',
                       children: [
-                        Object(x['jsx'])('div', {
-                          children: Object(x['jsx'])('input', {
+                        Object(r['jsx'])('div', {
+                          children: Object(r['jsx'])('input', {
                             className: 'p-3 w-full',
                             style: { border: '1px solid #DFEBEB' },
                             type: 'text',
@@ -284,8 +288,8 @@
                             }),
                           }),
                         }),
-                        Object(x['jsx'])('div', {
-                          children: Object(x['jsx'])('input', {
+                        Object(r['jsx'])('div', {
+                          children: Object(r['jsx'])('input', {
                             className: 'p-3 w-full mt-5',
                             style: { border: '1px solid #DFEBEB' },
                             type: 'number',
@@ -294,8 +298,8 @@
                             }),
                           }),
                         }),
-                        Object(x['jsx'])('div', {
-                          children: Object(x['jsx'])('button', {
+                        Object(r['jsx'])('div', {
+                          children: Object(r['jsx'])('button', {
                             className:
                               'p-3 mt-10 text-white text-base xl:text-lg w-full',
                             style: { background: '#00C9D0' },
@@ -304,7 +308,7 @@
                             }),
                           }),
                         }),
-                        Object(x['jsx'])('div', {
+                        Object(r['jsx'])('div', {
                           className: 'text-center mt-3 text-sm lg:text-base',
                           style: { color: '#00C9D0' },
                           children: e.formatMessage({
@@ -366,7 +370,7 @@
         ];
       function P() {
         var e = Object(a['e'])();
-        return Object(x['jsx'])('section', {
+        return Object(r['jsx'])('section', {
           style: {
             backgroundColor: '#EAFCFC',
             backgroundImage:
@@ -375,35 +379,35 @@
             backgroundRepeat: 'no-repeat',
           },
           className: 'xl:absolute bottom-0 left-0 right-0',
-          children: Object(x['jsx'])('div', {
+          children: Object(r['jsx'])('div', {
             className: 'container mx-auto py-5 text-left',
-            children: Object(x['jsx'])(l['a'], {
+            children: Object(r['jsx'])(l['a'], {
               delay: 300,
               className: 'flex flex-wrap',
               children: Y.map(function (t, s) {
-                return Object(x['jsxs'])(
+                return Object(r['jsxs'])(
                   'div',
                   {
                     className:
                       'item flex w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 xxl:w-1/5 p-3 items-center',
                     children: [
-                      Object(x['jsx'])('div', {
+                      Object(r['jsx'])('div', {
                         className: 'icon',
-                        children: Object(x['jsx'])('img', {
+                        children: Object(r['jsx'])('img', {
                           className:
                             'w-8 h-8  lg:w-12 lg:h-12 xl:w-16 xl:h-16 2xl:w-16 2xl:h-16',
                           src: t.icon,
                           alt: '',
                         }),
                       }),
-                      Object(x['jsxs'])('div', {
+                      Object(r['jsxs'])('div', {
                         className: 'flex-1 pl-3',
                         children: [
-                          Object(x['jsx'])('div', {
+                          Object(r['jsx'])('div', {
                             className: 'text-lg 2xl:text-2xl',
                             children: e.formatMessage({ id: t.count }),
                           }),
-                          Object(x['jsx'])('div', {
+                          Object(r['jsx'])('div', {
                             className: 'text-sm 2xl:text-base text-gray-400',
                             children: e.formatMessage({ id: t.desc }),
                           }),
@@ -422,24 +426,24 @@
       function K(e) {
         var t = e.data;
         Object(a['e'])();
-        return Object(x['jsx'])('section', {
+        return Object(r['jsx'])('section', {
           id: 'mainSlider',
-          children: Object(x['jsx'])(O['a'], {
+          children: Object(r['jsx'])(O['a'], {
             onSwiper: function (e) {
               return (window.swiper = e);
             },
             spaceBetween: 50,
             loop: !0,
             children: t.map(function (e, t) {
-              return Object(x['jsxs'])(
+              return Object(r['jsxs'])(
                 w['a'],
                 {
                   children: [
-                    Object(x['jsx'])('img', {
+                    Object(r['jsx'])('img', {
                       referrerPolicy: 'no-referrer',
                       src: 'https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga25a3e66a51f28a738b3dc2bf722c0560c6173a00d688a4805711bf37d1bd601',
                     }),
-                    Object(x['jsx'])(P, {}),
+                    Object(r['jsx'])(P, {}),
                   ],
                 },
                 t,
@@ -477,9 +481,9 @@
       ];
       function H() {
         var e = Object(a['e'])();
-        return Object(x['jsx'])('section', {
+        return Object(r['jsx'])('section', {
           id: 'certify2',
-          children: Object(x['jsx'])(O['a'], {
+          children: Object(r['jsx'])(O['a'], {
             navigation: !0,
             pagination: {
               clickable: !0,
@@ -520,16 +524,16 @@
               }
             },
             children: V.map(function (t, s) {
-              return Object(x['jsxs'])(
+              return Object(r['jsxs'])(
                 w['a'],
                 {
                   children: [
-                    Object(x['jsx'])('img', {
+                    Object(r['jsx'])('img', {
                       src:
                         'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
                         t.img,
                     }),
-                    Object(x['jsxs'])('div', {
+                    Object(r['jsxs'])('div', {
                       className:
                         'absolute text-sm lg:text-lg left-4 bottom-4 xl:left-8 xl:bottom-8 text-white',
                       children: [
@@ -584,9 +588,9 @@
           s = t[0],
           l = t[1],
           A = Object(a['e'])();
-        return Object(x['jsx'])('section', {
+        return Object(r['jsx'])('section', {
           id: 'certify3',
-          children: Object(x['jsx'])(O['a'], {
+          children: Object(r['jsx'])(O['a'], {
             navigation: !0,
             watchSlidesProgress: !0,
             centeredSlides: !0,
@@ -631,18 +635,18 @@
               }
             },
             children: I.map(function (e, t) {
-              return Object(x['jsxs'])(
+              return Object(r['jsxs'])(
                 w['a'],
                 {
                   children: [
-                    Object(x['jsx'])('div', {
-                      children: Object(x['jsx'])('img', {
+                    Object(r['jsx'])('div', {
+                      children: Object(r['jsx'])('img', {
                         src:
                           'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
                           e.img,
                       }),
                     }),
-                    Object(x['jsxs'])('div', {
+                    Object(r['jsxs'])('div', {
                       className:
                         'text-center w-full absolute transition-all '.concat(
                           s === t
@@ -650,14 +654,14 @@
                             : '-bottom-full invisible',
                         ),
                       children: [
-                        Object(x['jsx'])('div', {
+                        Object(r['jsx'])('div', {
                           className: 'text-base lg:text-xl xl:text-2xl pb-2',
                           style: { color: '#222' },
                           children: A.formatMessage({
                             id: 'section3.' + e.title,
                           }),
                         }),
-                        Object(x['jsx'])('div', {
+                        Object(r['jsx'])('div', {
                           className: 'text-sm xl:text-lg',
                           style: { color: '#777' },
                           children: A.formatMessage({
@@ -707,9 +711,9 @@
       ];
       function F() {
         var e = Object(a['e'])();
-        return Object(x['jsx'])('section', {
+        return Object(r['jsx'])('section', {
           id: 'certify32',
-          children: Object(x['jsx'])(O['a'], {
+          children: Object(r['jsx'])(O['a'], {
             navigation: !0,
             watchSlidesProgress: !0,
             centeredSlides: !0,
@@ -745,26 +749,26 @@
               }
             },
             children: G.map(function (t, s) {
-              return Object(x['jsxs'])(
+              return Object(r['jsxs'])(
                 w['a'],
                 {
                   children: [
-                    Object(x['jsx'])('img', {
+                    Object(r['jsx'])('img', {
                       src:
                         'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
                         t.img,
                     }),
-                    Object(x['jsxs'])('div', {
+                    Object(r['jsxs'])('div', {
                       className:
                         'absolute bottom-4 w-full text-center xl:left-8 xl:bottom-8 text-white',
                       children: [
-                        Object(x['jsx'])('div', {
+                        Object(r['jsx'])('div', {
                           className: 'text-base lg:text-lg',
                           children: e.formatMessage({
                             id: 'section3.' + t.title,
                           }),
                         }),
-                        Object(x['jsx'])('div', {
+                        Object(r['jsx'])('div', {
                           className: 'text-xs lg:text-sm',
                           children: e.formatMessage({
                             id: 'section3.' + t.desc,
@@ -787,11 +791,11 @@
           c = e.color,
           i = void 0 === c ? 'green' : c;
         Object(a['e'])();
-        return Object(x['jsx'])('div', {
+        return Object(r['jsx'])('div', {
           className: 'left' === s ? 'text-left' : 'text-center',
           children:
             !!t &&
-            Object(x['jsx'])('div', {
+            Object(r['jsx'])('div', {
               className: s + ' section-title ' + i,
               children: t,
             }),
@@ -828,84 +832,91 @@
         ];
       function q() {
         var e = Object(a['e'])();
-        return Object(x['jsxs'])('section', {
-          id: 'certify5',
-          className: 'relative',
-          children: [
-            Object(x['jsx'])('div', {
-              className:
-                'absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-16',
-              children: Object(x['jsx'])(T, {
-                title1:
-                  e.formatMessage({ id: 'title.\u54c1\u724c' }) +
-                  e.formatMessage({ id: 'title.\u670d\u52a1' }),
-                align: 'center',
-                color: 'white',
+        return (
+          console.log('\u91cd\u65b0\u6267\u884c\u6ca1\uff1f'),
+          Object(r['jsxs'])('section', {
+            id: 'certify5',
+            className: 'relative',
+            children: [
+              Object(r['jsx'])('div', {
+                className:
+                  'absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-16',
+                children: Object(r['jsx'])(T, {
+                  title1:
+                    e.formatMessage({ id: 'title.\u54c1\u724c' }) +
+                    e.formatMessage({ id: 'title.\u670d\u52a1' }),
+                  align: 'center',
+                  color: 'white',
+                }),
               }),
-            }),
-            Object(x['jsx'])(O['a'], {
-              pagination: {
-                clickable: !0,
-                renderBullet: function (t, s) {
-                  return '<div class="'
-                    .concat(s, '">')
-                    .concat(
-                      e.formatMessage({ id: 'section7.' + S[t] }),
-                      '</div>',
+              Object(r['jsx'])(O['a'], {
+                touchEventsTarget: 'wrapper',
+                pagination: {
+                  clickable: !0,
+                  renderBullet: function (t, s) {
+                    return (
+                      console.log('\u91cd\u65b0\u6267\u884c\u6ca12\uff1f'),
+                      '<div class="'
+                        .concat(s, '">')
+                        .concat(
+                          e.formatMessage({ id: 'section7.' + S[t] }),
+                          '</div>',
+                        )
                     );
-                },
-              },
-              onSwiper: function (e) {
-                return (window.swiper = e);
-              },
-              spaceBetween: 50,
-              children: W.map(function (t, s) {
-                return Object(x['jsxs'])(
-                  w['a'],
-                  {
-                    children: [
-                      Object(x['jsx'])('img', {
-                        src:
-                          'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
-                          t.img,
-                      }),
-                      Object(x['jsx'])('div', {
-                        className: 'absolute w-full text-white px-5 lg:px-0',
-                        style: { top: '40%' },
-                        children: Object(x['jsxs'])('div', {
-                          className: 'container mx-auto text-left',
-                          children: [
-                            Object(x['jsx'])('div', {
-                              className: 'text-sm lg:text-base xl:text-2xl',
-                              children: e.formatMessage({
-                                id: 'section7.' + t.title,
-                              }),
-                            }),
-                            Object(x['jsx'])('div', {
-                              className:
-                                'text-xs lg:text-base xl:text-lg mt-2 lg:mt-4 lg:w-1/2',
-                              children: e.formatMessage({
-                                id: 'section7.' + t.title + s,
-                              }),
-                            }),
-                            Object(x['jsx'])('div', {
-                              className:
-                                'hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white',
-                              children: e.formatMessage({
-                                id: 'section7.\u4e86\u89e3\u66f4\u591a',
-                              }),
-                            }),
-                          ],
-                        }),
-                      }),
-                    ],
                   },
-                  s,
-                );
+                },
+                onSwiper: function (e) {
+                  return (window.swiper = e);
+                },
+                spaceBetween: 50,
+                children: W.map(function (t, s) {
+                  return Object(r['jsxs'])(
+                    w['a'],
+                    {
+                      children: [
+                        Object(r['jsx'])('img', {
+                          src:
+                            'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
+                            t.img,
+                        }),
+                        Object(r['jsx'])('div', {
+                          className: 'absolute w-full text-white px-5 lg:px-0',
+                          style: { top: '40%' },
+                          children: Object(r['jsxs'])('div', {
+                            className: 'container mx-auto text-left',
+                            children: [
+                              Object(r['jsx'])('div', {
+                                className: 'text-sm lg:text-base xl:text-2xl',
+                                children: e.formatMessage({
+                                  id: 'section7.' + t.title,
+                                }),
+                              }),
+                              Object(r['jsx'])('div', {
+                                className:
+                                  'text-xs lg:text-base xl:text-lg mt-2 lg:mt-4 lg:w-1/2',
+                                children: e.formatMessage({
+                                  id: 'section7.' + t.title + s,
+                                }),
+                              }),
+                              Object(r['jsx'])('div', {
+                                className:
+                                  'hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white',
+                                children: e.formatMessage({
+                                  id: 'section7.\u4e86\u89e3\u66f4\u591a',
+                                }),
+                              }),
+                            ],
+                          }),
+                        }),
+                      ],
+                    },
+                    s,
+                  );
+                }),
               }),
-            }),
-          ],
-        });
+            ],
+          })
+        );
       }
       var J = s('k1fw'),
         X = s('PpiC');
@@ -920,7 +931,7 @@
           n = e.full,
           d = void 0 !== n && n,
           o = e.hrefid,
-          r = void 0 === o ? '' : o,
+          x = void 0 === o ? '' : o,
           g = Object(X['a'])(e, [
             'desc',
             'children',
@@ -930,21 +941,21 @@
             'hrefid',
           ]);
         Object(a['e'])();
-        return Object(x['jsxs'])(x['Fragment'], {
+        return Object(r['jsxs'])(r['Fragment'], {
           children: [
-            Object(x['jsx'])('a', { id: r }),
-            Object(x['jsx'])(
+            Object(r['jsx'])('a', { id: x }),
+            Object(r['jsx'])(
               'section',
               Object(J['a'])(
                 Object(J['a'])({ className: l }, g),
                 {},
                 {
-                  children: Object(x['jsxs'])('div', {
+                  children: Object(r['jsxs'])('div', {
                     className: d ? 'w-full' : 'container mx-auto',
                     children: [
-                      Object(x['jsx'])(T, { title1: A, align: 'center' }),
+                      Object(r['jsx'])(T, { title1: A, align: 'center' }),
                       !!s &&
-                        Object(x['jsx'])('div', {
+                        Object(r['jsx'])('div', {
                           className: 'text-center',
                           children: s,
                         }),
@@ -970,9 +981,9 @@
         ne = s('ZtXy'),
         de = s.n(ne),
         oe = s('GgEe'),
-        xe = s.n(oe),
-        re = s('6tIf'),
-        ge = s.n(re),
+        re = s.n(oe),
+        xe = s('6tIf'),
+        ge = s.n(xe),
         me = [
           { icon: $.a, count: '10\u33a1', desc: '\u603b\u9762\u79ef' },
           { icon: te.a, count: '101\u33a1', desc: '\u5206\u9694\u9762\u79ef' },
@@ -984,7 +995,7 @@
           },
           { icon: Ae.a, count: '\u505c\u8f66\u573a', desc: '\u4f9b\u5e94' },
           { icon: de.a, count: 'WiFi', desc: '\u5168\u533a\u57df\u8986\u76d6' },
-          { icon: xe.a, count: 'VRV', desc: '24\u5c0f\u65f6\u5728\u7ebf' },
+          { icon: re.a, count: 'VRV', desc: '24\u5c0f\u65f6\u5728\u7ebf' },
           {
             icon: ge.a,
             count: '\u56ed\u533a\u7ba1\u7406',
@@ -994,7 +1005,7 @@
       function be() {
         var e = Object(a['e'])(),
           t = function (e) {
-            return Object(x['jsx'])(
+            return Object(r['jsx'])(
               'div',
               Object(J['a'])(
                 { className: 'grid grid-cols-4 lg:grid-cols-8' },
@@ -1002,42 +1013,42 @@
               ),
             );
           };
-        return Object(x['jsx'])('section', {
+        return Object(r['jsx'])('section', {
           className: 'mb-28 mt-16',
           style: { minHeight: 80 },
-          children: Object(x['jsx'])('div', {
+          children: Object(r['jsx'])('div', {
             className: 'container mx-auto',
-            children: Object(x['jsx'])(n.a, {
+            children: Object(r['jsx'])(n.a, {
               playScale: '0.1',
-              children: Object(x['jsx'])(
+              children: Object(r['jsx'])(
                 l['a'],
                 {
                   type: 'bottom',
                   component: t,
                   leaveReverse: !0,
                   children: me.map(function (t) {
-                    return Object(x['jsxs'])(
+                    return Object(r['jsxs'])(
                       'div',
                       {
                         className: 'text-center',
                         children: [
-                          Object(x['jsx'])('div', {
+                          Object(r['jsx'])('div', {
                             className: 'icon m-5',
-                            children: Object(x['jsx'])('img', {
+                            children: Object(r['jsx'])('img', {
                               className:
                                 ' w-8 h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 inline-block',
                               src: t.icon,
                               alt: '',
                             }),
                           }),
-                          Object(x['jsx'])('div', {
+                          Object(r['jsx'])('div', {
                             className:
                               'font-bold text-sm xl:text-base 2xl:text-lg',
                             children: e.formatMessage({
                               id: 'zulin.' + t.count,
                             }),
                           }),
-                          Object(x['jsx'])('div', {
+                          Object(r['jsx'])('div', {
                             className: 'text-xs',
                             children: e.formatMessage({
                               id: 'zulin.' + t.desc,
@@ -1059,7 +1070,7 @@
         he = function (e) {
           var t = e.src,
             s = Object(X['a'])(e, ['src']);
-          return Object(x['jsx'])(
+          return Object(r['jsx'])(
             'img',
             Object(J['a'])(Object(J['a'])({}, s), {}, { src: je + t }),
           );
@@ -1068,58 +1079,58 @@
           (s('UbcZ'),
           function () {
             var e = Object(a['e'])();
-            return Object(x['jsxs'])('div', {
+            return Object(r['jsxs'])('div', {
               className: 'container mx-auto relative',
               children: [
-                Object(x['jsx'])('div', {
+                Object(r['jsx'])('div', {
                   className: 'mt-4 mb-24 xl:hidden',
-                  children: Object(x['jsx'])('img', {
+                  children: Object(r['jsx'])('img', {
                     className: 'w-full',
                     src: 'https://wehome-image.oss-cn-shanghai.aliyuncs.com/d7a7d3a8b9eac838cd67c712bf5800b8.png',
                     alt: '',
                   }),
                 }),
-                Object(x['jsxs'])('div', {
+                Object(r['jsxs'])('div', {
                   className: 'pbg hidden xl:block',
                   children: [
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'dian dian1',
-                      children: Object(x['jsx'])('div', {
+                      children: Object(r['jsx'])('div', {
                         className: 'dian-tit',
                         children: e.formatMessage({
                           id: 'section1.\u9f99\u6e56\u8679\u6865\u5929\u8857',
                         }),
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'dian dian2',
-                      children: Object(x['jsx'])('div', {
+                      children: Object(r['jsx'])('div', {
                         className: 'dian-tit',
                         children: e.formatMessage({
                           id: 'section1.\u65b0\u534e\u8054\u8d2d\u7269\u4e2d\u5fc3',
                         }),
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'meto meto1',
-                      children: Object(x['jsx'])('div', {
+                      children: Object(r['jsx'])('div', {
                         className: 'meto-tit',
                         children: e.formatMessage({
                           id: 'section1.\u8679\u6865\u706b\u8f66\u7ad9',
                         }),
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'dian dian3',
-                      children: Object(x['jsxs'])('div', {
+                      children: Object(r['jsxs'])('div', {
                         className: 'dian-tit',
                         children: [
-                          Object(x['jsx'])('img', {
+                          Object(r['jsx'])('img', {
                             src: o.a,
                             className: 'w-36',
                             alt: '',
                           }),
-                          Object(x['jsx'])('div', {
+                          Object(r['jsx'])('div', {
                             className: 'text-gray-600 text-xs mt-1',
                             children: e.formatMessage({
                               id: 'header.\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3',
@@ -1128,33 +1139,33 @@
                         ],
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'meto meto2',
-                      children: Object(x['jsxs'])('div', {
+                      children: Object(r['jsxs'])('div', {
                         className: 'meto-tit',
                         children: [
                           e.formatMessage({
                             id: 'section1.\u8679\u68652\u53f7',
                           }),
-                          Object(x['jsx'])('br', {}),
+                          Object(r['jsx'])('br', {}),
                           e.formatMessage({
                             id: 'section1.\u822a\u7ad9\u697c',
                           }),
                         ],
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'dian dian4',
-                      children: Object(x['jsx'])('div', {
+                      children: Object(r['jsx'])('div', {
                         className: 'dian-tit',
                         children: e.formatMessage({
                           id: 'section1.\u4e0a\u6d77\u8679\u6865\u56fd\u9645\u673a\u573a',
                         }),
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className: 'dian dian5',
-                      children: Object(x['jsxs'])('div', {
+                      children: Object(r['jsxs'])('div', {
                         className: 'dian-tit',
                         children: [
                           ' ',
@@ -1181,24 +1192,24 @@
             n = A[0],
             d = A[1],
             o = Object(i['useState'])(),
-            r = Object(c['a'])(o, 2),
-            g = r[0],
-            m = r[1];
-          return Object(x['jsx'])('div', {
+            x = Object(c['a'])(o, 2),
+            g = x[0],
+            m = x[1];
+          return Object(r['jsx'])('div', {
             className: 'container mx-auto relative',
             onClick: function (e) {
               e.stopPropagation();
             },
-            children: Object(x['jsx'])('div', {
+            children: Object(r['jsx'])('div', {
               className: ' z-10 p-3 rounded-lg',
               style: { backgroundColor: 'rgba(0, 201, 208, 0.42)' },
-              children: Object(x['jsxs'])('div', {
+              children: Object(r['jsxs'])('div', {
                 className:
                   'bg-white px-10 py-12 w-full rounded-lg overflow-hidden',
                 style: { backgroundColor: 'rgba(255,255,255,0.93)' },
                 children: [
-                  Object(x['jsx'])('div', {
-                    children: Object(x['jsx'])('input', {
+                  Object(r['jsx'])('div', {
+                    children: Object(r['jsx'])('input', {
                       className: 'rounded-sm p-2 text-center w-full',
                       style: { border: '1px solid #D1DDDD' },
                       type: 'text',
@@ -1211,8 +1222,8 @@
                       },
                     }),
                   }),
-                  Object(x['jsx'])('div', {
-                    children: Object(x['jsx'])('input', {
+                  Object(r['jsx'])('div', {
+                    children: Object(r['jsx'])('input', {
                       className: 'rounded-sm p-2 text-center w-full mt-4',
                       style: { border: '1px solid #D1DDDD' },
                       type: 'number',
@@ -1225,8 +1236,8 @@
                       },
                     }),
                   }),
-                  Object(x['jsx'])('div', {
-                    children: Object(x['jsx'])('button', {
+                  Object(r['jsx'])('div', {
+                    children: Object(r['jsx'])('button', {
                       onClick: function () {
                         11 === (null === n || void 0 === n ? void 0 : n.length)
                           ? fetch(
@@ -1254,21 +1265,21 @@
                       }),
                     }),
                   }),
-                  Object(x['jsxs'])('div', {
+                  Object(r['jsxs'])('div', {
                     className:
                       'flex items-center justify-around text-center text-gray-400 mt-7 text-sm 2xl:text-base',
                     children: [
-                      Object(x['jsx'])('img', {
+                      Object(r['jsx'])('img', {
                         className: 'w-6',
                         src: Me.a,
                         alt: '',
                       }),
-                      Object(x['jsx'])('span', {
+                      Object(r['jsx'])('span', {
                         children: s.formatMessage({
                           id: 'footer.\u6211\u4eec\u7684\u4e13\u4e1a\u987e\u95ee\u4f1a\u5c3d\u5feb\u4e0e\u60a8\u8054\u7cfb',
                         }),
                       }),
-                      Object(x['jsx'])('img', {
+                      Object(r['jsx'])('img', {
                         className: 'w-6',
                         src: ve.a,
                         alt: '',
@@ -1322,12 +1333,11 @@
           n = s[1],
           d = Object(i['useState'])(window.innerWidth > 1024),
           o = Object(c['a'])(d, 2),
-          r = o[0],
+          x = o[0],
           g = o[1];
         Object(i['useEffect'])(function () {
           var e = function (e) {
-            console.log('xxx', e),
-              window.innerWidth > 1024 && (console.log('xxx2', e), g(!1));
+            window.innerWidth > 1024 && g(!1);
           };
           return (
             window.addEventListener('scroll', e, !0),
@@ -1355,27 +1365,27 @@
             e
           );
         });
-        return Object(x['jsxs'])('main', {
+        return Object(r['jsxs'])('main', {
           children: [
-            Object(x['jsx'])('a', { href: '', id: 'id0' }),
-            Object(x['jsx'])(m, {}),
-            Object(x['jsx'])(K, { data: [pe.a, Qe.a] }),
-            Object(x['jsx'])('div', {
+            Object(r['jsx'])('a', { href: '', id: 'id0' }),
+            Object(r['jsx'])(m, {}),
+            Object(r['jsx'])(K, { data: [pe.a, Qe.a] }),
+            Object(r['jsx'])('div', {
               style: { zIndex: 99 },
               className:
                 'fixed bg-gray-900 bg-opacity-20 md:bg-none top-0 bottom-0 items-center justify-center md:inset-auto md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
-                  r ? ' flex md:block' : ' hidden',
+                  x ? ' flex md:block' : ' hidden',
                 ),
               onClick: function () {
                 g(!1);
               },
-              children: Object(x['jsx'])(Oe, {
+              children: Object(r['jsx'])(Oe, {
                 onSubmit: function () {
                   g(!1);
                 },
               }),
             }),
-            Object(x['jsx'])(L, {
+            Object(r['jsx'])(L, {
               hrefid: 'id1',
               style: {
                 backgroundImage:
@@ -1385,26 +1395,26 @@
                 backgroundSize: '22%',
               },
               className: 'pt-20',
-              desc: Object(x['jsxs'])('div', {
+              desc: Object(r['jsxs'])('div', {
                 className:
                   'px-5 my-10 text-sm 2xl:text-base leading-6 2xl:leading-8',
                 style: { color: '#666' },
                 children: [
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     className: 'whitespace-pre-line',
                     children: e.formatMessage({ id: 'section1.con1' }),
                   }),
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     children: e.formatMessage({ id: 'section1.con2' }),
                   }),
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     children: e.formatMessage({ id: 'section1.con3' }),
                   }),
                 ],
               }),
-              title1: Object(x['jsxs'])('div', {
+              title1: Object(r['jsxs'])('div', {
                 children: [
-                  Object(x['jsx'])('span', {
+                  Object(r['jsx'])('span', {
                     className: 'text-green',
                     children: e.formatMessage({
                       id: 'title.\u661f\u6708\u5fb7\u5fc5WE"',
@@ -1414,16 +1424,16 @@
                 ],
               }),
               full: !0,
-              children: Object(x['jsx'])(ue, {}),
+              children: Object(r['jsx'])(ue, {}),
             }),
-            Object(x['jsx'])(L, {
+            Object(r['jsx'])(L, {
               hrefid: 'id2',
               full: !0,
-              children: Object(x['jsxs'])('div', {
+              children: Object(r['jsxs'])('div', {
                 className:
                   'flex flex-wrap flex-col-reverse md:flex-row text-white',
                 children: [
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     className:
                       'w-full h-96 md:h-auto md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2',
                     style: {
@@ -1433,26 +1443,26 @@
                         'url(https://wehome-image.oss-cn-shanghai.aliyuncs.com/11af3e84c140117665bf8b1ef1660583.png)',
                     },
                   }),
-                  Object(x['jsxs'])('div', {
+                  Object(r['jsxs'])('div', {
                     className:
                       'w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xxl:w-1/2 py-8 px-8 xl:py-12 xl:px-20 2xl:py-16 2xl:px-24',
                     style: { backgroundColor: '#00C9D0' },
                     children: [
-                      Object(x['jsx'])(T, {
+                      Object(r['jsx'])(T, {
                         title1: e.formatMessage({
                           id: 'title.\u533a\u4f4d\u4ea4\u901a',
                         }),
                         align: 'left',
                         color: 'white',
                       }),
-                      Object(x['jsx'])('div', {
+                      Object(r['jsx'])('div', {
                         className:
                           'pt-6 xl:pt-8 text-base lx:text-xl 2xl:text-2xl',
                         children: e.formatMessage({ id: 'section2.con1' }),
                       }),
-                      Object(x['jsx'])('div', {
+                      Object(r['jsx'])('div', {
                         className: 'pt-10',
-                        children: Object(x['jsx'])('div', {
+                        children: Object(r['jsx'])('div', {
                           className: 'mapBtn',
                           style: {
                             backgroundColor: '#0094A5',
@@ -1466,37 +1476,37 @@
                           }),
                         }),
                       }),
-                      Object(x['jsx'])('div', {
+                      Object(r['jsx'])('div', {
                         className: 'xl:pt-4',
-                        children: Object(x['jsxs'])(l['a'], {
+                        children: Object(r['jsxs'])(l['a'], {
                           delay: 300,
                           reversed: !0,
                           children: [
-                            Object(x['jsxs'])(
+                            Object(r['jsxs'])(
                               'div',
                               {
                                 className: 'flex items-center my-10',
                                 children: [
-                                  Object(x['jsx'])('img', {
+                                  Object(r['jsx'])('img', {
                                     className:
                                       'w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20',
                                     src: Ye.a,
                                     alt: '',
                                   }),
-                                  Object(x['jsxs'])('div', {
+                                  Object(r['jsxs'])('div', {
                                     className: 'flex-1 pl-4',
                                     children: [
-                                      Object(x['jsx'])('div', {
+                                      Object(r['jsx'])('div', {
                                         className:
                                           'text-base xl:text-xl 2xl:text-2xl font-bold',
                                         children: e.formatMessage({
                                           id: 'section2.\u4e13\u5c5e\u73ed\u8f66',
                                         }),
                                       }),
-                                      Object(x['jsx'])('div', {
+                                      Object(r['jsx'])('div', {
                                         className:
                                           'text-xs lg:text-sm 2xl:text-base mt-1',
-                                        children: Object(x['jsx'])('div', {
+                                        children: Object(r['jsx'])('div', {
                                           children: e.formatMessage({
                                             id: 'section2.\u4e0a\u4e0b\u73ed5\u5206\u949f\u76f4\u8fbe\u8679\u6865T2\u822a\u7ad9\u697c\u5730\u94c1\u7ad9',
                                           }),
@@ -1508,37 +1518,37 @@
                               },
                               'a',
                             ),
-                            Object(x['jsxs'])(
+                            Object(r['jsxs'])(
                               'div',
                               {
                                 className: 'flex items-center my-10',
                                 children: [
-                                  Object(x['jsx'])('img', {
+                                  Object(r['jsx'])('img', {
                                     className:
                                       'w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20',
                                     src: Ke.a,
                                     alt: '',
                                   }),
-                                  Object(x['jsxs'])('div', {
+                                  Object(r['jsxs'])('div', {
                                     className: 'flex-1 pl-4',
                                     children: [
-                                      Object(x['jsx'])('div', {
+                                      Object(r['jsx'])('div', {
                                         className:
                                           'text-base xl:text-xl 2xl:text-2xl font-bold',
                                         children: e.formatMessage({
                                           id: 'section2.\u8f68\u9053\u4ea4\u901a',
                                         }),
                                       }),
-                                      Object(x['jsxs'])('div', {
+                                      Object(r['jsxs'])('div', {
                                         className:
                                           'text-xs lg:text-sm 2xl:text-base mt-1',
                                         children: [
-                                          Object(x['jsx'])('div', {
+                                          Object(r['jsx'])('div', {
                                             children: e.formatMessage({
                                               id: 'section2.con2',
                                             }),
                                           }),
-                                          Object(x['jsx'])('div', {
+                                          Object(r['jsx'])('div', {
                                             children: e.formatMessage({
                                               id: 'section2.con3',
                                             }),
@@ -1551,31 +1561,31 @@
                               },
                               'b',
                             ),
-                            Object(x['jsxs'])(
+                            Object(r['jsxs'])(
                               'div',
                               {
                                 className: 'flex items-center mt-10',
                                 children: [
-                                  Object(x['jsx'])('img', {
+                                  Object(r['jsx'])('img', {
                                     className:
                                       'w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20',
                                     src: He.a,
                                     alt: '',
                                   }),
-                                  Object(x['jsxs'])('div', {
+                                  Object(r['jsxs'])('div', {
                                     className: 'flex-1 pl-4',
                                     children: [
-                                      Object(x['jsx'])('div', {
+                                      Object(r['jsx'])('div', {
                                         className:
                                           'text-base xl:text-xl 2xl:text-2xl font-bold',
                                         children: e.formatMessage({
                                           id: 'section2.\u516c\u4ea4\u7ebf\u8def',
                                         }),
                                       }),
-                                      Object(x['jsx'])('div', {
+                                      Object(r['jsx'])('div', {
                                         className:
                                           'text-xs lg:text-sm 2xl:text-base mt-1',
-                                        children: Object(x['jsx'])('div', {
+                                        children: Object(r['jsx'])('div', {
                                           children: e.formatMessage({
                                             id: 'section2.con4',
                                           }),
@@ -1595,13 +1605,13 @@
                 ],
               }),
             }),
-            Object(x['jsxs'])(L, {
+            Object(r['jsxs'])(L, {
               full: !0,
               className: 'pt-20',
               hrefid: 'id3',
-              title1: Object(x['jsxs'])('div', {
+              title1: Object(r['jsxs'])('div', {
                 children: [
-                  Object(x['jsx'])('span', {
+                  Object(r['jsx'])('span', {
                     className: 'text-green',
                     children: e.formatMessage({ id: 'title.\u8bbe\u8ba1' }),
                   }),
@@ -1609,44 +1619,44 @@
                 ],
               }),
               children: [
-                Object(x['jsx'])('div', {
+                Object(r['jsx'])('div', {
                   className:
                     'pt-10 lg:pt-20 lg:pb-16 xl:pb-24 2xl:pb-32 overflow-hidden hidden lg:block',
-                  children: Object(x['jsx'])(k, {
+                  children: Object(r['jsx'])(k, {
                     data: [pe.a, pe.a, Qe.a, Qe.a],
                   }),
                 }),
-                Object(x['jsx'])('div', {
+                Object(r['jsx'])('div', {
                   className: 'pt-10 lg:pt-20 overflow-hidden lg:hidden',
-                  children: Object(x['jsx'])(F, {}),
+                  children: Object(r['jsx'])(F, {}),
                 }),
               ],
             }),
-            Object(x['jsx'])(L, {
+            Object(r['jsx'])(L, {
               className: 'pt-20',
               full: !0,
-              title1: Object(x['jsxs'])('div', {
+              title1: Object(r['jsxs'])('div', {
                 children: [
-                  Object(x['jsx'])('span', {
+                  Object(r['jsx'])('span', {
                     className: 'text-green',
                     children: e.formatMessage({ id: 'title.\u529e\u516c' }),
                   }),
                   e.formatMessage({ id: 'title.\u7a7a\u95f4' }),
                 ],
               }),
-              desc: Object(x['jsx'])('div', {
+              desc: Object(r['jsx'])('div', {
                 className: 'leading-8 px-5 my-10 text-sm 2xl:text-base',
                 style: { color: '#666' },
-                children: Object(x['jsx'])('div', {
+                children: Object(r['jsx'])('div', {
                   children: e.formatMessage({ id: 'section4.con1' }),
                 }),
               }),
-              children: Object(x['jsx'])('div', {
+              children: Object(r['jsx'])('div', {
                 className: 'lg:w-4/5 mx-auto',
-                children: Object(x['jsx'])(H, {}),
+                children: Object(r['jsx'])(H, {}),
               }),
             }),
-            Object(x['jsx'])(L, {
+            Object(r['jsx'])(L, {
               style: {
                 backgroundImage:
                   'url(https://wehome-image.oss-cn-shanghai.aliyuncs.com/3190d8bc478ec4b31b0eecb339700353.png)',
@@ -1656,9 +1666,9 @@
               },
               className: 'pt-12 lg:pt-20 xl:pt-28 2xl:pt-32',
               hrefid: 'id4',
-              title1: Object(x['jsxs'])('div', {
+              title1: Object(r['jsxs'])('div', {
                 children: [
-                  Object(x['jsx'])('span', {
+                  Object(r['jsx'])('span', {
                     className: 'text-green',
                     children: e.formatMessage({ id: 'title.\u751f\u6001' }),
                   }),
@@ -1666,23 +1676,23 @@
                 ],
               }),
               full: !0,
-              desc: Object(x['jsx'])('div', {
+              desc: Object(r['jsx'])('div', {
                 className: 'leading-8 px-5 my-5 text-sm 2xl:text-base',
-                children: Object(x['jsx'])('div', {
+                children: Object(r['jsx'])('div', {
                   children: e.formatMessage({ id: 'section5.con1' }),
                 }),
               }),
-              children: Object(x['jsxs'])('div', {
+              children: Object(r['jsxs'])('div', {
                 className: 'flex flex-wrap mt-10',
                 children: [
-                  Object(x['jsxs'])('div', {
+                  Object(r['jsxs'])('div', {
                     className: 'w-full lg:w-1/2 relative',
                     children: [
-                      Object(x['jsx'])(he, {
+                      Object(r['jsx'])(he, {
                         width: '100%',
                         src: '0aed55856418022454767b5815c4d1e9.png',
                       }),
-                      Object(x['jsx'])('div', {
+                      Object(r['jsx'])('div', {
                         className:
                           'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                         style: { background: '#00C9D0' },
@@ -1692,20 +1702,20 @@
                       }),
                     ],
                   }),
-                  Object(x['jsxs'])('div', {
+                  Object(r['jsxs'])('div', {
                     className: 'w-full lg:w-1/2',
                     children: [
-                      Object(x['jsxs'])('div', {
+                      Object(r['jsxs'])('div', {
                         className: 'flex flex-wrap',
                         children: [
-                          Object(x['jsxs'])('div', {
+                          Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(x['jsx'])(he, {
+                              Object(r['jsx'])(he, {
                                 width: '100%',
                                 src: '71765038a896cc41ffb6527a0f3a3a8e.png',
                               }),
-                              Object(x['jsx'])('div', {
+                              Object(r['jsx'])('div', {
                                 className:
                                   'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
@@ -1715,14 +1725,14 @@
                               }),
                             ],
                           }),
-                          Object(x['jsxs'])('div', {
+                          Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(x['jsx'])(he, {
+                              Object(r['jsx'])(he, {
                                 width: '100%',
                                 src: '2ebec6c9dce48720310fd8d0163e0521.png',
                               }),
-                              Object(x['jsx'])('div', {
+                              Object(r['jsx'])('div', {
                                 className:
                                   'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
@@ -1734,17 +1744,17 @@
                           }),
                         ],
                       }),
-                      Object(x['jsxs'])('div', {
+                      Object(r['jsxs'])('div', {
                         className: 'flex flex-wrap',
                         children: [
-                          Object(x['jsxs'])('div', {
+                          Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2  relative',
                             children: [
-                              Object(x['jsx'])(he, {
+                              Object(r['jsx'])(he, {
                                 width: '100%',
                                 src: 'e217f33b4bf65e57319ba9a5dbf30896.png',
                               }),
-                              Object(x['jsx'])('div', {
+                              Object(r['jsx'])('div', {
                                 className:
                                   'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
@@ -1754,14 +1764,14 @@
                               }),
                             ],
                           }),
-                          Object(x['jsxs'])('div', {
+                          Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(x['jsx'])(he, {
+                              Object(r['jsx'])(he, {
                                 width: '100%',
                                 src: '0667876ac3587157d912f6168f6b267a.png',
                               }),
-                              Object(x['jsx'])('div', {
+                              Object(r['jsx'])('div', {
                                 className:
                                   'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
@@ -1778,18 +1788,18 @@
                 ],
               }),
             }),
-            Object(x['jsxs'])(L, {
+            Object(r['jsxs'])(L, {
               className: 'pt-20',
               hrefid: 'id5',
-              desc: Object(x['jsxs'])('div', {
+              desc: Object(r['jsxs'])('div', {
                 className: 'leading-10 my-5 px-5 relative',
                 children: [
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     className: 'text-base 2xl:text-lg mt-3',
                     style: { color: '#222' },
                     children: e.formatMessage({ id: 'section6.con1' }),
                   }),
-                  Object(x['jsx'])('div', {
+                  Object(r['jsx'])('div', {
                     className:
                       'text-xs 2xl:text-sm mt-2 leading-6 2xl:leading-7 whitespace-pre-line',
                     style: { color: '#666' },
@@ -1797,9 +1807,9 @@
                   }),
                 ],
               }),
-              title1: Object(x['jsxs'])('div', {
+              title1: Object(r['jsxs'])('div', {
                 children: [
-                  Object(x['jsx'])('span', {
+                  Object(r['jsx'])('span', {
                     className: 'text-green',
                     children: e.formatMessage({ id: 'title.\u54c1\u724c' }),
                   }),
@@ -1809,67 +1819,67 @@
               style: { backgroundColor: '#E9FCFD' },
               full: !0,
               children: [
-                Object(x['jsx'])('div', {
+                Object(r['jsx'])('div', {
                   className: 'container mx-auto',
-                  children: Object(x['jsx'])(he, {
+                  children: Object(r['jsx'])(he, {
                     className: 'z-0',
                     src: '8b29a2213f35a062c978bef867f946df.jpg',
                   }),
                 }),
-                Object(x['jsx'])(q, {}),
+                Object(r['jsx'])(q, {}),
               ],
             }),
-            Object(x['jsx'])(L, {
+            Object(r['jsx'])(L, {
               hrefid: 'id6',
               className: 'pt-20',
-              title1: Object(x['jsxs'])('div', {
+              title1: Object(r['jsxs'])('div', {
                 children: [
-                  Object(x['jsx'])('span', {
+                  Object(r['jsx'])('span', {
                     className: 'text-green',
                     children: e.formatMessage({ id: 'title.\u79df\u8d41' }),
                   }),
                   e.formatMessage({ id: 'title.\u4fe1\u606f' }),
                 ],
               }),
-              children: Object(x['jsx'])(be, {}),
+              children: Object(r['jsx'])(be, {}),
             }),
-            Object(x['jsx'])(h, {}),
-            Object(x['jsxs'])('div', {
+            Object(r['jsx'])(h, {}),
+            Object(r['jsxs'])('div', {
               className: 'fixed right-0 top-1/2 z-10',
               children: [
-                Object(x['jsxs'])('div', {
+                Object(r['jsxs'])('div', {
                   className:
                     'text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 text-white text-center p-2 cursor-pointer',
                   style: { backgroundColor: '#00C9D0' },
                   onClick: function () {
-                    g(!r);
+                    g(!x);
                   },
                   children: [
-                    Object(x['jsx'])('img', {
+                    Object(r['jsx'])('img', {
                       className: 'block w-2/3 mx-auto',
                       src: Re.a,
                       alt: '',
                     }),
-                    Object(x['jsx'])('span', {
+                    Object(r['jsx'])('span', {
                       children: e.formatMessage({
                         id: 'footer.\u9884\u7ea6\u53c2\u89c2',
                       }),
                     }),
                   ],
                 }),
-                Object(x['jsx'])('div', {
+                Object(r['jsx'])('div', {
                   className:
                     'text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2',
                   style: { backgroundColor: '#00C9D0' },
-                  children: Object(x['jsxs'])('a', {
+                  children: Object(r['jsxs'])('a', {
                     href: 'tel:021-62335008',
                     children: [
-                      Object(x['jsx'])('img', {
+                      Object(r['jsx'])('img', {
                         className: 'block w-2/3 mx-auto',
                         src: Be.a,
                         alt: '',
                       }),
-                      Object(x['jsx'])('span', {
+                      Object(r['jsx'])('span', {
                         children: e.formatMessage({
                           id: 'footer.\u7535\u8bdd\u54a8\u8be2',
                         }),
@@ -1877,7 +1887,7 @@
                     ],
                   }),
                 }),
-                Object(x['jsxs'])('div', {
+                Object(r['jsxs'])('div', {
                   className:
                     'text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2 cursor-pointer',
                   style: { backgroundColor: '#00C9D0' },
@@ -1892,22 +1902,22 @@
                       n(!A);
                   },
                   children: [
-                    Object(x['jsx'])('img', {
+                    Object(r['jsx'])('img', {
                       className: 'block w-2/3 mx-auto',
                       src: ye.a,
                       alt: '',
                     }),
-                    Object(x['jsx'])('span', {
+                    Object(r['jsx'])('span', {
                       children: e.formatMessage({
                         id: 'footer.\u5728\u7ebf\u54a8\u8be2',
                       }),
                     }),
-                    Object(x['jsx'])('div', {
+                    Object(r['jsx'])('div', {
                       className:
                         'fixed top-1/2 w-80 h-3/5 transform -translate-y-1/2 right-20 '.concat(
                           A ? 'block' : 'hidden',
                         ),
-                      children: Object(x['jsx'])('iframe', {
+                      children: Object(r['jsx'])('iframe', {
                         src: '',
                         frameBorder: '0',
                         className: 'iframe w-full h-full',

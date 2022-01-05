@@ -89,6 +89,7 @@ export default function IndexPage() {
                   onClick={(e) => {
                     e.preventDefault();
                     setLocale('zh-CN', false);
+                    setVisible(false);
                   }}
                   style={{ color: getLocale() === 'zh-CN' ? '#00C9D0' : '' }}
                 >
@@ -100,6 +101,7 @@ export default function IndexPage() {
                   onClick={(e) => {
                     e.preventDefault();
                     setLocale('en-US', false);
+                    setVisible(false);
                   }}
                 >
                   EN

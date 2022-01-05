@@ -42,6 +42,7 @@ const imgs = [
 
 export default function IndexPage() {
   const intl = useIntl();
+  console.log('重新执行没？');
   return (
     <section id="certify5" className="relative">
       <div className="absolute -z-1 lg:z-10 w-full top-4 lg:top-8 2xl:top-16">
@@ -59,9 +60,11 @@ export default function IndexPage() {
         />
       </div>
       <Swiper
+        touchEventsTarget="wrapper"
         pagination={{
           clickable: true,
           renderBullet: (index, className) => {
+            console.log('重新执行没2？');
             return `<div class="${className}">${intl.formatMessage({
               id: 'section7.' + tits[index],
             })}</div>`;
