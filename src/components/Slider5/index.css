@@ -20,8 +20,8 @@
 
 #certify5 .swiper-slide {
   width: 1000px;
-  background: #fff;
   box-shadow: 0 8px 30px #ddd;
+  @apply py-12 overflow-hidden bg-white;
 }
 #certify5 .swiper-slide img {
   display: block;

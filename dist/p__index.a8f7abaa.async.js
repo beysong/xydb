@@ -359,8 +359,8 @@
       var h = s('bTu8'),
         u = s('g0Ox'),
         M = s('Xchd'),
-        v = s('Ap4+'),
-        N = s('ZXcA'),
+        N = s('Ap4+'),
+        v = s('ZXcA'),
         O = s('xqva'),
         w = s('Ndxo'),
         p = (s('u+OR'), s('he91')),
@@ -410,7 +410,7 @@
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           },
-          className: 'xl:absolute bottom-0 left-0 right-0',
+          className: 'xl:absolute bottom-0 left-0 right-0 mt-12 md:mt-0',
           children: Object(r['jsx'])('div', {
             className: 'container mx-auto py-5 text-left',
             children: Object(r['jsx'])(l['a'], {
@@ -457,7 +457,6 @@
       s('lubV');
       function K(e) {
         var t = e.data;
-        Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'mainSlider',
           children: Object(r['jsx'])(O['a'], {
@@ -472,6 +471,7 @@
                 {
                   children: [
                     Object(r['jsx'])('img', {
+                      className: 'transform scale-150 md:scale-0',
                       referrerPolicy: 'no-referrer',
                       src: 'https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga25a3e66a51f28a738b3dc2bf722c0560c6173a00d688a4805711bf37d1bd601',
                     }),
@@ -484,9 +484,9 @@
           }),
         });
       }
-      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
       s('dFpQ');
-      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
       var V = [
         {
           title:
@@ -584,7 +584,7 @@
       }
       var Z = s('daxC');
       s('NeEy');
-      h['a'].use([u['a'], M['a'], v['a'], N['a'], Z['a']]);
+      h['a'].use([u['a'], M['a'], N['a'], v['a'], Z['a']]);
       var I = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -711,7 +711,7 @@
         });
       }
       s('UUBk');
-      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
       var G = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -833,7 +833,7 @@
             }),
         });
       }
-      h['a'].use([u['a'], M['a'], v['a'], N['a']]);
+      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
       var S = [
           '\u5341\u5927\u589e\u503c\u670d\u52a1',
           '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
@@ -906,6 +906,7 @@
                     {
                       children: [
                         Object(r['jsx'])('img', {
+                          className: 'transform scale-150 md:scale-0',
                           src:
                             'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
                             e.img,
@@ -1213,8 +1214,8 @@
           }),
         ue = s('5Pvu'),
         Me = s.n(ue),
-        ve = s('WhpI'),
-        Ne = s.n(ve),
+        Ne = s('WhpI'),
+        ve = s.n(Ne),
         Oe = function (e) {
           var t = e.onSubmit,
             s = Object(a['f'])(),
@@ -1312,7 +1313,7 @@
                       }),
                       Object(r['jsx'])('img', {
                         className: 'w-6',
-                        src: Ne.a,
+                        src: ve.a,
                         alt: '',
                       }),
                     ],
@@ -1880,7 +1881,7 @@
               children: [
                 Object(r['jsxs'])('div', {
                   className:
-                    'text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 text-white text-center p-2 cursor-pointer',
+                    'text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 text-white text-center p-2 cursor-pointer',
                   style: { backgroundColor: '#00C9D0' },
                   onClick: function () {
                     g(!x);
@@ -1892,6 +1893,7 @@
                       alt: '',
                     }),
                     Object(r['jsx'])('span', {
+                      className: 'hidden md:inline',
                       children: e.formatMessage({
                         id: 'footer.\u9884\u7ea6\u53c2\u89c2',
                       }),
@@ -1900,7 +1902,7 @@
                 }),
                 Object(r['jsx'])('div', {
                   className:
-                    'text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2',
+                    'text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 mt-2 text-white text-center p-2',
                   style: { backgroundColor: '#00C9D0' },
                   children: Object(r['jsxs'])('a', {
                     href: 'tel:021-62335008',
@@ -1911,6 +1913,7 @@
                         alt: '',
                       }),
                       Object(r['jsx'])('span', {
+                        className: 'hidden md:inline',
                         children: e.formatMessage({
                           id: 'footer.\u7535\u8bdd\u54a8\u8be2',
                         }),
@@ -1920,7 +1923,7 @@
                 }),
                 Object(r['jsxs'])('div', {
                   className:
-                    'text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2 cursor-pointer',
+                    'text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 mt-2 text-white text-center p-2 cursor-pointer',
                   style: { backgroundColor: '#00C9D0' },
                   onClick: function () {
                     var e = document.querySelector('.iframe');
@@ -1939,6 +1942,7 @@
                       alt: '',
                     }),
                     Object(r['jsx'])('span', {
+                      className: 'hidden md:inline',
                       children: e.formatMessage({
                         id: 'footer.\u5728\u7ebf\u54a8\u8be2',
                       }),

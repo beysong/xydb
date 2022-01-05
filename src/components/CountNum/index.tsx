@@ -26,7 +26,7 @@ export default function IndexPage() {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }}
-      className="xl:absolute bottom-0 left-0 right-0"
+      className="xl:absolute bottom-0 left-0 right-0 mt-12 md:mt-0"
     >
       <div className="container mx-auto py-5 text-left">
         <QueueAnim delay={300} className="flex flex-wrap">

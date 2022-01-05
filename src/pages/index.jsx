@@ -502,26 +502,26 @@ export default function IndexPage() {
       <Footer />
       <div className="fixed right-0 top-1/2 z-10">
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 text-white text-center p-2 cursor-pointer"
+          className="text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 text-white text-center p-2 cursor-pointer"
           style={{ backgroundColor: '#00C9D0' }}
           onClick={() => {
             setShowContact(!showContact);
           }}
         >
           <img className="block w-2/3 mx-auto" src={fixmsg} alt="" />
-          <span>
+          <span className="hidden md:inline">
             {intl.formatMessage({
               id: 'footer.预约参观',
             })}
           </span>
         </div>
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2"
+          className="text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#00C9D0' }}
         >
           <a href="tel:021-62335008">
             <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
-            <span>
+            <span className="hidden md:inline">
               {intl.formatMessage({
                 id: 'footer.电话咨询',
               })}
@@ -529,7 +529,7 @@ export default function IndexPage() {
           </a>
         </div>
         <div
-          className="text-xs xl:text-sm 2xl:text-sm w-20 xl:w-24 mt-2 text-white text-center p-2 cursor-pointer"
+          className="text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 mt-2 text-white text-center p-2 cursor-pointer"
           style={{ backgroundColor: '#00C9D0' }}
           onClick={() => {
             let iframe = document.querySelector('.iframe');
@@ -545,7 +545,7 @@ export default function IndexPage() {
           }}
         >
           <img className="block w-2/3 mx-auto" src={fixmeet} alt="" />
-          <span>
+          <span className="hidden md:inline">
             {intl.formatMessage({
               id: 'footer.在线咨询',
             })}
