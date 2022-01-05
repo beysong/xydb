@@ -210,7 +210,15 @@
         j = s.n(b);
       s('kyQ6');
       function h() {
-        var e = Object(a['e'])();
+        var e = Object(a['e'])(),
+          t = Object(i['useState'])(),
+          s = Object(c['a'])(t, 2),
+          l = s[0],
+          A = s[1],
+          n = Object(i['useState'])(),
+          d = Object(c['a'])(n, 2),
+          o = d[0],
+          x = d[1];
         return Object(r['jsxs'])('footer', {
           className: 'footer py-12 xl:py-24',
           style: {
@@ -286,6 +294,9 @@
                             placeholder: e.formatMessage({
                               id: 'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u59d3\u540d',
                             }),
+                            onChange: function (e) {
+                              x(e.target.value);
+                            },
                           }),
                         }),
                         Object(r['jsx'])('div', {
@@ -296,6 +307,9 @@
                             placeholder: e.formatMessage({
                               id: 'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7',
                             }),
+                            onChange: function (e) {
+                              A(e.target.value);
+                            },
                           }),
                         }),
                         Object(r['jsx'])('div', {
@@ -303,6 +317,24 @@
                             className:
                               'p-3 mt-10 text-white text-base xl:text-lg w-full',
                             style: { background: '#00C9D0' },
+                            onClick: function () {
+                              11 ===
+                              (null === l || void 0 === l ? void 0 : l.length)
+                                ? fetch(
+                                    'http://open-api.wehome.net.cn/standard_project/wehome/open_dobe_web_order_create',
+                                    {
+                                      method: 'POST',
+                                      body: JSON.stringify({
+                                        tel: l,
+                                        name: o,
+                                        room_id: 9351,
+                                      }),
+                                    },
+                                  )
+                                : alert(
+                                    '\u624b\u673a\u53f7\u683c\u5f0f\u4e0d\u6b63\u786e',
+                                  );
+                            },
                             children: e.formatMessage({
                               id: 'footer.\u7acb\u5373\u514d\u8d39\u9884\u7ea6\u53c2\u89c2',
                             }),
@@ -327,8 +359,8 @@
       var u = s('bTu8'),
         f = s('g0Ox'),
         M = s('Xchd'),
-        N = s('Ap4+'),
-        v = s('ZXcA'),
+        v = s('Ap4+'),
+        N = s('ZXcA'),
         O = s('xqva'),
         w = s('Ndxo'),
         p = (s('u+OR'), s('he91')),
@@ -452,9 +484,9 @@
           }),
         });
       }
-      u['a'].use([f['a'], M['a'], N['a'], v['a']]);
+      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
       s('dFpQ');
-      u['a'].use([f['a'], M['a'], N['a'], v['a']]);
+      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
       var V = [
         {
           title:
@@ -552,7 +584,7 @@
       }
       var Z = s('daxC');
       s('NeEy');
-      u['a'].use([f['a'], M['a'], N['a'], v['a'], Z['a']]);
+      u['a'].use([f['a'], M['a'], v['a'], N['a'], Z['a']]);
       var I = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -679,7 +711,7 @@
         });
       }
       s('UUBk');
-      u['a'].use([f['a'], M['a'], N['a'], v['a']]);
+      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
       var G = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -801,7 +833,7 @@
             }),
         });
       }
-      u['a'].use([f['a'], M['a'], N['a'], v['a']]);
+      u['a'].use([f['a'], M['a'], v['a'], N['a']]);
       var S = [
           '\u5341\u5927\u589e\u503c\u670d\u52a1',
           '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
@@ -1182,8 +1214,8 @@
           }),
         fe = s('5Pvu'),
         Me = s.n(fe),
-        Ne = s('WhpI'),
-        ve = s.n(Ne),
+        ve = s('WhpI'),
+        Ne = s.n(ve),
         Oe = function (e) {
           var t = e.onSubmit,
             s = Object(a['e'])(),
@@ -1281,7 +1313,7 @@
                       }),
                       Object(r['jsx'])('img', {
                         className: 'w-6',
-                        src: ve.a,
+                        src: Ne.a,
                         alt: '',
                       }),
                     ],

@@ -1,5 +1,5 @@
 import { setLocale, useIntl } from 'umi';
-
+import React, { useState } from 'react';
 import logo from '@/assets/foot_logo.png';
 
 import './index.css';
@@ -7,6 +7,10 @@ const menus = [{ id: 'home' }, { id: 'project' }];
 
 export default function IndexPage() {
   const intl = useIntl();
+
+  const [tel, setTel] = useState();
+  const [name, setName] = useState();
+
   return (
     <footer
       className="footer py-12 xl:py-24"
@@ -62,6 +66,9 @@ export default function IndexPage() {
                   placeholder={intl.formatMessage({
                     id: 'footer.请输入您的姓名',
                   })}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
                 />
               </div>
               <div>
@@ -74,6 +81,9 @@ export default function IndexPage() {
                   placeholder={intl.formatMessage({
                     id: 'footer.请输入您的手机号',
                   })}
+                  onChange={(e) => {
+                    setTel(e.target.value);
+                  }}
                 />
               </div>
               <div>
@@ -81,6 +91,23 @@ export default function IndexPage() {
                   className="p-3 mt-10 text-white text-base xl:text-lg w-full"
                   style={{
                     background: '#00C9D0',
+                  }}
+                  onClick={() => {
+                    if (tel?.length !== 11) {
+                      alert('手机号格式不正确');
+                      return;
+                    }
+                    fetch(
+                      'http://open-api.wehome.net.cn/standard_project/wehome/open_dobe_web_order_create',
+                      {
+                        method: 'POST',
+                        body: JSON.stringify({
+                          tel,
+                          name,
+                          room_id: 9351,
+                        }),
+                      },
+                    );
                   }}
                 >
                   {intl.formatMessage({
