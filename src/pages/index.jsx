@@ -43,7 +43,7 @@ let popMapIns = null;
 export default function IndexPage() {
   const intl = useIntl();
   const [isFrame, setIsFrame] = useState(false);
-  const [showContact, setShowContact] = useState(true);
+  const [showContact, setShowContact] = useState(window.innerWidth > 1024);
 
   useEffect(() => {
     const handleScroll = (e) => {
@@ -87,11 +87,10 @@ export default function IndexPage() {
         style={{
           top: 300,
           zIndex: 99,
-          position: 'fixed',
-          right: '15%',
-          width: '24rem',
         }}
-        className={showContact ? 'block' : 'hidden'}
+        className={`fixed w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 ${
+          showContact ? 'block' : 'hidden'
+        }`}
       >
         <Contact
           onSubmit={() => {
