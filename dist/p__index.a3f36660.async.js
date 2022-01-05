@@ -1357,9 +1357,9 @@
             Object(x['jsx'])(m, {}),
             Object(x['jsx'])(K, { data: [pe.a, Qe.a] }),
             Object(x['jsx'])('div', {
-              style: { top: 300, zIndex: 99 },
+              style: { zIndex: 99 },
               className:
-                'fixed w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
+                'fixed top-1/4 md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
                   r ? 'block' : 'hidden',
                 ),
               children: Object(x['jsx'])(Oe, {
