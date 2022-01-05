@@ -48,7 +48,9 @@ export default function IndexPage() {
   useEffect(() => {
     const handleScroll = (e) => {
       // console.log('xxx', e);
-      setShowContact(false);
+      if (window.innerWidth > 1024) {
+        setShowContact(false);
+      }
     };
     window.addEventListener('scroll', handleScroll, true);
     return () => {
