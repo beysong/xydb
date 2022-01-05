@@ -1359,7 +1359,7 @@
             Object(x['jsx'])('div', {
               style: { zIndex: 99 },
               className:
-                'fixed top-1/4 md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
+                'fixed inset-0 md:inset-auto top-1/4 md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 '.concat(
                   r ? 'block' : 'hidden',
                 ),
               children: Object(x['jsx'])(Oe, {
