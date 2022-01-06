@@ -19,7 +19,7 @@ export default function IndexPage({ data }) {
         {data.map((v, i) => (
           <SwiperSlide key={i}>
             <img
-              className="transform scale-150 md:scale-0"
+              className="transform scale-150 md:scale-100"
               referrerPolicy="no-referrer"
               src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga25a3e66a51f28a738b3dc2bf722c0560c6173a00d688a4805711bf37d1bd601"
             />

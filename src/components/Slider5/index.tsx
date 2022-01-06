@@ -73,7 +73,7 @@ export default function IndexPage() {
         {imgs.map((v, i) => (
           <SwiperSlide key={i}>
             <img
-              className="transform scale-150 md:scale-0"
+              className="transform scale-150 md:scale-100"
               src={'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' + v.img}
             />
             <div
