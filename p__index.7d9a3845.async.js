@@ -471,7 +471,7 @@
                 {
                   children: [
                     Object(r['jsx'])('img', {
-                      className: 'transform scale-150 md:scale-0',
+                      className: 'transform scale-150 md:scale-100',
                       referrerPolicy: 'no-referrer',
                       src: 'https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga25a3e66a51f28a738b3dc2bf722c0560c6173a00d688a4805711bf37d1bd601',
                     }),
@@ -906,7 +906,7 @@
                     {
                       children: [
                         Object(r['jsx'])('img', {
-                          className: 'transform scale-150 md:scale-0',
+                          className: 'transform scale-150 md:scale-100',
                           src:
                             'https://wehome-image.oss-cn-shanghai.aliyuncs.com/' +
                             e.img,
