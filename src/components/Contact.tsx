@@ -18,7 +18,7 @@ export default ({ onSubmit }) => {
       <div
         className=" z-10 p-3 rounded-lg"
         style={{
-          backgroundColor: 'rgba(0, 201, 208, 0.42)',
+          backgroundColor: 'rgba(0, 201, 208, 0.52)',
         }}
       >
         <div

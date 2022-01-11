@@ -43,20 +43,19 @@ let popMapIns = null;
 export default function IndexPage() {
   const intl = useIntl();
   const [isFrame, setIsFrame] = useState(false);
-  const [showContact, setShowContact] = useState(window.innerWidth > 1024);
+  const [showContact, setShowContact] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = (e) => {
-      if (window.innerWidth > 1024) {
-        setShowContact(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll, true);
-    return () => {
-      // console.log('xxx2');
-      window.removeEventListener('scroll', handleScroll, true);
-    };
-  });
+  // useEffect(() => {
+  //   const handleScroll = (e) => {
+  //     if (window.innerWidth > 1024) {
+  //       setShowContact(false);
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll, true);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll, true);
+  //   };
+  // });
   const popMap = getSingle(function () {
     const popDiv = document.createElement('div');
     const popImg = document.createElement('img');
@@ -83,12 +82,20 @@ export default function IndexPage() {
       <a href="" id="id0"></a>
       <Header />
       <Slider data={[s1, s2]} />
+      <div
+        style={{
+          zIndex: 99,
+        }}
+        className={`absolute top-0 bottom-0 items-center justify-center md:inset-auto md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 hidden md:block`}
+      >
+        <Contact onSubmit={() => {}} />
+      </div>
 
       <div
         style={{
           zIndex: 99,
         }}
-        className={`fixed bg-gray-900 bg-opacity-20 md:bg-none top-0 bottom-0 items-center justify-center md:inset-auto md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 ${
+        className={`fixed top-0 bottom-0 items-center justify-center md:inset-auto md:top-1/3 w-full md:w-96 left-0 md:left-2/3 px-10 md:px-0 ${
           showContact ? ' flex md:block' : ' hidden'
         }`}
         onClick={() => {
