@@ -17,7 +17,7 @@
       '' +
       ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
       '.' +
-      { 0: '8a500498', 2: '574d5d68' }[e] +
+      { 0: '6902d177', 2: '574d5d68' }[e] +
       '.async.js'
     );
   }
@@ -39,7 +39,7 @@
               var a =
                   ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
                   '.' +
-                  { 0: 'a2cbd86a', 2: '485daf20' }[e] +
+                  { 0: 'd3691bb2', 2: '485daf20' }[e] +
                   '.chunk.css',
                 i = o.p + a,
                 s = document.getElementsByTagName('link'),
@@ -11461,7 +11461,7 @@
         'menu.\u79df\u8d41\u4fe1\u606f': 'Lease',
         'menu.\u8054\u7cfb\u6211\u4eec': 'Contact',
         'sidemenu.\u9884\u7ea6\u53c2\u89c2': 'Visitation appointment',
-        'sidemenu.\u7535\u8bdd\u54a8\u8be2': 'Telephone consultation',
+        'sidemenu.\u7535\u8bdd\u54a8\u8be2': 'Settled hotline',
         'sidemenu.\u5728\u7ebf\u54a8\u8be2': 'Online consultation',
         'count.10+\u5e74': '10+ Years',
         'count.50+': '50+',
@@ -11494,14 +11494,14 @@
         'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24h online service',
         'zulin.\u56ed\u533a\u7ba1\u7406': 'Park management',
         'title.\u661f\u6708\u5fb7\u5fc5WE"': 'Moonstar DoBe WE"',
-        'title.\u6982\u51b5': ' profile',
+        'title.\u6982\u51b5': ' ',
         'title.\u533a\u4f4d\u4ea4\u901a': 'Location',
         'title.\u8bbe\u8ba1': 'Design',
-        'title.\u7406\u5ff5': ' philosophy',
+        'title.\u7406\u5ff5': ' ',
         'title.\u529e\u516c': 'Office',
-        'title.\u7a7a\u95f4': ' space',
+        'title.\u7a7a\u95f4': ' Space',
         'title.\u751f\u6001': 'Supporting',
-        'title.\u914d\u5957': ' ecotope',
+        'title.\u914d\u5957': ' ',
         'title.\u54c1\u724c': 'Brand',
         'title.\u670d\u52a1': ' service',
         'title.\u79df\u8d41': 'Lease',
@@ -11515,13 +11515,13 @@
         'footer.\u6211\u4eec\u7684\u4e13\u4e1a\u987e\u95ee\u4f1a\u5c3d\u5feb\u4e0e\u60a8\u8054\u7cfb':
           'Our consultant will contact you as soon as possible',
         'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u59d3\u540d':
-          'Please input your name',
+          'Please input your Name',
         'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7':
-          'Please input your phone number ',
+          'Please input your Phone number ',
         'footer.\u7acb\u5373\u514d\u8d39\u9884\u7ea6\u53c2\u89c2':
-          'Make an appointment now for free visiting',
+          'Make an appointment now',
         'footer.\u9884\u7ea6\u53c2\u89c2': 'Visitation appointment',
-        'footer.\u7535\u8bdd\u54a8\u8be2': 'Telephone consultation',
+        'footer.\u7535\u8bdd\u54a8\u8be2': 'Settled hotline',
         'footer.\u5728\u7ebf\u54a8\u8be2': 'Online consultation',
         'section1.con1':
           'With total area of 53,000m\xb2 in Hongqiao CBD, Moonstar DoBe WE" is determined to ',
@@ -11553,23 +11553,23 @@
         'section2.con4':
           'No. 71 BRT, No. 189/141/941/ No. 1 and 2 of Hongqiao business district',
         'section3."\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"':
-          '"advanced smart facility"',
+          '"Advanced smart facility"',
         'section3.\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c':
           'Fantastic experience of future technology',
         'section3."\u7075\u52a8\u591a\u53d8 \u6253\u7834\u4f20\u7edf\u529e\u516c\u683c\u5c40"':
-          '"flexible and innovative office layout"',
+          '"Flexible and innovative office layout"',
         'section3.\u521b\u610f\u4e0d\u518d\u88ab\u7a7a\u95f4\u675f\u7f1a':
           'Creativity is no confined to space',
         'section3."\u5168\u65b9\u4f4d\u5b89\u5fc3\u5b88\u62a4"':
-          '"all-round safety and guard"',
+          '"All-round safety and guard"',
         'section3.\u4e0d\u653e\u8fc7\u6bcf\u4e00\u5904\u7ec6\u8282':
           'Focusing on each detail',
         'section3."\u9ad8\u54c1\u8d28\u7cbe\u88c5\u5165\u9a7b"':
-          '"high-quality decoration"',
+          '"High-quality decoration"',
         'section3.\u4e3a\u4f01\u4e1a\u8282\u770130%\u7a7a\u95f4\u6210\u672c':
           'Save 30% space cost for enterprises',
         'section3."\u751f\u6001\u8d4b\u80fd\u5efa\u7b51 \u65e0\u754c\u82b1\u56ed"':
-          '"ecological building and borderless garden"',
+          '"Ecological building and borderless garden"',
         'section3.\u6253\u9020\u7eff\u8272\u4f4e\u78b3\u529e\u516c\u793e\u533a':
           'Green and low-carbon office community',
         'section4.con1': 'Well-equipped decoration and 24h worry-free office',
@@ -11607,12 +11607,11 @@
         'section7.\u5341\u5927\u589e\u503c\u670d\u52a10':
           'Depending on favorable resources, we can provide talents, financing brand promotion, legal policy consulting and other services based on enterprise demands, thus giving solutions for members and growing up together with them.',
         'section7.\u8f7b\u516c\u53f8\u751f\u6001\u57081':
-          'Moonstar DoBe WE integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
+          'Moonstar DoBe WE" integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
         'section7.\u56fd\u9645\u4f01\u4e1a\u5171\u80542':
-          'Moonstar DoBe WE has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
+          'Moonstar DoBe WE" has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
         'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a13':
           '5A smart office and property service system offers specialized and top-ranking service for all clients, including daily building management, safety precaution management, emergency management and smart operating service.',
-        'section7.\u4e86\u89e3\u66f4\u591a': 'Learn more',
       },
       Et = {
         WELCOME_TO_UMI_WORLD: '{name}\uff0c\u6b22\u8fce\u5149\u4e34',
@@ -11787,7 +11786,6 @@
           '\u5fb7\u5fc5\u96c6\u56e2\u5df2\u8986\u76d6\u6b27\u7f8e\u4e9a\u4e09\u5927\u6d3210\u4f59\u4e2a\u56fd\u5bb6\u548c\u5730\u533a\uff0c\u62c5\u4efb\u4f01\u4e1a\u201c\u5927\u4f7f\u9986\u201d\uff0c\u901a\u8fc7\u5168\u7403\u8d44\u6e90\u7f51\u7edc\uff0c\u4e3a\u4f01\u4e1a\u63d0\u4f9b\u6df1\u5ea6\u5d4c\u5165\u5f0f\u201cN+1\u201d\u56fd\u9645\u4e1a\u52a1\u670d\u52a1\uff0c\u5b9e\u73b0\u4f01\u4e1a\u5ba2\u6237\u7684\u7ecf\u6d4e\u4e0e\u793e\u4f1a\u6548\u76ca\u6700\u5927\u5316\u3002',
         'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a13':
           '5A\u7ea7\u667a\u80fd\u5316\u529e\u516c\u53ca\u7269\u4e1a\u670d\u52a1\u7cfb\u7edf\uff0c\u4e3a\u6240\u6709\u5ba2\u6237\u63d0\u4f9b\u4e13\u4e1a\u5316\u7ba1\u7406\u548c\u56fd\u9645\u6807\u51c6\u5316\u670d\u52a1\uff0c\u5305\u62ec\u65e5\u5e38\u697c\u5b87\u670d\u52a1\u3001\u5b89\u5168\u9884\u9632\u7ba1\u7406\u3001\u7d27\u6025\u4e8b\u4ef6\u5904\u7406\u3001\u667a\u80fd\u8fd0\u8425\u670d\u52a1\u3002',
-        'section7.\u4e86\u89e3\u66f4\u591a': '\u4e86\u89e3\u66f4\u591a',
       },
       At = !0,
       Ht = {

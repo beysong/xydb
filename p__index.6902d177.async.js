@@ -36,14 +36,14 @@
       'use strict';
       s.r(t),
         s.d(t, 'default', function () {
-          return Ge;
+          return Fe;
         });
       var c = s('tJVT'),
         a = s('9kvl'),
         i = s('cDcd'),
         l = (s('iLUg'), s('0Xwh')),
-        A = s('bqU7'),
-        n = s.n(A),
+        n = s('bqU7'),
+        A = s.n(n),
         d = s('zwU1'),
         o = s.n(d),
         r = (s('PCGc'), s('nKUr')),
@@ -73,9 +73,9 @@
           t = Object(i['useState'])(!1),
           s = Object(c['a'])(t, 2),
           l = s[0],
-          A = s[1],
-          n = Object(i['useState'])(''),
-          d = Object(c['a'])(n, 2),
+          n = s[1],
+          A = Object(i['useState'])(''),
+          d = Object(c['a'])(A, 2),
           m = d[0],
           b = d[1];
         return Object(r['jsx'])('header', {
@@ -118,7 +118,7 @@
                           children: Object(r['jsx'])('a', {
                             href: '',
                             onClick: function (e) {
-                              b(t.id), A(!1), g('#id' + s, e);
+                              b(t.id), n(!1), g('#id' + s, e);
                             },
                             children: e.formatMessage({ id: t.id }),
                           }),
@@ -138,7 +138,7 @@
                             onClick: function (e) {
                               e.preventDefault(),
                                 Object(a['e'])('zh-CN', !1),
-                                A(!1);
+                                n(!1);
                             },
                             style: {
                               color:
@@ -155,7 +155,7 @@
                             onClick: function (e) {
                               e.preventDefault(),
                                 Object(a['e'])('en-US', !1),
-                                A(!1);
+                                n(!1);
                             },
                             children: 'EN',
                           }),
@@ -186,7 +186,7 @@
               }),
               Object(r['jsx'])('div', {
                 onClick: function () {
-                  A(!l);
+                  n(!l);
                 },
                 className: 'lg:hidden xl:hidden 2xl:hidden',
                 children: Object(r['jsx'])('svg', {
@@ -209,14 +209,14 @@
       var b = s('yonP'),
         j = s.n(b);
       s('kyQ6');
-      function f() {
+      function u() {
         var e = Object(a['f'])(),
           t = Object(i['useState'])(),
           s = Object(c['a'])(t, 2),
           l = s[0],
-          A = s[1],
-          n = Object(i['useState'])(),
-          d = Object(c['a'])(n, 2),
+          n = s[1],
+          A = Object(i['useState'])(),
+          d = Object(c['a'])(A, 2),
           o = d[0],
           x = d[1];
         return Object(r['jsxs'])('footer', {
@@ -308,7 +308,7 @@
                               id: 'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7',
                             }),
                             onChange: function (e) {
-                              A(e.target.value);
+                              n(e.target.value);
                             },
                           }),
                         }),
@@ -356,15 +356,15 @@
           ],
         });
       }
-      var h = s('bTu8'),
-        u = s('g0Ox'),
+      var f = s('bTu8'),
+        h = s('g0Ox'),
         M = s('Xchd'),
-        N = s('Ap4+'),
-        v = s('ZXcA'),
+        v = s('Ap4+'),
+        N = s('ZXcA'),
         O = s('xqva'),
-        p = s('Ndxo'),
-        w = (s('u+OR'), s('he91')),
-        z = s.n(w),
+        w = s('Ndxo'),
+        p = (s('u+OR'), s('he91')),
+        z = s.n(p),
         Q = s('1yZO'),
         E = s.n(Q),
         y = s('qz2A'),
@@ -467,7 +467,7 @@
             loop: !0,
             children: t.map(function (e, t) {
               return Object(r['jsxs'])(
-                p['a'],
+                w['a'],
                 {
                   children: [
                     Object(r['jsx'])('img', {
@@ -484,10 +484,10 @@
           }),
         });
       }
-      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
+      f['a'].use([h['a'], M['a'], v['a'], N['a']]);
       s('dFpQ');
-      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
-      var V = [
+      f['a'].use([h['a'], M['a'], v['a'], N['a']]);
+      var H = [
         {
           title:
             '\u72ec\u7acb\u524d\u53f0\u3001\u4f1a\u8bae\u5ba4\u3001\u50a8\u85cf\u95f4',
@@ -511,7 +511,7 @@
           img: 'e249a828ab58d9a501f964f45e021f07.jpg',
         },
       ];
-      function H() {
+      function V() {
         var e = Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'certify2',
@@ -539,10 +539,10 @@
                   i = 1;
                 Math.abs(a) > 1 && (i = 0.3 * (Math.abs(a) - 1) + 1);
                 var l = 0.67 * window.innerWidth * 0.8,
-                  A = a * i * l + 'px',
-                  n = 1 - Math.abs(a) / 5,
+                  n = a * i * l + 'px',
+                  A = 1 - Math.abs(a) / 5,
                   d = 999 - Math.abs(Math.round(10 * a));
-                c.transform('translateX(' + A + ') scale(' + n + ')'),
+                c.transform('translateX(' + n + ') scale(' + A + ')'),
                   c.css('zIndex', d),
                   c.css('opacity', 1),
                   Math.abs(a) > 3 && c.css('opacity', 0),
@@ -555,9 +555,9 @@
                 c.transition(t);
               }
             },
-            children: V.map(function (t, s) {
+            children: H.map(function (t, s) {
               return Object(r['jsxs'])(
-                p['a'],
+                w['a'],
                 {
                   children: [
                     Object(r['jsx'])('img', {
@@ -582,9 +582,9 @@
           }),
         });
       }
-      var Z = s('daxC');
+      var k = s('daxC');
       s('NeEy');
-      h['a'].use([u['a'], M['a'], N['a'], v['a'], Z['a']]);
+      f['a'].use([h['a'], M['a'], v['a'], N['a'], k['a']]);
       var I = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -614,12 +614,12 @@
           img: 'b44231525e153409e443de754e7b81ef.jpg',
         },
       ];
-      function k() {
+      function Z() {
         var e = Object(i['useState'])(0),
           t = Object(c['a'])(e, 2),
           s = t[0],
           l = t[1],
-          A = Object(a['f'])();
+          n = Object(a['f'])();
         return Object(r['jsx'])('section', {
           id: 'certify3',
           children: Object(r['jsx'])(O['a'], {
@@ -640,18 +640,18 @@
                 Math.abs(a) > 1 && 0.3 * (Math.abs(a) - 1) + 1;
                 var i = 0.67 * window.innerWidth * 0.32,
                   l = Math.abs(a),
-                  A = '0px';
-                Math.round(a) && (A = 0.45 * i * a * (1 + l / 3.5) + 'px');
-                var n = l > 0.01 ? 0.4 * (1 + l / 10) : 1,
+                  n = '0px';
+                Math.round(a) && (n = 0.45 * i * a * (1 + l / 3.5) + 'px');
+                var A = l > 0.01 ? 0.4 * (1 + l / 10) : 1,
                   d = 999 - Math.abs(Math.round(10 * a)),
                   o = (8 * a) / 4;
                 c.transform(
                   'translateX(' +
-                    A +
+                    n +
                     ') perspective(100px) rotateY(' +
                     o +
                     'deg) scale(' +
-                    n +
+                    A +
                     ')',
                 ),
                   c.css('zIndex', d),
@@ -668,7 +668,7 @@
             },
             children: I.map(function (e, t) {
               return Object(r['jsxs'])(
-                p['a'],
+                w['a'],
                 {
                   children: [
                     Object(r['jsx'])('div', {
@@ -687,16 +687,17 @@
                         ),
                       children: [
                         Object(r['jsx'])('div', {
-                          className: 'text-base lg:text-xl xl:text-2xl pb-2',
+                          className:
+                            'text-base lg:text-lg 2xl:text-2xl pb-2 whitespace-nowrap',
                           style: { color: '#222' },
-                          children: A.formatMessage({
+                          children: n.formatMessage({
                             id: 'section3.' + e.title,
                           }),
                         }),
                         Object(r['jsx'])('div', {
-                          className: 'text-sm xl:text-lg',
+                          className: 'text-sm xl:text-base',
                           style: { color: '#777' },
-                          children: A.formatMessage({
+                          children: n.formatMessage({
                             id: 'section3.' + e.desc,
                           }),
                         }),
@@ -711,7 +712,7 @@
         });
       }
       s('UUBk');
-      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
+      f['a'].use([h['a'], M['a'], v['a'], N['a']]);
       var G = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
@@ -763,10 +764,10 @@
                   i = 1;
                 Math.abs(a) > 1 && (i = 0.3 * (Math.abs(a) - 1) + 1);
                 var l = 0.67 * window.innerWidth * 0.8,
-                  A = a * i * l + 'px',
-                  n = 1 - Math.abs(a) / 5,
+                  n = a * i * l + 'px',
+                  A = 1 - Math.abs(a) / 5,
                   d = 999 - Math.abs(Math.round(10 * a));
-                c.transform('translateX(' + A + ') scale(' + n + ')'),
+                c.transform('translateX(' + n + ') scale(' + A + ')'),
                   c.css('zIndex', d),
                   c.css('opacity', 1),
                   Math.abs(a) > 3 && c.css('opacity', 0),
@@ -782,7 +783,7 @@
             },
             children: G.map(function (t, s) {
               return Object(r['jsxs'])(
-                p['a'],
+                w['a'],
                 {
                   children: [
                     Object(r['jsx'])('img', {
@@ -833,7 +834,7 @@
             }),
         });
       }
-      h['a'].use([u['a'], M['a'], N['a'], v['a']]);
+      f['a'].use([h['a'], M['a'], v['a'], N['a']]);
       var S = [
           '\u5341\u5927\u589e\u503c\u670d\u52a1',
           '\u8f7b\u516c\u53f8\u751f\u6001\u5708',
@@ -902,7 +903,7 @@
                 spaceBetween: 50,
                 children: q.map(function (e, s) {
                   return Object(r['jsxs'])(
-                    p['a'],
+                    w['a'],
                     {
                       children: [
                         Object(r['jsx'])('img', {
@@ -930,13 +931,6 @@
                                   id: 'section7.' + e.title + s,
                                 }),
                               }),
-                              Object(r['jsx'])('div', {
-                                className:
-                                  'hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white',
-                                children: t.formatMessage({
-                                  id: 'section7.\u4e86\u89e3\u66f4\u591a',
-                                }),
-                              }),
                             ],
                           }),
                         }),
@@ -959,9 +953,9 @@
           c = e.children,
           i = e.className,
           l = void 0 === i ? '' : i,
-          A = e.title1,
-          n = e.full,
-          d = void 0 !== n && n,
+          n = e.title1,
+          A = e.full,
+          d = void 0 !== A && A,
           o = e.hrefid,
           x = void 0 === o ? '' : o,
           g = Object(X['a'])(e, [
@@ -985,7 +979,7 @@
                   children: Object(r['jsxs'])('div', {
                     className: d ? 'w-full' : 'container mx-auto',
                     children: [
-                      Object(r['jsx'])(T, { title1: A, align: 'center' }),
+                      Object(r['jsx'])(T, { title1: n, align: 'center' }),
                       !!s &&
                         Object(r['jsx'])('div', {
                           className: 'text-center',
@@ -1009,9 +1003,9 @@
         ae = s('JnX4'),
         ie = s.n(ae),
         le = s('bl/D'),
-        Ae = s.n(le),
-        ne = s('ZtXy'),
-        de = s.n(ne),
+        ne = s.n(le),
+        Ae = s('ZtXy'),
+        de = s.n(Ae),
         oe = s('GgEe'),
         re = s.n(oe),
         xe = s('6tIf'),
@@ -1025,7 +1019,7 @@
             count: '\u7cbe\u88c5',
             desc: '\u4ea4\u4ed8\u6807\u51c6',
           },
-          { icon: Ae.a, count: '\u505c\u8f66\u573a', desc: '\u4f9b\u5e94' },
+          { icon: ne.a, count: '\u505c\u8f66\u573a', desc: '\u4f9b\u5e94' },
           { icon: de.a, count: 'WiFi', desc: '\u5168\u533a\u57df\u8986\u76d6' },
           { icon: re.a, count: 'VRV', desc: '24\u5c0f\u65f6\u5728\u7ebf' },
           {
@@ -1050,7 +1044,7 @@
           style: { minHeight: 80 },
           children: Object(r['jsx'])('div', {
             className: 'container mx-auto',
-            children: Object(r['jsx'])(n.a, {
+            children: Object(r['jsx'])(A.a, {
               playScale: '0.1',
               children: Object(r['jsx'])(
                 l['a'],
@@ -1099,7 +1093,7 @@
         });
       }
       var je = 'https://wehome-image.oss-cn-shanghai.aliyuncs.com/',
-        fe = function (e) {
+        ue = function (e) {
           var t = e.src,
             s = Object(X['a'])(e, ['src']);
           return Object(r['jsx'])(
@@ -1107,7 +1101,7 @@
             Object(J['a'])(Object(J['a'])({}, s), {}, { src: je + t }),
           );
         },
-        he =
+        fe =
           (s('UbcZ'),
           function () {
             var e = Object(a['f'])();
@@ -1212,17 +1206,17 @@
               ],
             });
           }),
-        ue = s('5Pvu'),
-        Me = s.n(ue),
-        Ne = s('WhpI'),
-        ve = s.n(Ne),
+        he = s('5Pvu'),
+        Me = s.n(he),
+        ve = s('WhpI'),
+        Ne = s.n(ve),
         Oe = function (e) {
           var t = e.onSubmit,
             s = Object(a['f'])(),
             l = Object(i['useState'])(),
-            A = Object(c['a'])(l, 2),
-            n = A[0],
-            d = A[1],
+            n = Object(c['a'])(l, 2),
+            A = n[0],
+            d = n[1],
             o = Object(i['useState'])(),
             x = Object(c['a'])(o, 2),
             g = x[0],
@@ -1262,7 +1256,7 @@
                       placeholder: s.formatMessage({
                         id: 'footer.\u8bf7\u8f93\u5165\u60a8\u7684\u624b\u673a\u53f7',
                       }),
-                      value: n,
+                      value: A,
                       onChange: function (e) {
                         d(e.target.value);
                       },
@@ -1271,13 +1265,13 @@
                   Object(r['jsx'])('div', {
                     children: Object(r['jsx'])('button', {
                       onClick: function () {
-                        11 === (null === n || void 0 === n ? void 0 : n.length)
+                        11 === (null === A || void 0 === A ? void 0 : A.length)
                           ? fetch(
                               'http://open-api.wehome.net.cn/standard_project/wehome/open_dobe_web_order_create',
                               {
                                 method: 'POST',
                                 body: JSON.stringify({
-                                  tel: n,
+                                  tel: A,
                                   name: g,
                                   room_id: 9351,
                                 }),
@@ -1313,7 +1307,7 @@
                       }),
                       Object(r['jsx'])('img', {
                         className: 'w-6',
-                        src: ve.a,
+                        src: Ne.a,
                         alt: '',
                       }),
                     ],
@@ -1323,8 +1317,8 @@
             }),
           });
         },
-        pe = s('CoB4'),
-        we = s.n(pe),
+        we = s('CoB4'),
+        pe = s.n(we),
         ze = s('dEfy'),
         Qe = s.n(ze),
         Ee = s('4cez'),
@@ -1337,9 +1331,9 @@
         Ye = s.n(Ue),
         Pe = s('6Yia'),
         Ke = s.n(Pe),
-        Ve = s('oN81'),
-        He = s.n(Ve),
-        Ze = function (e) {
+        He = s('oN81'),
+        Ve = s.n(He),
+        ke = function (e) {
           var t;
           return function () {
             return t || (t = e.apply(this, arguments));
@@ -1356,24 +1350,62 @@
               }),
             Ie(e, t, s);
         },
-        ke = (s('EDuE'), null);
-      function Ge() {
+        Ze = (s('EDuE'), null),
+        Ge = null;
+      function Fe() {
         var e = Object(a['f'])(),
           t = Object(i['useState'])(!1),
           s = Object(c['a'])(t, 2),
-          A = s[0],
-          n = s[1],
+          n = s[0],
+          A = s[1],
           d = Object(i['useState'])(!1),
           o = Object(c['a'])(d, 2),
           x = o[0],
           g = o[1],
-          b = Ze(function () {
+          b = Object(i['useState'])(!1),
+          j = Object(c['a'])(b, 2),
+          f = j[0],
+          h = j[1];
+        Object(i['useEffect'])(function () {
+          console.log('...');
+          var e = function (e) {
+            console.log('...2'),
+              window.scrollY > window.innerHeight ? !f && h(!0) : f && h(!1);
+          };
+          return (
+            window.addEventListener('scroll', e, !0),
+            function () {
+              window.removeEventListener('scroll', e, !0);
+            }
+          );
+        });
+        var M = ke(function () {
             var e = document.createElement('div'),
               t = document.createElement('img');
             return (
               (t.src =
-                'https://wehome-image.oss-cn-shanghai.aliyuncs.com/2dc8058a10178bb2961da002793615e7.jpg'),
-              (t.className = 'w-2/3 mx-auto'),
+                'https://wehome-image.oss-cn-shanghai.aliyuncs.com/8151ddadcfdd6af09a8711006e6990ab.png'),
+              (t.className = 'w-1/2 mx-auto'),
+              e.appendChild(t),
+              (e.style.background = 'rgba(0,0,0,0.3)'),
+              (e.style.zIndex = '999'),
+              (e.className =
+                'w-full h-screen flex items-center justify-center fixed inset-0'),
+              Ie(e, 'click', function () {
+                this.style.display = 'none';
+              }),
+              document.body.appendChild(e),
+              e
+            );
+          }),
+          v = ke(function () {
+            var e = document.createElement('div'),
+              t = document.createElement('div');
+            return (
+              (t.innerHTML =
+                '<div class="py-4 px-8 bg-white rounded-lg">021-62335008</div>'),
+              (t.className = 'p-4 rounded-lg'),
+              (t.style.backgroundColor = 'rgba(0, 201, 208, 0.52)'),
               e.appendChild(t),
               (e.style.background = 'rgba(0,0,0,0.3)'),
               (e.style.zIndex = '999'),
@@ -1390,7 +1422,7 @@
           children: [
             Object(r['jsx'])('a', { href: '', id: 'id0' }),
             Object(r['jsx'])(m, {}),
-            Object(r['jsx'])(K, { data: [we.a, Qe.a] }),
+            Object(r['jsx'])(K, { data: [pe.a, Qe.a] }),
             Object(r['jsx'])('div', {
               style: { zIndex: 99 },
               className:
@@ -1451,7 +1483,7 @@
                 ],
               }),
               full: !0,
-              children: Object(r['jsx'])(he, {}),
+              children: Object(r['jsx'])(fe, {}),
             }),
             Object(r['jsx'])(L, {
               hrefid: 'id2',
@@ -1496,7 +1528,7 @@
                             letterSpacing: 4,
                           },
                           onClick: function () {
-                            ke ? (ke.style.display = 'flex') : (ke = b());
+                            Ze ? (Ze.style.display = 'flex') : (Ze = M());
                           },
                           children: e.formatMessage({
                             id: 'section2.\u70b9\u51fb\u67e5\u770b\u533a\u4f4d\u56fe',
@@ -1596,7 +1628,7 @@
                                   Object(r['jsx'])('img', {
                                     className:
                                       'w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20',
-                                    src: He.a,
+                                    src: Ve.a,
                                     alt: '',
                                   }),
                                   Object(r['jsxs'])('div', {
@@ -1649,8 +1681,8 @@
                 Object(r['jsx'])('div', {
                   className:
                     'pt-10 lg:pt-20 lg:pb-16 xl:pb-24 2xl:pb-32 overflow-hidden hidden lg:block',
-                  children: Object(r['jsx'])(k, {
-                    data: [we.a, we.a, Qe.a, Qe.a],
+                  children: Object(r['jsx'])(Z, {
+                    data: [pe.a, pe.a, Qe.a, Qe.a],
                   }),
                 }),
                 Object(r['jsx'])('div', {
@@ -1680,7 +1712,7 @@
               }),
               children: Object(r['jsx'])('div', {
                 className: 'lg:w-4/5 mx-auto',
-                children: Object(r['jsx'])(H, {}),
+                children: Object(r['jsx'])(V, {}),
               }),
             }),
             Object(r['jsx'])(L, {
@@ -1715,7 +1747,7 @@
                   Object(r['jsxs'])('div', {
                     className: 'w-full lg:w-1/2 relative',
                     children: [
-                      Object(r['jsx'])(fe, {
+                      Object(r['jsx'])(ue, {
                         width: '100%',
                         src: '0aed55856418022454767b5815c4d1e9.png',
                       }),
@@ -1738,7 +1770,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(r['jsx'])(fe, {
+                              Object(r['jsx'])(ue, {
                                 width: '100%',
                                 src: '71765038a896cc41ffb6527a0f3a3a8e.png',
                               }),
@@ -1755,7 +1787,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(r['jsx'])(fe, {
+                              Object(r['jsx'])(ue, {
                                 width: '100%',
                                 src: '2ebec6c9dce48720310fd8d0163e0521.png',
                               }),
@@ -1777,7 +1809,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2  relative',
                             children: [
-                              Object(r['jsx'])(fe, {
+                              Object(r['jsx'])(ue, {
                                 width: '100%',
                                 src: 'e217f33b4bf65e57319ba9a5dbf30896.png',
                               }),
@@ -1794,7 +1826,7 @@
                           Object(r['jsxs'])('div', {
                             className: 'w-full lg:w-1/2 relative',
                             children: [
-                              Object(r['jsx'])(fe, {
+                              Object(r['jsx'])(ue, {
                                 width: '100%',
                                 src: '0667876ac3587157d912f6168f6b267a.png',
                               }),
@@ -1848,9 +1880,12 @@
               children: [
                 Object(r['jsx'])('div', {
                   className: 'container mx-auto',
-                  children: Object(r['jsx'])(fe, {
+                  children: Object(r['jsx'])(ue, {
                     className: 'z-0',
-                    src: '8b29a2213f35a062c978bef867f946df.jpg',
+                    src:
+                      'en-US' === Object(a['b'])()
+                        ? 'a4b0535bdedf7c42a0cd31c3d5e1ae53.jpg'
+                        : '8b29a2213f35a062c978bef867f946df.jpg',
                   }),
                 }),
                 Object(r['jsx'])(W, {}),
@@ -1870,9 +1905,12 @@
               }),
               children: Object(r['jsx'])(be, {}),
             }),
-            Object(r['jsx'])(f, {}),
+            Object(r['jsx'])(u, {}),
             Object(r['jsxs'])('div', {
-              className: 'fixed right-0 top-1/2 z-10',
+              className: ''.concat(
+                f ? 'right-0 opacity-100' : '-right-full opacity-0',
+                ' fixed top-1/2 z-10 transition-all duration-500',
+              ),
               children: [
                 Object(r['jsxs'])('div', {
                   className:
@@ -1900,7 +1938,17 @@
                     'text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 mt-2 text-white text-center p-2',
                   style: { backgroundColor: '#00C9D0' },
                   children: Object(r['jsxs'])('a', {
-                    href: 'tel:021-62335008',
+                    onClick: function (e) {
+                      e.preventDefault();
+                      var t = navigator.userAgent.toLowerCase();
+                      /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(
+                        t,
+                      )
+                        ? (window.location.href = 'tel:021-62335008')
+                        : Ge
+                        ? (Ge.style.display = 'flex')
+                        : (Ge = v());
+                    },
                     children: [
                       Object(r['jsx'])('img', {
                         className: 'block w-2/3 mx-auto',
@@ -1922,13 +1970,13 @@
                   style: { backgroundColor: '#00C9D0' },
                   onClick: function () {
                     var e = document.querySelector('.iframe');
-                    A
+                    n
                       ? e.removeAttribute('src')
                       : e.setAttribute(
                           'src',
                           'https://im1c5366d.7x24cc.com/phone_webChat.html?accountId=N000000031971&chatId=5ba0492b-7f47-454f-a6b9-415da15e8c68',
                         ),
-                      n(!A);
+                      A(!n);
                   },
                   children: [
                     Object(r['jsx'])('img', {
@@ -1945,7 +1993,7 @@
                     Object(r['jsx'])('div', {
                       className:
                         'fixed top-1/2 w-80 h-3/5 transform -translate-y-1/2 right-20 '.concat(
-                          A ? 'block' : 'hidden',
+                          n ? 'block' : 'hidden',
                         ),
                       children: Object(r['jsx'])('iframe', {
                         src: '',
