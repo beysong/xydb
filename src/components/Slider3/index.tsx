@@ -126,14 +126,14 @@ export default function IndexPage() {
               }`}
             >
               <div
-                className="text-base lg:text-xl xl:text-2xl pb-2"
+                className="text-base lg:text-lg 2xl:text-2xl pb-2 whitespace-nowrap"
                 style={{ color: '#222' }}
               >
                 {intl.formatMessage({
                   id: 'section3.' + v.title,
                 })}
               </div>
-              <div className="text-sm xl:text-lg" style={{ color: '#777' }}>
+              <div className="text-sm xl:text-base" style={{ color: '#777' }}>
                 {intl.formatMessage({
                   id: 'section3.' + v.desc,
                 })}

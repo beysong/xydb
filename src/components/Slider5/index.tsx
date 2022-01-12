@@ -91,11 +91,6 @@ export default function IndexPage() {
                     id: 'section7.' + v.title + i,
                   })}
                 </div>
-                <div className="hidden lg:inline-block px-6 lg:px-8 xl:px-12 py-1 lg:py-2 mt-3 lg:mt-6 xl:mt-8 2xl:mt-10 text-sm lg:text-base xl:text-lg rounded-full border border-solid border-white">
-                  {intl.formatMessage({
-                    id: 'section7.了解更多',
-                  })}
-                </div>
               </div>
             </div>
           </SwiperSlide>

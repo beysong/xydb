@@ -12,7 +12,7 @@ export default {
   'menu.联系我们': 'Contact',
 
   'sidemenu.预约参观': 'Visitation appointment',
-  'sidemenu.电话咨询': 'Telephone consultation',
+  'sidemenu.电话咨询': 'Settled hotline',
   'sidemenu.在线咨询': 'Online consultation',
 
   'count.10+年': '10+ Years',
@@ -44,14 +44,14 @@ export default {
   'zulin.园区管理': 'Park management',
 
   'title.星月德必WE"': 'Moonstar DoBe WE"',
-  'title.概况': ' profile',
+  'title.概况': ' ',
   'title.区位交通': 'Location',
   'title.设计': 'Design',
-  'title.理念': ' philosophy',
+  'title.理念': ' ',
   'title.办公': 'Office',
-  'title.空间': ' space',
+  'title.空间': ' Space',
   'title.生态': 'Supporting',
-  'title.配套': ' ecotope',
+  'title.配套': ' ',
   'title.品牌': 'Brand',
   'title.服务': ' service',
   'title.租赁': 'Lease',
@@ -66,11 +66,11 @@ export default {
     'No. 199, Fenghong Road, Minhang District, Shanghai ',
   'footer.我们的专业顾问会尽快与您联系':
     'Our consultant will contact you as soon as possible',
-  'footer.请输入您的姓名': 'Please input your name',
-  'footer.请输入您的手机号': 'Please input your phone number ',
-  'footer.立即免费预约参观': 'Make an appointment now for free visiting',
+  'footer.请输入您的姓名': 'Please input your Name',
+  'footer.请输入您的手机号': 'Please input your Phone number ',
+  'footer.立即免费预约参观': 'Make an appointment now',
   'footer.预约参观': 'Visitation appointment',
-  'footer.电话咨询': 'Telephone consultation',
+  'footer.电话咨询': 'Settled hotline',
   'footer.在线咨询': 'Online consultation',
 
   'section1.con1':
@@ -99,17 +99,17 @@ export default {
   'section2.con4':
     'No. 71 BRT, No. 189/141/941/ No. 1 and 2 of Hongqiao business district',
 
-  'section3."前沿智能设施加持"': '"advanced smart facility"',
+  'section3."前沿智能设施加持"': '"Advanced smart facility"',
   'section3.创享未来科技体验': 'Fantastic experience of future technology',
   'section3."灵动多变 打破传统办公格局"':
-    '"flexible and innovative office layout"',
+    '"Flexible and innovative office layout"',
   'section3.创意不再被空间束缚': 'Creativity is no confined to space',
-  'section3."全方位安心守护"': '"all-round safety and guard"',
+  'section3."全方位安心守护"': '"All-round safety and guard"',
   'section3.不放过每一处细节': 'Focusing on each detail',
-  'section3."高品质精装入驻"': '"high-quality decoration"',
+  'section3."高品质精装入驻"': '"High-quality decoration"',
   'section3.为企业节省30%空间成本': 'Save 30% space cost for enterprises',
   'section3."生态赋能建筑 无界花园"':
-    '"ecological building and borderless garden"',
+    '"Ecological building and borderless garden"',
   'section3.打造绿色低碳办公社区': 'Green and low-carbon office community',
 
   'section4.con1': 'Well-equipped decoration and 24h worry-free office',
@@ -140,10 +140,9 @@ export default {
   'section7.十大增值服务0':
     'Depending on favorable resources, we can provide talents, financing brand promotion, legal policy consulting and other services based on enterprise demands, thus giving solutions for members and growing up together with them.',
   'section7.轻公司生态圈1':
-    'Moonstar DoBe WE integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
+    'Moonstar DoBe WE" integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
   'section7.国际企业共联2':
-    'Moonstar DoBe WE has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
+    'Moonstar DoBe WE" has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
   'section7.基础企业服务3':
     '5A smart office and property service system offers specialized and top-ranking service for all clients, including daily building management, safety precaution management, emergency management and smart operating service.',
-  'section7.了解更多': 'Learn more',
 };

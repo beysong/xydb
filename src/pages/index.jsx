@@ -1,4 +1,4 @@
-import { setLocale, useIntl } from 'umi';
+import { setLocale, useIntl, getLocale } from 'umi';
 import React, { useState, useEffect } from 'react';
 import { OverPack, Parallax } from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
@@ -14,9 +14,7 @@ import Slider32 from '@/components/Slider32';
 import Slider5 from '@/components/Slider5';
 import SectionTitle from '@/components/SectionTitle';
 import Section from '@/components/Section';
-import CountNum from '@/components/CountNum';
 import ZuLin from '@/components/ZuLin';
-import Img from '@/components/Img';
 import OssImg from '@/components/OssImg';
 import ProjectInfo from '@/components/ProjectInfo';
 import Contact from '@/components/Contact';
@@ -32,38 +30,63 @@ import add1 from '@/assets/address/add1.png';
 import add2 from '@/assets/address/add2.png';
 import add3 from '@/assets/address/add3.png';
 
-import regleft from '@/assets/regleft.png';
-import regright from '@/assets/regright.png';
 import { getSingle, addEvent } from '@/utils';
 
 import './index.css';
 
-let popMapIns = null;
+let popMapIns = null,
+  popMobileIns = null;
 
 export default function IndexPage() {
   const intl = useIntl();
   const [isFrame, setIsFrame] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [sideMenu, setSideMenu] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = (e) => {
-  //     if (window.innerWidth > 1024) {
-  //       setShowContact(false);
-  //     }
-  //   };
-  //   window.addEventListener('scroll', handleScroll, true);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll, true);
-  //   };
-  // });
+  useEffect(() => {
+    console.log('...');
+    const handleScroll = (e) => {
+      console.log('...2');
+      if (window.scrollY > window.innerHeight) {
+        !sideMenu && setSideMenu(true);
+      } else {
+        sideMenu && setSideMenu(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, true);
+    return () => {
+      window.removeEventListener('scroll', handleScroll, true);
+    };
+  });
   const popMap = getSingle(function () {
     const popDiv = document.createElement('div');
     const popImg = document.createElement('img');
     popImg.src =
-      'https://wehome-image.oss-cn-shanghai.aliyuncs.com/2dc8058a10178bb2961da002793615e7.jpg';
-    popImg.className = 'w-2/3 mx-auto';
+      'https://wehome-image.oss-cn-shanghai.aliyuncs.com/8151ddadcfdd6af09a8711006e6990ab.png';
+    popImg.className = 'w-1/2 mx-auto';
     // popDiv.innerHTML = '我是登录浮窗';
     popDiv.appendChild(popImg);
+    popDiv.style.background = 'rgba(0,0,0,0.3)';
+    popDiv.style.zIndex = '999';
+    popDiv.className =
+      'w-full h-screen flex items-center justify-center fixed inset-0';
+
+    addEvent(popDiv, 'click', function () {
+      this.style.display = 'none';
+    });
+
+    document.body.appendChild(popDiv);
+    return popDiv;
+  });
+
+  const popMobile = getSingle(function () {
+    const popDiv = document.createElement('div');
+    const popSpan = document.createElement('div');
+    popSpan.innerHTML =
+      '<div class="py-4 px-8 bg-white rounded-lg">021-62335008</div>';
+    popSpan.className = 'p-4 rounded-lg';
+    popSpan.style.backgroundColor = 'rgba(0, 201, 208, 0.52)';
+    popDiv.appendChild(popSpan);
     popDiv.style.background = 'rgba(0,0,0,0.3)';
     popDiv.style.zIndex = '999';
     popDiv.className =
@@ -482,7 +505,14 @@ export default function IndexPage() {
         full
       >
         <div className="container mx-auto">
-          <OssImg className="z-0" src="8b29a2213f35a062c978bef867f946df.jpg" />
+          <OssImg
+            className="z-0"
+            src={
+              getLocale() === 'en-US'
+                ? 'a4b0535bdedf7c42a0cd31c3d5e1ae53.jpg'
+                : '8b29a2213f35a062c978bef867f946df.jpg'
+            }
+          />
         </div>
 
         <Slider5 />
@@ -507,7 +537,11 @@ export default function IndexPage() {
         <ZuLin />
       </Section>
       <Footer />
-      <div className="fixed right-0 top-1/2 z-10">
+      <div
+        className={`${
+          sideMenu ? 'right-0 opacity-100' : '-right-full opacity-0'
+        } fixed top-1/2 z-10 transition-all duration-500`}
+      >
         <div
           className="text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 text-white text-center p-2 cursor-pointer"
           style={{ backgroundColor: '#00C9D0' }}
@@ -526,7 +560,26 @@ export default function IndexPage() {
           className="text-xs xl:text-sm 2xl:text-sm w-14 xl:w-24 mt-2 text-white text-center p-2"
           style={{ backgroundColor: '#00C9D0' }}
         >
-          <a href="tel:021-62335008">
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              let userAgent = navigator.userAgent.toLowerCase();
+              // 用 test 匹配浏览器信息
+              if (
+                /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(
+                  userAgent,
+                )
+              ) {
+                window.location.href = 'tel:021-62335008';
+              } else {
+                if (popMobileIns) {
+                  popMobileIns.style.display = 'flex';
+                } else {
+                  popMobileIns = popMobile();
+                }
+              }
+            }}
+          >
             <img className="block w-2/3 mx-auto" src={fixtel} alt="" />
             <span className="hidden md:inline">
               {intl.formatMessage({
