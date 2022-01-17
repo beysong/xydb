@@ -17,7 +17,7 @@
       '' +
       ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
       '.' +
-      { 0: '6902d177', 2: '574d5d68' }[e] +
+      { 0: '64895633', 2: '574d5d68' }[e] +
       '.async.js'
     );
   }
@@ -11478,12 +11478,12 @@
           '24h well-equipped office',
         'count.\u5168\u4ef7\u503c\u94fe\u589e\u503c\u670d\u52a1':
           '10 + value-added services of full value chain',
-        'zulin.10\u33a1': '10\u33a1',
+        'zulin.53000\u33a1': '53000\u33a1',
         'zulin.\u603b\u9762\u79ef': 'Total area',
-        'zulin.101\u33a1': '101\u33a1',
+        'zulin.100-3800\u33a1': '100-3800\u33a1',
         'zulin.\u5206\u9694\u9762\u79ef': 'Separate area',
         'zulin.3\u33a1': '3\u33a1',
-        'zulin.\u539f\u9ad8': 'Original height',
+        'zulin.\u5c42\u9ad8': 'Original height',
         'zulin.\u7cbe\u88c5': 'Refined decoration',
         'zulin.\u4ea4\u4ed8\u6807\u51c6': 'Delivery standards',
         'zulin.\u505c\u8f66\u573a': 'Parking lot',
@@ -11491,7 +11491,7 @@
         'zulin.WiFi': 'WiFi',
         'zulin.\u5168\u533a\u57df\u8986\u76d6': 'Full coverage',
         'zulin.VRV': 'VRV',
-        'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24h online service',
+        'zulin.24\u5c0f\u65f6\u7a7a\u8c03': '24h online service',
         'zulin.\u56ed\u533a\u7ba1\u7406': 'Park management',
         'title.\u661f\u6708\u5fb7\u5fc5WE"': 'Moonstar DoBe WE"',
         'title.\u6982\u51b5': ' ',
@@ -11587,7 +11587,7 @@
         'section5.wehome\u667a\u80fd\u4f1a\u8bae\u5385':
           'Wehome smart meeting room',
         'section5.\u7761\u7720\u8231': 'Sleep cabin',
-        'section5.\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1':
+        'section5.\u667a\u6167\u79d1\u6280\u9910\u5385':
           'Multilevel catering service',
         'section5.\u4eba\u8138\u8bc6\u522b\u95e8\u7981':
           'Facial recognition access control',
@@ -11644,12 +11644,12 @@
           '\u5168\u914d\u529e\u516c\u6761\u4ef6',
         'count.\u5168\u4ef7\u503c\u94fe\u589e\u503c\u670d\u52a1':
           '\u5168\u4ef7\u503c\u94fe\u589e\u503c\u670d\u52a1',
-        'zulin.10\u33a1': '10\u33a1',
+        'zulin.53000\u33a1': '53000\u33a1',
         'zulin.\u603b\u9762\u79ef': '\u603b\u9762\u79ef',
-        'zulin.101\u33a1': '101\u33a1',
+        'zulin.100-3800\u33a1': '100-3800\u33a1',
         'zulin.\u5206\u9694\u9762\u79ef': '\u5206\u9694\u9762\u79ef',
-        'zulin.3\u33a1': '3\u33a1',
-        'zulin.\u539f\u9ad8': '\u539f\u9ad8',
+        'zulin.3.0-4.2\u33a1': '3.0-4.2\u33a1',
+        'zulin.\u5c42\u9ad8': '\u5c42\u9ad8',
         'zulin.\u7cbe\u88c5': '\u7cbe\u88c5',
         'zulin.\u4ea4\u4ed8\u6807\u51c6': '\u4ea4\u4ed8\u6807\u51c6',
         'zulin.\u505c\u8f66\u573a': '\u505c\u8f66\u573a',
@@ -11658,7 +11658,7 @@
         'zulin.\u5168\u533a\u57df\u8986\u76d6':
           '\u5168\u533a\u57df\u8986\u76d6',
         'zulin.VRV': 'VRV',
-        'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24\u5c0f\u65f6\u5728\u7ebf',
+        'zulin.24\u5c0f\u65f6\u7a7a\u8c03': '24\u5c0f\u65f6\u7a7a\u8c03',
         'zulin.\u56ed\u533a\u7ba1\u7406': '\u56ed\u533a\u7ba1\u7406',
         'title.\u661f\u6708\u5fb7\u5fc5WE"': '\u661f\u6708\u5fb7\u5fc5WE"',
         'title.\u6982\u51b5': '\u6982\u51b5',
@@ -11695,7 +11695,7 @@
         'section1.con2':
           '\u7acb\u8db3\u8679\u6865\u56fd\u9645\u5f00\u653e\u67a2\u7ebd\u56fd\u5bb6\u7ea7\u89c4\u5212',
         'section1.con3':
-          '\u6253\u9020\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3\uff0c\u4e3a\u4e0a\u6d77\u53ca\u957f\u4e09\u89d2\u6570\u5b57\u521b\u610f\u4f01\u4e1a\u63d0\u4f9b\u6700\u4f18\u5316\u7684\u529e\u516c\u73af\u5883\u548c\u8d44\u6e90\u94fe\u63a5\u5e73\u53f0\u3002',
+          '\u6253\u9020\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3\uff0c\u4e3a\u4e0a\u6d77\u53ca\u957f\u4e09\u89d2\u6570\u5b57\u521b\u610f\u4f01\u4e1a\u63d0\u4f9b\u6700\u4f18\u8d28\u7684\u529e\u516c\u73af\u5883\u548c\u8d44\u6e90\u94fe\u63a5\u5e73\u53f0\u3002',
         'section1.\u9f99\u6e56\u8679\u6865\u5929\u8857':
           '\u9f99\u6e56\u8679\u6865\u5929\u8857',
         'section1.\u65b0\u534e\u8054\u8d2d\u7269\u4e2d\u5fc3':
@@ -11760,8 +11760,8 @@
         'section5.wehome\u667a\u80fd\u4f1a\u8bae\u5385':
           'wehome\u667a\u80fd\u4f1a\u8bae\u5385',
         'section5.\u7761\u7720\u8231': '\u7761\u7720\u8231',
-        'section5.\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1':
-          '\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1',
+        'section5.\u667a\u6167\u79d1\u6280\u9910\u5385':
+          '\u667a\u6167\u79d1\u6280\u9910\u5385',
         'section5.\u4eba\u8138\u8bc6\u522b\u95e8\u7981':
           '\u4eba\u8138\u8bc6\u522b\u95e8\u7981',
         'section5.\u5171\u4eab\u5065\u8eab\u7a7a\u95f4':

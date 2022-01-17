@@ -327,7 +327,7 @@
                                       body: JSON.stringify({
                                         tel: l,
                                         name: o,
-                                        room_id: 9351,
+                                        room_id: 7319,
                                       }),
                                     },
                                   )
@@ -1011,9 +1011,13 @@
         xe = s('6tIf'),
         ge = s.n(xe),
         me = [
-          { icon: $.a, count: '10\u33a1', desc: '\u603b\u9762\u79ef' },
-          { icon: te.a, count: '101\u33a1', desc: '\u5206\u9694\u9762\u79ef' },
-          { icon: ce.a, count: '3\u33a1', desc: '\u539f\u9ad8' },
+          { icon: $.a, count: '53000\u33a1', desc: '\u603b\u9762\u79ef' },
+          {
+            icon: te.a,
+            count: '100-3800\u33a1',
+            desc: '\u5206\u9694\u9762\u79ef',
+          },
+          { icon: ce.a, count: '3.0-4.2\u33a1', desc: '\u5c42\u9ad8' },
           {
             icon: ie.a,
             count: '\u7cbe\u88c5',
@@ -1021,11 +1025,11 @@
           },
           { icon: ne.a, count: '\u505c\u8f66\u573a', desc: '\u4f9b\u5e94' },
           { icon: de.a, count: 'WiFi', desc: '\u5168\u533a\u57df\u8986\u76d6' },
-          { icon: re.a, count: 'VRV', desc: '24\u5c0f\u65f6\u5728\u7ebf' },
+          { icon: re.a, count: 'VRV', desc: '24\u5c0f\u65f6\u7a7a\u8c03' },
           {
             icon: ge.a,
             count: '\u56ed\u533a\u7ba1\u7406',
-            desc: '24\u5c0f\u65f6\u5728\u7ebf',
+            desc: '24\u5c0f\u65f6\u7a7a\u8c03',
           },
         ];
       function be() {
@@ -1273,7 +1277,7 @@
                                 body: JSON.stringify({
                                   tel: A,
                                   name: g,
-                                  room_id: 9351,
+                                  room_id: 7319,
                                 }),
                               },
                             ).then(function () {
@@ -1796,7 +1800,7 @@
                                   'absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center',
                                 style: { background: '#00C9D0' },
                                 children: e.formatMessage({
-                                  id: 'section5.\u591a\u5c42\u6b21\u9910\u996e\u670d\u52a1',
+                                  id: 'section5.\u667a\u6167\u79d1\u6280\u9910\u5385',
                                 }),
                               }),
                             ],
