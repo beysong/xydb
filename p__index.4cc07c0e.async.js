@@ -60,13 +60,12 @@
         g = function (e, t) {
           t && t.preventDefault();
           var s = document.querySelector(e);
-          console.log('??', s, e),
-            s &&
-              s.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'nearest',
-              });
+          s &&
+            s.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'nearest',
+            });
         };
       function m() {
         var e = Object(a['f'])(),
@@ -500,7 +499,7 @@
         },
         {
           title: '\u53ef\u5bb9\u7eb3 3 0 - 6 0 \u4eba\u56e2\u961f',
-          img: 'c340fcd072819aee7979cf067dba94d1.jpg',
+          img: '9ffa3e2009ddcb8598a0008e0df0a062.jpg',
         },
         {
           title: '24\u5c0f\u65f6VRV\u7a7a\u8c03',
@@ -508,7 +507,7 @@
         },
         {
           title: '1 5 0 - 5 0 0 \u5e73\u7c73\u6237\u578b',
-          img: 'e249a828ab58d9a501f964f45e021f07.jpg',
+          img: '3d02b8cef288fbc911828eb9d40d8768.jpg',
         },
       ];
       function V() {
@@ -1371,10 +1370,8 @@
           f = j[0],
           h = j[1];
         Object(i['useEffect'])(function () {
-          console.log('...');
           var e = function (e) {
-            console.log('...2'),
-              window.scrollY > window.innerHeight ? !f && h(!0) : f && h(!1);
+            window.scrollY > window.innerHeight ? !f && h(!0) : f && h(!1);
           };
           return (
             window.addEventListener('scroll', e, !0),
@@ -1793,7 +1790,7 @@
                             children: [
                               Object(r['jsx'])(ue, {
                                 width: '100%',
-                                src: '2ebec6c9dce48720310fd8d0163e0521.png',
+                                src: '3c4e097018a030538c4dc1e676a8b775.jpeg',
                               }),
                               Object(r['jsx'])('div', {
                                 className:
