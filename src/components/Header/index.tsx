@@ -19,7 +19,7 @@ const handleQuickJump = (id, e) => {
   }
   const node = document.querySelector(id);
 
-  console.log('??', node, id);
+  // console.log('??', node, id);
   if (node) {
     node.scrollIntoView({
       behavior: 'smooth',

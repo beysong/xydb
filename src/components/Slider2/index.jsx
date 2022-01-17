@@ -24,12 +24,12 @@ const imgs = [
   },
   {
     title: '可容纳 3 0 - 6 0 人团队',
-    img: 'c340fcd072819aee7979cf067dba94d1.jpg',
+    img: '9ffa3e2009ddcb8598a0008e0df0a062.jpg',
   },
   { title: '24小时VRV空调', img: '57d8b53dcb78a38e1621f3343fd89223.jpg' },
   {
     title: '1 5 0 - 5 0 0 平米户型',
-    img: 'e249a828ab58d9a501f964f45e021f07.jpg',
+    img: '3d02b8cef288fbc911828eb9d40d8768.jpg',
   },
 ];
 

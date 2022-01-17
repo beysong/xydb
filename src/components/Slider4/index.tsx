@@ -38,7 +38,7 @@ export default function IndexPage({ data }) {
           let nowIndex = progress.activeIndex;
           let len = this.slides.length;
 
-          console.log('aaa', nowIndex, len);
+          // console.log('aaa', nowIndex, len);
           let slide1 = this.slides.eq(nowIndex - 2);
           let slide2 = this.slides.eq(nowIndex - 1);
           let slide = this.slides.eq(nowIndex);

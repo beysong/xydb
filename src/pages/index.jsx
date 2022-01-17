@@ -44,9 +44,9 @@ export default function IndexPage() {
   const [sideMenu, setSideMenu] = useState(false);
 
   useEffect(() => {
-    console.log('...');
+    // console.log('...');
     const handleScroll = (e) => {
-      console.log('...2');
+      // console.log('...2');
       if (window.scrollY > window.innerHeight) {
         !sideMenu && setSideMenu(true);
       } else {
@@ -419,7 +419,7 @@ export default function IndexPage() {
               <div className="w-full lg:w-1/2 relative">
                 <OssImg
                   width="100%"
-                  src={'2ebec6c9dce48720310fd8d0163e0521.png'}
+                  src={'3c4e097018a030538c4dc1e676a8b775.jpeg'}
                 />
                 <div
                   className="absolute bottom-0 w-full text-white text-base xl:text-lg 2xl:text-xl p-2 xl:p-3 text-center"
