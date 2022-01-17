@@ -27,12 +27,12 @@ export default {
   'count.全配办公条件': '24h well-equipped office',
   'count.全价值链增值服务': '10 + value-added services of full value chain',
 
-  'zulin.10㎡': '10㎡',
+  'zulin.53000㎡': '53000㎡',
   'zulin.总面积': 'Total area',
-  'zulin.101㎡': '101㎡',
+  'zulin.100-3800㎡': '100-3800㎡',
   'zulin.分隔面积': 'Separate area',
   'zulin.3㎡': '3㎡',
-  'zulin.原高': 'Original height',
+  'zulin.层高': 'Original height',
   'zulin.精装': 'Refined decoration',
   'zulin.交付标准': 'Delivery standards',
   'zulin.停车场': 'Parking lot',
@@ -40,7 +40,7 @@ export default {
   'zulin.WiFi': 'WiFi',
   'zulin.全区域覆盖': 'Full coverage',
   'zulin.VRV': 'VRV',
-  'zulin.24小时在线': '24h online service',
+  'zulin.24小时空调': '24h online service',
   'zulin.园区管理': 'Park management',
 
   'title.星月德必WE"': 'Moonstar DoBe WE"',
@@ -124,7 +124,7 @@ export default {
     'Complete ecological commercial supply chain and life-esque office experience',
   'section5.wehome智能会议厅': 'Wehome smart meeting room',
   'section5.睡眠舱': 'Sleep cabin',
-  'section5.多层次餐饮服务': 'Multilevel catering service',
+  'section5.智慧科技餐厅': 'Multilevel catering service',
   'section5.人脸识别门禁': 'Facial recognition access control',
   'section5.共享健身空间': 'Sharing fitness center',
 

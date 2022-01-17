@@ -426,7 +426,7 @@ export default function IndexPage() {
                   style={{ background: '#00C9D0' }}
                 >
                   {intl.formatMessage({
-                    id: 'section5.多层次餐饮服务',
+                    id: 'section5.智慧科技餐厅',
                   })}
                 </div>
               </div>
