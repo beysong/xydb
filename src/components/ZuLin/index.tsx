@@ -14,12 +14,12 @@ import ico8 from '@/assets/foot/ico8.png';
 const datas = [
   { icon: ico1, count: '53000㎡', desc: '总面积' },
   { icon: ico2, count: '100-3800㎡', desc: '分隔面积' },
-  { icon: ico3, count: '3.0-4.2㎡', desc: '层高' },
+  { icon: ico3, count: '3.0-4.2m', desc: '层高' },
   { icon: ico4, count: '精装', desc: '交付标准' },
   { icon: ico5, count: '停车场', desc: '供应' },
   { icon: ico6, count: 'WiFi', desc: '全区域覆盖' },
   { icon: ico7, count: 'VRV', desc: '24小时空调' },
-  { icon: ico8, count: '园区管理', desc: '24小时空调' },
+  { icon: ico8, count: '园区管理', desc: '24小时在线' },
 ];
 
 export default function IndexPage() {

@@ -42,6 +42,7 @@ export default {
   'zulin.VRV': 'VRV',
   'zulin.24小时空调': '24h online service',
   'zulin.园区管理': 'Park management',
+  'zulin.24小时在线': '24h online service',
 
   'title.星月德必WE"': 'Moonstar DoBe WE"',
   'title.概况': ' ',
