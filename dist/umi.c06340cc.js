@@ -11493,6 +11493,7 @@
         'zulin.VRV': 'VRV',
         'zulin.24\u5c0f\u65f6\u7a7a\u8c03': '24h online service',
         'zulin.\u56ed\u533a\u7ba1\u7406': 'Park management',
+        'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24h online service',
         'title.\u661f\u6708\u5fb7\u5fc5WE"': 'Moonstar DoBe WE"',
         'title.\u6982\u51b5': ' ',
         'title.\u533a\u4f4d\u4ea4\u901a': 'Location',
