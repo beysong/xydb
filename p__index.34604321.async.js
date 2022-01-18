@@ -1016,7 +1016,7 @@
             count: '100-3800\u33a1',
             desc: '\u5206\u9694\u9762\u79ef',
           },
-          { icon: ce.a, count: '3.0-4.2\u33a1', desc: '\u5c42\u9ad8' },
+          { icon: ce.a, count: '3.0-4.2m', desc: '\u5c42\u9ad8' },
           {
             icon: ie.a,
             count: '\u7cbe\u88c5',
@@ -1028,7 +1028,7 @@
           {
             icon: ge.a,
             count: '\u56ed\u533a\u7ba1\u7406',
-            desc: '24\u5c0f\u65f6\u7a7a\u8c03',
+            desc: '24\u5c0f\u65f6\u5728\u7ebf',
           },
         ];
       function be() {
