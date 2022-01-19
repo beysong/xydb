@@ -621,7 +621,7 @@
           img: 'b44231525e153409e443de754e7b81ef.jpg',
         },
       ];
-      function V() {
+      function I() {
         var e = Object(i['useState'])(0),
           t = Object(c['a'])(e, 2),
           s = t[0],
@@ -720,7 +720,7 @@
       }
       s('UUBk');
       j['a'].use([u['a'], f['a'], h['a'], M['a']]);
-      var I = [
+      var V = [
         {
           title: '"\u524d\u6cbf\u667a\u80fd\u8bbe\u65bd\u52a0\u6301"',
           desc: '\u521b\u4eab\u672a\u6765\u79d1\u6280\u4f53\u9a8c',
@@ -782,13 +782,12 @@
               }
             },
             onSetTransition: function (e, t) {
-              console.log('transition', t);
               for (var s = 0; s < this.slides.length; s++) {
                 var c = this.slides.eq(s);
                 c.transition(t);
               }
             },
-            children: I.map(function (t, s) {
+            children: V.map(function (t, s) {
               return Object(d['jsxs'])(
                 N['a'],
                 {
@@ -1392,9 +1391,9 @@
         He = s('JJtt'),
         ke = s.n(He),
         Ke = s('6Yia'),
-        Ve = s.n(Ke),
-        Ie = s('oN81'),
-        Ze = s.n(Ie),
+        Ie = s.n(Ke),
+        Ve = s('oN81'),
+        Ze = s.n(Ve),
         Ge = (s('EDuE'), null),
         Fe = null;
       function Te() {
@@ -1628,7 +1627,7 @@
                                   Object(d['jsx'])('img', {
                                     className:
                                       'w-12 h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20',
-                                    src: Ve.a,
+                                    src: Ie.a,
                                     alt: '',
                                   }),
                                   Object(d['jsxs'])('div', {
@@ -1724,7 +1723,7 @@
                 Object(d['jsx'])('div', {
                   className:
                     'pt-10 lg:pt-20 lg:pb-16 xl:pb-24 2xl:pb-32 overflow-hidden hidden lg:block',
-                  children: Object(d['jsx'])(V, {
+                  children: Object(d['jsx'])(I, {
                     data: [ye.a, ye.a, Ce.a, Ce.a],
                   }),
                 }),
@@ -1950,6 +1949,7 @@
             }),
             Object(d['jsx'])(b, {}),
             Object(d['jsxs'])('div', {
+              style: { zIndex: 99999 },
               className: ''.concat(
                 f ? 'right-0 opacity-100' : '-right-full opacity-0',
                 ' fixed top-1/2 z-10 transition-all duration-500',
