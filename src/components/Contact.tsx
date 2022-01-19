@@ -1,13 +1,39 @@
 import React, { useState } from 'react';
 import { setLocale, useIntl } from 'umi';
 
+import { getSingle, addEvent } from '@/utils';
+
 import regleft from '@/assets/regleft.png';
 import regright from '@/assets/regright.png';
 
+let popDialogIns = null;
+
 export default ({ onSubmit }) => {
   const intl = useIntl();
-  const [tel, setTel] = useState();
-  const [name, setName] = useState();
+  const [tel, setTel] = useState('');
+  const [name, setName] = useState('');
+
+  const popDialog = getSingle(function () {
+    const popDiv = document.createElement('div');
+    const popSpan = document.createElement('div');
+    popSpan.innerHTML =
+      '<div class="py-4 px-8 bg-white rounded-lg text-center">感谢您的预约，我们招商顾问将在<br />2小时内联系您，请保持手机畅通</div>';
+    popSpan.className = 'p-4 rounded-lg';
+    popSpan.style.backgroundColor = 'rgba(0, 201, 208, 0.52)';
+    popDiv.appendChild(popSpan);
+    popDiv.style.background = 'rgba(0,0,0,0.3)';
+    popDiv.style.zIndex = '999';
+    popDiv.className =
+      'w-full h-screen flex items-center justify-center fixed inset-0';
+
+    addEvent(popDiv, 'click', function () {
+      this.style.display = 'none';
+    });
+
+    document.body.appendChild(popDiv);
+    return popDiv;
+  });
+
   return (
     <div
       className="container mx-auto relative"
@@ -76,9 +102,23 @@ export default ({ onSubmit }) => {
                       room_id: 7319,
                     }),
                   },
-                ).then(() => {
-                  onSubmit();
-                });
+                )
+                  .then((r) => r.json())
+                  .then((res) => {
+                    onSubmit();
+                    if (res.status !== 200) {
+                      alert(res.msg);
+                    } else {
+                      if (popDialogIns) {
+                        popDialogIns.style.display = 'flex';
+                      } else {
+                        popDialogIns = popDialog();
+                      }
+
+                      setName('');
+                      setTel('');
+                    }
+                  });
               }}
               style={{ backgroundColor: '#00C9D0' }}
               className="text-center text-base 2xl:text-lg p-2 text-white w-full mt-7"

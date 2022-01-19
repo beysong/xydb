@@ -9,6 +9,7 @@
 
 # production
 /dist
+/*.zip
 
 # misc
 .DS_Store

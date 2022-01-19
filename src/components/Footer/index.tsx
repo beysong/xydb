@@ -7,8 +7,8 @@ import './index.css';
 export default function IndexPage() {
   const intl = useIntl();
 
-  const [tel, setTel] = useState();
-  const [name, setName] = useState();
+  const [tel, setTel] = useState('');
+  const [name, setName] = useState('');
 
   return (
     <footer
@@ -65,6 +65,7 @@ export default function IndexPage() {
                   placeholder={intl.formatMessage({
                     id: 'footer.请输入您的姓名',
                   })}
+                  value={name}
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
@@ -80,6 +81,7 @@ export default function IndexPage() {
                   placeholder={intl.formatMessage({
                     id: 'footer.请输入您的手机号',
                   })}
+                  value={tel}
                   onChange={(e) => {
                     setTel(e.target.value);
                   }}
@@ -106,7 +108,16 @@ export default function IndexPage() {
                           room_id: 7319,
                         }),
                       },
-                    );
+                    )
+                      .then((r) => r.json())
+                      .then((res) => {
+                        if (res.status !== 200) {
+                          alert(res.msg);
+                        } else {
+                          setName('');
+                          setTel('');
+                        }
+                      });
                   }}
                 >
                   {intl.formatMessage({

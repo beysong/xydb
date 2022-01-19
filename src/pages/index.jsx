@@ -1,9 +1,6 @@
 import { setLocale, useIntl, getLocale } from 'umi';
 import React, { useState, useEffect } from 'react';
-import { OverPack, Parallax } from 'rc-scroll-anim';
-import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
-import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -63,7 +60,7 @@ export default function IndexPage() {
     const popImg = document.createElement('img');
     popImg.src =
       'https://wehome-image.oss-cn-shanghai.aliyuncs.com/8151ddadcfdd6af09a8711006e6990ab.png';
-    popImg.className = 'w-1/2 mx-auto';
+    popImg.className = 'w-3/4 md:w-1/2 mx-auto';
     // popDiv.innerHTML = '我是登录浮窗';
     popDiv.appendChild(popImg);
     popDiv.style.background = 'rgba(0,0,0,0.3)';
@@ -611,7 +608,7 @@ export default function IndexPage() {
             })}
           </span>
           <div
-            className={`fixed top-1/2 w-80 h-3/5 transform -translate-y-1/2 right-20 ${
+            className={`fixed top-1/2 w-5/6 md:w-80 h-3/4 md:h-3/5 transform -translate-y-1/2 left-5 md:left-auto md:right-20 ${
               isFrame ? 'block' : 'hidden'
             }`}
           >
