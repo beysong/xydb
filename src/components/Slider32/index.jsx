@@ -93,7 +93,7 @@ export default function IndexPage() {
           }
         }}
         onSetTransition={function (swiper, transition) {
-          console.log('transition', transition);
+          // console.log('transition', transition);
           for (let i = 0; i < this.slides.length; i++) {
             let slide = this.slides.eq(i);
             slide.transition(transition);
