@@ -608,6 +608,7 @@ export default function IndexPage() {
             })}
           </span>
           <div
+            style={{ minHeight: 500, minWidth: 320 }}
             className={`fixed top-1/2 w-5/6 md:w-80 h-3/4 md:h-3/5 transform -translate-y-1/2 left-5 md:left-auto md:right-20 ${
               isFrame ? 'block' : 'hidden'
             }`}
