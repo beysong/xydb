@@ -535,6 +535,7 @@ export default function IndexPage() {
       </Section>
       <Footer />
       <div
+        style={{ zIndex: 99999 }}
         className={`${
           sideMenu ? 'right-0 opacity-100' : '-right-full opacity-0'
         } fixed top-1/2 z-10 transition-all duration-500`}
