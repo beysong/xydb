@@ -17,7 +17,7 @@
       '' +
       ({ 0: 'p__index', 2: 'vendors~p__index' }[e] || e) +
       '.' +
-      { 0: '3523fed1', 2: '743b560e' }[e] +
+      { 0: '8f1f3af1', 2: '743b560e' }[e] +
       '.async.js'
     );
   }
@@ -11494,7 +11494,8 @@
         'zulin.24\u5c0f\u65f6\u7a7a\u8c03': '24h online service',
         'zulin.\u56ed\u533a\u7ba1\u7406': 'Park management',
         'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24h online service',
-        'title.\u661f\u6708\u5fb7\u5fc5WE"': 'Moonstar DoBe WE"',
+        'title.\u5fb7\u5fc5\u8679\u6865\u56fd\u9645WE"':
+          'DoBe Hongqiao International WE"',
         'title.\u6982\u51b5': ' ',
         'title.\u533a\u4f4d\u4ea4\u901a': 'Location',
         'title.\u8bbe\u8ba1': 'Design',
@@ -11525,7 +11526,7 @@
         'footer.\u7535\u8bdd\u54a8\u8be2': 'Settled hotline',
         'footer.\u5728\u7ebf\u54a8\u8be2': 'Online consultation',
         'section1.con1':
-          'With total area of 53,000m\xb2 in Hongqiao CBD, Moonstar DoBe WE" is determined to ',
+          'With total area of 53,000m\xb2 in Hongqiao CBD, DoBe Hongqiao International WE" is determined to ',
         'section1.con2':
           'be the digital technology innovation center in the Yangtze River Delta according to the national strategy of international opening hub, ',
         'section1.con3':
@@ -11597,7 +11598,7 @@
         'section6.con1':
           'Diversified value-added services enable enterprises to share global resources via international platforms',
         'section6.con2':
-          "To satisfy growth and transaction of digital innovative businesses, \nMoonstar DoBe WE's spends more than ten years on constructing culture-technology-innovation industrial service system, \nintroducing dozens of global industrial parks and thousands of enterprises. \nDoing so contributes to the urban layout of different cities, \nconnectivity among enterprises and full life-cycle innovation service.",
+          "To satisfy growth and transaction of digital innovative businesses, \nDoBe Hongqiao International WE's spends more than ten years on constructing culture-technology-innovation industrial service system, \nintroducing dozens of global industrial parks and thousands of enterprises. \nDoing so contributes to the urban layout of different cities, \nconnectivity among enterprises and full life-cycle innovation service.",
         'section7.\u5341\u5927\u589e\u503c\u670d\u52a1':
           'Ten value-added services',
         'section7.\u8f7b\u516c\u53f8\u751f\u6001\u5708': 'Smart circle',
@@ -11608,15 +11609,15 @@
         'section7.\u5341\u5927\u589e\u503c\u670d\u52a10':
           'Depending on favorable resources, we can provide talents, financing brand promotion, legal policy consulting and other services based on enterprise demands, thus giving solutions for members and growing up together with them.',
         'section7.\u8f7b\u516c\u53f8\u751f\u6001\u57081':
-          'Moonstar DoBe WE" integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
+          'DoBe Hongqiao International WE" integrates resource and promotes interactive and cross-border cooperation development for all members in the park by establishing "smart circle." Closely work with thousands of enterprises and over 100,000 white-collar workers to have free transaction and cooperation and make joint progress.',
         'section7.\u56fd\u9645\u4f01\u4e1a\u5171\u80542':
-          'Moonstar DoBe WE" has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
+          'DoBe Hongqiao International WE" has covered more than ten countries and areas in Europe and America and Asia. It builds a connection bridge for enterprises so that they can get access to global resource network and in-depth N + 1 international business service, maximizing economic and social benefits.',
         'section7.\u57fa\u7840\u4f01\u4e1a\u670d\u52a13':
           '5A smart office and property service system offers specialized and top-ranking service for all clients, including daily building management, safety precaution management, emergency management and smart operating service.',
       },
       Et = {
         WELCOME_TO_UMI_WORLD: '{name}\uff0c\u6b22\u8fce\u5149\u4e34',
-        'site.title': '\u661f\u6708\u5fb7\u5fc5WE"',
+        'site.title': '\u5fb7\u5fc5\u8679\u6865\u56fd\u9645WE"',
         'site.logodesc':
           '\u957f\u4e09\u89d2\u6570\u5b57\u79d1\u6280\u521b\u65b0\u4e2d\u5fc3',
         'menu.\u9996\u9875': '\u9996\u9875',
@@ -11662,7 +11663,8 @@
         'zulin.24\u5c0f\u65f6\u7a7a\u8c03': '24\u5c0f\u65f6\u7a7a\u8c03',
         'zulin.\u56ed\u533a\u7ba1\u7406': '\u56ed\u533a\u7ba1\u7406',
         'zulin.24\u5c0f\u65f6\u5728\u7ebf': '24\u5c0f\u65f6\u5728\u7ebf',
-        'title.\u661f\u6708\u5fb7\u5fc5WE"': '\u661f\u6708\u5fb7\u5fc5WE"',
+        'title.\u5fb7\u5fc5\u8679\u6865\u56fd\u9645WE"':
+          '\u5fb7\u5fc5\u8679\u6865\u56fd\u9645WE"',
         'title.\u6982\u51b5': '\u6982\u51b5',
         'title.\u533a\u4f4d\u4ea4\u901a': '\u533a\u4f4d\u4ea4\u901a',
         'title.\u8bbe\u8ba1': '\u8bbe\u8ba1',
@@ -11693,7 +11695,7 @@
         'footer.\u7535\u8bdd\u54a8\u8be2': '\u7535\u8bdd\u54a8\u8be2',
         'footer.\u5728\u7ebf\u54a8\u8be2': '\u5728\u7ebf\u54a8\u8be2',
         'section1.con1':
-          '\u661f\u6708\u5fb7\u5fc5WE"\uff0c\u4f4d\u4e8e\u8679\u6865\u5546\u52a1\u533a\u6838\u5fc3\u533a\uff0c\n\u603b\u5efa\u7b51\u9762\u79ef53,000m\xb2',
+          '\u5fb7\u5fc5\u8679\u6865\u56fd\u9645WE"\uff0c\u4f4d\u4e8e\u8679\u6865\u5546\u52a1\u533a\u6838\u5fc3\u533a\uff0c\n\u603b\u5efa\u7b51\u9762\u79ef53,000m\xb2',
         'section1.con2':
           '\u7acb\u8db3\u8679\u6865\u56fd\u9645\u5f00\u653e\u67a2\u7ebd\u56fd\u5bb6\u7ea7\u89c4\u5212',
         'section1.con3':
